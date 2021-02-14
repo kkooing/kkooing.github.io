@@ -1,0 +1,7 @@
+#  The date format
+
+tooltip: "%Y-%m-%d %a | %H:%M %z"
+
+post:
+  long: "%Y-%m-%d"
+  short: "%m월 %d일"
