@@ -131,7 +131,7 @@ footer:
       # url:
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
-      url: 'https://github.com/kkooing'
+      #url: 'https://github.com/kkooing'
     - label: 'GitLab'
       icon: 'fab fa-fw fa-gitlab'
       # url:
@@ -148,8 +148,8 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
+  - '*.sublime-project'
+  - '*.sublime-workspace'
   - vendor
   - .asset-cache
   - .bundle
@@ -177,15 +177,15 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: 'utf-8'
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
 
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: '\n\n'
 incremental: false
 
 
@@ -272,7 +272,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
