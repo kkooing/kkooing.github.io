@@ -1,0 +1,1 @@
+Powershell.exe -noprofile -executionpolicy bypass -file "timeStamp.ps1"
