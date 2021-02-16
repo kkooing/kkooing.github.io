@@ -4,28 +4,357 @@ categories: [blog]
 tags:       [blog]
 last_modified_at: 2021-01-13T21:17:00+09:00
 ---
-<h1>h1 H1 제목</h1>
-<h2>h2 H2 제목</h2>
-<h3>h3 H3 제목</h3>
-<h4>h4 H4 제목</h4>
-<h5>h5 H5 제목</h5>
-<h6>h6 H6 제목</h6>
-<hr />
-일반 문단, 일반 문단, 일반 문단, 일반 문단, 일반 문단, 일반 문단, 일반 문단, 일반 문단, 일반 문단, 일반 문단, 일반 문단, 일반 문단,
-<hr />
-<p>
-&lt;p&gt;p 문단 시작 anseks 1234567890!@#$%^&amp;*() 문단 문단 문단 문단 문단 문단문단문단문단문단 p 문단 끝&lt;/p&gt;
-</p>
-<hr />
-일반 글씨 normal<br/>
-<strong>굵은 글씨 &lt;strong&gt;</strong><br/>
-<em>기울임 &lt;em&gt;</em><br/>
-<em><strong>굵은 기울임 &lt;strong em&gt;</strong></em><br/>
-일반 글씨<small>작은 글씨 &lt;small&gt;</small><br/>
-<mark>마킹 &lt;mark&gt;</mark><br/>
-<del>중간선 &lt;del&gt;</del><br/>
-<ins>밑줄 &lt;ins&gt;</ins><br/>
-일반 글씨<sub>아래첨자 &lt;sub&gt;</sub><sup>위첨자 &lt;sup&gt;</sup><br/>
+
+## 제목 &lt;h&gt;
+
+<table>
+  <thead>
+    <tr>
+      <th>markdown<br/>
+      (kramdown)</th>
+      <th>HTML</th>
+      <th>브라우저</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># H1 제목</span>
+<span class="gu">## H2 제목</span>
+<span class="gu">### H3 제목</span>
+<span class="gu">#### H4 제목</span>
+<span class="gu">##### H5 제목</span>
+<span class="gu">###### H6 제목</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>H1 제목<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>H2 제목<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>H3 제목<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>H4 제목<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>H5 제목<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>H6 제목<span class="nt">&lt;/h6&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<h1>H1 제목</h1>
+<h2>H2 제목</h2>
+<h3>H3 제목</h3>
+<h4>H4 제목</h4>
+<h5>H5 제목</h5>
+<h6>H6 제목</h6>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">H1 제목
+==================
+</span>
+<span class="gh">H2 제목
+-------------------
+</span></code></pre></div></div>
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>H1 제목<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>H2 제목<span class="nt">&lt;/h2&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<h1>H1 제목</h1>
+
+<h2>H2 제목</h2>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## 문단, 개행 &lt;p&gt;, &lt;br/&gt;
+
+<table>
+  <thead>
+    <tr>
+      <th>markdown<br/>
+      (kramdown)</th>
+      <th>HTML</th>
+      <th>브라우저</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1번 문장, first line.
+2번 문장, second line.
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>1번 문장, first line.<span class="nt">&lt;br&gt;</span>
+2번 문장, second line.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<p>1번 문장, first line.
+2번 문장, second line.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1번 문장, first line.
+
+2번 문장, second line.
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>1번 문장, first line.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>2번 문장, second line.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<p>1번 문장, first line.</p>
+<p>2번 문장, second line.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1번 문장, first line.  
+2번 문장, second line.
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>1번 문장, first line.<span class="nt">&lt;br&gt;</span>
+2번 문장, second line.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<p>1번 문장, first line.<br>
+2번 문장, second line.</p>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## span 요소 &lt;&gt;
+
+```md
+일반
+```
+
+```html
+일반
+```
+
+<table>
+  <thead>
+    <tr>
+      <th>markdown<br/>
+      (kramdown)</th>
+      <th>HTML</th>
+      <th>브라우저</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>일반
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>일반
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+일반
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ge">*기울임*</span>
+<span class="ge">_기울임_</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;em&gt;</span>기울임<span class="nt">&lt;/em&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<em>기울임</em>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gs">**굵게**</span>
+<span class="gs">__굵게__</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;strong&gt;</span>굵게<span class="nt">&lt;/strong&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<strong>굵게</strong>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+-
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;small&gt;</span>작게<span class="nt">&lt;/small&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<small>작게</small>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+-
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;mark&gt;</span>마킹<span class="nt">&lt;/mark&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<mark>마킹</mark>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+-
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ins&gt;</span>밑줄<span class="nt">&lt;/ins&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<ins>밑줄</ins>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+-
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;del&gt;</span>취소선<span class="nt">&lt;/del&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<del>취소선</del>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+-
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;sub&gt;</span>아래첨자<span class="nt">&lt;/sub&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<sub>아래첨자</sub>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+-
+
+      </td>
+      <td>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;sup&gt;</span>위첨자<span class="nt">&lt;/sup&gt;</span>
+</code></pre></div></div>
+
+      </td>
+      <td>
+
+<sup>위첨자</sup>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### 연달아 쓰기
+일반*기울임***굵게**<small>작게</small><mark>마킹</mark><ins>밑줄</ins><del>취소선</del><sub>아래첨자</sub><sup>위첨자</sup>
+
 <table style="width:100%">
   <caption>Monthly savings</caption>
   <tr>
