@@ -1,5 +1,5 @@
 ---
-title:      '스타일 예시'
+title:      'kramdown(markdown) 문법 / 예시'
 categories: [blog]
 tags:       [blog]
 last_modified_at: 2021-01-13T21:17:00+09:00
@@ -163,14 +163,6 @@ last_modified_at: 2021-01-13T21:17:00+09:00
 </table>
 
 ## span 요소 &lt;&gt;
-
-```md
-일반
-```
-
-```html
-일반
-```
 
 <table>
   <thead>
