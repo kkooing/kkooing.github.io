@@ -6,14 +6,12 @@ last_modified_at: 2020-12-04T21:17:00+09:00
 ---
 ## 0. 주제
  인터넷 접속 없이 curl을 통해 iptime 공유기에 세션방식으로 로그인 하고 외부 IP 주소를 가져온다.<br />
-<br />
 
 ## 1. 서론
  내가 사용하는 iptime 공유기 N704V3에는 기본방식, 세션방식의 두 가지 로그인 인증 방식이 있다. 기본방식을 선택하면 HTTP Basic 인증이 사용되며, 공유기에 로그인 할 필요도 없이 공유기 접속 첫 페이지에 외부 IP가 노출된다. 하지만 세션방식은 별도의 로그인 페이지가 열리고 로그인 이후 외부 IP를 볼 수 있다.<br />
-<br />
 
-<div class="separator" style="clear: both; display: block; text-align: center;"><a href="https://1.bp.blogspot.com/-YKlZP6A43RQ/X9Mgy1BOMeI/AAAAAAAAANE/jvtH7lEyWa4tEBh45Iq8EJpffnnLK6ldACLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png"><img alt="" border="0" data-original-height="96" data-original-width="642" src="https://1.bp.blogspot.com/-YKlZP6A43RQ/X9Mgy1BOMeI/AAAAAAAAANE/jvtH7lEyWa4tEBh45Iq8EJpffnnLK6ldACLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png" /></a><br />▲ 로그인 인증 방법 설정
-</div>
+[![로그인 인증 방법 설정](https://1.bp.blogspot.com/-YKlZP6A43RQ/X9Mgy1BOMeI/AAAAAAAAANE/jvtH7lEyWa4tEBh45Iq8EJpffnnLK6ldACLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png)](https://1.bp.blogspot.com/-YKlZP6A43RQ/X9Mgy1BOMeI/AAAAAAAAANE/jvtH7lEyWa4tEBh45Iq8EJpffnnLK6ldACLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png)▲ 로그인 인증 방법 설정
+
 <br />
 <div class="separator" style="clear: both; display: block; text-align: center;"><br /><a href="https://1.bp.blogspot.com/-1BCSLqazvFQ/X9MwNxzPjNI/AAAAAAAAAN4/esGx2ALvBrQycaVH8ZALsMu303-r5CaMwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png"><img alt="" border="0" data-original-height="282" data-original-width="297" src="https://1.bp.blogspot.com/-1BCSLqazvFQ/X9MwNxzPjNI/AAAAAAAAAN4/esGx2ALvBrQycaVH8ZALsMu303-r5CaMwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png" /></a><br />▲ 기본방식 첫 페이지
 </div>
