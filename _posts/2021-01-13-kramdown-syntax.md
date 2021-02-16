@@ -162,7 +162,7 @@ last_modified_at: 2021-01-13T21:17:00+09:00
   </tbody>
 </table>
 
-## span 요소 &lt;&gt;
+## 글자 꾸밈 &lt;em&gt;, &lt;strong&gt;...
 
 <table>
   <thead>
@@ -347,6 +347,138 @@ last_modified_at: 2021-01-13T21:17:00+09:00
 ### 연달아 쓰기
 일반*기울임***굵게**<small>작게</small><mark>마킹</mark><ins>밑줄</ins><del>취소선</del><sub>아래첨자</sub><sup>위첨자</sup>
 
+## 리스트
+### ordered &lt;ol&gt;
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> 첫 번째 항목
+<span class="p">2.</span> 두 번째 항목
+<span class="p">9.</span> 순서 무관
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>첫 번째 항목<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>두 번째 항목<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>순서 무관<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+1. 첫 번째 항목
+2. 두 번째 항목
+9. 순서 무관
+
+
+### unordered &lt;ul&gt;
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">*</span> 첫 번째 항목
+<span class="p">+</span> 두 번째 항목
+<span class="p">-</span> 기호 무관
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>첫 번째 항목<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>두 번째 항목<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>기호 무관<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+* 첫 번째 항목
++ 두 번째 항목
+- 기호 무관
+
+### definition &lt;dl&gt;
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>첫 번째 용어
+: 정의 1
+: 정의 2
+
+두 번째 용어
+세 번째 용어
+: 정의 1
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>첫 번째 용어<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>정의 1<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>정의 2<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>두 번째 용어<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>세 번째 용어<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>정의 1<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre></div></div>
+
+첫 번째 용어
+: 정의 1
+: 정의 2
+
+두 번째 용어
+세 번째 용어
+: 정의 1
+
+## 코드 블록 &lt;pre&gt;, &lt;code&gt;
+
+### 들여쓰기 방식
+```md
+앞쪽 일반 문장
+
+	코드 시작 # 4공백 또는 1탭
+코드 이어짐
+
+뒤쪽 일반 문장
+```
+
+앞쪽 일반 문장
+
+	코드 시작
+코드 이어짐
+
+뒤쪽 일반 문장
+
+### 기호 방식
+
+````md
+```
+기호 3개 이상으로 코드블록 생성
+```
+````
+
+```
+코드
+```
+`` ` `` 대신 `~` 사용 가능
+
+### 기타
+
+`````md
+````
+코드 시작
+```
+코드 블록 마지막 줄의 기호 개수는 첫줄보다 많으면 된다.
+````
+`````
+
+````
+코드 시작
+```
+코드 블록 마지막 줄의 기호 개수는 첫줄보다 많으면 된다.
+````
+
+## 인용 &lt;blockquote&gt;
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; 인용구 내 첫 번째 문장.</span>
+<span class="gt">&gt; 이어지는 다음 문장.</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;blockquote&gt;</span>
+  <span class="nt">&lt;p&gt;</span>인용구 내 첫 번째 문장.
+이어지는 다음 문장.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/blockquote&gt;</span>
+</code></pre></div></div>
+
+> 인용구 내 첫 번째 문장.
+> 이어지는 다음 문장.
+
+## 수평선 &lt;hr/&gt;
+
 <table style="width:100%">
   <caption>Monthly savings</caption>
   <tr>
@@ -365,25 +497,8 @@ last_modified_at: 2021-01-13T21:17:00+09:00
     <td>94</td>
   </tr>
 </table>
-&lt;ul&gt;
-<ul>
-  <li>&lt;li&gt;Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-&lt;ol&gt;
-<ol>
-  <li>&lt;li&gt;Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>
-&lt;dl&gt;
-<dl>
-  <dt>&lt;dt&gt;Coffee</dt>
-  <dd>&lt;dd&gt;- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
+
+
 <blockquote cite="http://www.worldwildlife.org/who/index.html">
 For 50 years, WWF has been protecting the future of nature.
 </blockquote>
