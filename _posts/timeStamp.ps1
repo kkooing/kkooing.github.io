@@ -1,1 +1,0 @@
-Set-Clipboard (get-date -format 'yyyy-MM-ddTHH:mm:ssK')
