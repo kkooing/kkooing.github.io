@@ -6,3 +6,10 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__inner-wrap header .page__title {
+  text-align: center;
+  & + .page__meta {
+    text-align: center;
+  }
+}

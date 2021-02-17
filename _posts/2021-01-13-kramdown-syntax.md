@@ -1,8 +1,10 @@
 ---
-title:      'kramdown(markdown) 문법 / 예시'
+title:      'kramdown 문법 / 예시'
 categories: [blog]
 tags:       [blog]
 last_modified_at: 2021-02-17T01:24:13+09:00
+toc: true
+toc_sticky: true
 ---
 
 ## 제목 &lt;h&gt;
