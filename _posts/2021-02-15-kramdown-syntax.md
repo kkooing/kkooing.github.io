@@ -1,88 +1,38 @@
 ---
 title:      "kramdown 문법 / 예시"
 categories: [blog]
-tags:       [blog]
+tags:       [blog, kramdown, markdown]
 last_modified_at: 2021-02-17T01:24:13+09:00
 toc: true
 toc_sticky: true
-header:
-  teaser: /assets/images/bio-photo.jpg
 ---
+## 제목 \<h\>
 
-## 제목 &lt;h&gt;
+| {::nomarkdown}markdown<br/>(kramdown){:/} | HTML | 브라우저 |
+| {::nomarkdown}<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># H1 제목</span><span class="gu">## H2 제목</span><span class="gu">### H3 제목</span><span class="gu">#### H4 제목</span><span class="gu">##### H5 제목</span><span class="gu">###### H6 제목</span></code></pre></div></div>{:/} | {::nomarkdown}<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>H1 제목<span class="nt">&lt;/h1&gt;</span><span class="nt">&lt;h2&gt;</span>H2 제목<span class="nt">&lt;/h2&gt;</span><span class="nt">&lt;h3&gt;</span>H3 제목<span class="nt">&lt;/h3&gt;</span><span class="nt">&lt;h4&gt;</span>H4 제목<span class="nt">&lt;/h4&gt;</span><span class="nt">&lt;h5&gt;</span>H5 제목<span class="nt">&lt;/h5&gt;</span><span class="nt">&lt;h6&gt;</span>H6 제목<span class="nt">&lt;/h6&gt;</span></code></pre></div></div>{:/} | {::nomarkdown}<h1>H1 제목</h1><h2>H2 제목</h2><h3>H3 제목</h3><h4>H4 제목</h4><h5>H5 제목</h5><h6>H6 제목</h6>{:/} |
 
-<table>
-  <thead>
-    <tr>
-      <th>markdown<br/>
-      (kramdown)</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
 
-<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># H1 제목</span>
-<span class="gu">## H2 제목</span>
-<span class="gu">### H3 제목</span>
-<span class="gu">#### H4 제목</span>
-<span class="gu">##### H5 제목</span>
-<span class="gu">###### H6 제목</span>
-</code></pre></div></div>
 
-      </td>
-      <td>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>H1 제목<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>H2 제목<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>H3 제목<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>H4 제목<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>H5 제목<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>H6 제목<span class="nt">&lt;/h6&gt;</span>
-</code></pre></div></div>
 
-      </td>
-      <td>
 
-<h1>H1 제목</h1>
-<h2>H2 제목</h2>
-<h3>H3 제목</h3>
-<h4>H4 제목</h4>
-<h5>H5 제목</h5>
-<h6>H6 제목</h6>
 
-      </td>
-    </tr>
-    <tr>
-      <td>
-
+|{::nomarkdown}
 <div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">H1 제목
 ==================
 </span>
 <span class="gh">H2 제목
 -------------------
 </span></code></pre></div></div>
-
-      </td>
-      <td>
-
+{:/}|{::nomarkdown}
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>H1 제목<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;h2&gt;</span>H2 제목<span class="nt">&lt;/h2&gt;</span>
 </code></pre></div></div>
-
-      </td>
-      <td>
-
+{:/}|{::nomarkdown}
 <h1>H1 제목</h1>
 
 <h2>H2 제목</h2>
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+{:/}|
 
 ## 문단, 개행 &lt;p&gt;, &lt;br/&gt;
 

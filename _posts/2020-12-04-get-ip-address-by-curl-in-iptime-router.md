@@ -1,8 +1,10 @@
 ---
-title:      '[bash] curl로 iptime 공유기 로그인, 외부 IP 주소 가져오기'
+title:      'curl로 iptime 공유기 로그인, 외부 IP 주소 가져오기'
 categories: [bash]
-tags:       [bash]
-last_modified_at: 2020-12-04T21:17:00+09:00
+tags:       [bash, iptime, 공유기, curl, IP]
+last_modified_at: 2021-02-18T00:09:18+09:00
+header:
+  teaser: https://1.bp.blogspot.com/-uMIUCir2xI0/YCz9fBGX14I/AAAAAAAAAXs/34GtTr-fQV8NpzQ9YlPHRN_lGvzuzVHVgCPcBGAsYHg/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png
 ---
 ## 0. 주제
  인터넷 접속 없이 curl을 통해 iptime 공유기에 세션방식으로 로그인 하고 외부 IP 주소를 가져온다.<br />
