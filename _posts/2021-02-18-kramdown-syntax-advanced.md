@@ -2,7 +2,7 @@
 title:      'kramdown 문법 심화'
 categories: [blog]
 tags:       [blog, kramdown, markdown]
-last_modified_at: 2021-02-18T00:25:16+09:00
+last_modified_at: 2021-02-18T11:49:19+09:00
 toc: true
 toc_sticky: true
 ---
