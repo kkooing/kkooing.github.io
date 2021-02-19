@@ -71,7 +71,7 @@ H2 제목
 </td></tr></tbody></table>
 {:/}
 
-## 문단, 개행 \<p\>, \<br\>;
+## 문단, 개행 \<p\>, \<br/\>
 
 {::nomarkdown}
 <table><thead><tr>
@@ -423,7 +423,6 @@ _기울임_
 {:/}
 
 ## 코드 블록 \<pre\>\<code\>
-
 ### 들여쓰기 방식
 
 {::nomarkdown}
@@ -591,7 +590,7 @@ _ _ _
 </td></tr></tbody></table>
 {:/}
 
-## 표 \<table/\>
+## 표 \<table\>
 
 {::nomarkdown}
 <table><thead><tr>
