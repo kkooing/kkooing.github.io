@@ -12,17 +12,11 @@ header:
 ## 1. 서론
  내가 사용하는 iptime 공유기 N704V3에는 기본방식, 세션방식의 두 가지 로그인 인증 방식이 있다. 기본방식을 선택하면 HTTP Basic 인증이 사용되며, 공유기에 로그인 할 필요도 없이 공유기 접속 첫 페이지에 외부 IP가 노출된다. 하지만 세션방식은 별도의 로그인 페이지가 열리고 로그인 이후 외부 IP를 볼 수 있다.<br />
 
-[![로그인 인증 방법 설정](https://1.bp.blogspot.com/-XZNn2utiSxE/YCz9fOkdN-I/AAAAAAAAAXs/cOaFRz02ZuoGgUF-ZUDs55L2I_9UbuEAACPcBGAsYHg/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png)](https://1.bp.blogspot.com/-XZNn2utiSxE/YCz9fOkdN-I/AAAAAAAAAXs/cOaFRz02ZuoGgUF-ZUDs55L2I_9UbuEAACPcBGAsYHg/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png){: .align-center}
-▲ 로그인 인증 방법 설정
-{: .text-center}
+ {% include figure image_path="https://1.bp.blogspot.com/-B6jO3BJv9Ec/YDNHHGggDfI/AAAAAAAAAZM/ktTIKeSFt4IY9zEyFVUNIckPkAmhpnNQwCLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png" alt="로그인 인증 방법 설정" caption="▲ 로그인 인증 방법 설정" %}
 
-[![기본방식 첫 페이지](https://1.bp.blogspot.com/-uyf88ggJYQs/YCz9fAmcl7I/AAAAAAAAAXs/SZhNBJabqQY_gL5Qt1FThi2BH9_7hEG-wCPcBGAsYHg/s0/%25EC%2584%25B8%25EC%2585%2598%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png)](https://1.bp.blogspot.com/-uyf88ggJYQs/YCz9fAmcl7I/AAAAAAAAAXs/SZhNBJabqQY_gL5Qt1FThi2BH9_7hEG-wCPcBGAsYHg/s0/%25EC%2584%25B8%25EC%2585%2598%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png){: .align-center}
-▲ 기본방식 첫 페이지
-{: .text-center}
+ {% include figure image_path="https://1.bp.blogspot.com/-gV8bLJ7y_Bw/YDNHHNFun7I/AAAAAAAAAZQ/xgp2_-xtHZ0183is4dKjDlzfEN8_MHsNwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png" alt="기본방식 첫 페이지" caption="▲ 기본방식 첫 페이지" %}
 
-[![세션방식 첫 페이지](https://1.bp.blogspot.com/-uMIUCir2xI0/YCz9fBGX14I/AAAAAAAAAXs/34GtTr-fQV8NpzQ9YlPHRN_lGvzuzVHVgCPcBGAsYHg/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png)](https://1.bp.blogspot.com/-uMIUCir2xI0/YCz9fBGX14I/AAAAAAAAAXs/34GtTr-fQV8NpzQ9YlPHRN_lGvzuzVHVgCPcBGAsYHg/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png){: .align-center}
-▲ 세션방식 첫 페이지
-{: .text-center}
+ {% include figure image_path="https://1.bp.blogspot.com/-8ttTKvdcdwI/YDNHHKMLEsI/AAAAAAAAAZU/bXg7D74uq-M6YS5uFHwi-7pgVQ_WJLMVQCLcBGAsYHQ/s0/%25EC%2584%25B8%25EC%2585%2598%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png" alt="세션방식 첫 페이지" caption="▲ 세션방식 첫 페이지" %}
 
 ▼ 조건
 * iptime 공유기<br />
