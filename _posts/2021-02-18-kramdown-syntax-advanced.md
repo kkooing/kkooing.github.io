@@ -1,7 +1,7 @@
 ---
-title:      'kramdown 문법 심화'
-categories: [blog]
-tags:       [blog, kramdown, markdown]
+title:      "kramdown 문법 심화"
+categories: [kramdown]
+tags:       [kramdown, markdown]
 last_modified_at: 2021-02-18T11:49:19+09:00
 toc: true
 toc_sticky: true

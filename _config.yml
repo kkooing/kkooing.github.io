@@ -20,7 +20,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # "/assets/images/500x300.png"
 logo                     : # "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : true # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -234,22 +234,22 @@ whitelist:
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -274,4 +274,17 @@ defaults:
       comments: true
       share: true
       related: true
+      permalink: /:categories/:title/
       author_profile: false
+      sidebar:
+        nav: "sidebar"
+  - scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false

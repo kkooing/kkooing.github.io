@@ -5,7 +5,7 @@ try {
     $fileName = "$blogLoot/_posts/$fileDate$filePermalink.md"
     New-Item -Path "$fileName" -ItemType file
 "---
-title:      ''
+title:      ""
 categories: []
 tags:       []
 last_modified_at: 
