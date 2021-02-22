@@ -555,6 +555,59 @@ _기울임_
 </td></tr></tbody></table>
 {:/}
 
+## 미주(footnote)
+
+{::nomarkdown}
+<table><thead><tr>
+      <th>kramdown</th>
+      <th>HTML</th>
+      <th>브라우저</th>
+    </tr></thead>
+  <tbody><tr><td>
+{:/}
+```md
+본문 문장.[^1]  
+본문 문장.[^a]
+
+[^1]: 미주1
+[^a]: 미주2
+```
+{::nomarkdown}
+</td><td>
+{:/}
+```html
+* 생략 *
+```
+{::nomarkdown}
+</td><td>
+{:/}
+
+<p>
+  본문 문장.
+  <sup id="fnref:1-tb" role="doc-noteref">
+    <a href="#fn:1-tb" class="footnote">1</a>
+  </sup><br>
+  본문 문장.
+  <sup id="fnref:a-tb" role="doc-noteref">
+    <a href="#fn:a-tb" class="footnote">2</a>
+  </sup>
+</p>
+
+<div class="footnotes" role="doc-endnote">
+  <ol>
+    <li id="fn:1-tb" role="doc-endnote" tabindex="-1" style="outline: none;">
+      <p>미주1&nbsp;<a href="#fnref:1-tb" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:a-tb" role="doc-endnote">
+      <p>미주2&nbsp;<a href="#fnref:a-tb" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+{::nomarkdown}
+</td></tr></tbody></table>
+{:/}
+
 ## 수평선 \<hr/\>
 
 {::nomarkdown}

@@ -12,7 +12,7 @@ header:
 curl을 통해 iptime 공유기 공인 IP 주소를 가져온다.
 
 ## 1. 서론
-우선 인터넷에 연결이 되어 있다면 자신의 공인 IP를 쉘에 불러오는것은 간단하게 할 수 있다.
+우선 인터넷에 연결이 되어 있다면 자신의 공인 IP를 쉘에 불러오는것은 간단하게 할 수 있다.[^IP-addr]
 
 ```bash
 curl ifconfig.co
@@ -53,8 +53,8 @@ curl icanhazip.com
 ```bash
 curl -s4 'http://192.168.0.1/sess-bin/login_handler.cgi' -H 'Referer: http://192.168.0.1' --data-urlencode 'username=${id}' --data-urlencode '$passwd={pw}' | sed -En "s/^setCookie\('(.*)'\);/\1/p")
 ```
-`${id}` : 로그인 아이디<br />
-`${pw}` : 로그인 비밀번호<br />
+`${id}` : 로그인 아이디<br/>
+`${pw}` : 로그인 비밀번호<br/>
 
 위 코드에서 얻은 쿠키는 세션이 유지되는 동안에 사용할 수 있다. 이번에는 맨 위의 과정 1-1[이동]의 주소를 사용한다. 마찬가지로 `sed`로 필터링 해서 IP 주소만 가져올 수 있다.
 
@@ -62,15 +62,12 @@ curl -s4 'http://192.168.0.1/sess-bin/login_handler.cgi' -H 'Referer: http://192
 ```bash
 curl -s4 'http://192.168.0.1/login/login.cgi' -H "Cookie: efm_session_id=${cookie}" | sed -En "s,.*동적 IP - 연결됨 - (.*).*,\1,p"
 ```
-`${cookie}` : 쿠키<br />
+`${cookie}` : 쿠키<br/>
 
 ## 3. 결론
 이제 타 사이트에 접속하지 않고도 공인 IP를 알 수 있게 되었다. 공유기에 로그인을 할 수 있으니 IP 말고 다른 정보를 조회하는 데에도 유용하게 사용할 수 있을것 같다. 추후에 공유기 제조사에서 펌웨어를 업그레이드하면 이 방법이 소용없을 수도 있지만... 그땐 그냥 기본인증으로 사용해야겠다.
 
 *(의문점: 공유기에 로그인 기록이 안 남는것 같다...)*
 
-###### A. 참고
-***
-
-* *Tecmint: Linux Howtos, Tutorials & Guides, "4 Ways to Find Server Public IP Address in Linux Terminal", 
-  <https://www.tecmint.com/find-linux-server-public-ip-address/>*
+## A. 참고
+[^IP-addr]: *Tecmint: Linux Howtos, Tutorials & Guides, "4 Ways to Find Server Public IP Address in Linux Terminal", <https://www.tecmint.com/find-linux-server-public-ip-address/>*
