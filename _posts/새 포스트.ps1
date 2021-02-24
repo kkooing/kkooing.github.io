@@ -3,8 +3,9 @@ try {
     $fileDate = get-date -format 'yyyy-MM-dd-'
     $filePermalink = Read-Host $fileDate
     $fileName = "$blogLoot/_posts/$fileDate$filePermalink.md"
-    New-Item -Path "$fileName" -ItemType file
-'---
+    $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+
+$content = '---
 title:      ""
 categories: []
 tags:       []
@@ -13,7 +14,9 @@ toc_sticky: false
 header:
   teaser: 
 last_modified_at: 
----' > "$fileName"
+---'
+
+    [System.IO.File]::WriteAllLines($fileName, $content, $Utf8NoBomEncoding)
 }
 catch {
     pause
