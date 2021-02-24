@@ -2,11 +2,11 @@
 title:      "curl로 iptime 공유기 공인 IP 주소 가져오기"
 categories: [bash]
 tags:       [bash, IP, curl, 공유기, iptime]
+last_modified_at: 2021-02-22T17:48:19+09:00
 toc: true
 toc_sticky: true
 header:
     teaser: https://1.bp.blogspot.com/-gV8bLJ7y_Bw/YDNHHNFun7I/AAAAAAAAAZQ/xgp2_-xtHZ0183is4dKjDlzfEN8_MHsNwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png
-last_modified_at: 2021-02-22T17:48:19+09:00
 ---
 ## 0. 주제
 curl을 통해 iptime 공유기 공인 IP 주소를 가져온다.
