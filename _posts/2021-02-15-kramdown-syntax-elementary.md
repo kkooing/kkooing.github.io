@@ -2,9 +2,11 @@
 title:      "kramdown 문법 기초"
 categories: [kramdown]
 tags:       [kramdown, markdown]
-last_modified_at: 2021-02-19T01:57:05+09:00
 toc: true
 toc_sticky: true
+header:
+    teaser: 
+last_modified_at: 2021-02-19T01:57:05+09:00
 ---
 ## 제목 \<h\>
 
