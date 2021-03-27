@@ -1,6 +1,7 @@
 module Jekyll
   class SidebarCategoryForm < Liquid::Tag
-
+    safe true
+	
     def initialize(tag_name, text, tokens)
       super
       @text = text
