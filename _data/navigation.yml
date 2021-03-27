@@ -1,24 +1,55 @@
-# main links
-main:
-  - title: "카테고리"
-    url: /categories/
-  - title: "태그"
-    url: /tags/
+pages:
+  - text: home
+    url: /
+  - text: About
+    url: /about
+  - text: Blog
+    url: /blog
 
-sidebar:
-  - title: "컴퓨터 언어"
-    children:
-      - title: "C++"
-        url: /c++/
-      - title: "kramdown"
-        url: /kramdown/
-
-  - title: "프로그래밍"
-    children:
-      - title: "bash"
-        url: /bash/
-
-  - title: "툴"
-    children:
-      - title: "미정"
-        url: //
+categories:
+  - text: "컴퓨터 언어"   # computer-language
+    sub:
+      - text: "프로그래밍"   # programming
+        sub:
+          - text: "C++"
+            url: c++
+          - text: "Python"
+            url: python
+          - text: "Ruby"
+            url: ruby
+      - text: "스크립트"   # script
+        sub:
+          - text: "Bash"
+            url: bash
+          - text: "Batch"
+            url: batch
+          - text: "PowerShell"
+            url: powershell
+      - text: "기타"   # others
+        sub:
+          - text: "HTML"
+            url: html
+          - text: "css"
+            url: css
+          - text: "Kramdown"
+            url: kramdown
+          - text: "컨테이너"
+            url: container
+  - text: "IT"   # it
+    sub:
+      - text: "Jekyll 블로그"
+        url: jekyll-blog
+      - text: "라즈베리파이"
+        url: raspberry-pi
+      - text: "기타"
+        url: others-it
+  - text: "역학"   # mechanic
+    sub:
+  - text: "설계"   # design
+    sub:
+      - text: "이론"
+  - text: "tool"
+    sub:
+      - text: "AutoCAD"
+      - text: "인벤터"
+      - text: "Affinity Designer"

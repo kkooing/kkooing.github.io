@@ -1,42 +1,39 @@
 ---
 ---
-
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<html lang="{{ site.locale }}">
   <head>
     {% include head.html %}
-    {% include head/custom.html %}
   </head>
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  <body>
+    {% comment %}
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
-    {% include_cached masthead.html %}
+    {% endcomment %}
+    
+    <header class="header">
+      {% include header.html %}
+    </header>
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
+    <main class="main">
+      <div class="main_inner">
+        <section class="content">
+          {{ content }}
+        </section>
+      
+        <aside class="sidebar">
+          {% include sidebar.html %}
+        </aside>
+      
+        <aside class="toc">
+      
+        </aside>
       </div>
-    {% endif %}
+    </main>
 
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>
+    
   </body>
 </html>

@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-03-27T16:34:59+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">Liquid</title><link href="https://kkooing.github.io/it/jekyll-blog/liquid/" rel="alternate" type="text/html" title="Liquid" /><published>2021-03-19T00:00:00+00:00</published><updated>2021-03-19T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/liquid</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/liquid/">&lt;h2 id=&quot;1-liquid-핵심-요소&quot;&gt;1. Liquid 핵심 요소&lt;/h2&gt;
+
+&lt;p&gt;Liquid 코드는 object, tag, filter의 세가지로 정리할 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-object&quot;&gt;1.1. Object&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{{&lt;/code&gt;와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}}&lt;/code&gt;로 object와 변수를 사용한다.&lt;/p&gt;
+
+&lt;p&gt;input&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{{ page.title }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;output&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Introduction
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;12-tag&quot;&gt;1.2. Tag&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{%&lt;/code&gt;와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%}&lt;/code&gt;로 tag를 사용한다. Liquid 문법 구성에 사용된다.&lt;/p&gt;
+
+&lt;p&gt;input&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;output&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Hello Adam!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Tag는 다시 세 가지로 나뉜다.&lt;/p&gt;
+
+&lt;h4 id=&quot;121-tag---control-flow-분기&quot;&gt;1.2.1. Tag - Control flow (분기)&lt;/h4&gt;
+
+&lt;h4 id=&quot;122-tag---iteration-반복&quot;&gt;1.2.2. Tag - Iteration (반복)&lt;/h4&gt;
+
+&lt;h4 id=&quot;123-tag---variable-assignments-변수&quot;&gt;1.2.3. Tag - Variable assignments (변수)&lt;/h4&gt;
+
+&lt;h3 id=&quot;13-filter&quot;&gt;1.3. Filter&lt;/h3&gt;
+
+&lt;p&gt;파이프 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;를 이용해 object와 변수의 출력형식을 지정한다.&lt;/p&gt;
+
+&lt;p&gt;input&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{{ &quot;/my/fancy/url&quot; | append: &quot;.html&quot; }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;output&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/my/fancy/url.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;filter는 중첩가능하다.&lt;/p&gt;
+
+&lt;p&gt;input&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{{ &quot;adam!&quot; | capitalize | prepend: &quot;Hello &quot; }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;output&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Hello Adam!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;2-liquid-기타-요소&quot;&gt;2. Liquid 기타 요소&lt;/h2&gt;
+
+&lt;h3 id=&quot;21-연산자&quot;&gt;2.1. 연산자&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기본 연산자&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;eq&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!=&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;neq&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;gt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;lt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;gte&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;lte&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;or&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;or&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;and&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;and&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;contains
+문자열 탐색 연산자이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% if product.title contains &quot;Pack&quot; %}
+  This product's title contains the word Pack.
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% if product.tags contains &quot;Hello&quot; %}
+  This product has been tagged with &quot;Hello&quot;.
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;*기타&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;truthy&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;falsy&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;true&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;false&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;nil&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;string&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;empry string&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;integer&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;float&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;array&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;empty array&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;page&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;empty drop&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;v&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="Jekyll-blog" /><summary type="html">1. Liquid 핵심 요소</summary></entry><entry><title type="html">GitHub Page 만들기</title><link href="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1/" rel="alternate" type="text/html" title="GitHub Page 만들기" /><published>2021-03-17T00:00:00+00:00</published><updated>2021-03-17T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1/">&lt;h2 id=&quot;루비-설치&quot;&gt;루비 설치&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;마지막 설치 프로그램을 관리자권한으로 다시 실행&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ridk install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;블로그 홈에서&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install bundler jekyll minima jekyll-feed tzinfo-data rdiscount
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="Jekyll-blog" /><category term="blog" /><summary type="html">루비 설치</summary></entry><entry><title type="html">윈도우 시작프로그램 관리</title><link href="https://kkooing.github.io/it/others-it/managing-windows-startup-programs/" rel="alternate" type="text/html" title="윈도우 시작프로그램 관리" /><published>2021-02-24T00:00:00+00:00</published><updated>2021-02-24T02:14:37+00:00</updated><id>https://kkooing.github.io/it/others-it/managing-windows-startup-programs</id><content type="html" xml:base="https://kkooing.github.io/it/others-it/managing-windows-startup-programs/">&lt;h3 id=&quot;관리자-계정&quot;&gt;관리자 계정&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\RunOnce&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;현재-유저&quot;&gt;현재 유저&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows&lt;/code&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="others-it" /><category term="windows" /><category term="startup" /><category term="regedit" /><summary type="html">관리자 계정</summary></entry><entry><title type="html">kramdown 문법 심화</title><link href="https://kkooing.github.io/computer-language/others/kramdown-syntax-advanced/" rel="alternate" type="text/html" title="kramdown 문법 심화" /><published>2021-02-18T00:00:00+00:00</published><updated>2021-02-18T02:49:19+00:00</updated><id>https://kkooing.github.io/computer-language/others/kramdown-syntax-advanced</id><content type="html" xml:base="https://kkooing.github.io/computer-language/others/kramdown-syntax-advanced/">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;블록 요소&lt;/code&gt;를 명시적으로 감싸려면 요소의 앞뒤로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;빈 줄&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IAL&lt;/code&gt;을 사용한다. 하지만 예외로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;헤더(\&amp;lt;h\&amp;gt;, #...)&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;코드 블록&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;정의 목록(\&amp;lt;dl\&amp;gt;)&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;표(\&amp;lt;table\&amp;gt;)&lt;/code&gt;는 불가능하다.&lt;/p&gt;
+&lt;h2 id=&quot;이스케이프&quot;&gt;이스케이프&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;문자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;이름&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;\&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;backslash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;period&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;*&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;asterisk&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;_&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;underscore&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;+&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;plus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;minus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;=&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;equal sign&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;`&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;back tick&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;()[]{}&amp;lt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;left and right parens/brackets/braces/angle brackets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;#&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;hash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;!&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;bang&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;&amp;lt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;left guillemet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;right guillemet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;:&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;colon&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;|&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pipe&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&quot;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;double quote&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;'&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;single quote&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;$&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;dollar sign&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="others" /><category term="kramdown" /><category term="markdown" /><summary type="html">블록 요소를 명시적으로 감싸려면 요소의 앞뒤로 빈 줄, ^, IAL을 사용한다. 하지만 예외로 헤더(\&amp;lt;h\&amp;gt;, #...), 코드 블록, 정의 목록(\&amp;lt;dl\&amp;gt;), 표(\&amp;lt;table\&amp;gt;)는 불가능하다. 이스케이프</summary></entry><entry><title type="html">kramdown 문법 기초</title><link href="https://kkooing.github.io/computer-language/others/kramdown-syntax-elementary/" rel="alternate" type="text/html" title="kramdown 문법 기초" /><published>2021-02-15T00:00:00+00:00</published><updated>2021-02-18T16:57:05+00:00</updated><id>https://kkooing.github.io/computer-language/others/kramdown-syntax-elementary</id><content type="html" xml:base="https://kkooing.github.io/computer-language/others/kramdown-syntax-elementary/">&lt;h2 id=&quot;제목-h&quot;&gt;제목 &amp;lt;h&amp;gt;&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead style=&quot;width: 100%&quot;&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# H1 제목&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;## H2 제목&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;### H3 제목&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;#### H4 제목&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;##### H5 제목&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;###### H6 제목&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;H1 제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;H2 제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;H3 제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h4&amp;gt;&lt;/span&gt;H4 제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h4&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h5&amp;gt;&lt;/span&gt;H5 제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h5&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h6&amp;gt;&lt;/span&gt;H6 제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h6&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;h1&gt;H1 제목&lt;/h1&gt;
+&lt;h2&gt;H2 제목&lt;/h2&gt;
+&lt;h3&gt;H3 제목&lt;/h3&gt;
+&lt;h4&gt;H4 제목&lt;/h4&gt;
+&lt;h5&gt;H5 제목&lt;/h5&gt;
+&lt;h6&gt;H6 제목&lt;/h6&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gu&quot;&gt;H1 제목
+==================
+&lt;/span&gt;
+&lt;span class=&quot;gh&quot;&gt;H2 제목
+------------------
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;H1 제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;H2 제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;h1&gt;H1 제목&lt;/h1&gt;
+
+&lt;h2&gt;H2 제목&lt;/h2&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;문단-개행-p-br&quot;&gt;문단, 개행 &amp;lt;p&amp;gt;, &amp;lt;br/&amp;gt;&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1번 문장, first line.
+2번 문장, second line.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;1번 문장, first line.&lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+2번 문장, second line.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;1번 문장, first line.
+2번 문장, second line.&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1번 문장, first line.
+
+2번 문장, second line.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;1번 문장, first line.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;2번 문장, second line.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;1번 문장, first line.&lt;/p&gt;
+&lt;p&gt;2번 문장, second line.&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1번 문장, first line.  
+2번 문장, second line.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;1번 문장, first line.&lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+2번 문장, second line.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;1번 문장, first line.&lt;br /&gt;
+2번 문장, second line.&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;글자-꾸밈-em-strong&quot;&gt;글자 꾸밈 &amp;lt;em&amp;gt;, &amp;lt;strong&amp;gt;…&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;일반
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;일반
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;일반&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;ge&quot;&gt;*기울임*&lt;/span&gt;
+&lt;span class=&quot;ge&quot;&gt;_기울임_&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;em&amp;gt;&lt;/span&gt;기울임&lt;span class=&quot;nt&quot;&gt;&amp;lt;/em&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;&lt;em&gt;기울임&lt;/em&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gs&quot;&gt;**굵게**&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;굵게&lt;span class=&quot;nt&quot;&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;&lt;strong&gt;굵게&lt;/strong&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;small&amp;gt;&lt;/span&gt;작게&lt;span class=&quot;nt&quot;&gt;&amp;lt;/small&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;&lt;small&gt;작게&lt;/small&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;mark&amp;gt;&lt;/span&gt;마킹&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mark&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;&lt;mark&gt;마킹&lt;/mark&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ins&amp;gt;&lt;/span&gt;밑줄&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ins&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;&lt;ins&gt;밑줄&lt;/ins&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;del&amp;gt;&lt;/span&gt;취소선&lt;span class=&quot;nt&quot;&gt;&amp;lt;/del&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;&lt;del&gt;취소선&lt;/del&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;sub&amp;gt;&lt;/span&gt;아래첨자&lt;span class=&quot;nt&quot;&gt;&amp;lt;/sub&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;&lt;sub&gt;아래첨자&lt;/sub&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;sup&amp;gt;&lt;/span&gt;위첨자&lt;span class=&quot;nt&quot;&gt;&amp;lt;/sup&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;&lt;sup&gt;위첨자&lt;/sup&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;연달아 쓰기&lt;/strong&gt;&lt;br /&gt;
+일반&lt;em&gt;기울임&lt;/em&gt;&lt;strong&gt;굵게&lt;/strong&gt;&lt;small&gt;작게&lt;/small&gt;&lt;mark&gt;마킹&lt;/mark&gt;&lt;ins&gt;밑줄&lt;/ins&gt;&lt;del&gt;취소선&lt;/del&gt;&lt;sub&gt;아래첨자&lt;/sub&gt;&lt;sup&gt;위첨자&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;리스트&quot;&gt;리스트&lt;/h2&gt;
+&lt;h3 id=&quot;ordered-ol&quot;&gt;ordered &amp;lt;ol&amp;gt;&lt;/h3&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; 첫 번째 항목
+&lt;span class=&quot;p&quot;&gt;2.&lt;/span&gt; 두 번째 항목
+&lt;span class=&quot;p&quot;&gt;9.&lt;/span&gt; 순서 무관
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;첫 번째 항목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;두 번째 항목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;순서 무관&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;ol&gt;
+  &lt;li&gt;첫 번째 항목&lt;/li&gt;
+  &lt;li&gt;두 번째 항목&lt;/li&gt;
+  &lt;li&gt;순서 무관&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;unordered-ul&quot;&gt;unordered &amp;lt;ul&amp;gt;&lt;/h3&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; 첫 번째 항목
+&lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; 두 번째 항목
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; 기호 무관
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;첫 번째 항목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;두 번째 항목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;기호 무관&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;ul&gt;
+  &lt;li&gt;첫 번째 항목&lt;/li&gt;
+  &lt;li&gt;두 번째 항목&lt;/li&gt;
+  &lt;li&gt;기호 무관&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;definition-dl&quot;&gt;definition &amp;lt;dl&amp;gt;&lt;/h3&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;첫 번째 용어
+: 정의 1
+: 정의 2
+
+두 번째 용어
+세 번째 용어
+: 정의 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dl&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;dt&amp;gt;&lt;/span&gt;첫 번째 용어&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dt&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;dd&amp;gt;&lt;/span&gt;정의 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dd&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;dd&amp;gt;&lt;/span&gt;정의 2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dd&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;dt&amp;gt;&lt;/span&gt;두 번째 용어&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dt&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;dt&amp;gt;&lt;/span&gt;세 번째 용어&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dt&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;dd&amp;gt;&lt;/span&gt;정의 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dd&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dl&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;dl&gt;
+  &lt;dt&gt;첫 번째 용어&lt;/dt&gt;
+  &lt;dd&gt;정의 1&lt;/dd&gt;
+  &lt;dd&gt;정의 2&lt;/dd&gt;
+  &lt;dt&gt;두 번째 용어&lt;/dt&gt;
+  &lt;dt&gt;세 번째 용어&lt;/dt&gt;
+  &lt;dd&gt;정의 1&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;코드-블록-precode&quot;&gt;코드 블록 &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&lt;/h2&gt;
+&lt;h3 id=&quot;들여쓰기-방식&quot;&gt;들여쓰기 방식&lt;/h3&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;앞쪽 일반 문장&lt;span class=&quot;sb&quot;&gt;
+
+    코드 첫 줄. # 4공백 또는 탭
+&lt;/span&gt;이어짐.
+    그리고 두 번째 줄.
+
+뒤쪽 일반 문장
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;앞쪽 일반 문장
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;pre&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;code&amp;gt;&lt;/span&gt;코드 첫 줄. 이어짐.
+그리고 두 번째 줄.
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/code&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pre&amp;gt;&lt;/span&gt;
+뒤쪽 일반 문장
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;p&gt;앞쪽 일반 문장&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;코드 첫 줄. 이어짐.
+그리고 두 번째 줄.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;뒤쪽 일반 문장&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;기호-방식&quot;&gt;기호 방식&lt;/h3&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;
+&lt;/span&gt;기호 3개 이상으로 코드블록 생성
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;pre&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;code&amp;gt;&lt;/span&gt;코드 첫 줄. 이어짐.
+그리고 두 번째 줄.
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/code&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pre&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;코드
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;`&lt;/code&gt; 대신 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~&lt;/code&gt; 사용 가능&lt;/p&gt;
+
+&lt;h3 id=&quot;기타&quot;&gt;기타&lt;/h3&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;````&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;
+&lt;/span&gt;코드 시작
+```
+코드 블록 마지막 줄의 기호 개수는 첫줄보다 많으면 된다.
+&lt;span class=&quot;p&quot;&gt;````&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;코드 시작
+```
+코드 블록 마지막 줄의 기호 개수는 첫줄보다 많으면 된다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;인용-blockquote&quot;&gt;인용 &amp;lt;blockquote&amp;gt;&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gt&quot;&gt;&amp;gt; 인용구 내 첫 번째 문장.&lt;/span&gt;
+&lt;span class=&quot;gt&quot;&gt;&amp;gt; 이어지는 다음 문장.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;인용구 내 첫 번째 문장.
+이어지는 다음 문장.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/blockquote&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;인용구 내 첫 번째 문장.
+이어지는 다음 문장.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;미주footnote&quot;&gt;미주(footnote)&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;본문 문장.[^1]  
+본문 문장.[^a]
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;^1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;미주1&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;^a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;미주2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* 생략 *
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+
+&lt;p&gt;
+  본문 문장.
+  &lt;sup id=&quot;fnref:1-tb&quot; role=&quot;doc-noteref&quot;&gt;
+    &lt;a href=&quot;#fn:1-tb&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;
+  &lt;/sup&gt;&lt;br /&gt;
+  본문 문장.
+  &lt;sup id=&quot;fnref:a-tb&quot; role=&quot;doc-noteref&quot;&gt;
+    &lt;a href=&quot;#fn:a-tb&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;
+  &lt;/sup&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnote&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1-tb&quot; role=&quot;doc-endnote&quot; tabindex=&quot;-1&quot; style=&quot;outline: none;&quot;&gt;
+      &lt;p&gt;미주1&amp;nbsp;&lt;a href=&quot;#fnref:1-tb&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:a-tb&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;미주2&amp;nbsp;&lt;a href=&quot;#fnref:a-tb&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;수평선-hr&quot;&gt;수평선 &amp;lt;hr/&amp;gt;&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;***
+---
+&lt;/span&gt;&lt;span class=&quot;ge&quot;&gt;__&lt;/span&gt;_
+&lt;span class=&quot;p&quot;&gt;* * *&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;- - -&lt;/span&gt;
+&lt;span class=&quot;gh&quot;&gt;_ _ _
+------------
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;hr/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;hr /&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;표-table&quot;&gt;표 &amp;lt;table&amp;gt;&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;
+      &lt;th&gt;kramdown&lt;/th&gt;
+      &lt;th&gt;HTML&lt;/th&gt;
+      &lt;th&gt;브라우저&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;| h1 | h2 |
+|----|----|
+| b1 | b2 |
+| b3 | b4 |
+|====|====|
+| f1 | f2 |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;thead&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;th&amp;gt;&lt;/span&gt;h1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;th&amp;gt;&lt;/span&gt;h2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/thead&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;tbody&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;b1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;b2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;b3&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;b4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tbody&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;tfoot&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;f1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;f2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tfoot&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;h1&lt;/th&gt;
+      &lt;th&gt;h2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;b1&lt;/td&gt;
+      &lt;td&gt;b2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;b3&lt;/td&gt;
+      &lt;td&gt;b4&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;f1&lt;/td&gt;
+      &lt;td&gt;f2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="others" /><category term="kramdown" /><category term="markdown" /><summary type="html">제목 &amp;lt;h&amp;gt;</summary></entry><entry><title type="html">[C++] 1. 타입</title><link href="https://kkooing.github.io/computer-language/programming/c++/cpp-1-type/" rel="alternate" type="text/html" title="[C++] 1. 타입" /><published>2021-01-05T00:00:00+00:00</published><updated>2021-01-05T10:44:00+00:00</updated><id>https://kkooing.github.io/computer-language/programming/c++/cpp-1-type</id><content type="html" xml:base="https://kkooing.github.io/computer-language/programming/c++/cpp-1-type/">&lt;h2 id=&quot;불리언-타입&quot;&gt;불리언 타입&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;타입&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bool&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;불리언&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;bool 타입은 true 또는 false 값을 가지는 논리 타입이다. int, 포인터 타입 간에 변환이 가능하다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;bool&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;int&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;포인터&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!0&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!nullptr&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nullptr&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;문자-타입&quot;&gt;문자 타입&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;타입&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;기본 문자 타입&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signed char&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;부호 있는 char&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unsigned char&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;부호 없는 char&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wchar_t&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;대규모 문자(유니코드)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char16_t&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;16비트 문자(UTF-16)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char32_t&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;32비트 문자(UTF-32)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;-127~127의 char는 signed char, 0~255의 char는 unsigned char에 보관한다. 일반적인 char가 signed char인지 unsigned char인지는 구현에 따라 다르다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;정수-타입&quot;&gt;정수 타입&lt;/h2&gt;
+
+&lt;h3 id=&quot;부호별&quot;&gt;부호별&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;타입&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;일반적인 int&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signed int&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;부호 있는 int&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unsigned int&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;부호 없는 int&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;크기별&quot;&gt;크기별&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;타입&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short int&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;작은 int&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;일반 int&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;long int&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;큰 int&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;long long int&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;큰 int&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;부호/크기별 단축 표기&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th colspan=&quot;3&quot;&gt;부호&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;int&lt;/th&gt;
+      &lt;th&gt;signed&lt;/th&gt;
+      &lt;th&gt;unsigned&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th rowspan=&quot;4&quot;&gt;크기&lt;/th&gt;
+      &lt;th&gt;short&lt;/th&gt;
+      &lt;td&gt;short&lt;/td&gt;
+      &lt;td&gt;signed short&lt;/td&gt;
+      &lt;td&gt;unsigned short&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;int&lt;/th&gt;
+      &lt;td&gt;int&lt;/td&gt;
+      &lt;td&gt;signed&lt;/td&gt;
+      &lt;td&gt;unsigned&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;long&lt;/th&gt;
+      &lt;td&gt;long&lt;/td&gt;
+      &lt;td&gt;signed long&lt;/td&gt;
+      &lt;td&gt;unsigned long&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;long long&lt;/th&gt;
+      &lt;td&gt;long long&lt;/td&gt;
+      &lt;td&gt;signed long long&lt;/td&gt;
+      &lt;td&gt;unsigned long long&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;
+int는 signed int와 완전히 동일하다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;부동소수점-타입&quot;&gt;부동소수점 타입&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;타입&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;단정밀도&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;배정밀도&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;long double&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;확장 정밀도&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;void-타입&quot;&gt;void 타입&lt;/h2&gt;
+
+&lt;p&gt;함수와 포인터의 타입으로만 사용 가능하다.&lt;br /&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="programming" /><category term="c++" /><category term="C++" /><summary type="html">불리언 타입</summary></entry><entry><title type="html">curl로 iptime 공유기 공인 IP 주소 가져오기</title><link href="https://kkooing.github.io/it/raspberry-pi/get-ip-address-by-curl-in-iptime-router/" rel="alternate" type="text/html" title="curl로 iptime 공유기 공인 IP 주소 가져오기" /><published>2020-12-04T00:00:00+00:00</published><updated>2021-02-22T08:48:19+00:00</updated><id>https://kkooing.github.io/it/raspberry-pi/get-ip-address-by-curl-in-iptime-router</id><content type="html" xml:base="https://kkooing.github.io/it/raspberry-pi/get-ip-address-by-curl-in-iptime-router/">&lt;h2 id=&quot;0-주제&quot;&gt;0. 주제&lt;/h2&gt;
+&lt;p&gt;curl을 통해 iptime 공유기 공인 IP 주소를 가져온다.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-서론&quot;&gt;1. 서론&lt;/h2&gt;
+&lt;p&gt;우선 인터넷에 연결이 되어 있다면 자신의 공인 IP를 쉘에 불러오는것은 간단하게 할 수 있다.&lt;sup id=&quot;fnref:IP-addr&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:IP-addr&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl ifconfig.co
+curl ifconfig.me
+curl icanhazip.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;하지만 VPN을 사용하는 환경에서는 이 방법을 사용할 수 없거나 IP를 조회할 때마다 우회를 해야하는 문제가 발생했다. 그래서 나의 경우에는 공유기를 거처 네트워크에 접속되어 있고, 공유기에서도 IP 주소를 확인할 수 있다는 것을 이용하기로 했다.&lt;/p&gt;
+
+&lt;p&gt;내가 사용하는 iptime 공유기 N704V3에는 기본방식, 세션방식의 두 가지 로그인 인증 방식이 있다. 기본방식을 선택하면 HTTP Basic 인증이 사용되며, 공유기에 로그인 할 필요도 없이 공유기 접속 첫 페이지에 외부 IP가 노출된다. 하지만 세션방식은 별도의 로그인 페이지가 열리고 로그인 이후 외부 IP를 볼 수 있다.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot; style=&quot;display: block; text-align: center;&quot;&gt;
+  &lt;a href=&quot;https://1.bp.blogspot.com/-gV8bLJ7y_Bw/YDNHHNFun7I/AAAAAAAAAZQ/xgp2_-xtHZ0183is4dKjDlzfEN8_MHsNwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png&quot; style=&quot;display: initial;&quot;&gt;
+    &lt;img src=&quot;https://1.bp.blogspot.com/-gV8bLJ7y_Bw/YDNHHNFun7I/AAAAAAAAAZQ/xgp2_-xtHZ0183is4dKjDlzfEN8_MHsNwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png&quot; alt=&quot;기본방식 첫 페이지&quot; style=&quot;width: auto;&quot; /&gt;
+  &lt;/a&gt;&lt;figcaption&gt;
+      ▲ 기본방식 첫 페이지
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot; style=&quot;display: block; text-align: center;&quot;&gt;
+  &lt;a href=&quot;https://1.bp.blogspot.com/-8ttTKvdcdwI/YDNHHKMLEsI/AAAAAAAAAZU/bXg7D74uq-M6YS5uFHwi-7pgVQ_WJLMVQCLcBGAsYHQ/s0/%25EC%2584%25B8%25EC%2585%2598%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png&quot; style=&quot;display: initial;&quot;&gt;
+    &lt;img src=&quot;https://1.bp.blogspot.com/-8ttTKvdcdwI/YDNHHKMLEsI/AAAAAAAAAZU/bXg7D74uq-M6YS5uFHwi-7pgVQ_WJLMVQCLcBGAsYHQ/s0/%25EC%2584%25B8%25EC%2585%2598%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png&quot; alt=&quot;세션방식 첫 페이지&quot; style=&quot;width: auto;&quot; /&gt;
+  &lt;/a&gt;&lt;figcaption&gt;
+      ▲ 세션방식 첫 페이지
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;기본방식 인증을 선택하면 그냥 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl '게이트웨이 주소'&lt;/code&gt; 하면 IP 주소를 얻을 수 있겠지만, 그냥 심미적인 이유에서 세션방식이 더 마음에 들었다. (기본방식도 충분 하겠지만 아마도 세션방식이 보안상 더 좋지 않을까?)&lt;/p&gt;
+
+&lt;figure class=&quot;&quot; style=&quot;display: block; text-align: center;&quot;&gt;
+  &lt;a href=&quot;https://1.bp.blogspot.com/-B6jO3BJv9Ec/YDNHHGggDfI/AAAAAAAAAZM/ktTIKeSFt4IY9zEyFVUNIckPkAmhpnNQwCLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png&quot; style=&quot;display: initial;&quot;&gt;
+    &lt;img src=&quot;https://1.bp.blogspot.com/-B6jO3BJv9Ec/YDNHHGggDfI/AAAAAAAAAZM/ktTIKeSFt4IY9zEyFVUNIckPkAmhpnNQwCLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png&quot; alt=&quot;로그인 인증 방법 설정&quot; style=&quot;width: auto;&quot; /&gt;
+  &lt;/a&gt;&lt;figcaption&gt;
+      ▲ 로그인 인증 방법 설정
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;▼ 조건&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;iptime 공유기 (모델 N704V3, 펌웨어 12.07.6)&lt;/li&gt;
+  &lt;li&gt;세션방식 로그인&lt;/li&gt;
+  &lt;li&gt;Captcha 없음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-본론&quot;&gt;2. 본론&lt;/h2&gt;
+&lt;p&gt;브라우저에 기본 게이트웨이 주소(나는 192.168.0.1)를 입력하면 아래와 같은 순서로 리다이렉트 된다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;게이트웨이 주소 &lt;em&gt;192.168.0.1&lt;/em&gt; 입력&lt;br /&gt;
+1) [이동] &lt;em&gt;http://192.168.0.1/login/login.cgi&lt;/em&gt;&lt;br /&gt;
+2) [리다이렉트] &lt;em&gt;http://192.168.0.1/sess-bin/login_session.cgi&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;아이디, 비밀번호를 입력하고 로그인&lt;br /&gt;
+1) [이동] &lt;em&gt;http://192.168.0.1/sess-bin/login_handler.cgi&lt;/em&gt;&lt;br /&gt;
+2) [리다이렉트] &lt;em&gt;http://192.168.0.1/sess-bin/login.cgi?&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;위 과정 2-1[이동]의 주소에 로그인 정보를 넘겨주면 쿠키 정보가 들어있는 페이지를 얻을 수 있다. 원래 안보이는 주소지만 크롬 개발자 도구를 통해 구했다. 결과 페이지를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sed&lt;/code&gt;로 필터링 해서 쿠키 문자열만 가져올 수도 있다.&lt;/p&gt;
+
+&lt;p&gt;▼ 로그인 하고 쿠키 가져오기 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sed&lt;/code&gt;도 사용)&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-s4&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'http://192.168.0.1/sess-bin/login_handler.cgi'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Referer: http://192.168.0.1'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--data-urlencode&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'username=${id}'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--data-urlencode&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'$passwd={pw}'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-En&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s/^setCookie&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'(.*)'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/p&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${id}&lt;/code&gt; : 로그인 아이디&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${pw}&lt;/code&gt; : 로그인 비밀번호&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;위 코드에서 얻은 쿠키는 세션이 유지되는 동안에 사용할 수 있다. 이번에는 맨 위의 과정 1-1[이동]의 주소를 사용한다. 마찬가지로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sed&lt;/code&gt;로 필터링 해서 IP 주소만 가져올 수 있다.&lt;/p&gt;
+
+&lt;p&gt;▼ 로그인 이후 페이지 가져오기 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sed&lt;/code&gt;도 사용)&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-s4&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'http://192.168.0.1/login/login.cgi'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Cookie: efm_session_id=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cookie&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-En&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s,.*동적 IP - 연결됨 - (.*).*,&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;,p&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${cookie}&lt;/code&gt; : 쿠키&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-결론&quot;&gt;3. 결론&lt;/h2&gt;
+&lt;p&gt;이제 타 사이트에 접속하지 않고도 공인 IP를 알 수 있게 되었다. 공유기에 로그인을 할 수 있으니 IP 말고 다른 정보를 조회하는 데에도 유용하게 사용할 수 있을것 같다. 추후에 공유기 제조사에서 펌웨어를 업그레이드하면 이 방법이 소용없을 수도 있지만… 그땐 그냥 기본인증으로 사용해야겠다.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(의문점: 공유기에 로그인 기록이 안 남는것 같다…)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;a-참고&quot;&gt;A. 참고&lt;/h2&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:IP-addr&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;em&gt;Tecmint: Linux Howtos, Tutorials &amp;amp; Guides, “4 Ways to Find Server Public IP Address in Linux Terminal”, &lt;a href=&quot;https://www.tecmint.com/find-linux-server-public-ip-address/&quot;&gt;https://www.tecmint.com/find-linux-server-public-ip-address/&lt;/a&gt;&lt;/em&gt; &lt;a href=&quot;#fnref:IP-addr&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="raspberry-pi" /><category term="bash" /><category term="IP" /><category term="curl" /><category term="공유기" /><category term="iptime" /><summary type="html">0. 주제 curl을 통해 iptime 공유기 공인 IP 주소를 가져온다.</summary></entry></feed>
