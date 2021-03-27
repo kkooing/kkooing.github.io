@@ -89,8 +89,9 @@ author:
 #layouts_dir         : _layouts
 #data_dir            : _data
 #includes_dir        : _includes
-#sass:
-#  sass_dir: _sass
+sass:   # 왠지는 모르겠는데 필수
+  sass_dir: _sass
+  style: compressed
 #collections:
 #  posts:
 #    output          : true
