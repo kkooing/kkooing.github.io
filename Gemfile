@@ -13,7 +13,6 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   gem 'tzinfo'
   gem 'tzinfo-data'
-  gem 'posts_auto_categorization'
-  gem 'category_pages'
-  gem 'sidebar_category_form'
+  
+  gem 'jekyll-auto-cat-plus'
 end

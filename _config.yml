@@ -106,8 +106,8 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
 
 # Plugins
-plugins             : ["jekyll-sitemap", "jekyll-feed", "jekyll-seo-tag", "jekyll-include-cache"]
-whitelist           : ["jekyll-sitemap", "jekyll-feed", "jekyll-seo-tag", "jekyll-include-cache"]
+plugins             : ["jekyll-sitemap", "jekyll-feed", "jekyll-seo-tag", "jekyll-include-cache", "jekyll-auto-cat-plus"] #, "sidebar_category_form"]
+whitelist           : ["jekyll-sitemap", "jekyll-feed", "jekyll-seo-tag", "jekyll-include-cache", "jekyll-auto-cat-plus"] #, "sidebar_category_form"]
 
 # Outputting
 permalink           : /:categories/:title/

@@ -1,11 +1,22 @@
+# /_post 아래의 폴더 구조를 통해 카테고리를 자동으로 생성한다.
+# 메소드 재정의를 사용함.
+module Jekyll
+  class Document
+    def categories_from_path(special_dir)
+      superdirs = relative_path.sub(special_dir, "")
+      superdirs = superdirs.split(File::SEPARATOR)
+      superdirs.reject! { |c| c.empty? || c == special_dir || c == basename }
+      
+      merge_data!({ "categories" => superdirs }, :source => "file path")
+    end
+  end
+end
+
 # /_site 의 post 폴더 구조에 카테고리 페이지를 생성한다.
 # post 와 category_page 모두 basename 이 index.html 이므로
 # post를 카테고리 계층 사이에 생성하면 안된다.
-
 module SamplePlugin
   class CategoryPageGenerator < Jekyll::Generator
-    safe true
-
     def generate(site)	  
       site.categories.each do |category, posts|
         site.pages << CategoryPage.new(site, category, posts)
