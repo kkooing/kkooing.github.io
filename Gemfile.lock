@@ -29,7 +29,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-auto-cat (0.1.4)
+    jekyll-auto-cat (0.1.5)
       jekyll (>= 3.7, < 5.0)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
