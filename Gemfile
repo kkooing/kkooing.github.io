@@ -14,5 +14,5 @@ group :jekyll_plugins do
   gem 'tzinfo'
   gem 'tzinfo-data'
   
-  gem 'jekyll-auto-cat-plus'
+  gem 'jekyll-auto-cat'
 end
