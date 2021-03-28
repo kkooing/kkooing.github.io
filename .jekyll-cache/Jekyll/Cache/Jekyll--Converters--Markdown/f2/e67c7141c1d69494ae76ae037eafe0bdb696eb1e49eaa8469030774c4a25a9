@@ -1,3 +1,0 @@
-I"�<p><code class="language-plaintext highlighter-rouge">블록 요소</code>를 명시적으로 감싸려면 요소의 앞뒤로 <code class="language-plaintext highlighter-rouge">빈 줄</code>, <code class="language-plaintext highlighter-rouge">^</code>, <code class="language-plaintext highlighter-rouge">IAL</code>을 사용한다. 하지만 예외로 <code class="language-plaintext highlighter-rouge">헤더(\&lt;h\&gt;, #...)</code>, <code class="language-plaintext highlighter-rouge">코드 블록</code>, <code class="language-plaintext highlighter-rouge">정의 목록(\&lt;dl\&gt;)</code>, <code class="language-plaintext highlighter-rouge">표(\&lt;table\&gt;)</code>는 불가능하다.</p>
-<h2 id="이스케이프">이스케이프</h2>
-:ET
