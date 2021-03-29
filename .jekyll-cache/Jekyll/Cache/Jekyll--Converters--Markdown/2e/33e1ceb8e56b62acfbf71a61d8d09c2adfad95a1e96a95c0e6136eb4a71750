@@ -1,0 +1,194 @@
+I"<h2 id="1-liquid-핵심-요소">1. Liquid 핵심 요소</h2>
+
+<p>Liquid 코드는 object, tag, filter의 세가지로 정리할 수 있다.</p>
+
+<h3 id="11-object">1.1. Object</h3>
+
+<p><code class="language-plaintext highlighter-rouge">{{</code>와 <code class="language-plaintext highlighter-rouge">}}</code>로 object와 변수를 사용한다.</p>
+
+<p>input</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ page.title }}
+</code></pre></div></div>
+
+<p>output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Introduction
+</code></pre></div></div>
+
+<h3 id="12-tag">1.2. Tag</h3>
+
+<p><code class="language-plaintext highlighter-rouge">{%</code>와 <code class="language-plaintext highlighter-rouge">%}</code>로 tag를 사용한다. Liquid 문법 구성에 사용된다.</p>
+
+<p>input</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
+</code></pre></div></div>
+
+<p>output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello Adam!
+</code></pre></div></div>
+
+<p>Tag는 다시 세 가지로 나뉜다.</p>
+
+<h4 id="121-tag---control-flow-분기">1.2.1. Tag - Control flow (분기)</h4>
+
+<h4 id="122-tag---iteration-반복">1.2.2. Tag - Iteration (반복)</h4>
+
+<h4 id="123-tag---variable-assignments-변수">1.2.3. Tag - Variable assignments (변수)</h4>
+
+<h3 id="13-filter">1.3. Filter</h3>
+
+<p>파이프 <code class="language-plaintext highlighter-rouge">|</code>를 이용해 object와 변수의 출력형식을 지정한다.</p>
+
+<p>input</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ "/my/fancy/url" | append: ".html" }}
+</code></pre></div></div>
+
+<p>output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/my/fancy/url.html
+</code></pre></div></div>
+
+<p>filter는 중첩가능하다.</p>
+
+<p>input</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ "adam!" | capitalize | prepend: "Hello " }}
+</code></pre></div></div>
+
+<p>output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello Adam!
+</code></pre></div></div>
+
+<h2 id="2-liquid-기타-요소">2. Liquid 기타 요소</h2>
+
+<h3 id="21-연산자">2.1. 연산자</h3>
+
+<ul>
+  <li>기본 연산자</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">==</code></td>
+      <td>eq</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!=</code></td>
+      <td>neq</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+      <td>gt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td>lt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;=</code></td>
+      <td>gte</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;=</code></td>
+      <td>lte</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">or</code></td>
+      <td>or</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">and</code></td>
+      <td>and</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>contains
+문자열 탐색 연산자이다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if product.title contains "Pack" %}
+  This product's title contains the word Pack.
+{% endif %}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if product.tags contains "Hello" %}
+  This product has been tagged with "Hello".
+{% endif %}
+</code></pre></div></div>
+
+<p>*기타</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: center">truthy</th>
+      <th style="text-align: center">falsy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">true</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">false</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">v</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">nil</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">v</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">string</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">empry string</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">integer</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">float</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">array</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">empty array</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">page</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">empty drop</td>
+      <td style="text-align: center">v</td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+:ET
