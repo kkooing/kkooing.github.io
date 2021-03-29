@@ -13,6 +13,4 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   gem 'tzinfo'
   gem 'tzinfo-data'
-  
-  gem 'jekyll-auto-cat'
 end
