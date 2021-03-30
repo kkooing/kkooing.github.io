@@ -1,0 +1,30 @@
+{%- assign url = include.url -%}
+
+{%- assign url-begin = url | slice: 0 -%}
+
+{%- if url-begin == "/" -%}
+  {%- assign url = url | remove_first: "/" -%}
+{%- endif -%}
+
+{%- assign url-array = url | append: "/" | split: "/" -%}
+
+{%- assign title_array_in = '' | split: '' -%}
+
+{%- capture title_array -%}
+{%- include category-route-lookup list=site.data.navigation.categories title_array=title_array_in cat_array=url-array -%}
+{%- endcapture -%}
+
+{%- assign title_array = title_array | split: ", " -%}
+
+
+{% assign rel_url = "/" %}
+{% assign rt_num = title_array.size | minus: 1 %}
+
+{% for i in (0..rt_num) %}
+  {% assign rel_url = rel_url | append: url-array[i] | append: "/" %}
+  {% if i != rt_num %}
+    {{ title_array[i] }} > 
+  {% else %}
+    <a href="{{ rel_url }}">{{ title_array[i] }}</a>
+  {% endif %}
+{% endfor %}

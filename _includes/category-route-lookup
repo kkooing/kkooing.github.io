@@ -1,0 +1,19 @@
+{%- for l in include.list -%}
+  {%- if include.cat_array contains l.url -%}
+    {%- assign tmp_array = l.title | append: "/" | split: "/" -%}
+    {%- assign title_array_in = include.title_array | concat: tmp_array -%}
+    
+    {%- if include.cat_array[-1] == l.url -%}
+      {% break %}
+    {%- else -%}
+      {%- capture title_array_in -%}
+      {%- include category-route-lookup list=l.sub title_array=title_array_in cat_array=include.cat_array -%}
+      {%- endcapture -%}
+      {%- assign title_array_in = title_array_in | split: ", " -%}
+      {%- if include.cat_array == title_array_in -%}
+        {% break %}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{{- title_array_in | join: ", " -}}

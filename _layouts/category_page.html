@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
+{% include category-route url=page.url %}
+
 {% assign last-category = page.url | split: "/" | last %}
-{{ page.cat_title_array | join: " > " }}
 <h1>{{ page.cat_title_array | last }}</h1>
 
 {% assign my_posts = site.posts | where:"categories", last-category %}
