@@ -89,9 +89,9 @@ author:
 #layouts_dir         : _layouts
 #data_dir            : _data
 #includes_dir        : _includes
-sass:   # 왠지는 모르겠는데 필수
-  sass_dir: _sass
-  style: compressed
+#sass:   # 왠지는 모르겠는데 필수
+#  sass_dir: _sass
+#  style: compressed
 #collections:
 #  posts:
 #    output          : true
@@ -100,7 +100,7 @@ sass:   # 왠지는 모르겠는데 필수
 safe                : false
 include             : [".htaccess", "_pages"]
 exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files          : [".git", ".svn"]
+keep_files          : [".git", ".github", ".svn"]
 encoding            : "utf-8"
 markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
