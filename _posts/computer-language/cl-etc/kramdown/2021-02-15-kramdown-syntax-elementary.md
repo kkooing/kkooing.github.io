@@ -2,8 +2,6 @@
 title:      "kramdown 문법 기초"
 tags:       [kramdown, markdown]
 last_modified_at: 2021-02-19T01:57:05+09:00
-toc: true
-toc_sticky: true
 ---
 ## 제목 \<h\>
 

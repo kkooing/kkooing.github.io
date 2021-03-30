@@ -1,55 +1,65 @@
 pages:
-  - text: home
+  - title: home
     url: /
-  - text: About
-    url: /about
-  - text: Blog
-    url: /blog
+  - title: About
+    url: "/about/"
+  - title: Blog
+    url: "/blog/"
 
 categories:
-  - text: "컴퓨터 언어"   # computer-language
-    sub:
-      - text: "프로그래밍"   # programming
-        sub:
-          - text: "C++"
-            url: c++
-          - text: "Python"
-            url: python
-          - text: "Ruby"
-            url: ruby
-      - text: "스크립트"   # script
-        sub:
-          - text: "Bash"
-            url: bash
-          - text: "Batch"
-            url: batch
-          - text: "PowerShell"
-            url: powershell
-      - text: "기타"   # others
-        sub:
-          - text: "HTML"
-            url: html
-          - text: "css"
-            url: css
-          - text: "Kramdown"
-            url: kramdown
-          - text: "컨테이너"
-            url: container
-  - text: "IT"   # it
-    sub:
-      - text: "Jekyll 블로그"
-        url: jekyll-blog
-      - text: "라즈베리파이"
-        url: raspberry-pi
-      - text: "기타"
-        url: others-it
-  - text: "역학"   # mechanic
-    sub:
-  - text: "설계"   # design
-    sub:
-      - text: "이론"
-  - text: "tool"
-    sub:
-      - text: "AutoCAD"
-      - text: "인벤터"
-      - text: "Affinity Designer"
+  - title: "컴퓨터 언어"
+    url  : "computer-language"
+    sub  :
+      - title: "프로그래밍"
+        url  : "programming"
+        sub  :
+          - title: "C++"
+            url  : "cpp"
+          - title: "Python"
+            url  : "python"
+          - title: "Ruby"
+            url  : "ruby"
+      - title: "스크립트"
+        url  : "script"
+        sub  :
+          - title: "Bash"
+            url  : "bash"
+          - title: "Batch"
+            url  : "batch"
+          - title: "PowerShell"
+            url  : "powershell"
+      - title: "기타"
+        url  : "cl-etc"
+        sub  :
+          - title: "HTML"
+            url  : "html"
+          - title: "css"
+            url  : "css"
+          - title: "Kramdown"
+            url  : "kramdown"
+          - title: "컨테이너"
+            url  : "container"
+  - title: "IT"
+    url  : "it"
+    sub  :
+      - title: "Jekyll 블로그"
+        url  : "jekyll-blog"
+      - title: "라즈베리파이"
+        url  : "raspberry-pi"
+      - title: "기타"
+        url  : "it-etc"
+  - title: "역학"
+    url  : "mechanics"
+    sub  :
+  - title: "설계"
+    url  : "design"
+    sub  :
+  - title: "tool"
+    url  : "tool"
+    sub  :
+      - title: "AutoCAD"
+        url  : "auto-cad"
+      - title: "인벤터"
+        url  : "inventor"
+      - title: "Affinity Designer"
+        url  : "affinity-designer"

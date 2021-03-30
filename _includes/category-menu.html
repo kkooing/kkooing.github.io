@@ -1,0 +1,19 @@
+{% for item in include.list %}
+  <li>
+    {% assign target_url = item.url | prepend: "/" | prepend: include.url%}
+    {% if item.sub %}
+      {{ item.title }}
+      <ul>
+        {% include category-menu.html list=item.sub url=target_url %}
+      </ul>
+    {% else %}
+        {% assign last-category = target_url | split: "/" | last %}
+        {% assign my_posts = site.posts | where:"categories", last-category %}
+        {% if {{my_posts.size}} != 0 %}
+          <a href="{{ target_url }}">{{ item.title }} {{my_posts.size}}</a>
+        {% else %}
+          {{ item.title }} {{my_posts.size}}
+        {% endif %}
+    {% endif %}
+  </li>
+{% endfor %}

@@ -13,7 +13,7 @@
   <ul>
     {% for page in site.data.navigation.pages %}
     <li>
-      <a href="{{ page.url }}">{{ page.text }}</a>
+      <a href="{{ page.url }}">{{ page.title }}</a>
     </li>
     {% endfor %}
   </ul>
@@ -21,10 +21,6 @@
 
 <div class="categories">
   <ul>
-    {% for category in site.categories %}
-    <li>
-      <a href="{{ category.url }}">{{ category | first }}</a>
-    </li>
-    {% endfor %}
+    {% include category-menu.html list=site.data.navigation.categories url="" %}
   </ul>
 </div>

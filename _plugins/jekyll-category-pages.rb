@@ -12,9 +12,20 @@ module SamplePlugin
       end
     end
   end
-
+  
   # Subclass of `Jekyll::Page` with custom method definitions.
   class CategoryPage < Jekyll::Page
+    
+	ATTRIBUTES_FOR_LIQUID = %w(
+      content
+      dir
+      excerpt
+      name
+      path
+      url
+	  cat_title_array
+    ).freeze
+	
     def initialize(site, category, posts)
       @site = site             # the current site instance.
       @base = site.source      # path to the source directory.
@@ -23,8 +34,13 @@ module SamplePlugin
       p_special_dir = posts.first.collection.relative_directory
       p_superdirs = posts.first.relative_path.sub(p_special_dir, "")
 	  p_superdirs = p_superdirs.sub(/#{category}.*/,"") << category
-      @dir  = p_superdirs      # the directory the page will reside in.
-      
+      @dir = p_superdirs      # the directory the page will reside in.
+	  
+	  cat_array = p_superdirs.split("/").delete_if(&:empty?)
+	  
+	  title_array = []
+	  @cat_title_array = cat_lookup(site.data["navigation"]["categories"], title_array, cat_array)
+	  
       # All pages have the same filename, so define attributes straight away.
       @basename = 'index'      # filename without the extension.
       @ext      = '.html'      # the extension.
@@ -51,5 +67,26 @@ module SamplePlugin
         :output_ext => output_ext,
       }
     end
+	
+	def cat_lookup(list, title_array, cat_array)
+	  list.each do |l|
+	    if cat_array.include?(l["url"])
+		  title_array << l["title"]
+		  if cat_array[-1] == l["url"]
+		    return title_array
+		  else
+		    title_array = cat_lookup(l["sub"], title_array, cat_array)
+			if cat_array == title_array
+		      return title_array
+		    end
+		  end
+		end
+      end
+	  return title_array
+	end
+	
+	def cat_title_array
+	  @cat_title_array
+	end
   end
 end

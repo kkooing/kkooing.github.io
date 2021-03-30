@@ -1,3 +1,16 @@
 ---
 layout: default
 ---
+{% assign last-category = page.url | split: "/" | last %}
+{{ page.cat_title_array | join: " > " }}
+<h1>{{ page.cat_title_array | last }}</h1>
+
+{% assign my_posts = site.posts | where:"categories", last-category %}
+<ul>
+  {% for post in my_posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.date | date: "%Y. %m. %d." }}
+    </li>
+  {% endfor %}
+</ul>

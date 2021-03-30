@@ -1,10 +1,6 @@
 ---
 title:      "GitHub Page 만들기"
 tags:       [blog]
-toc: true
-toc_sticky: true
-header:
-  teaser: 
 last_modified_at: 
 ---
 
