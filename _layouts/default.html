@@ -2,38 +2,28 @@
 ---
 <!doctype html>
 <html lang="{{ site.locale }}">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    {% comment %}
-    {% include_cached skip-links.html %}
-    {% include_cached browser-upgrade.html %}
-    {% endcomment %}
-    
-    <header class="header">
-      {% include header.html %}
-    </header>
 
-    <main class="main">
-      <div class="main_inner">
-        <section class="content">
-          {{ content }}
-        </section>
-      
-        <aside class="sidebar">
-          {% include sidebar.html %}
-        </aside>
-      
-        <aside class="toc">
-      
-        </aside>
-      </div>
-    </main>
+<head>
+  {% include head.html %}
+</head>
 
-    <footer class="footer">
-      {% include footer.html %}
-    </footer>
-    
-  </body>
+<body>
+  {% include_cached skip-links.html %}
+  {% include_cached browser-upgrade.html %}
+
+  {% include header.html %}
+
+  <section class="center" id="center">
+    <div class="center_inner">
+      {{ content }}
+      
+      {% include featured-posts.html %}
+      {% include sidebar.html %}
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+</body>
+
 </html>

@@ -1,0 +1,19 @@
+{%- for l in include.list -%}
+  {%- if include.url-array contains l.url -%}
+    {%- assign tmp_array = l.title | append: "/" | split: "/" -%}
+    {%- assign title_array = include.title_array | concat: tmp_array -%}
+    
+    {%- if include.url-array[-1] == l.url -%}
+      {% break %}
+    {%- else -%}
+      {%- capture title_array -%}
+      {%- include breadcrumbs-lookup list=l.sub title_array=title_array url-array=include.url-array -%}
+      {%- endcapture -%}
+      {%- assign title_array = title_array | split: ", " -%}
+      {%- if include.url-array == title_array -%}
+        {% break %}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{{- title_array | join: ", " -}}

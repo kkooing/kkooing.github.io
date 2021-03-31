@@ -1,0 +1,9 @@
+I"=<nav class="skip-links">
+  <h2>Skip links</h2>
+  <ul>
+    <li><a href="#core" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#categories" class="screen-reader-shortcut">Skip to categories</a></li>
+    <li><a href="#pages" class="screen-reader-shortcut">Skip to pages</a></li>
+  </ul>
+</nav>
+:ET

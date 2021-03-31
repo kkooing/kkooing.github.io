@@ -1,9 +1,41 @@
 ---
 layout: default
 ---
-{% include category-route url=page.url %}
+<main class="main" id="main">
+  <section class="content">
+    {% include breadcrumbs.html url=page.url %}
+    <div class="post" id="core">
+      <div class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+          {{ page.date | date: "%Y. %m. %d." }}
+        </div>
+      </div>
+      <div class="post-content">
+        {{ content }}
+      </div>
+      <div class="post-footer">
+        <div class="tag-list">
+          {% assign tags_sorted = page.tags | sort_natural %}
+          {% for tag_word in tags_sorted %}
+          <span class="tag_word">#{{ tag_word }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <aside class="toc" id="toc">
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date: "%Y. %m. %d." }}</p>
+    </aside>
+  </section>
+  <section class="pagenation" id="pagenation">
 
-{{ content }}
+    {% assign post-url = page.url | remove_first: "/" | split: "/" %}
+    {% assign post-url-num = post-url.size | minus: 2 %}
+    {%- assign cat-url = "" -%}
+    {% for i in (0..post-url-num) %}
+      {% assign cat-url = cat-url | append: "/" | append: post-url[i] %}
+    {% endfor %}
+    
+    {% include post-list.html url=cat-url %}
+  </section>
+</main>

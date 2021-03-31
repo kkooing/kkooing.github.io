@@ -1,17 +1,11 @@
 ---
 layout: default
 ---
-{% include category-route url=page.url %}
-
-{% assign last-category = page.url | split: "/" | last %}
-<h1>{{ page.cat_title_array | last }}</h1>
-
-{% assign my_posts = site.posts | where:"categories", last-category %}
-<ul>
-  {% for post in my_posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.date | date: "%Y. %m. %d." }}
-    </li>
-  {% endfor %}
-</ul>
+<main class="main" id="main">
+  <section class="content">
+    {% include breadcrumbs.html url=page.url %}
+    <div class="category-page" id="core">
+      {% include post-list.html url=page.url %}
+    </div>
+  </section>
+</main>

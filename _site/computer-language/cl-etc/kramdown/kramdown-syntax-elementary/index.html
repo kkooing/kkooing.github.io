@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8">
+
+<head>
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -25,30 +26,44 @@
     }
   </style>
 <![endif]-->
-  </head>
-  <body>
-    
-    
-    <header class="header">
-      <div class="header_inner">
-  <div class="Hamburger_menu">
-    
-  </div>
-  <div class="site_name">
-    <a class="site_name" href="/">
-      kkooing
-    </a>
-  </div>
-  <div class="search_blog">
-    
-  </div>
-</div>
-    </header>
+</head>
 
-    <main class="main">
-      <div class="main_inner">
-        <section class="content">
-          
+<body>
+  <nav class="skip-links">
+  <h2>Skip links</h2>
+  <ul>
+    <li><a href="#core" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#categories" class="screen-reader-shortcut">Skip to categories</a></li>
+    <li><a href="#pages" class="screen-reader-shortcut">Skip to pages</a></li>
+  </ul>
+</nav>
+
+  <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+
+  <header class="header" id="header">
+  <div class="header_inner">
+    <div class="Hamburger_menu">
+
+    </div>
+    <div class="site_name">
+      <a class="site_name" href="/">
+        kkooing
+      </a>
+    </div>
+    <div class="search_blog">
+
+    </div>
+  </div>
+</header>
+
+  <section class="center" id="center">
+    <div class="center_inner">
+      <main class="main" id="main">
+  <section class="content">
+    
 
 
 
@@ -67,11 +82,15 @@
     <a href="/computer-language/cl-etc/kramdown/">Kramdown</a>
   
 
-
-<h1>kramdown 문법 기초</h1>
-<p>2021. 02. 15.</p>
-
-<h2 id="제목-h">제목 &lt;h&gt;</h2>
+    <div class="post" id="core">
+      <div class="post-header">
+        <h1 class="post-title">kramdown 문법 기초</h1>
+        <div class="post-meta">
+          2021. 02. 15.
+        </div>
+      </div>
+      <div class="post-content">
+        <h2 id="제목-h">제목 &lt;h&gt;</h2>
 
 <table><thead style="width: 100%"><tr>
       <th>kramdown</th>
@@ -566,41 +585,87 @@
 </table>
 </td></tr></tbody></table>
 
-        </section>
-      
-        <aside class="sidebar">
-          <div class="profile">
-  <div class="Hamburger_menu">
-    
-  </div>
-  <div class="site_name">
-    <a class="site_name" href="/">
-      kkooing
-    </a>
-  </div>
-</div>
+      </div>
+      <div class="post-footer">
+        <div class="tag-list">
+          
+          
+          <span class="tag_word">#kramdown</span>
+          
+          <span class="tag_word">#markdown</span>
+          
+        </div>
+      </div>
+    </div>
+    <aside class="toc" id="toc">
 
-<div class="pages">
+    </aside>
+  </section>
+  <section class="pagenation" id="pagenation">
+
+    
+    
+    
+    
+
+<div class="post-list">
   <ul>
     
     <li>
-      <a href="/">home</a>
+      
+      
+      <a href="/computer-language/cl-etc/kramdown/kramdown-syntax-advanced/">kramdown 문법 심화</a>
+      2021. 02. 18.
     </li>
     
     <li>
-      <a href="/about/">About</a>
-    </li>
-    
-    <li>
-      <a href="/blog/">Blog</a>
+      
+      
+      <a href="/computer-language/cl-etc/kramdown/kramdown-syntax-elementary/">kramdown 문법 기초</a>
+      2021. 02. 15.
     </li>
     
   </ul>
 </div>
+  </section>
+</main>
+      
+      <section class="featured-posts" id="featured-posts">
 
-<div class="categories">
-  <ul>
-    
+</section>
+      <aside class="sidebar" id="sidebar">
+  <div class="profile" id="profile">
+    <div class="Hamburger_menu">
+
+    </div>
+    <div class="site_name">
+      <a class="site_name" href="/">
+        kkooing
+      </a>
+    </div>
+  </div>
+
+  <nav class="pages" id="pages">
+    <ul>
+      
+      <li>
+        <a href="/">home</a>
+      </li>
+      
+      <li>
+        <a href="/about/">About</a>
+      </li>
+      
+      <li>
+        <a href="/blog/">Blog</a>
+      </li>
+      
+    </ul>
+  </nav>
+
+  <nav class="categories" id="categories">
+    <ul>
+      
   <li>
     
     
@@ -763,7 +828,7 @@
         
         
         
-          <a href="/it/jekyll-blog">Jekyll 블로그 2</a>
+          <a href="/it/jekyll-blog">Jekyll 블로그 3</a>
         
     
   </li>
@@ -859,22 +924,20 @@
     
   </li>
 
-  </ul>
-</div>
-        </aside>
-      
-        <aside class="toc">
-      
-        </aside>
-      </div>
-    </main>
+    </ul>
+  </nav>
+</aside>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="footer_inner">
-  &copy; 2020-2021 kkooing. Powered by <a href="https://jekyllrb.com" target="_blank" rel="nofollow">Jekyll
-</div>
+  <footer class="footer" id="footer">
+  <div class="footer_inner">
+    <div class="copyright">
+      &copy; 2020-2021 <a href="https://github.com/kkooing" target="_blank" rel="nofollow">kkooing</a>.
+    </div>
+  </div>
+</footer>
 
-    </footer>
-    
-  </body>
+</body>
+
 </html>

@@ -1,26 +1,28 @@
-<div class="profile">
-  <div class="Hamburger_menu">
-    
-  </div>
-  <div class="site_name">
-    <a class="site_name" href="{{ '/' | relative_url }}">
-      {{ site.name }}
-    </a>
-  </div>
-</div>
+<aside class="sidebar" id="sidebar">
+  <div class="profile" id="profile">
+    <div class="Hamburger_menu">
 
-<div class="pages">
-  <ul>
-    {% for page in site.data.navigation.pages %}
-    <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+    </div>
+    <div class="site_name">
+      <a class="site_name" href="{{ '/' | relative_url }}">
+        {{ site.name }}
+      </a>
+    </div>
+  </div>
 
-<div class="categories">
-  <ul>
-    {% include category-menu.html list=site.data.navigation.categories url="" %}
-  </ul>
-</div>
+  <nav class="pages" id="pages">
+    <ul>
+      {% for page in site.data.navi.pages %}
+      <li>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <nav class="categories" id="categories">
+    <ul>
+      {% include category-menu.html list=site.data.navi.categories url="" %}
+    </ul>
+  </nav>
+</aside>

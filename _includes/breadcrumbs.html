@@ -1,5 +1,4 @@
 {%- assign url = include.url -%}
-
 {%- assign url-begin = url | slice: 0 -%}
 
 {%- if url-begin == "/" -%}
@@ -7,11 +6,10 @@
 {%- endif -%}
 
 {%- assign url-array = url | append: "/" | split: "/" -%}
-
-{%- assign title_array_in = '' | split: '' -%}
+{%- assign title_array = '' | split: '' -%}
 
 {%- capture title_array -%}
-{%- include category-route-lookup list=site.data.navigation.categories title_array=title_array_in cat_array=url-array -%}
+{%- include breadcrumbs-lookup list=site.data.navi.categories title_array=title_array url-array=url-array -%}
 {%- endcapture -%}
 
 {%- assign title_array = title_array | split: ", " -%}
