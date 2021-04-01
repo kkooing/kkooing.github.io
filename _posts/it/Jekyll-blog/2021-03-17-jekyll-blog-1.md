@@ -1,6 +1,6 @@
 ---
-title:      "GitHub Page 만들기"
-tags:       [blog]
+title           : "GitHub Page 만들기"
+tags            : [blog]
 last_modified_at: 
 ---
 

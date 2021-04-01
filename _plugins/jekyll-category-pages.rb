@@ -6,8 +6,17 @@ module SamplePlugin
   class CategoryPageGenerator < Jekyll::Generator
     safe true
 
-    def generate(site)	  
-      site.categories.each do |category, posts|
+    def generate(site)
+	  integrated_categories = {}
+	  site.posts.docs.each do |post|
+	    key_cat_string = post["categories"].join("/")
+	    if integrated_categories.has_key? key_cat_string
+		  integrated_categories[key_cat_string] << post
+		else
+		  integrated_categories[key_cat_string] = [post]
+		end
+      end
+	  integrated_categories.each do |category, posts|
         site.pages << CategoryPage.new(site, category, posts)
       end
     end
@@ -19,13 +28,8 @@ module SamplePlugin
     def initialize(site, category, posts)
       @site = site             # the current site instance.
       @base = site.source      # path to the source directory.
-    
-      p_basename = posts.first.basename
-      p_special_dir = posts.first.collection.relative_directory
-      p_superdirs = posts.first.relative_path.sub(p_special_dir, "")
-      p_superdirs = p_superdirs.sub(/#{category}.*/,"") << category
-      @dir = p_superdirs      # the directory the page will reside in.
-    
+      @dir = category          # the directory the page will reside in.
+	  
       # All pages have the same filename, so define attributes straight away.
       @basename = 'index'      # filename without the extension.
       @ext      = '.html'      # the extension.

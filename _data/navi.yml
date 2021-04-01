@@ -31,7 +31,7 @@ categories:
           - title: "PowerShell"
             url  : "powershell"
       - title: "기타"
-        url  : "cl-etc"
+        url  : "etc"
         sub  :
           - title: "HTML"
             url  : "html"
@@ -50,7 +50,7 @@ categories:
       - title: "라즈베리파이"
         url  : "raspberry-pi"
       - title: "기타"
-        url  : "it-etc"
+        url  : "etc"
   - title: "역학"
     url  : "mechanics"
     hr   : true

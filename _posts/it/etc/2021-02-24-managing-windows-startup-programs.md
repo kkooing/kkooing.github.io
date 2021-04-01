@@ -1,6 +1,6 @@
 ---
-title:      "윈도우 시작프로그램 관리"
-tags:       [windows, startup, regedit]
+title           : "윈도우 시작프로그램 관리"
+tags            : [windows, startup, regedit]
 last_modified_at: 2021-02-24T11:14:37+09:00
 ---
 

@@ -1,6 +1,6 @@
 ---
-title:      "kramdown 문법 심화"
-tags:       [kramdown, markdown]
+title           : "kramdown 문법 심화"
+tags            : [kramdown, markdown]
 last_modified_at: 2021-02-18T11:49:19+09:00
 ---
 

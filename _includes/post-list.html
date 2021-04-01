@@ -7,28 +7,28 @@
 
 {%- assign cat-array = url | append: "/" | split: "/" -%}
 
-{% if cat-array.size != 0 %}
+{%- if cat-array.size != 0 -%}
   {%- assign cat_num = cat-array.size | minus: 1 -%}
   
   {%- assign filtered-posts = site.posts | where:"categories", cat-array[0] -%}
   {%- for i in (1..cat_num) -%}
     {%- assign filtered-posts = filtered-posts | where:"categories", cat-array[i] -%}
   {%- endfor -%}
-{% else %}
+{%- else -%}
   {%- assign filtered-posts = site.posts -%}
-{% endif %}
+{%- endif -%}
 
 <div class="post-list">
   <ul>
-    {% for post in filtered-posts %}
+    {%- for post in filtered-posts -%}
     <li>
-      {% if cat-array.size == 0 %}
-        {% include breadcrumbs.html url=post.url mode="plain" %}
-      {% endif %}
+      {%- if cat-array.size == 0 -%}
+        {%- include breadcrumbs.html url=post.url mode="plain" -%}
+      {%- endif -%}
       {{post.basename}}
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.date | date: "%Y. %m. %d." }}
+      <a href="{{ post.url }}">{{- post.title -}}</a>
+      {{- post.date | date: "%Y. %m. %d." -}}
     </li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </div>

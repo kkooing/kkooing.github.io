@@ -1,6 +1,6 @@
 ---
-title:      "Jekyll 블로그 잡다 기록"
-tags:       [blog]
+title           : "Jekyll 블로그 잡다 기록"
+tags            : [blog]
 last_modified_at: 
 ---
 

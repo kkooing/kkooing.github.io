@@ -1,22 +1,22 @@
-{% for item in include.list %}
+{%- for item in include.list -%}
   <li>
-    {% assign target_url = item.url | prepend: "/" | prepend: include.url%}
-    {% if item.sub %}
-      {{ item.title }}
+    {%- assign target_url = item.url | prepend: "/" | prepend: include.url -%}
+    {%- if item.sub -%}
+      {{- item.title -}}
       <ul>
-        {% include category-menu.html list=item.sub url=target_url %}
+        {%- include category-menu.html list=item.sub url=target_url -%}
       </ul>
-    {% else %}
-        {% assign last-category = target_url | split: "/" | last %}
-        {% assign my_posts = site.posts | where:"categories", last-category %}
-        {% if {{my_posts.size}} != 0 %}
-          <a href="{{ target_url }}">{{ item.title }}</a> <span>({{my_posts.size}})</span>
-        {% else %}
-          {{ item.title }}
-        {% endif %}
-    {% endif %}
+    {%- else -%}
+        {%- assign last-category = target_url | split: "/" | last -%}
+        {%- assign my_posts = site.posts | where:"categories", last-category -%}
+        {%- if {{my_posts.size}} != 0 -%}
+          <a href="{{ target_url }}">{{- item.title -}}</a> <span>({{- my_posts.size -}})</span>
+        {%- else -%}
+          {{- item.title -}}
+        {%- endif -%}
+    {%- endif -%}
   </li>
-  {% if item.hr %}
+  {%- if item.hr -%}
     <hr/>
-  {% endif %}
-{% endfor %}
+  {%- endif -%}
+{%- endfor -%}
