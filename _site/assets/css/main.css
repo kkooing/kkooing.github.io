@@ -1,3 +1,4 @@
+/* Variables */
 body { margin: 0; background-color: AliceBlue; }
 
 #site-top { background-color: White; border-bottom: 1px solid Gainsboro; }
@@ -128,5 +129,3 @@ body { margin: 0; background-color: AliceBlue; }
 .highlight .ss { color: #a31515; }
 
 /* Literal.String.Symbol */
-
-/*# sourceMappingURL=main.css.map */

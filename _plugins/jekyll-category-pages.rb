@@ -1,5 +1,5 @@
 # /_site 의 post 폴더 구조에 카테고리 페이지를 생성한다.
-# post 와 category_page 모두 basename 이 index.html 이므로
+# post 와 category_page 모두 basename 이 index 이므로
 # post를 카테고리 계층 사이에 생성하면 안된다.
 
 module SamplePlugin
@@ -9,11 +9,13 @@ module SamplePlugin
     def generate(site)
 	  integrated_categories = {}
 	  site.posts.docs.each do |post|
-	    key_cat_string = post["categories"].join("/")
-	    if integrated_categories.has_key? key_cat_string
-		  integrated_categories[key_cat_string] << post
-		else
-		  integrated_categories[key_cat_string] = [post]
+	    for i in 0...post["categories"].size
+		  key_cat_string = post["categories"][0..i].join("/")
+		  if integrated_categories.has_key? key_cat_string
+		    integrated_categories[key_cat_string] << post
+		  else
+  		    integrated_categories[key_cat_string] = [post]
+		  end
 		end
       end
 	  integrated_categories.each do |category, posts|

@@ -26,6 +26,8 @@ comments:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 
+
+    
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -81,21 +83,6 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-# Where things are
-#source              : .
-#destination         : ./_site
-#collections_dir     : .
-#plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-#layouts_dir         : _layouts
-#data_dir            : _data
-#includes_dir        : _includes
-#sass:
-#  sass_dir: _sass
-#  style: compressed
-#collections:
-#  posts:
-#    output          : true
-
 # Handling Reading
 safe                : false
 include             : [".htaccess", "_pages"]
@@ -106,8 +93,8 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
 
 # Plugins
-plugins             : ["jekyll-sitemap", "jekyll-feed", "jekyll-seo-tag", "jekyll-include-cache"]
-whitelist           : ["jekyll-sitemap", "jekyll-feed", "jekyll-seo-tag", "jekyll-include-cache"]
+plugins             : ["jekyll-sitemap", "jekyll-feed", "jekyll-seo-tag", "jekyll-include-cache", "jekyll-algolia"]
+whitelist           : ["jekyll-sitemap", "jekyll-feed", "jekyll-seo-tag", "jekyll-include-cache", "jekyll-algolia"]
 
 # Outputting
 permalink           : /:categories/:title/
@@ -143,7 +130,8 @@ defaults:
     values:
       layout: "post"
   - scope:
-      type: categories  # select all category pages
+      path: ""
+      type: "categories"
     values:
       layout: category_page
       permalink: /:category/

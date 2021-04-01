@@ -6,7 +6,7 @@
   width: $site-width;
   margin: auto;
   padding: $section-margin 0;
-  @include float-hack;
+  @include clearfix;
 }
 
 // sidebar

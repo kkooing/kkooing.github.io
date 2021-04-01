@@ -4,7 +4,7 @@ body {
 }
 
 // float overflow 방지
-@mixin float-hack{
+@mixin clearfix{
   &::after{
     content: "";
     clear: both;
