@@ -1,0 +1,13 @@
+#site-bottom {
+  background-color: $footer-bg-color;
+  border-top: 1px solid $footer-border-color;
+}
+
+#footer {
+  width: $site-width;
+  height: $footer-height;
+  margin: auto;
+  .copyright {
+    text-align: center;
+  }
+}

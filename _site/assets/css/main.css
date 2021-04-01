@@ -1,24 +1,30 @@
-body { margin: 0; }
+body { margin: 0; background-color: AliceBlue; }
+
+#site-top { background-color: White; border-bottom: 1px solid Gainsboro; }
 
 #header { width: 1200px; height: 100px; margin: auto; }
 
-#middle-body { width: 1200px; margin: auto; }
+#site-middle { background-color: White; }
 
-#middle-body::after { content: ""; clear: both; display: table; }
+#body { width: 1200px; margin: auto; padding: 10px 0; }
 
-#footer { width: 1200px; height: footer-height; margin: auto; }
-
-#footer .copyright { text-align: center; }
+#body::after { content: ""; clear: both; display: table; }
 
 #sidebar { width: 200px; margin: auto; float: left; }
 
 #sidebar .sidebar-menu-title { font-weight: bold; }
 
-#sidebar hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: blue; }
+#sidebar hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: DarkGray; }
 
 #sidebar #categories ul { margin: 0; padding-left: 10px; list-style-type: none; }
 
-#main { width: 1000px; margin: auto; float: left; }
+#main { width: 990px; margin: auto; margin-left: 10px; float: left; }
+
+#site-bottom { background-color: AliceBlue; border-top: 1px solid Gainsboro; }
+
+#footer { width: 1200px; height: 100px; margin: auto; }
+
+#footer .copyright { text-align: center; }
 
 .skip-links ul { margin: 0; padding: 0; }
 
@@ -122,3 +128,5 @@ body { margin: 0; }
 .highlight .ss { color: #a31515; }
 
 /* Literal.String.Symbol */
+
+/*# sourceMappingURL=main.css.map */

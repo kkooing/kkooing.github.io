@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: $footer-bg-color;
 }
 
 // float overflow 방지
@@ -9,53 +10,4 @@ body {
     clear: both;
     display: table;
   }
-}
-
-#header {
-  width: $site-width;
-  height: $header-height;
-  margin: auto;
-}
-#middle-body {
-  width: $site-width;
-  margin: auto;
-  @include float-hack;
-}
-#footer {
-  width: $site-width;
-  height: footer-height;
-  margin: auto;
-  .copyright {
-    text-align: center;
-  }
-}
-
-#sidebar {
-  width: $sidebar-width;
-  margin: auto;
-  float: left;
-  .sidebar-menu-title {
-    font-weight: bold;
-  }
-  hr {
-    margin: 5px 5px 5px -5px;
-    border-style: dashed none none none;
-    border-width: 1px;
-    border-color: blue;
-  }
-  #pages {
-    
-  }
-  #categories {
-    ul {
-      margin: 0;
-      padding-left: 10px;
-      list-style-type: none;
-    }
-  }
-}
-#main {
-  width: $site-width - $sidebar-width;
-  margin: auto;
-  float: left;
 }

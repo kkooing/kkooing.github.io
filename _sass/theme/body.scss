@@ -1,0 +1,46 @@
+#site-middle {
+  background-color: $body-bg-color;
+}
+
+#body {
+  width: $site-width;
+  margin: auto;
+  padding: $section-margin 0;
+  @include float-hack;
+}
+
+// sidebar
+
+#sidebar {
+  width: $sidebar-width;
+  margin: auto;
+  float: left;
+  .sidebar-menu-title {
+    font-weight: bold;
+  }
+  hr {
+    margin: 5px 5px 5px -5px;
+    border-style: dashed none none none;
+    border-width: 1px;
+    border-color: $sidebar-cat-hr-color;
+  }
+  #pages {
+    
+  }
+  #categories {
+    ul {
+      margin: 0;
+      padding-left: 10px;
+      list-style-type: none;
+    }
+  }
+}
+
+// main
+
+#main {
+  width: $site-width - $sidebar-width - $section-margin;
+  margin: auto;
+  margin-left: $section-margin;
+  float: left;
+}
