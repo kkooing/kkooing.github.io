@@ -31,7 +31,7 @@ module SamplePlugin
       @site = site             # the current site instance.
       @base = site.source      # path to the source directory.
       @dir = category          # the directory the page will reside in.
-	  
+	  puts category
       # All pages have the same filename, so define attributes straight away.
       @basename = 'index'      # filename without the extension.
       @ext      = '.html'      # the extension.
