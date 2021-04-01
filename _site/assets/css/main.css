@@ -1,4 +1,28 @@
-.current { color: green; }
+body { margin: 0; }
+
+#header { width: 1200px; height: 100px; margin: auto; }
+
+#middle-body { width: 1200px; margin: auto; }
+
+#middle-body::after { content: ""; clear: both; display: table; }
+
+#footer { width: 1200px; height: footer-height; margin: auto; }
+
+#footer .copyright { text-align: center; }
+
+#sidebar { width: 200px; margin: auto; float: left; }
+
+#sidebar .sidebar-menu-title { font-weight: bold; }
+
+#sidebar hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: blue; }
+
+#sidebar #categories ul { margin: 0; padding-left: 10px; list-style-type: none; }
+
+#main { width: 1000px; margin: auto; float: left; }
+
+.skip-links ul { margin: 0; padding: 0; }
+
+.skip-links li { position: absolute; top: -5em; }
 
 .highlight .hll { background-color: #ffffcc; }
 

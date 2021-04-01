@@ -20,10 +20,10 @@ module SamplePlugin
       @site = site             # the current site instance.
       @base = site.source      # path to the source directory.
     
-    p_basename = posts.first.basename
+      p_basename = posts.first.basename
       p_special_dir = posts.first.collection.relative_directory
       p_superdirs = posts.first.relative_path.sub(p_special_dir, "")
-    p_superdirs = p_superdirs.sub(/#{category}.*/,"") << category
+      p_superdirs = p_superdirs.sub(/#{category}.*/,"") << category
       @dir = p_superdirs      # the directory the page will reside in.
     
       # All pages have the same filename, so define attributes straight away.

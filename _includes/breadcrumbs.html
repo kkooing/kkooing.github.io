@@ -1,28 +1,63 @@
+<!-- include.url: relative url string (/).../...(/*) -->
 {%- assign url = include.url -%}
 {%- assign url-begin = url | slice: 0 -%}
-
 {%- if url-begin == "/" -%}
   {%- assign url = url | remove_first: "/" -%}
 {%- endif -%}
 
 {%- assign url-array = url | append: "/" | split: "/" -%}
-{%- assign title_array = '' | split: '' -%}
+{%- assign title_array = "/" | split: "/" -%}
 
 {%- capture title_array -%}
 {%- include breadcrumbs-lookup list=site.data.navi.categories title_array=title_array url-array=url-array -%}
 {%- endcapture -%}
 
-{%- assign title_array = title_array | split: ", " -%}
+{%- assign title_array = title_array | split: "/" -%}
+{%- assign rt_num = title_array.size | minus: 1 -%}
 
+{%- assign rel_url_array = "" -%}
+{%- for i in (0..rt_num) -%}
+  {%- assign rel_url = "" -%}
+  {%- for j in (0..i) -%}
+    {%- assign rel_url = rel_url | append: "/" | append: url-array[j] -%}
+  {%- endfor -%}
+  {%- assign rel_url_array = rel_url_array | append: ":" | append: rel_url -%}
+{%- endfor -%}
+{%- assign rel_url_array = rel_url_array | remove_first: ":" | split: ":" -%}
 
-{% assign rel_url = "/" %}
-{% assign rt_num = title_array.size | minus: 1 %}
+{%- case include.mode -%}
+  {%- when "plain" -%}
 
-{% for i in (0..rt_num) %}
-  {% assign rel_url = rel_url | append: url-array[i] | append: "/" %}
-  {% if i != rt_num %}
-    {{ title_array[i] }} > 
-  {% else %}
-    <a href="{{ rel_url }}">{{ title_array[i] }}</a>
-  {% endif %}
-{% endfor %}
+    {%- for i in (0..rt_num) -%}
+      {%- if forloop.first == false -%}
+        <span>{{ site.data.ui-text[site.locale].breadcrumb_separator | default: ' > ' }}</span>
+      {%- endif -%}
+        <span>{{- title_array[i] -}}</span>
+    {%- endfor -%}
+
+  {%- when "link" -%}
+
+    {%- for i in (0..rt_num) -%}
+      {%- if forloop.first == false -%}
+        <span>{{ site.data.ui-text[site.locale].breadcrumb_separator | default: ' > ' }}</span>
+      {%- endif -%}
+        <a href="{{- rel_url_array[i] -}}">{{- title_array[i] -}}</a>
+    {%- endfor -%}
+  {%- when "last-link" -%}
+
+    {%- for i in (0..rt_num) -%}
+      {%- if forloop.first == false -%}
+        <span>{{ site.data.ui-text[site.locale].breadcrumb_separator | default: ' > ' }}</span>
+      {%- endif -%}
+      {%- if forloop.last == true -%}
+        <a href="{{- rel_url_array[i] -}}">{{- title_array[i] -}}</a>
+      {%- else -%}
+        <span>{{- title_array[i] -}}</span>
+      {%- endif -%}
+    {%- endfor -%}
+
+  {%- else -%}
+
+    {{- title_array | concat: rel_url_array | join: ":" -}}
+
+{%- endcase -%}

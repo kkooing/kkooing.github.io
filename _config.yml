@@ -94,7 +94,7 @@ author:
 #  style: compressed
 #collections:
 #  posts:
-#    output          : true #
+#    output          : true
 
 # Handling Reading
 safe                : false

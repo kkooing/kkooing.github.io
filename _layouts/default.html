@@ -11,19 +11,23 @@
   {% include_cached skip-links.html %}
   {% include_cached browser-upgrade.html %}
 
-  {% include header.html %}
+  <div cladd="site-top" id="site-top">
+    {% include header.html %}
+  </div>
 
-  <section class="center" id="center">
-    <div class="center_inner">
-      {{ content }}
-      
-      {% include featured-posts.html %}
+  <div class="site-middle" id="site-middle">
+    <div class="middle-body" id="middle-body">
       {% include sidebar.html %}
+      <main class="main" id="main">
+        {{ content }}
+        {% include featured-posts.html %}
+      </main>
     </div>
-  </section>
+  </div>
 
-  {% include footer.html %}
-
+  <div class="site-bottom" id="site-bottom">
+    {% include footer.html %}
+  </div>
 </body>
 
 </html>

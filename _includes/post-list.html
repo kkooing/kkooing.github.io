@@ -23,7 +23,7 @@
     {% for post in filtered-posts %}
     <li>
       {% if cat-array.size == 0 %}
-        {% include breadcrumbs.html url=post.url %}
+        {% include breadcrumbs.html url=post.url mode="plain" %}
       {% endif %}
       {{post.basename}}
       <a href="{{ post.url }}">{{ post.title }}</a>

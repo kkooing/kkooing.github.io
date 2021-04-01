@@ -6,9 +6,11 @@ pages:
   - title: Blog
     url: "/blog/"
 
+# Do not put \, /, :, *, ?, ", <, >, | in the title or url.
 categories:
   - title: "컴퓨터 언어"
     url  : "computer-language"
+    hr   : true
     sub  :
       - title: "프로그래밍"
         url  : "programming"
@@ -41,6 +43,7 @@ categories:
             url  : "container"
   - title: "IT"
     url  : "it"
+    hr   : true
     sub  :
       - title: "Jekyll 블로그"
         url  : "jekyll-blog"
@@ -50,9 +53,11 @@ categories:
         url  : "it-etc"
   - title: "역학"
     url  : "mechanics"
+    hr   : true
     sub  :
   - title: "설계"
     url  : "design"
+    hr   : true
     sub  :
   - title: "tool"
     url  : "tool"

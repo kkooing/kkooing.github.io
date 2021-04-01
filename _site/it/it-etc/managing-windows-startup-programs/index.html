@@ -30,11 +30,10 @@
 
 <body>
   <nav class="skip-links">
-  <h2>Skip links</h2>
   <ul>
-    <li><a href="#core" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#categories" class="screen-reader-shortcut">Skip to categories</a></li>
-    <li><a href="#pages" class="screen-reader-shortcut">Skip to pages</a></li>
+    <li><a href="#content" class="skip_to_content">Skip to content</a></li>
+    <li><a href="#categories" class="skip_to_categories">Skip to categories</a></li>
+    <li><a href="#pages" class="skip_to_pages">Skip to pages</a></li>
   </ul>
 </nav>
 
@@ -43,7 +42,8 @@
 <![endif]-->
 
 
-  <header class="header" id="header">
+  <div cladd="site-top" id="site-top">
+    <header class="header" id="header">
   <div class="header_inner">
     <div class="Hamburger_menu">
 
@@ -58,96 +58,10 @@
     </div>
   </div>
 </header>
+  </div>
 
-  <section class="center" id="center">
-    <div class="center_inner">
-      <main class="main" id="main">
-  <section class="content">
-    
-
-
-
-  
-  
-    IT > 
-  
-
-  
-  
-    <a href="/it/it-etc/">기타</a>
-  
-
-    <div class="post" id="core">
-      <div class="post-header">
-        <h1 class="post-title">윈도우 시작프로그램 관리</h1>
-        <div class="post-meta">
-          2021. 02. 24.
-        </div>
-      </div>
-      <div class="post-content">
-        <h3 id="관리자-계정">관리자 계정</h3>
-
-<p><code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</code>
-<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce</code>
-<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices</code>
-<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce</code>
-<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit</code></p>
-
-<p><code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run</code>
-<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\RunOnce</code></p>
-
-<h3 id="현재-유저">현재 유저</h3>
-
-<p><code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</code>
-<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce</code>
-<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices</code>
-<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce</code></p>
-
-<p><code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows</code></p>
-
-      </div>
-      <div class="post-footer">
-        <div class="tag-list">
-          
-          
-          <span class="tag_word">#regedit</span>
-          
-          <span class="tag_word">#startup</span>
-          
-          <span class="tag_word">#windows</span>
-          
-        </div>
-      </div>
-    </div>
-    <aside class="toc" id="toc">
-
-    </aside>
-  </section>
-  <section class="pagenation" id="pagenation">
-
-    
-    
-    
-    
-
-<div class="post-list">
-  <ul>
-    
-    <li>
-      
-      
-      <a href="/it/it-etc/managing-windows-startup-programs/">윈도우 시작프로그램 관리</a>
-      2021. 02. 24.
-    </li>
-    
-  </ul>
-</div>
-  </section>
-</main>
-      
-      <section class="featured-posts" id="featured-posts">
-
-</section>
+  <div class="site-middle" id="site-middle">
+    <div class="middle-body" id="middle-body">
       <aside class="sidebar" id="sidebar">
   <div class="profile" id="profile">
     <div class="Hamburger_menu">
@@ -161,6 +75,7 @@
   </div>
 
   <nav class="pages" id="pages">
+    <div class="sidebar-menu-title">page</div>
     <ul>
       
       <li>
@@ -179,6 +94,7 @@
   </nav>
 
   <nav class="categories" id="categories">
+    <div class="sidebar-menu-title">category</div>
     <ul>
       
   <li>
@@ -199,10 +115,11 @@
         
         
         
-          <a href="/computer-language/programming/cpp">C++ 1</a>
+          <a href="/computer-language/programming/cpp">C++</a> <span>(1)</span>
         
     
   </li>
+  
 
   <li>
     
@@ -210,10 +127,11 @@
         
         
         
-          Python 0
+          Python
         
     
   </li>
+  
 
   <li>
     
@@ -221,14 +139,16 @@
         
         
         
-          Ruby 0
+          Ruby
         
     
   </li>
+  
 
       </ul>
     
   </li>
+  
 
   <li>
     
@@ -242,10 +162,11 @@
         
         
         
-          Bash 0
+          Bash
         
     
   </li>
+  
 
   <li>
     
@@ -253,10 +174,11 @@
         
         
         
-          Batch 0
+          Batch
         
     
   </li>
+  
 
   <li>
     
@@ -264,14 +186,16 @@
         
         
         
-          PowerShell 0
+          PowerShell
         
     
   </li>
+  
 
       </ul>
     
   </li>
+  
 
   <li>
     
@@ -285,10 +209,11 @@
         
         
         
-          HTML 0
+          HTML
         
     
   </li>
+  
 
   <li>
     
@@ -296,10 +221,11 @@
         
         
         
-          css 0
+          css
         
     
   </li>
+  
 
   <li>
     
@@ -307,10 +233,11 @@
         
         
         
-          <a href="/computer-language/cl-etc/kramdown">Kramdown 2</a>
+          <a href="/computer-language/cl-etc/kramdown">Kramdown</a> <span>(2)</span>
         
     
   </li>
+  
 
   <li>
     
@@ -318,18 +245,23 @@
         
         
         
-          컨테이너 0
+          컨테이너
         
     
   </li>
+  
 
       </ul>
     
   </li>
+  
 
       </ul>
     
   </li>
+  
+    <hr/>
+  
 
   <li>
     
@@ -343,10 +275,11 @@
         
         
         
-          <a href="/it/jekyll-blog">Jekyll 블로그 3</a>
+          <a href="/it/jekyll-blog">Jekyll 블로그</a> <span>(3)</span>
         
     
   </li>
+  
 
   <li>
     
@@ -354,10 +287,11 @@
         
         
         
-          <a href="/it/raspberry-pi">라즈베리파이 1</a>
+          <a href="/it/raspberry-pi">라즈베리파이</a> <span>(1)</span>
         
     
   </li>
+  
 
   <li>
     
@@ -365,14 +299,18 @@
         
         
         
-          <a href="/it/it-etc">기타 1</a>
+          <a href="/it/it-etc">기타</a> <span>(1)</span>
         
     
   </li>
+  
 
       </ul>
     
   </li>
+  
+    <hr/>
+  
 
   <li>
     
@@ -380,10 +318,13 @@
         
         
         
-          역학 0
+          역학
         
     
   </li>
+  
+    <hr/>
+  
 
   <li>
     
@@ -391,10 +332,13 @@
         
         
         
-          설계 0
+          설계
         
     
   </li>
+  
+    <hr/>
+  
 
   <li>
     
@@ -408,10 +352,11 @@
         
         
         
-          AutoCAD 0
+          AutoCAD
         
     
   </li>
+  
 
   <li>
     
@@ -419,10 +364,11 @@
         
         
         
-          인벤터 0
+          인벤터
         
     
   </li>
+  
 
   <li>
     
@@ -430,29 +376,105 @@
         
         
         
-          Affinity Designer 0
+          Affinity Designer
         
     
   </li>
+  
 
       </ul>
     
   </li>
+  
 
     </ul>
   </nav>
 </aside>
+      <main class="main" id="main">
+        <section class="core" id="core">
+  <!-- include.url: relative url string (/).../...(/*) --><a href="/it">IT</a><span> > </span><a href="/it/it-etc">기타</a>
+  <div class="content" id="content">
+    <div class="post-header">
+      <h1 class="post-title">윈도우 시작프로그램 관리</h1>
+      <div class="post-meta">
+        2021. 02. 24.
+      </div>
     </div>
-  </section>
+    <div class="post-content">
+      <h3 id="관리자-계정">관리자 계정</h3>
 
-  <footer class="footer" id="footer">
+<p><code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\RunOnce</code></p>
+
+<h3 id="현재-유저">현재 유저</h3>
+
+<p><code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</code>
+<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce</code>
+<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices</code>
+<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows</code></p>
+
+    </div>
+    <div class="post-footer">
+      <div class="tag-list">
+        
+        
+        <span class="tag_word">#regedit</span>
+        
+        <span class="tag_word">#startup</span>
+        
+        <span class="tag_word">#windows</span>
+        
+      </div>
+    </div>
+  </div>
+  <aside class="toc" id="toc">
+
+  </aside>
+</section>
+<section class="pagenation" id="pagenation">
+
+  
+  
+
+  
+
+<div class="post-list">
+  <ul>
+    
+    <li>
+      
+      
+      <a href="/it/it-etc/managing-windows-startup-programs/">윈도우 시작프로그램 관리</a>
+      2021. 02. 24.
+    </li>
+    
+  </ul>
+</div>
+</section>
+        <section class="featured-posts" id="featured-posts">
+
+</section>
+      </main>
+    </div>
+  </div>
+
+  <div class="site-bottom" id="site-bottom">
+    <footer class="footer" id="footer">
   <div class="footer_inner">
     <div class="copyright">
       &copy; 2020-2021 <a href="https://github.com/kkooing" target="_blank" rel="nofollow">kkooing</a>.
     </div>
   </div>
 </footer>
-
+  </div>
 </body>
 
 </html>

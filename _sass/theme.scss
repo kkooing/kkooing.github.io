@@ -1,3 +1,6 @@
-.current {
-  color: green;
-}
+@import "theme/var";
+@import "theme/base";
+
+@import "theme/header";
+@import "theme/footer";
+@import "theme/skip-links";
