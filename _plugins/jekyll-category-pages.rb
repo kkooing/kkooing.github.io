@@ -9,6 +9,7 @@ module SamplePlugin
     def generate(site)
 	  integrated_categories = {}
 	  site.posts.docs.each do |post|
+	    puts post["categories"].join("/")
 	    for i in 0...post["categories"].size
 		  key_cat_string = post["categories"][0..i].join("/")
 		  if integrated_categories.has_key? key_cat_string
@@ -31,7 +32,7 @@ module SamplePlugin
       @site = site             # the current site instance.
       @base = site.source      # path to the source directory.
       @dir = category          # the directory the page will reside in.
-	  puts category
+	  
       # All pages have the same filename, so define attributes straight away.
       @basename = 'index'      # filename without the extension.
       @ext      = '.html'      # the extension.
