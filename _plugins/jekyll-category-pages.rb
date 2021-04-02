@@ -10,7 +10,7 @@ module SamplePlugin
 	  integrated_categories = {}
 	  site.posts.docs.each do |post|
 	    for i in 0...post["categories"].size
-		  key_cat_string = post["categories"][0..i].join("/").downcase
+		  key_cat_string = post["categories"][0..i].join("/")
 		  if integrated_categories.has_key? key_cat_string
 		    integrated_categories[key_cat_string] << post
 		  else
