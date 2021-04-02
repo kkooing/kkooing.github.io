@@ -7,7 +7,7 @@ module Jekyll
       superdirs = relative_path.sub(special_dir, "")
       superdirs = superdirs.split(File::SEPARATOR)
       superdirs.reject! { |c| c.empty? || c == special_dir || c == basename }
-      puts superdirs.join"/"
+      puts relative_path
       merge_data!({ "categories" => superdirs }, :source => "file path")
     end
   end
