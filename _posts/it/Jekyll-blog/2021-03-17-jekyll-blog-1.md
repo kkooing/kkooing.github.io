@@ -1,6 +1,6 @@
 ---
-title           : "GitHub Page 만들기"
-tags            : [blog]
+title           : "Jekyll로 GitHub Pages 블로그 만들기"
+tags            : [jekyll, github-pages, blog]
 last_modified_at: 
 ---
 
