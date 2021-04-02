@@ -9,9 +9,8 @@ module SamplePlugin
     def generate(site)
 	  integrated_categories = {}
 	  site.posts.docs.each do |post|
-	    puts post["categories"].join("/")
 	    for i in 0...post["categories"].size
-		  key_cat_string = post["categories"][0..i].join("/")
+		  key_cat_string = post["categories"][0..i].join("/").downcase
 		  if integrated_categories.has_key? key_cat_string
 		    integrated_categories[key_cat_string] << post
 		  else
