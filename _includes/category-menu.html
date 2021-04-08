@@ -1,22 +1,25 @@
 {%- for item in include.list -%}
-  <li>
-    {%- assign target_url = item.url | prepend: "/" | prepend: include.url -%}
-    {%- if item.sub -%}
-      {{- item.title -}}
-      <ul>
-        {%- include category-menu.html list=item.sub url=target_url -%}
-      </ul>
+{%- assign target_url = item.url | prepend: "/" | prepend: include.url -%}
+<li>
+  <div class="{{- target_url -}}">
+    {%- assign last-category = target_url | split: "/" | last -%}
+    {%- assign my_posts = site.posts | where:"categories", last-category -%}
+    {%- if {{my_posts.size}} != 0 -%}
+      <a href="{{ target_url }}">{{- item.title -}}</a>
+      {%- unless item.sub -%}
+        <span>({{- my_posts.size -}})</span>
+      {%- endunless -%}
     {%- else -%}
-        {%- assign last-category = target_url | split: "/" | last -%}
-        {%- assign my_posts = site.posts | where:"categories", last-category -%}
-        {%- if {{my_posts.size}} != 0 -%}
-          <a href="{{ target_url }}">{{- item.title -}}</a> <span>({{- my_posts.size -}})</span>
-        {%- else -%}
-          {{- item.title -}}
-        {%- endif -%}
+      {{- item.title -}}
     {%- endif -%}
-  </li>
-  {%- if item.hr -%}
-    <hr/>
+  </div>
+  {%- if item.sub -%}
+    <ul>
+      {%- include category-menu.html list=item.sub url=target_url -%}
+    </ul>
   {%- endif -%}
+</li>
+{%- if item.hr -%}
+  <hr/>
+{%- endif -%}
 {%- endfor -%}

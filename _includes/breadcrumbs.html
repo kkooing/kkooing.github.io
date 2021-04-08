@@ -9,7 +9,7 @@
 {%- assign title_array = "/" | split: "/" -%}
 
 {%- capture title_array -%}
-{%- include breadcrumbs-lookup list=site.data.navi.categories title_array=title_array url-array=url-array -%}
+{%- include breadcrumbs-lookup list=include.list title_array=title_array url-array=url-array -%}
 {%- endcapture -%}
 
 {%- assign title_array = title_array | split: "/" -%}
@@ -30,7 +30,7 @@
 
     {%- for i in (0..rt_num) -%}
       {%- if forloop.first == false -%}
-        <span>{{ site.data.ui-text[site.locale].breadcrumb_separator | default: ' > ' }}</span>
+        <span> > </span>
       {%- endif -%}
         <span>{{- title_array[i] -}}</span>
     {%- endfor -%}
@@ -39,7 +39,7 @@
 
     {%- for i in (0..rt_num) -%}
       {%- if forloop.first == false -%}
-        <span>{{ site.data.ui-text[site.locale].breadcrumb_separator | default: ' > ' }}</span>
+        <span> > </span>
       {%- endif -%}
         <a href="{{- rel_url_array[i] -}}">{{- title_array[i] -}}</a>
     {%- endfor -%}
@@ -47,7 +47,7 @@
 
     {%- for i in (0..rt_num) -%}
       {%- if forloop.first == false -%}
-        <span>{{ site.data.ui-text[site.locale].breadcrumb_separator | default: ' > ' }}</span>
+        <span> > </span>
       {%- endif -%}
       {%- if forloop.last == true -%}
         <a href="{{- rel_url_array[i] -}}">{{- title_array[i] -}}</a>

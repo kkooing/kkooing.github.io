@@ -1,20 +1,8 @@
-#site-middle {
-  background-color: $body-bg-color;
-}
-
-#body {
-  width: $site-width;
-  margin: auto;
-  padding: $section-margin 0;
-  @include clearfix;
-}
-
-// sidebar
-
 #sidebar {
   width: $sidebar-width;
-  margin: auto;
   float: left;
+
+  outline: 1px dashed black; // temporary
   .sidebar-menu-title {
     font-weight: bold;
   }
@@ -34,13 +22,4 @@
       list-style-type: none;
     }
   }
-}
-
-// main
-
-#main {
-  width: $site-width - $sidebar-width - $section-margin;
-  margin: auto;
-  margin-left: $section-margin;
-  float: left;
 }

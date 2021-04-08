@@ -1,4 +1,697 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-04-02T00:16:08+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">Jekyll 블로그 잡다 기록</title><link href="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2/" rel="alternate" type="text/html" title="Jekyll 블로그 잡다 기록" /><published>2021-03-31T00:00:00+00:00</published><updated>2021-03-31T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2/">&lt;h2 id=&quot;_sass-구조&quot;&gt;_sass 구조&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><summary type="html">_sass 구조</summary></entry><entry><title type="html">Liquid</title><link href="https://kkooing.github.io/it/jekyll-blog/liquid/" rel="alternate" type="text/html" title="Liquid" /><published>2021-03-19T00:00:00+00:00</published><updated>2021-03-19T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/liquid</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/liquid/">&lt;h2 id=&quot;1-liquid-핵심-요소&quot;&gt;1. Liquid 핵심 요소&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-04-08T11:16:28+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">색상</title><link href="https://kkooing.github.io/computer-language/etc/css/css-color/" rel="alternate" type="text/html" title="색상" /><published>2021-04-07T00:00:00+00:00</published><updated>2021-04-07T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-color</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-color/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
+
+&lt;p&gt;rgb(&lt;ruby&gt;60&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;, &lt;ruby&gt;179&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;, &lt;ruby&gt;113&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;)&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="css" /><category term="css" /><summary type="html">기본 문법</summary></entry><entry><title type="html">html 샘플</title><link href="https://kkooing.github.io/it/jekyll-blog/html-sample/" rel="alternate" type="text/html" title="html 샘플" /><published>2021-04-07T00:00:00+00:00</published><updated>2021-04-07T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/html-sample</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/html-sample/">&lt;h2 id=&quot;1-단락-요소&quot;&gt;1. 단락 요소&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1&gt;&amp;lt;h1&amp;gt;&lt;/h1&gt;
+&lt;h2&gt;&amp;lt;h2&amp;gt;&lt;/h2&gt;
+&lt;h3&gt;&amp;lt;h3&amp;gt;&lt;/h3&gt;
+&lt;h4&gt;&amp;lt;h4&amp;gt;&lt;/h4&gt;
+&lt;h5&gt;&amp;lt;h5&amp;gt;&lt;/h5&gt;
+&lt;h6&gt;&amp;lt;h6&amp;gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;address&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;address&gt;
+Written by &lt;a href=&quot;mailto:webmaster@example.com&quot;&gt;Jon Doe&lt;/a&gt;.&lt;br /&gt;
+Visit us at:&lt;br /&gt;
+Example.com&lt;br /&gt;
+Box 564, Disneyland&lt;br /&gt;
+USA
+&lt;/address&gt;
+
+&lt;h2 id=&quot;2-그룹-요소&quot;&gt;2. 그룹 요소&lt;/h2&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This is some text in a paragraph. This is some text in a paragraph.&lt;br /&gt;
+This is some text in a paragraph. This is some text in a paragraph.&lt;br /&gt;다음은 이러한 스택이 웹 디자인에 사용되는 방식과 모든 웹 페이지에 사용해야하는 이유를 포함하여 &quot;글꼴 스택&quot;이라는 CSS 용어의 정의입니다.
+&lt;/p&gt;
+&lt;p&gt;This is some text in a paragraph.&lt;/p&gt;
+&lt;p&gt;This is some text in a paragraph.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;caption&gt;Sans Serif&lt;/caption&gt;
+&lt;tr style=&quot;font-family: sans-serif; letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
+&lt;td&gt;sans-serif&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: Roboto', cursive;&quot;&gt;
+&lt;td&gt;Roboto&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Sans&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Noto Sans', cursive;&quot;&gt;
+&lt;td&gt;Noto Sans&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Noto Sans KR', cursive; font-weight: 400;&quot;&gt;
+&lt;td&gt;Noto Sans KR@400&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;font-family: 'Noto Sans KR', cursive; font-weight: 300;&quot;&gt;
+&lt;td&gt;Noto Sans KR@300&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Nanum Gothic', cursive;&quot;&gt;
+&lt;td&gt;Nanum Gothic&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;caption&gt;Serif&lt;/caption&gt;
+&lt;tr style=&quot;font-family: serif;&quot;&gt;
+&lt;td&gt;serif&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Serif&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Noto Serif', sans-serif;&quot;&gt;
+&lt;td&gt;Noto Serif&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Noto Serif KR', sans-serif; font-weight: 400;&quot;&gt;
+&lt;td&gt;Noto Serif KR@400&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;font-family: 'Noto Serif KR', sans-serif; font-weight: 300;&quot;&gt;
+&lt;td&gt;Noto Serif KR@300&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Nanum Gothic', cursive;&quot;&gt;
+&lt;td&gt;Nanum Gothic&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p style=&quot;font-family: sans-serif;&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+&lt;p style=&quot;font-family: Tahoma;&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+&lt;p style=&quot;font-family: 'Trebuchet MS';&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+&lt;p style=&quot;font-family: 'Roboto Mono';&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;font-family: 'Times New Roman';&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+&lt;p style=&quot;font-family: Georgia;&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+&lt;p style=&quot;font-family: Garamond;&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;font-family: 'Courier';&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+&lt;p style=&quot;font-family: 'Brush Script MT';&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=New+Tegomin&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+
+&lt;p style=&quot;font-family: 'New Tegomin';&quot;&gt;This is some text in a paragraph. 용어의 정의입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;pre&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;pre&gt;
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote cite=&quot;http://www.worldwildlife.org/who/index.html&quot;&gt;
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;dl&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Coffee&lt;/dt&gt;
+  &lt;dd&gt;Black hot drink&lt;/dd&gt;
+  &lt;dt&gt;Milk&lt;/dt&gt;
+  &lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;figure&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://www.w3schools.com/tags/pic_trulli.jpg&quot; alt=&quot;Trulli&quot; style=&quot;width:100%&quot; /&gt;
+  &lt;figcaption&gt;Fig.1 - Trulli, Puglia, Italy.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;3-택스트-요소&quot;&gt;3. 택스트 요소&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;a&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.w3schools.com&quot;&gt;Visit W3Schools.com!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;em&amp;gt; - 강조&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;You &lt;em&gt;have&lt;/em&gt; to hurry up!&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;strong&amp;gt; - 중요&lt;/span&gt;&lt;br /&gt;
+&lt;strong&gt;This text is important!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;small&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;This is some smaller text.&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;s&amp;gt; - 정정&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;Only 50 tickets left!&lt;/s&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;cite&amp;gt; - 작품명&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch. Painted in 1893.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;q&amp;gt; - 인용&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;WWF's goal is to:
+&lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;
+We hope they succeed.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;dfn&amp;gt; - 정의&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;dfn&gt;HTML&lt;/dfn&gt; is the standard markup language for creating web pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;abbr&amp;gt; - 약어, 두문자어&lt;/span&gt;&lt;br /&gt;
+The &lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;ruby&amp;gt; - 후리가나&lt;/span&gt;&lt;br /&gt;
+&lt;ruby&gt;
+漢 &lt;rt&gt; ㄏㄢˋ &lt;/rt&gt;
+&lt;/ruby&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;data&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;data value=&quot;21053&quot;&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;data value=&quot;21054&quot;&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;data value=&quot;21055&quot;&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;time&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Open from &lt;time&gt;10:00&lt;/time&gt; to &lt;time&gt;21:00&lt;/time&gt; every weekday.&lt;/p&gt;
+&lt;p&gt;I have a date on &lt;time datetime=&quot;2008-02-14 20:00&quot;&gt;Valentines day&lt;/time&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;code&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The HTML &lt;code&gt;button&lt;/code&gt; tag defines a clickable button.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;var&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The area of a triangle is: 1/2 x &lt;var&gt;b&lt;/var&gt; x &lt;var&gt;h&lt;/var&gt;, where &lt;var&gt;b&lt;/var&gt; is the base, and &lt;var&gt;h&lt;/var&gt; is the vertical height.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;samp&amp;gt; - 코드 출력&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;samp&gt;File not found.&lt;br /&gt;Press F1 to continue&lt;/samp&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;kbd&amp;gt; - 코드 입력&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; to copy text (Windows).&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;sub&amp;gt;, &amp;lt;sup&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This text contains &lt;sub&gt;subscript&lt;/sub&gt; text.&lt;/p&gt;
+&lt;p&gt;This text contains &lt;sup&gt;superscript&lt;/sup&gt; text.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;i&amp;gt; - 기울임 (무의미, 부각됨)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Lorem ipsum&lt;/i&gt; is the most popular filler text in history.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;b&amp;gt; - 두껍게 (무의미)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This is normal text - &lt;b&gt;and this is bold text&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;u&amp;gt; - 모호한 (지양됨)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This is some &lt;u&gt;mispeled&lt;/u&gt; text.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;mark&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;bdi&amp;gt;, &amp;lt;bdo&amp;gt;&lt;/span&gt;&lt;br /&gt;
+User &lt;bdi&gt;إيان&lt;/bdi&gt;: 90 points&lt;br /&gt;
+&lt;bdo dir=&quot;rtl&quot;&gt;
+This text will go right-to-left.
+&lt;/bdo&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;My mother has &lt;span style=&quot;color:blue&quot;&gt;blue&lt;/span&gt; eyes.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;To force&lt;br /&gt; line breaks&lt;br /&gt; in a text,&lt;br /&gt; use the br&lt;br /&gt; element.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;wbr&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery&lt;wbr /&gt;longwordthatwillbreakatspecific&lt;wbr /&gt;placeswhenthebrowserwindowisresized.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-편집-요소&quot;&gt;3. 편집 요소&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;ins&amp;gt;, &amp;lt;del&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;4-임베드-요소&quot;&gt;4. 임베드 요소&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;picture&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source media=&quot;(min-width:650px)&quot; srcset=&quot;https://www.w3schools.com/tags/img_white_flower.jpg&quot; /&gt;
+  &lt;source media=&quot;(min-width:465px)&quot; srcset=&quot;https://www.w3schools.com/tags/img_orange_flowers.jpg&quot; /&gt;
+  &lt;img src=&quot;img_orange_flowers.jpg&quot; alt=&quot;Flowers&quot; style=&quot;width:auto;&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;img&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&lt;img src=&quot;https://www.w3schools.com/tags/img_girl.jpg&quot; alt=&quot;Girl in a jacket&quot; width=&quot;500&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;iframe&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;http://192.168.0.152&quot; title=&quot;W3Schools Free Online Web Tutorials&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;embed&amp;gt; - 비추천&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;object&amp;gt;, &amp;lt;param&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;video&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;&quot;&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/movie.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/movie.ogg&quot; type=&quot;video/ogg&quot; /&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;audio&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/horse.ogg&quot; type=&quot;audio/ogg&quot; /&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/horse.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;track&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;&quot;&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/forrest_gump.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/forrest_gump.ogg&quot; type=&quot;video/ogg&quot; /&gt;
+  &lt;track src=&quot;https://www.w3schools.com/tags/fgsubtitles_en.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;
+  &lt;track src=&quot;https://www.w3schools.com/tags/fgsubtitles_no.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;no&quot; label=&quot;Norwegian&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;map&amp;gt;, &amp;lt;area&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&lt;img src=&quot;https://www.w3schools.com/tags/workplace.jpg&quot; alt=&quot;Workplace&quot; usemap=&quot;#workmap&quot; width=&quot;400&quot; height=&quot;379&quot; /&gt;&lt;/p&gt;
+&lt;map name=&quot;workmap&quot;&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;34,44,270,350&quot; alt=&quot;Computer&quot; href=&quot;computer.htm&quot; /&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;290,172,333,250&quot; alt=&quot;Phone&quot; href=&quot;phone.htm&quot; /&gt;
+  &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; alt=&quot;Cup of coffee&quot; href=&quot;coffee.htm&quot; /&gt;
+&lt;/map&gt;
+
+&lt;h2 id=&quot;5-표-요소&quot;&gt;5. 표 요소&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;table&amp;gt;, &amp;lt;caption&amp;gt;&lt;br /&gt;
+&amp;lt;thead&amp;gt;, &amp;lt;tbody&amp;gt;, &amp;lt;tfoot&amp;gt;,&lt;br /&gt;
+&amp;lt;tr&amp;gt;, &amp;lt;td&amp;gt;, &amp;lt;th&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;caption&gt;Monthly savings&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Month&lt;/th&gt;
+      &lt;th&gt;Savings&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;January&lt;/td&gt;
+      &lt;td&gt;$100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;February&lt;/td&gt;
+      &lt;td&gt;$80&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sum&lt;/td&gt;
+      &lt;td&gt;$180&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;colgroup&amp;gt;, &amp;lt;col&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col span=&quot;2&quot; style=&quot;background-color:red&quot; /&gt;
+    &lt;col style=&quot;background-color:yellow&quot; /&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;ISBN&lt;/th&gt;
+    &lt;th&gt;Title&lt;/th&gt;
+    &lt;th&gt;Price&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3476896&lt;/td&gt;
+    &lt;td&gt;My first HTML&lt;/td&gt;
+    &lt;td&gt;$53&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;6-폼-요소&quot;&gt;6. 폼 요소&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;form&amp;gt;, &amp;lt;label&amp;gt;, &amp;lt;input type=”“&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;form action=&quot;/action_page.php&quot;&gt;
+  &lt;label for=&quot;i-hidden&quot;&gt;text:&lt;/label&gt;
+  &lt;input type=&quot;hidden&quot; id=&quot;i-hidden&quot; name=&quot;i-hidden&quot; value=&quot;Submit&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-text&quot;&gt;text:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;i-text&quot; name=&quot;i-text&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-search&quot;&gt;search:&lt;/label&gt;
+  &lt;input type=&quot;search&quot; id=&quot;i-search&quot; name=&quot;i-search&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-tel&quot;&gt;tel:&lt;/label&gt;
+  &lt;input type=&quot;tel&quot; id=&quot;i-tel&quot; name=&quot;i-tel&quot; placeholder=&quot;123-45-678&quot; pattern=&quot;[0-9]{3}-[0-9]{2}-[0-9]{3}&quot; required=&quot;&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-url&quot;&gt;url:&lt;/label&gt;
+  &lt;input type=&quot;url&quot; id=&quot;i-url&quot; name=&quot;i-url&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-email&quot;&gt;email:&lt;/label&gt;
+  &lt;input type=&quot;email&quot; id=&quot;i-email&quot; name=&quot;i-email&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-password&quot;&gt;password:&lt;/label&gt;
+  &lt;input type=&quot;password&quot; id=&quot;i-password&quot; name=&quot;i-password&quot; value=&quot;sadf&quot; /&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;label for=&quot;i-date&quot;&gt;date:&lt;/label&gt;
+  &lt;input type=&quot;date&quot; id=&quot;i-date&quot; name=&quot;i-date&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-month&quot;&gt;month:&lt;/label&gt;
+  &lt;input type=&quot;month&quot; id=&quot;i-month&quot; name=&quot;i-month&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-week&quot;&gt;week:&lt;/label&gt;
+  &lt;input type=&quot;week&quot; id=&quot;i-week&quot; name=&quot;i-week&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-time&quot;&gt;time:&lt;/label&gt;
+  &lt;input type=&quot;time&quot; id=&quot;i-time&quot; name=&quot;i-time&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-datetime-local&quot;&gt;datetime-local:&lt;/label&gt;
+  &lt;input type=&quot;datetime-local&quot; id=&quot;i-datetime-local&quot; name=&quot;i-datetime-local&quot; /&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;label for=&quot;i-number&quot;&gt;number:&lt;/label&gt;
+  &lt;input type=&quot;number&quot; id=&quot;i-number&quot; name=&quot;i-number&quot; min=&quot;1&quot; max=&quot;5&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-range&quot;&gt;range:&lt;/label&gt;
+  &lt;input type=&quot;range&quot; id=&quot;i-range&quot; name=&quot;i-range&quot; min=&quot;0&quot; max=&quot;50&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-color&quot;&gt;color:&lt;/label&gt;
+  &lt;input type=&quot;color&quot; id=&quot;i-color&quot; name=&quot;i-color&quot; value=&quot;#ff0000&quot; /&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;vehicle1&quot; name=&quot;vehicle1&quot; value=&quot;Bike&quot; /&gt;
+  &lt;label for=&quot;vehicle1&quot;&gt; I have a bike&lt;/label&gt;&lt;br /&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;vehicle2&quot; name=&quot;vehicle2&quot; value=&quot;Car&quot; /&gt;
+  &lt;label for=&quot;vehicle2&quot;&gt; I have a car&lt;/label&gt;&lt;br /&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;vehicle3&quot; name=&quot;vehicle3&quot; value=&quot;Boat&quot; /&gt;
+  &lt;label for=&quot;vehicle3&quot;&gt; I have a boat&lt;/label&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; value=&quot;male&quot; /&gt;
+  &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;&lt;br /&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot; /&gt;
+  &lt;label for=&quot;female&quot;&gt;Female&lt;/label&gt;&lt;br /&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;other&quot; name=&quot;gender&quot; value=&quot;other&quot; /&gt;
+  &lt;label for=&quot;other&quot;&gt;Other&lt;/label&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;label for=&quot;i-file&quot;&gt;file:&lt;/label&gt;
+  &lt;input type=&quot;file&quot; id=&quot;i-file&quot; name=&quot;i-file&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-image&quot;&gt;image:&lt;/label&gt;
+  &lt;input type=&quot;image&quot; id=&quot;i-image&quot; name=&quot;i-image&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-button&quot;&gt;button:&lt;/label&gt;
+  &lt;input type=&quot;button&quot; onclick=&quot;alert('Hello World!')&quot; value=&quot;Click Me!&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-submit-reset&quot;&gt;submit, reset:&lt;/label&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+  &lt;input type=&quot;reset&quot; /&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;button&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&lt;button type=&quot;button&quot;&gt;Click Me!&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;select&amp;gt;, &amp;lt;optgroup&amp;gt;, &amp;lt;option&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;form action=&quot;/action_page.php&quot;&gt;
+  &lt;label for=&quot;cars&quot;&gt;Choose a car:&lt;/label&gt;
+  &lt;select name=&quot;cars&quot; id=&quot;cars&quot;&gt;
+    &lt;optgroup label=&quot;Swedish Cars&quot;&gt;
+      &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+      &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label=&quot;German Cars&quot;&gt;
+      &lt;option value=&quot;mercedes&quot;&gt;Mercedes&lt;/option&gt;
+      &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+    &lt;/optgroup&gt;
+  &lt;/select&gt;
+  &lt;br /&gt;&lt;br /&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;datalist&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;form action=&quot;/action_page.php&quot; method=&quot;get&quot;&gt;
+  &lt;label for=&quot;browser&quot;&gt;Choose your browser from the list:&lt;/label&gt;
+  &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; id=&quot;browser&quot; /&gt;
+  &lt;datalist id=&quot;browsers&quot;&gt;
+    &lt;option value=&quot;Edge&quot; /&gt;
+    &lt;option value=&quot;Firefox&quot; /&gt;
+    &lt;option value=&quot;Chrome&quot; /&gt;
+    &lt;option value=&quot;Opera&quot; /&gt;
+    &lt;option value=&quot;Safari&quot; /&gt;
+  &lt;/datalist&gt;
+  &lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;textarea&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;form action=&quot;/action_page.php&quot;&gt;
+&lt;label for=&quot;w3review&quot;&gt;Review of W3Schools:&lt;/label&gt;
+&lt;textarea id=&quot;w3review&quot; name=&quot;w3review&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;
+  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+  &lt;/textarea&gt;
+  &lt;br /&gt;&lt;br /&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;output&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;form oninput=&quot;x.value=parseInt(a.value)+parseInt(b.value)&quot;&gt;
+&lt;input type=&quot;range&quot; id=&quot;a&quot; value=&quot;50&quot; /&gt;
++&lt;input type=&quot;number&quot; id=&quot;b&quot; value=&quot;25&quot; /&gt;
+=&lt;output name=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;progress&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;progress id=&quot;file&quot; value=&quot;32&quot; max=&quot;100&quot;&gt; 32% &lt;/progress&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;meter&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&lt;label for=&quot;disk_c&quot;&gt;Disk usage C:&lt;/label&gt;&lt;/p&gt;
+&lt;meter id=&quot;disk_c&quot; value=&quot;2&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;2 out of 10&lt;/meter&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;fieldset&amp;gt;, &amp;lt;legend&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;form action=&quot;/action_page.php&quot;&gt;
+ &lt;fieldset&gt;
+  &lt;legend&gt;Personalia:&lt;/legend&gt;
+  &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+  &lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+  &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+  &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+  &lt;label for=&quot;birthday&quot;&gt;Birthday:&lt;/label&gt;
+  &lt;input type=&quot;date&quot; id=&quot;birthday&quot; name=&quot;birthday&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+ &lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;h2 id=&quot;7-상호작용-요소&quot;&gt;7. 상호작용 요소&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;details&amp;gt;, &amp;lt;summary&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Epcot Center&lt;/summary&gt;
+  &lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;dialog&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;dialog open=&quot;&quot;&gt;This is an open dialog window&lt;/dialog&gt;
+
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;h2 id=&quot;8-스크립트-요소&quot;&gt;8. 스크립트 요소&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;noscript&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&amp;lt;noscript&amp;gt;Sorry, your browser does not support JavaScript!&amp;lt;/noscript&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><summary type="html">1. 단락 요소 &amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt; &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt;</summary></entry><entry><title type="html">문법</title><link href="https://kkooing.github.io/computer-language/etc/css/css-syntax/" rel="alternate" type="text/html" title="문법" /><published>2021-04-06T00:00:00+00:00</published><updated>2021-04-06T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-syntax</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-syntax/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
+
+&lt;p&gt;h1 {color: blue; font-size: 12px;}&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;문자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;이름&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;\&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;backslash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;period&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;*&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;asterisk&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;_&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;underscore&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;+&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;plus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;minus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;=&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;equal sign&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;`&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;back tick&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;()[]{}&amp;lt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;left and right parens/brackets/braces/angle brackets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;#&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;hash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;!&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;bang&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;&amp;lt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;left guillemet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;right guillemet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;:&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;colon&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;|&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pipe&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&quot;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;double quote&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;'&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;single quote&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;$&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;dollar sign&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="css" /><category term="css" /><summary type="html">기본 문법</summary></entry><entry><title type="html">Jekyll 블로그 잡다 기록</title><link href="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2/" rel="alternate" type="text/html" title="Jekyll 블로그 잡다 기록" /><published>2021-03-31T00:00:00+00:00</published><updated>2021-03-31T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2/">&lt;h2 id=&quot;플러그인-추가&quot;&gt;플러그인 추가&lt;/h2&gt;
+&lt;p&gt;/_posts 폴더 아래에 카테고리별 폴더를 만들어서 게시물을 분류하려고 한다. Jekyll은 폴더 안에 포스트를 넣으면 해당 포스트에 자동으로 카테고리를 달아준다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;폴더 구조:
+./
+├── cat-A/
+│   ├── cat-1/
+│   │   └── _posts/
+│   │       └── 2021-03-07-sample-post-1.md
+│   └── cat-2/
+│       └── _posts/
+│           └── 2021-03-21-sample-post-2.md
+└── _posts/
+    ├── cat-B/
+    │   └── 2021-03-17-sample-post-3.md
+    └── cat-C/
+        └── 2021-04-02-sample-post-4.md
+
+결과:
+  sample-post-1의 카테고리: [cat-A, cat-1]
+  sample-post-2의 카테고리: [cat-A, cat-2]
+  sample-post-3의 카테고리: []
+  sample-post-4의 카테고리: []
+
+결론:
+  _posts/ 아래의 폴더는 무시된다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이러한 결과에 대해서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Jekyll::Document::categories_from_path&lt;/code&gt;에도 설명되어있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Jekyll::Document::categories_from_path
+
+# Add superdirectories of the special_dir to categories.
+# In the case of es/_posts, 'es' is added as a category.
+# In the case of _posts/es, 'es' is NOT added as a category.
+#
+# Returns nothing.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;플러그인을 통해 다음의 결과를 얻으려 한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;폴더 구조:
+./
+└── _posts/
+    ├── cat-A/
+    │   ├── cat-1/
+    │   │   └── 2021-03-07-sample-post-1.md
+    │   └── cat-2/
+    │       └── 2021-03-21-sample-post-2.md
+    ├── cat-B/
+    │   └── 2021-03-17-sample-post-3.md
+    └── cat-C/
+        └── 2021-04-02-sample-post-4.md
+
+결과:
+  sample-post-1의 카테고리: [cat-A, cat-1]
+  sample-post-2의 카테고리: [cat-A, cat-2]
+  sample-post-3의 카테고리: [cat-B]
+  sample-post-4의 카테고리: [cat-C]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;_plugins/에 다음 파일을 생성한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// jekyll-auto-cat.rb
+
+module Jekyll
+  class Document
+    def categories_from_path(special_dir)
+      superdirs = relative_path.sub(special_dir, &quot;&quot;).downcase
+      superdirs = superdirs.split(File::SEPARATOR)
+      superdirs.reject! { |c| c.empty? || c == special_dir || c == basename }
+      merge_data!({ &quot;categories&quot; =&amp;gt; superdirs }, :source =&amp;gt; &quot;file path&quot;)
+    end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;분명히 소문자로 폴더명을 지었고 로컬에서 블로그를 실행하면 아무 문제 없는데 git에 올릴때는 알 수 없는 이유로 대문자 카테고리가 추가 생성되는 오류가 있었다. 그래서 일단은 4번쨰 줄의 downcase로 임시조치해 놓았다.&lt;/p&gt;
+
+&lt;h2 id=&quot;html-구조&quot;&gt;HTML 구조&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="jekyll" /><category term="github-pages" /><category term="blog" /><summary type="html">플러그인 추가 /_posts 폴더 아래에 카테고리별 폴더를 만들어서 게시물을 분류하려고 한다. Jekyll은 폴더 안에 포스트를 넣으면 해당 포스트에 자동으로 카테고리를 달아준다.</summary></entry><entry><title type="html">Liquid</title><link href="https://kkooing.github.io/it/jekyll-blog/liquid/" rel="alternate" type="text/html" title="Liquid" /><published>2021-03-19T00:00:00+00:00</published><updated>2021-03-19T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/liquid</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/liquid/">&lt;h2 id=&quot;1-liquid-핵심-요소&quot;&gt;1. Liquid 핵심 요소&lt;/h2&gt;
 
 &lt;p&gt;Liquid 코드는 object, tag, filter의 세가지로 정리할 수 있다.&lt;/p&gt;
 
@@ -190,7 +883,7 @@
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><summary type="html">1. Liquid 핵심 요소</summary></entry><entry><title type="html">GitHub Page 만들기</title><link href="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1/" rel="alternate" type="text/html" title="GitHub Page 만들기" /><published>2021-03-17T00:00:00+00:00</published><updated>2021-03-17T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1/">&lt;h2 id=&quot;루비-설치&quot;&gt;루비 설치&lt;/h2&gt;
+&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><summary type="html">1. Liquid 핵심 요소</summary></entry><entry><title type="html">Jekyll로 GitHub Pages 블로그 만들기</title><link href="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1/" rel="alternate" type="text/html" title="Jekyll로 GitHub Pages 블로그 만들기" /><published>2021-03-17T00:00:00+00:00</published><updated>2021-03-17T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1/">&lt;h2 id=&quot;루비-설치&quot;&gt;루비 설치&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -203,7 +896,7 @@
 
 &lt;p&gt;블로그 홈에서&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install bundler jekyll minima jekyll-feed tzinfo-data rdiscount
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><summary type="html">루비 설치</summary></entry><entry><title type="html">윈도우 시작프로그램 관리</title><link href="https://kkooing.github.io/it/etc/managing-windows-startup-programs/" rel="alternate" type="text/html" title="윈도우 시작프로그램 관리" /><published>2021-02-24T00:00:00+00:00</published><updated>2021-02-24T02:14:37+00:00</updated><id>https://kkooing.github.io/it/etc/managing-windows-startup-programs</id><content type="html" xml:base="https://kkooing.github.io/it/etc/managing-windows-startup-programs/">&lt;h3 id=&quot;관리자-계정&quot;&gt;관리자 계정&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="jekyll" /><category term="github-pages" /><category term="blog" /><summary type="html">루비 설치</summary></entry><entry><title type="html">윈도우 시작프로그램 관리</title><link href="https://kkooing.github.io/it/etc/managing-windows-startup-programs/" rel="alternate" type="text/html" title="윈도우 시작프로그램 관리" /><published>2021-02-24T00:00:00+00:00</published><updated>2021-02-24T02:14:37+00:00</updated><id>https://kkooing.github.io/it/etc/managing-windows-startup-programs</id><content type="html" xml:base="https://kkooing.github.io/it/etc/managing-windows-startup-programs/">&lt;h3 id=&quot;관리자-계정&quot;&gt;관리자 계정&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&lt;/code&gt;
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce&lt;/code&gt;
@@ -1009,91 +1702,4 @@ int는 signed int와 완전히 동일하다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;void-타입&quot;&gt;void 타입&lt;/h2&gt;
 
-&lt;p&gt;함수와 포인터의 타입으로만 사용 가능하다.&lt;br /&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="programming" /><category term="cpp" /><category term="C++" /><summary type="html">불리언 타입</summary></entry><entry><title type="html">curl로 iptime 공유기 공인 IP 주소 가져오기</title><link href="https://kkooing.github.io/it/raspberry-pi/get-ip-address-by-curl-in-iptime-router/" rel="alternate" type="text/html" title="curl로 iptime 공유기 공인 IP 주소 가져오기" /><published>2020-12-04T00:00:00+00:00</published><updated>2021-02-22T08:48:19+00:00</updated><id>https://kkooing.github.io/it/raspberry-pi/get-ip-address-by-curl-in-iptime-router</id><content type="html" xml:base="https://kkooing.github.io/it/raspberry-pi/get-ip-address-by-curl-in-iptime-router/">&lt;h2 id=&quot;0-주제&quot;&gt;0. 주제&lt;/h2&gt;
-&lt;p&gt;curl을 통해 iptime 공유기 공인 IP 주소를 가져온다.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-서론&quot;&gt;1. 서론&lt;/h2&gt;
-&lt;p&gt;우선 인터넷에 연결이 되어 있다면 자신의 공인 IP를 쉘에 불러오는것은 간단하게 할 수 있다.&lt;sup id=&quot;fnref:IP-addr&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:IP-addr&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl ifconfig.co
-curl ifconfig.me
-curl icanhazip.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;하지만 VPN을 사용하는 환경에서는 이 방법을 사용할 수 없거나 IP를 조회할 때마다 우회를 해야하는 문제가 발생했다. 그래서 나의 경우에는 공유기를 거처 네트워크에 접속되어 있고, 공유기에서도 IP 주소를 확인할 수 있다는 것을 이용하기로 했다.&lt;/p&gt;
-
-&lt;p&gt;내가 사용하는 iptime 공유기 N704V3에는 기본방식, 세션방식의 두 가지 로그인 인증 방식이 있다. 기본방식을 선택하면 HTTP Basic 인증이 사용되며, 공유기에 로그인 할 필요도 없이 공유기 접속 첫 페이지에 외부 IP가 노출된다. 하지만 세션방식은 별도의 로그인 페이지가 열리고 로그인 이후 외부 IP를 볼 수 있다.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot; style=&quot;display: block; text-align: center;&quot;&gt;
-  &lt;a href=&quot;https://1.bp.blogspot.com/-gV8bLJ7y_Bw/YDNHHNFun7I/AAAAAAAAAZQ/xgp2_-xtHZ0183is4dKjDlzfEN8_MHsNwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png&quot; style=&quot;display: initial;&quot;&gt;
-    &lt;img src=&quot;https://1.bp.blogspot.com/-gV8bLJ7y_Bw/YDNHHNFun7I/AAAAAAAAAZQ/xgp2_-xtHZ0183is4dKjDlzfEN8_MHsNwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png&quot; alt=&quot;기본방식 첫 페이지&quot; style=&quot;width: auto;&quot; /&gt;
-  &lt;/a&gt;&lt;figcaption&gt;
-      ▲ 기본방식 첫 페이지
-
-    &lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot; style=&quot;display: block; text-align: center;&quot;&gt;
-  &lt;a href=&quot;https://1.bp.blogspot.com/-8ttTKvdcdwI/YDNHHKMLEsI/AAAAAAAAAZU/bXg7D74uq-M6YS5uFHwi-7pgVQ_WJLMVQCLcBGAsYHQ/s0/%25EC%2584%25B8%25EC%2585%2598%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png&quot; style=&quot;display: initial;&quot;&gt;
-    &lt;img src=&quot;https://1.bp.blogspot.com/-8ttTKvdcdwI/YDNHHKMLEsI/AAAAAAAAAZU/bXg7D74uq-M6YS5uFHwi-7pgVQ_WJLMVQCLcBGAsYHQ/s0/%25EC%2584%25B8%25EC%2585%2598%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png&quot; alt=&quot;세션방식 첫 페이지&quot; style=&quot;width: auto;&quot; /&gt;
-  &lt;/a&gt;&lt;figcaption&gt;
-      ▲ 세션방식 첫 페이지
-
-    &lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;p&gt;기본방식 인증을 선택하면 그냥 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl '게이트웨이 주소'&lt;/code&gt; 하면 IP 주소를 얻을 수 있겠지만, 그냥 심미적인 이유에서 세션방식이 더 마음에 들었다. (기본방식도 충분 하겠지만 아마도 세션방식이 보안상 더 좋지 않을까?)&lt;/p&gt;
-
-&lt;figure class=&quot;&quot; style=&quot;display: block; text-align: center;&quot;&gt;
-  &lt;a href=&quot;https://1.bp.blogspot.com/-B6jO3BJv9Ec/YDNHHGggDfI/AAAAAAAAAZM/ktTIKeSFt4IY9zEyFVUNIckPkAmhpnNQwCLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png&quot; style=&quot;display: initial;&quot;&gt;
-    &lt;img src=&quot;https://1.bp.blogspot.com/-B6jO3BJv9Ec/YDNHHGggDfI/AAAAAAAAAZM/ktTIKeSFt4IY9zEyFVUNIckPkAmhpnNQwCLcBGAsYHQ/s0/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8%2B%25EC%259D%25B8%25EC%25A6%259D%2B%25EB%25B0%25A9%25EB%25B2%2595%2B%25EC%2584%25A4%25EC%25A0%2595.png&quot; alt=&quot;로그인 인증 방법 설정&quot; style=&quot;width: auto;&quot; /&gt;
-  &lt;/a&gt;&lt;figcaption&gt;
-      ▲ 로그인 인증 방법 설정
-
-    &lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;p&gt;▼ 조건&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;iptime 공유기 (모델 N704V3, 펌웨어 12.07.6)&lt;/li&gt;
-  &lt;li&gt;세션방식 로그인&lt;/li&gt;
-  &lt;li&gt;Captcha 없음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2-본론&quot;&gt;2. 본론&lt;/h2&gt;
-&lt;p&gt;브라우저에 기본 게이트웨이 주소(나는 192.168.0.1)를 입력하면 아래와 같은 순서로 리다이렉트 된다.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;게이트웨이 주소 &lt;em&gt;192.168.0.1&lt;/em&gt; 입력&lt;br /&gt;
-1) [이동] &lt;em&gt;http://192.168.0.1/login/login.cgi&lt;/em&gt;&lt;br /&gt;
-2) [리다이렉트] &lt;em&gt;http://192.168.0.1/sess-bin/login_session.cgi&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;아이디, 비밀번호를 입력하고 로그인&lt;br /&gt;
-1) [이동] &lt;em&gt;http://192.168.0.1/sess-bin/login_handler.cgi&lt;/em&gt;&lt;br /&gt;
-2) [리다이렉트] &lt;em&gt;http://192.168.0.1/sess-bin/login.cgi?&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;위 과정 2-1[이동]의 주소에 로그인 정보를 넘겨주면 쿠키 정보가 들어있는 페이지를 얻을 수 있다. 원래 안보이는 주소지만 크롬 개발자 도구를 통해 구했다. 결과 페이지를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sed&lt;/code&gt;로 필터링 해서 쿠키 문자열만 가져올 수도 있다.&lt;/p&gt;
-
-&lt;p&gt;▼ 로그인 하고 쿠키 가져오기 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sed&lt;/code&gt;도 사용)&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-s4&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'http://192.168.0.1/sess-bin/login_handler.cgi'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Referer: http://192.168.0.1'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--data-urlencode&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'username=${id}'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--data-urlencode&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'$passwd={pw}'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-En&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s/^setCookie&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'(.*)'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/p&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${id}&lt;/code&gt; : 로그인 아이디&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${pw}&lt;/code&gt; : 로그인 비밀번호&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;위 코드에서 얻은 쿠키는 세션이 유지되는 동안에 사용할 수 있다. 이번에는 맨 위의 과정 1-1[이동]의 주소를 사용한다. 마찬가지로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sed&lt;/code&gt;로 필터링 해서 IP 주소만 가져올 수 있다.&lt;/p&gt;
-
-&lt;p&gt;▼ 로그인 이후 페이지 가져오기 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sed&lt;/code&gt;도 사용)&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-s4&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'http://192.168.0.1/login/login.cgi'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Cookie: efm_session_id=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cookie&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-En&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s,.*동적 IP - 연결됨 - (.*).*,&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;,p&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${cookie}&lt;/code&gt; : 쿠키&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-결론&quot;&gt;3. 결론&lt;/h2&gt;
-&lt;p&gt;이제 타 사이트에 접속하지 않고도 공인 IP를 알 수 있게 되었다. 공유기에 로그인을 할 수 있으니 IP 말고 다른 정보를 조회하는 데에도 유용하게 사용할 수 있을것 같다. 추후에 공유기 제조사에서 펌웨어를 업그레이드하면 이 방법이 소용없을 수도 있지만… 그땐 그냥 기본인증으로 사용해야겠다.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;(의문점: 공유기에 로그인 기록이 안 남는것 같다…)&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;a-참고&quot;&gt;A. 참고&lt;/h2&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:IP-addr&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;em&gt;Tecmint: Linux Howtos, Tutorials &amp;amp; Guides, “4 Ways to Find Server Public IP Address in Linux Terminal”, &lt;a href=&quot;https://www.tecmint.com/find-linux-server-public-ip-address/&quot;&gt;https://www.tecmint.com/find-linux-server-public-ip-address/&lt;/a&gt;&lt;/em&gt; &lt;a href=&quot;#fnref:IP-addr&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="raspberry-pi" /><category term="bash" /><category term="IP" /><category term="curl" /><category term="공유기" /><category term="iptime" /><summary type="html">0. 주제 curl을 통해 iptime 공유기 공인 IP 주소를 가져온다.</summary></entry></feed>
+&lt;p&gt;함수와 포인터의 타입으로만 사용 가능하다.&lt;br /&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="programming" /><category term="cpp" /><category term="C++" /><summary type="html">불리언 타입</summary></entry></feed>

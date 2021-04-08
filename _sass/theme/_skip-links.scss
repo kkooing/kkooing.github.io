@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
   }
-  li{
     position: absolute;
-    top: -5em;
-  }
+    top: (-$line-height-html * 3em);
 }

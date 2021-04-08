@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<section class="core">
-  {% include breadcrumbs.html url=page.url mode="link" %}
+<div class="post">
+  {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url mode="link" %}
   <section class="content" id="content">
     <div class="post-header">
       <h1 class="post-title">{{ page.title }}</h1>
@@ -25,9 +25,11 @@ layout: default
   <aside class="toc" id="toc">
 
   </aside>
-</section>
-<section class="pagenation" id="pagenation">
-
+</div>
+<section class="pagenation">
+  <div>
+    {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url mode="link" %}
+  </div>
   {% assign post-url = page.url | remove_first: "/" | split: "/" %}
   {% assign post-url-num = post-url.size | minus: 2 %}
   {%- assign cat-url = "" -%}

@@ -1,17 +1,41 @@
 /* Variables */
+html { box-sizing: border-box; min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 1.25em; letter-spacing: 0.02em; word-spacing: 0em; line-height: 1.6; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
 body { margin: 0; background-color: AliceBlue; }
 
-#site-top { background-color: White; border-bottom: 1px solid Gainsboro; }
+h1, h2, h3, h4, h5, h6 { margin: 2em 0 0.5em; font-weight: bold; }
 
-#header { width: 1200px; height: 100px; margin: auto; }
+h1 { font-size: 2em; }
 
-#site-middle { background-color: White; }
+h2 { font-size: 1.7em; }
 
-#body { width: 1200px; margin: auto; padding: 10px 0; }
+h3 { font-size: 1.4em; }
 
-#body::after { content: ""; clear: both; display: table; }
+h4 { font-size: 1.2em; }
 
-#sidebar { width: 200px; margin: auto; float: left; }
+h5 { font-size: 1.1em; }
+
+h6 { font-size: 1em; }
+
+#header { background-color: White; border-bottom: 1px solid Gainsboro; }
+
+#header .header__inner-wrap { margin: auto; max-width: 1200px; height: 100px; }
+
+#center { background-color: White; }
+
+#center .center__inner-wrap { margin: auto; max-width: 1200px; padding: 10px 0; }
+
+#center .center__inner-wrap::after { content: ""; clear: both; display: table; }
+
+#footer { background-color: AliceBlue; border-top: 1px solid Gainsboro; }
+
+#footer .footer__inner-wrap { margin: auto; max-width: 1200px; height: 100px; }
+
+#footer .footer__inner-wrap .copyright { text-align: center; }
+
+#sidebar { width: 250px; float: left; outline: 1px dashed black; }
 
 #sidebar .sidebar-menu-title { font-weight: bold; }
 
@@ -19,17 +43,11 @@ body { margin: 0; background-color: AliceBlue; }
 
 #sidebar #categories ul { margin: 0; padding-left: 10px; list-style-type: none; }
 
-#main { width: 990px; margin: auto; margin-left: 10px; float: left; }
+#main { max-width: 940px; margin: 0 10px 0 260px; outline: 1px dashed black; }
 
-#site-bottom { background-color: AliceBlue; border-top: 1px solid Gainsboro; }
-
-#footer { width: 1200px; height: 100px; margin: auto; }
-
-#footer .copyright { text-align: center; }
+.skip-links { position: absolute; top: -4.8em; }
 
 .skip-links ul { margin: 0; padding: 0; }
-
-.skip-links li { position: absolute; top: -5em; }
 
 .highlight .hll { background-color: #ffffcc; }
 

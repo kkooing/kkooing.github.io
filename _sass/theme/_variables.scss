@@ -1,20 +1,40 @@
-// length
+// size
 $site-width: 1200px;
-$sidebar-width: 200px;
+
+$sidebar-width: 250px;
+$toc-width: 250px;
 
 $header-height: 100px;
 $footer-height: 100px;
 
 $section-margin: 10px;
 
+// breakpoint
+$bp-medium: 992px;
+$bp-small: 600px;
+
 // color
 $header-bg-color: White;
 $header-border-color: Gainsboro;
 
-$body-bg-color: White;
+$center-bg-color: White;
 
 $footer-bg-color: AliceBlue;
 $footer-border-color: Gainsboro;
 
 // sideber
 $sidebar-cat-hr-color: DarkGray;
+
+// font
+$font-family-html: 'Noto Sans KR', sans-serif;
+$font-size-html: 1.2500em;
+$letter-spacing-html: 0.02em;
+$word-spacing-html: 0.0em;
+$line-height-html: 1.6;
+
+$font-size-h1: 2em;
+$font-size-h2: 1.7em;
+$font-size-h3: 1.4em;
+$font-size-h4: 1.2em;
+$font-size-h5: 1.1em;
+$font-size-h6: 1em;

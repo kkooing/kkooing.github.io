@@ -1,0 +1,6 @@
+#main {
+  max-width: $site-width - $sidebar-width - $section-margin;
+  margin: 0 $section-margin 0 ($sidebar-width + $section-margin);
+
+  outline: 1px dashed black; // temporary
+}

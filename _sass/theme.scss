@@ -3,9 +3,10 @@
 @import "theme/variables";
 
 @import "theme/base";
+@import "theme/mixins";
 
-@import "theme/header";
-@import "theme/body";
-@import "theme/footer";
+@import "theme/layout";
+@import "theme/sidebar";
+@import "theme/main";
 
 @import "theme/skip-links";

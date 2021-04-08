@@ -1,0 +1,32 @@
+#header {
+  background-color: $header-bg-color;
+  border-bottom: 1px solid $header-border-color;
+  .header__inner-wrap {
+    margin: auto;
+    max-width: $site-width;
+    height: $header-height;
+  }
+}
+
+#center {
+  background-color: $center-bg-color;
+  .center__inner-wrap {
+    margin: auto;
+    max-width: $site-width;
+    padding: $section-margin 0;
+    @include clearfix;
+  }
+}
+
+#footer {
+  background-color: $footer-bg-color;
+  border-top: 1px solid $footer-border-color;
+  .footer__inner-wrap {
+    margin: auto;
+    max-width: $site-width;
+    height: $footer-height;
+    .copyright {
+      text-align: center;
+    }
+  }
+}

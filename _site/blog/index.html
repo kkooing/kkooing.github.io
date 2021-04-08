@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+
 
 <link type="application/atom+xml" rel="alternate" href="https://kkooing.github.io/feed.xml" title="kkooing" />
 
@@ -42,69 +47,94 @@
 <![endif]-->
 
 
-  <div cladd="site-top" id="site-top">
-    <header class="header" id="header">
-  <div class="header_inner">
-    <div class="Hamburger_menu">
+  <header class="header" id="header">
+    <div class="header__inner-wrap">
+      <div class="Hamburger_menu">
 
-    </div>
-    <div class="site_name">
-      <a class="site_name" href="/">kkooing</a>
-    </div>
-    <div class="search_blog">
+</div>
+<div class="site_name">
+  <a class="site_name" href="/">kkooing</a>
+</div>
+<div class="search_blog">
 
+</div>
     </div>
-  </div>
-</header>
-  </div>
+  </header>
 
-  <div class="site-middle" id="site-middle">
-    <div class="body" id="body">
+  <section class="center" id="center">
+    <div class="center__inner-wrap">
+
       <aside class="sidebar" id="sidebar">
-  <div class="profile" id="profile">
-    <div class="Hamburger_menu">
+        <div class="profile" id="profile">
+  <div class="Hamburger_menu">
 
-    </div>
-    <div class="site_name">
-      <a class="site_name" href="/">kkooing</a>
-    </div>
   </div>
+  <div class="site_name">
+    <a class="site_name" href="/">kkooing</a>
+  </div>
+</div>
 
-  <nav class="pages" id="pages">
-    <div class="sidebar-menu-title">page</div>
-    <ul><li>
-        <a href="/">home</a>
-      </li><li>
-        <a href="/about/">About</a>
-      </li><li>
-        <a href="/blog/">Blog</a>
-      </li></ul>
-  </nav>
+<nav class="pages" id="pages">
+  <div class="sidebar-menu-title">page</div>
+  <ul><li>
+      <a href="/">home</a>
+    </li><li>
+      <a href="/about/">About</a>
+    </li><li>
+      <a href="/blog/">Blog</a>
+    </li></ul>
+</nav>
 
-  <nav class="categories" id="categories">
-    <div class="sidebar-menu-title">category</div>
-    <ul><li>컴퓨터 언어<ul><li>프로그래밍<ul><li><a href="/computer-language/programming/cpp">C++</a> <span>(1)</span></li><li>Python</li><li>Ruby</li></ul></li><li>스크립트<ul><li>Bash</li><li>Batch</li><li>PowerShell</li></ul></li><li>기타<ul><li>HTML</li><li>css</li><li><a href="/computer-language/etc/kramdown">Kramdown</a> <span>(2)</span></li><li>컨테이너</li></ul></li></ul></li><hr/><li>IT<ul><li><a href="/it/jekyll-blog">Jekyll 블로그</a> <span>(3)</span></li><li><a href="/it/raspberry-pi">라즈베리파이</a> <span>(1)</span></li><li><a href="/it/etc">기타</a> <span>(3)</span></li></ul></li><hr/><li>역학</li><hr/><li>설계</li><hr/><li>tool<ul><li>AutoCAD</li><li>인벤터</li><li>Affinity Designer</li></ul></li></ul>
-  </nav>
-</aside>
+<nav class="categories" id="categories">
+  <div class="sidebar-menu-title">category</div>
+  <ul><li>
+  <div class="/computer-language"><a href="/computer-language">컴퓨터 언어</a></div><ul><li>
+  <div class="/computer-language/programming"><a href="/computer-language/programming">프로그래밍</a></div><ul><li>
+  <div class="/computer-language/programming/cpp"><a href="/computer-language/programming/cpp">C++</a><span>(1)</span></div></li><li>
+  <div class="/computer-language/programming/python">Python</div></li><li>
+  <div class="/computer-language/programming/ruby">Ruby</div></li></ul></li><li>
+  <div class="/computer-language/script">스크립트</div><ul><li>
+  <div class="/computer-language/script/bash">Bash</div></li><li>
+  <div class="/computer-language/script/batch">Batch</div></li><li>
+  <div class="/computer-language/script/powershell">PowerShell</div></li></ul></li><li>
+  <div class="/computer-language/etc"><a href="/computer-language/etc">기타</a></div><ul><li>
+  <div class="/computer-language/etc/html">HTML</div></li><li>
+  <div class="/computer-language/etc/css"><a href="/computer-language/etc/css">css</a><span>(2)</span></div></li><li>
+  <div class="/computer-language/etc/kramdown"><a href="/computer-language/etc/kramdown">Kramdown</a><span>(2)</span></div></li><li>
+  <div class="/computer-language/etc/container">컨테이너</div></li></ul></li></ul></li><hr/><li>
+  <div class="/it"><a href="/it">IT</a></div><ul><li>
+  <div class="/it/jekyll-blog"><a href="/it/jekyll-blog">Jekyll 블로그</a><span>(4)</span></div></li><li>
+  <div class="/it/raspberry-pi"><a href="/it/raspberry-pi">라즈베리파이</a><span>(1)</span></div></li><li>
+  <div class="/it/etc"><a href="/it/etc">기타</a><span>(5)</span></div></li></ul></li><hr/><li>
+  <div class="/mechanics">역학</div></li><hr/><li>
+  <div class="/design">설계</div></li><hr/><li>
+  <div class="/tool">tool</div><ul><li>
+  <div class="/tool/auto-cad">AutoCAD</div></li><li>
+  <div class="/tool/inventor">인벤터</div></li><li>
+  <div class="/tool/affinity-designer">Affinity Designer</div></li></ul></li></ul>
+</nav>
+      </aside>
+
       <main class="main" id="main">
-        
+        <section class="core" id="core">
+          
 
+        </section>
         <section class="featured-posts" id="featured-posts">
-
-</section>
+          
+        </section>
       </main>
-    </div>
-  </div>
 
-  <div class="site-bottom" id="site-bottom">
-    <footer class="footer" id="footer">
-  <div class="footer_inner">
-    <div class="copyright">
-      &copy;2020-2021<a href="https://github.com/kkooing" target="_blank" rel="nofollow">kkooing</a>.
     </div>
-  </div>
-</footer>
-  </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer__inner-wrap">
+      <div class="copyright">
+  &copy;2020-2021<a href="https://github.com/kkooing" target="_blank" rel="nofollow">kkooing</a>.
+</div>
+    </div>
+  </footer>
 </body>
 
 </html>

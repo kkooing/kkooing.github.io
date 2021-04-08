@@ -1,13 +1,32 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  //overflow-x: hidden;
+  
+  font-family: $font-family-html;
+  font-size: $font-size-html;
+  letter-spacing: $letter-spacing-html;
+  word-spacing: $word-spacing-html;
+  line-height: $line-height-html;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit
+}
+
 body {
   margin: 0;
   background-color: $footer-bg-color;
 }
 
-// float overflow 방지
-@mixin clearfix{
-  &::after{
-    content: "";
-    clear: both;
-    display: table;
-  }
+h1, h2, h3, h4, h5, h6 {
+  margin: 2em 0 0.5em;
+  font-weight: bold;
 }
+
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+h5 { font-size: $font-size-h5; }
+h6 { font-size: $font-size-h6; }

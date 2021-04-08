@@ -1,0 +1,8 @@
+// float overflow 방지
+@mixin clearfix{
+  &::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
