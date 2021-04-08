@@ -1,41 +1,41 @@
 /* Variables */
-html { box-sizing: border-box; min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 1.25em; letter-spacing: 0.02em; word-spacing: 0em; line-height: 1.6; }
+html { box-sizing: border-box; min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 1.125em; letter-spacing: 0.02em; word-spacing: 0em; line-height: 1.6; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
 body { margin: 0; background-color: AliceBlue; }
 
-h1, h2, h3, h4, h5, h6 { margin: 2em 0 0.5em; font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { font-family: "Noto Sans KR", sans-serif; font-weight: bold; }
 
-h1 { font-size: 2em; }
+h1 { font-size: 2em; margin: 0.5em 0; }
 
-h2 { font-size: 1.7em; }
+h2 { font-size: 1.7em; margin: 0.65em 0; }
 
-h3 { font-size: 1.4em; }
+h3 { font-size: 1.4em; margin: 0.8em 0; }
 
-h4 { font-size: 1.2em; }
+h4 { font-size: 1.2em; margin: 0.9em 0; }
 
-h5 { font-size: 1.1em; }
+h5 { font-size: 1.1em; margin: 0.95em 0; }
 
-h6 { font-size: 1em; }
+h6 { font-size: 1em; margin: 1em 0; }
 
 #header { background-color: White; border-bottom: 1px solid Gainsboro; }
 
-#header .header__inner-wrap { margin: auto; max-width: 1200px; height: 100px; }
+#header .header__inner-wrap { margin: auto; max-width: 1000px; height: 100px; }
 
 #center { background-color: White; }
 
-#center .center__inner-wrap { margin: auto; max-width: 1200px; padding: 10px 0; }
+#center .center__inner-wrap { margin: auto; max-width: 1000px; padding: 20px 0; }
 
 #center .center__inner-wrap::after { content: ""; clear: both; display: table; }
 
 #footer { background-color: AliceBlue; border-top: 1px solid Gainsboro; }
 
-#footer .footer__inner-wrap { margin: auto; max-width: 1200px; height: 100px; }
+#footer .footer__inner-wrap { margin: auto; max-width: 1000px; height: 100px; }
 
 #footer .footer__inner-wrap .copyright { text-align: center; }
 
-#sidebar { width: 250px; float: left; outline: 1px dashed black; }
+#sidebar { width: 200px; float: left; outline: 1px dashed black; }
 
 #sidebar .sidebar-menu-title { font-weight: bold; }
 
@@ -43,11 +43,13 @@ h6 { font-size: 1em; }
 
 #sidebar #categories ul { margin: 0; padding-left: 10px; list-style-type: none; }
 
-#main { max-width: 940px; margin: 0 10px 0 260px; outline: 1px dashed black; }
+#main { max-width: 780px; margin: 0 20px 0 220px; outline: 1px dashed black; }
 
 .skip-links { position: absolute; top: -4.8em; }
 
 .skip-links ul { margin: 0; padding: 0; }
+
+@media screen and (max-width: 600px) { #sidebar { display: none; } #main { margin: 0 20px 0 20px; } }
 
 .highlight .hll { background-color: #ffffcc; }
 

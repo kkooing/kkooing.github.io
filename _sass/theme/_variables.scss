@@ -1,13 +1,13 @@
 // size
-$site-width: 1200px;
+$site-width: 1000px;
 
-$sidebar-width: 250px;
-$toc-width: 250px;
+$sidebar-width: 200px;
+$toc-width: 200px;  
 
 $header-height: 100px;
 $footer-height: 100px;
 
-$section-margin: 10px;
+$section-margin: 20px;
 
 // breakpoint
 $bp-medium: 992px;
@@ -27,11 +27,12 @@ $sidebar-cat-hr-color: DarkGray;
 
 // font
 $font-family-html: 'Noto Sans KR', sans-serif;
-$font-size-html: 1.2500em;
+$font-size-html: 1.1250em;
 $letter-spacing-html: 0.02em;
 $word-spacing-html: 0.0em;
 $line-height-html: 1.6;
 
+$font-family-h: 'Noto Sans KR', sans-serif;
 $font-size-h1: 2em;
 $font-size-h2: 1.7em;
 $font-size-h3: 1.4em;
