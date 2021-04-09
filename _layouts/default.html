@@ -12,32 +12,27 @@
   {% include_cached browser-upgrade.html %}
 
   <header class="header" id="header">
-    <div class="header__inner-wrap">
+    <div class="inner-wrap">
       {% include header.html %}
     </div>
   </header>
 
   <section class="center" id="center">
-    <div class="center__inner-wrap">
+    <div class="inner-wrap">
 
       <aside class="sidebar" id="sidebar">
         {% include sidebar.html %}
       </aside>
 
       <main class="main" id="main">
-        <section class="core" id="core">
-          {{ content }}
-        </section>
-        <section class="featured-posts" id="featured-posts">
-          {% include featured-posts.html %}
-        </section>
+        {{ content }}
       </main>
 
     </div>
   </section>
 
   <footer class="footer" id="footer">
-    <div class="footer__inner-wrap">
+    <div class="inner-wrap">
       {% include footer.html %}
     </div>
   </footer>

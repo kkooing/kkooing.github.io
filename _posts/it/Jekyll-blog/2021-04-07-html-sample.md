@@ -30,9 +30,13 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <p>This is some text in a paragraph.</p>
 
 
-<table>
+
+
+
+<div style="overflow-x: auto; white-space: nowrap;">
+<table style="letter-spacing: 0em; word-spacing: 0em;">
 <caption>Sans Serif</caption>
-<tr style="font-family: sans-serif; letter-spacing: 0em; word-spacing: 0em;">
+<tr style="font-family: sans-serif, 'Noto Serif KR';">
 <td>sans-serif</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -40,7 +44,7 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<tr style="font-family: Roboto', cursive;">
+<tr style="font-family: Roboto', 'Noto Serif KR';">
 <td>Roboto</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -48,7 +52,7 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-<tr style="font-family: 'Noto Sans', cursive;">
+<tr style="font-family: 'Noto Sans', 'Noto Serif KR';">
 <td>Noto Sans</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -56,14 +60,14 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
-<tr style="font-family: 'Noto Sans KR', cursive; font-weight: 400;">
+<tr style="font-family: 'Noto Sans KR', 'Noto Serif KR'; font-weight: 400;">
 <td>Noto Sans KR@400</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
 <td>1234567890</td>
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
-<tr style="font-family: 'Noto Sans KR', cursive; font-weight: 300;">
+<tr style="font-family: 'Noto Sans KR', 'Noto Serif KR'; font-weight: 300;">
 <td>Noto Sans KR@300</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -71,7 +75,7 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-<tr style="font-family: 'Nanum Gothic', cursive;">
+<tr style="font-family: 'Nanum Gothic', 'Noto Serif KR';">
 <td>Nanum Gothic</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -79,10 +83,12 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 </table>
+</div>
 
-<table>
+<div style="overflow-x: auto; white-space: nowrap;">
+<table style="letter-spacing: 0em; word-spacing: 0em;">
 <caption>Serif</caption>
-<tr style="font-family: serif;">
+<tr style="font-family: serif, 'Noto Sans KR';">
 <td>serif</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -90,7 +96,7 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-<tr style="font-family: 'Noto Serif', sans-serif;">
+<tr style="font-family: 'Noto Serif', 'Noto Sans KR';">
 <td>Noto Serif</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -98,14 +104,14 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
-<tr style="font-family: 'Noto Serif KR', sans-serif; font-weight: 400;">
+<tr style="font-family: 'Noto Serif KR', 'Noto Sans KR'; font-weight: 400;">
 <td>Noto Serif KR@400</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
 <td>1234567890</td>
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
-<tr style="font-family: 'Noto Serif KR', sans-serif; font-weight: 300;">
+<tr style="font-family: 'Noto Serif KR', 'Noto Sans KR'; font-weight: 300;">
 <td>Noto Serif KR@300</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -113,7 +119,7 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-<tr style="font-family: 'Nanum Gothic', cursive;">
+<tr style="font-family: 'Nanum Gothic', 'Noto Sans KR';">
 <td>Nanum Gothic</td>
 <td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
@@ -121,21 +127,69 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
 </table>
+</div>
 
-<p style="font-family: sans-serif;">This is some text in a paragraph. 용어의 정의입니다.</p>
-<p style="font-family: Tahoma;">This is some text in a paragraph. 용어의 정의입니다.</p>
-<p style="font-family: 'Trebuchet MS';">This is some text in a paragraph. 용어의 정의입니다.</p>
-<p style="font-family: 'Roboto Mono';">This is some text in a paragraph. 용어의 정의입니다.</p>
-<br/>
-<p style="font-family: 'Times New Roman';">This is some text in a paragraph. 용어의 정의입니다.</p>
-<p style="font-family: Georgia;">This is some text in a paragraph. 용어의 정의입니다.</p>
-<p style="font-family: Garamond;">This is some text in a paragraph. 용어의 정의입니다.</p>
-<br/>
-<p style="font-family: 'Courier';">This is some text in a paragraph. 용어의 정의입니다.</p>
-<p style="font-family: 'Brush Script MT';">This is some text in a paragraph. 용어의 정의입니다.</p>
+<div style="overflow-x: auto; white-space: nowrap;">
+<table style="letter-spacing: 0em; word-spacing: 0em;">
+<caption>monospace</caption>
+<tr style="font-family: monospace; 'Noto Serif KR';">
+<td>monospace</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<tr style="font-family: 'Roboto Mono', 'Noto Serif KR';">
+<td>Roboto Mono</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+<tr style="font-family: 'Nanum Gothic Coding', 'Noto Serif KR';">
+<td>Nanum Gothic Coding</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<tr style="font-family: 'Inconsolata', 'Noto Serif KR';">
+<td>Inconsolata</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
+</tr>
+</table>
+</div>
 
-<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
-<p style="font-family: 'New Tegomin';">This is some text in a paragraph. 용어의 정의입니다.</p>
+<div style="overflow-x: auto; white-space: nowrap;">
+<table style="letter-spacing: 0em; word-spacing: 0em;">
+<caption>cursive</caption>
+<tr style="font-family: cursive; 'Noto Sans KR';">
+<td>cursive</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<tr style="font-family: 'Nanum Pen Script', 'Noto Sans KR';">
+<td>Nanum Pen Script</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
+</tr>
+</table>
+</div>
+
+
+
+
 
 <span style="color: red;">&lt;hr&gt;</span><br />
 <hr>
@@ -151,7 +205,7 @@ line breaks
 
 <span style="color: red;">&lt;blockquote&gt;</span><br />
 <blockquote cite="http://www.worldwildlife.org/who/index.html">
-For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in <cite>100</cite> countries and is supported by 1.2 million members in the United States and close to 5 million globally.
 </blockquote>
 
 <span style="color: red;">&lt;ol&gt;</span><br />

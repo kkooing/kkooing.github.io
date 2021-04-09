@@ -1,3 +1,4 @@
+<div class="breadcrumbs">
 <!-- include.url: relative url string (/).../...(/*) -->
 {%- assign url = include.url -%}
 {%- assign url-begin = url | slice: 0 -%}
@@ -61,3 +62,4 @@
     {{- title_array | concat: rel_url_array | join: ":" -}}
 
 {%- endcase -%}
+</div>

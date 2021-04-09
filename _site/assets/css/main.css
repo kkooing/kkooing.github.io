@@ -1,5 +1,5 @@
 /* Variables */
-html { box-sizing: border-box; min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 1.125em; letter-spacing: 0.02em; word-spacing: 0em; line-height: 1.6; }
+html { box-sizing: border-box; min-height: 100%; font-family: 'Noto Sans KR', sans-serif; font-size: 1.1250em; letter-spacing: 0.02em; word-spacing: 0.0em; line-height: 1.6; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
@@ -19,21 +19,35 @@ h5 { font-size: 1.1em; margin: 0.95em 0; }
 
 h6 { font-size: 1em; margin: 1em 0; }
 
+p { margin: 0.75em 0; }
+
+hr { margin: 1em 0; border: 0; border-top: 1px solid Gainsboro; }
+
+pre { overflow-x: auto; }
+
+blockquote { margin: 1em 0; padding: 0 1em; border-left: 0.25em solid LightGray; }
+
+ol, ul { margin: 0.5em 0; padding-left: 2em; }
+
+dl { margin: 0.5em 0; padding-left: 1em; }
+
+dl dd { margin-left: 1em; }
+
+.inner-wrap { margin: auto; padding: 20px; max-width: 1024px; }
+
 #header { background-color: White; border-bottom: 1px solid Gainsboro; }
 
-#header .header__inner-wrap { margin: auto; max-width: 1000px; height: 100px; }
+#header .inner-wrap { height: 100px; font-family: 'Caveat', sans-serif; font-size: 2em; }
 
 #center { background-color: White; }
 
-#center .center__inner-wrap { margin: auto; max-width: 1000px; padding: 20px 0; }
-
-#center .center__inner-wrap::after { content: ""; clear: both; display: table; }
+#center .inner-wrap::after { content: ""; clear: both; display: table; }
 
 #footer { background-color: AliceBlue; border-top: 1px solid Gainsboro; }
 
-#footer .footer__inner-wrap { margin: auto; max-width: 1000px; height: 100px; }
+#footer .inner-wrap { height: 100px; }
 
-#footer .footer__inner-wrap .copyright { text-align: center; }
+#footer .inner-wrap .copyright { text-align: center; }
 
 #sidebar { width: 200px; float: left; outline: 1px dashed black; }
 
@@ -43,13 +57,15 @@ h6 { font-size: 1em; margin: 1em 0; }
 
 #sidebar #categories ul { margin: 0; padding-left: 10px; list-style-type: none; }
 
-#main { max-width: 780px; margin: 0 20px 0 220px; outline: 1px dashed black; }
+#main { max-width: 764px; margin-left: 220px; padding: 20px; outline: 1px dashed black; }
 
 .skip-links { position: absolute; top: -4.8em; }
 
 .skip-links ul { margin: 0; padding: 0; }
 
-@media screen and (max-width: 600px) { #sidebar { display: none; } #main { margin: 0 20px 0 20px; } }
+@media screen and (max-width: 992px) { #sidebar { display: none; } #main { max-width: 984px; margin-left: 0; } }
+
+@media screen and (max-width: 600px) { #main { max-width: 1024px; } #center .inner-wrap { padding: 0; } }
 
 .highlight .hll { background-color: #ffffcc; }
 

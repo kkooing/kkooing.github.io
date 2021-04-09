@@ -1,19 +1,22 @@
+.inner-wrap {
+  margin: auto;
+  padding: $margin-site;
+  max-width: $site-width;
+}
+
 #header {
   background-color: $header-bg-color;
   border-bottom: 1px solid $header-border-color;
-  .header__inner-wrap {
-    margin: auto;
-    max-width: $site-width;
+  .inner-wrap {
     height: $header-height;
+
+    @include font-header;
   }
 }
 
 #center {
   background-color: $center-bg-color;
-  .center__inner-wrap {
-    margin: auto;
-    max-width: $site-width;
-    padding: $section-margin 0;
+  .inner-wrap {
     @include clearfix;
   }
 }
@@ -21,9 +24,7 @@
 #footer {
   background-color: $footer-bg-color;
   border-top: 1px solid $footer-border-color;
-  .footer__inner-wrap {
-    margin: auto;
-    max-width: $site-width;
+  .inner-wrap {
     height: $footer-height;
     .copyright {
       text-align: center;

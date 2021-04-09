@@ -1,12 +1,10 @@
+// 문서/메타/섹션
 html {
   box-sizing: border-box;
   min-height: 100%;
   //overflow-x: hidden;
   
-  font-family: $font-family-html;
-  font-size: $font-size-html;
-  letter-spacing: $letter-spacing-html;
-  word-spacing: $word-spacing-html;
+  @include font-html;
   line-height: $line-height-html;
 }
 
@@ -30,3 +28,39 @@ h3 { font-size: $font-size-h3; margin: 0.8em 0; }
 h4 { font-size: $font-size-h4; margin: 0.9em 0; }
 h5 { font-size: $font-size-h5; margin: 0.95em 0; }
 h6 { font-size: $font-size-h6; margin: 1em 0; }
+
+// 그룹
+p {
+  margin: 0.75em 0;
+}
+
+hr {
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid $color-hr;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0 1em;
+  border-left: 0.25em solid LightGray;
+}
+
+ol, ul {
+  margin: 0.5em 0;
+  padding-left: 2em;
+}
+dl {
+  margin: 0.5em 0;
+  padding-left: 1em;
+  dd {
+    margin-left: 1em;
+  }
+}
+
+// 택스트
+

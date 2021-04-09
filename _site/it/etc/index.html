@@ -7,6 +7,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 
 
 
@@ -48,7 +49,7 @@
 
 
   <header class="header" id="header">
-    <div class="header__inner-wrap">
+    <div class="inner-wrap">
       <div class="Hamburger_menu">
 
 </div>
@@ -62,7 +63,7 @@
   </header>
 
   <section class="center" id="center">
-    <div class="center__inner-wrap">
+    <div class="inner-wrap">
 
       <aside class="sidebar" id="sidebar">
         <div class="profile" id="profile">
@@ -116,14 +117,16 @@
       </aside>
 
       <main class="main" id="main">
-        <section class="core" id="core">
-          <!-- include.url: relative url string (/).../...(/*) --><a href="/it">IT</a><span> > </span><a href="/it/etc">기타</a>
-<section class="content" id="content">
+        <section class="core cate" id="core">
+  <div class="breadcrumbs">
+<!-- include.url: relative url string (/).../...(/*) --><a href="/it">IT</a><span> > </span><a href="/it/etc">기타</a></div>
+  <section class="content" id="content">
 
-  <div class="category-page">
-    <div class="post-list">
+    <div class="category-page">
+      <div class="post-list">
   <ul><li>
-      <div class="breadcrumbs"><!-- include.url: relative url string (/).../...(/*) --><span>IT</span><span> > </span><span>기타</span></div>
+      <div class="breadcrumbs"><div class="breadcrumbs">
+<!-- include.url: relative url string (/).../...(/*) --><span>IT</span><span> > </span><span>기타</span></div></div>
       <a href="/it/etc/managing-windows-startup-programs/">윈도우 시작프로그램 관리</a>
       <div class="posted-date">2021. 02. 24.</div>
       <div class="comment-count">
@@ -131,19 +134,20 @@
       </div>
     </li></ul>
 </div>
-  </div>
+    </div>
+  </section>
 </section>
-        </section>
-        <section class="featured-posts" id="featured-posts">
-          
-        </section>
+
+<section class="featured-posts" id="featured-posts">
+  
+</section>
       </main>
 
     </div>
   </section>
 
   <footer class="footer" id="footer">
-    <div class="footer__inner-wrap">
+    <div class="inner-wrap">
       <div class="copyright">
   &copy;2020-2021<a href="https://github.com/kkooing" target="_blank" rel="nofollow">kkooing</a>.
 </div>
