@@ -27,6 +27,10 @@ $footer-border-color: Gainsboro;
 
 $color-hr: Gainsboro;
 
+$color-link: DimGray;
+$color-visited: DimGray;
+$color-hover: Navy;
+
 // sideber
 $sidebar-cat-hr-color: DarkGray;
 
@@ -34,8 +38,8 @@ $sidebar-cat-hr-color: DarkGray;
 @mixin font-html {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.1250em;
+  color: DimGray;
   letter-spacing: 0.02em;
-  word-spacing: 0.0em;
 }
 $line-height-html: 1.6;
 @mixin font-header {

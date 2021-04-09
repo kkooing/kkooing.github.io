@@ -295,7 +295,7 @@ The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
 <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
 
 <span style="color: red;">&lt;sub&gt;, &lt;sup&gt;</span><br />
-<p>This text contains <sub>subscript</sub> text.</p>
+<p>This text contains <sub>subscript</sub><sup>superscript</sup> text.</p>
 <p>This text contains <sup>superscript</sup> text.</p>
 
 <span style="color: red;">&lt;i&gt; - 기울임 (무의미, 부각됨)</span><br />

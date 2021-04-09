@@ -6,6 +6,9 @@
     max-width: ($site-width - ($margin-site * 2));
     margin-left: 0;
   }
+  #header .inner-wrap .Hamburger_menu {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: $bp-small) {
@@ -14,5 +17,12 @@
   }
   #center .inner-wrap {
     padding: 0;
+  }
+  #header {
+    .inner-wrap {
+      height: ($header-height * 0.5);
+      padding: ($margin-site * 0.5) $margin-site;
+      font-size: 1em;
+    }
   }
 }
