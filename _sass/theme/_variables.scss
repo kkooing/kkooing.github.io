@@ -31,19 +31,40 @@ $color-hr: LightGray;
 $sidebar-cat-hr-color: DarkGray;
 
 // font
+$font-size-html: 1.1250em; // = 18px
+
+$font-size-medium: 1rem; 
+$font-size-small: 0.75rem; // = 13.5
+
+$font-size-h1: 1.6rem; // = 28.8
+$font-size-h2: 1.5rem; // = 27
+$font-size-h3: 1.4rem; // = 25.2
+$font-size-h4: 1.3rem; // = 23.4
+$font-size-h5: 1.2rem; // = 21.6
+$font-size-h6: 1.1rem; // = 19.8
+
+
 $line-height-html: 1.6;
+$color-basic-font: #353535;
 @mixin font-html {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.1250em;
   font-weight: 400;
-  color: #353535;
+  color: $color-basic-font;
   letter-spacing: 0.03em;
   line-height: $line-height-html;
 }
+@mixin font-mono {
+  font-family: 'Nanum Gothic Coding', monospace;
+  color: $color-basic-font;
+  letter-spacing: 0;
+}
 
-$color-link: #353535;
-$color-visited: #353535;
-$color-hover: DimGray;
+
+
+$color-link: $color-basic-font;
+$color-visited: $color-basic-font;
+$color-hover: LightSlateGray;
 
 @mixin font-header {
   font-family: 'Caveat', sans-serif;
@@ -52,12 +73,7 @@ $color-hover: DimGray;
 }
 
 $font-family-h: 'Noto Sans KR', sans-serif;
-$font-size-h1: 1.5em;
-$font-size-h2: 1.4em;
-$font-size-h3: 1.3em;
-$font-size-h4: 1.2em;
-$font-size-h5: 1.1em;
-$font-size-h6: 1em;
+
 
 
 

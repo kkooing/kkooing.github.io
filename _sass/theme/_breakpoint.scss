@@ -12,6 +12,9 @@
 }
 
 @media screen and (max-width: $bp-small) {
+  html {
+    font-size: 1.0625em;
+  }
   .l-col-right {
     max-width: $max-width-site;
   }

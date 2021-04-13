@@ -1,0 +1,199 @@
+I"� <h2 id="1-평행-비교">1. 평행 비교</h2>
+
+<div style="overflow-x: auto; white-space: nowrap;">
+<table style="letter-spacing: 0em; word-spacing: 0em;">
+<caption>Sans Serif</caption>
+<tr style="font-size: 18px;">
+<td>18px</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: Roboto', 'Noto Serif KR';">
+<td>Roboto</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Noto Sans', 'Noto Serif KR';">
+<td>Noto Sans</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Noto Sans KR', 'Noto Serif KR'; font-weight: 400;">
+<td>Noto Sans KR@400</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<tr style="font-family: 'Noto Sans KR', 'Noto Serif KR'; font-weight: 300;">
+<td>Noto Sans KR@300</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Nanum Gothic', 'Noto Serif KR';">
+<td>Nanum Gothic</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+</table>
+</div>
+
+<div style="overflow-x: auto; white-space: nowrap;">
+<table style="letter-spacing: 0em; word-spacing: 0em;">
+<caption>Serif</caption>
+<tr style="font-family: serif, 'Noto Sans KR';">
+<td>serif</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Noto Serif', 'Noto Sans KR';">
+<td>Noto Serif</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Noto Serif KR', 'Noto Sans KR'; font-weight: 400;">
+<td>Noto Serif KR@400</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<tr style="font-family: 'Noto Serif KR', 'Noto Sans KR'; font-weight: 300;">
+<td>Noto Serif KR@300</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Nanum Gothic', 'Noto Sans KR';">
+<td>Nanum Gothic</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+</table>
+</div>
+
+<div style="overflow-x: auto; white-space: nowrap;">
+<table style="letter-spacing: 0em; word-spacing: 0em;">
+<caption>monospace</caption>
+<tr style="font-family: monospace; 'Noto Serif KR';">
+<td>monospace</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Roboto Mono', 'Noto Serif KR';">
+<td>Roboto Mono</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Nanum Gothic Coding', 'Noto Serif KR';">
+<td>Nanum Gothic Coding</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Inconsolata', 'Noto Serif KR';">
+<td>Inconsolata</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+</table>
+</div>
+
+<div style="overflow-x: auto; white-space: nowrap;">
+<table style="letter-spacing: 0em; word-spacing: 0em;">
+<caption>cursive</caption>
+<tr style="font-family: cursive; 'Noto Sans KR';">
+<td>cursive</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet" />
+<tr style="font-family: 'Nanum Pen Script', 'Noto Sans KR';">
+<td>Nanum Pen Script</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+</table>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">분류</th>
+      <th style="text-align: center">dpi</th>
+      <th style="text-align: center">dp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">ldpi</td>
+      <td style="text-align: center">&lt;120</td>
+      <td style="text-align: center">1920</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">mdpi</td>
+      <td style="text-align: center">&lt;160</td>
+      <td style="text-align: center">1440</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">hdpi</td>
+      <td style="text-align: center">&lt;240</td>
+      <td style="text-align: center">960</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">xhdpi</td>
+      <td style="text-align: center">&lt;320</td>
+      <td style="text-align: center">720</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">xxhdpi</td>
+      <td style="text-align: center">&lt;480</td>
+      <td style="text-align: center">480</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">xxxhdpi</td>
+      <td style="text-align: center">&lt;640</td>
+      <td style="text-align: center">360</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="https://pixplicity.com/dp-px-converter">https://pixplicity.com/dp-px-converter</a></p>
+:ET

@@ -18,15 +18,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-h;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-h1 { font-size: $font-size-h1; margin: ((3em - $font-size-h1) / 2) 0; }
-h2 { font-size: $font-size-h2; margin: ((3em - $font-size-h2) / 2) 0; }
-h3 { font-size: $font-size-h3; margin: ((3em - $font-size-h3) / 2) 0; }
-h4 { font-size: $font-size-h4; margin: ((3em - $font-size-h4) / 2) 0; }
-h5 { font-size: $font-size-h5; margin: ((3em - $font-size-h5) / 2) 0; }
-h6 { font-size: $font-size-h6; margin: ((3em - $font-size-h6) / 2) 0; }
+h1 { font-size: $font-size-h1; margin: ((3rem - $font-size-h1) / 2) 0; }
+h2 { font-size: $font-size-h2; margin: ((3rem - $font-size-h2) / 2) 0; }
+h3 { font-size: $font-size-h3; margin: ((3rem - $font-size-h3) / 2) 0; }
+h4 { font-size: $font-size-h4; margin: ((3rem - $font-size-h4) / 2) 0; }
+h5 { font-size: $font-size-h5; margin: ((3rem - $font-size-h5) / 2) 0; }
+h6 { font-size: $font-size-h6; margin: ((3rem - $font-size-h6) / 2) 0; }
 
 // 그룹
 p {
@@ -46,7 +46,7 @@ pre {
 blockquote {
   margin: 1em 0;
   padding: 0 1em;
-  border-left: 0.25em solid LightGray;
+  border-left: 0.25em solid DarkGray;
 }
 
 ol, ul {
@@ -87,13 +87,16 @@ sup {
 }
 
 pre, code, kbd, samp {
-  font-family: monospace, monospace;
+  @include font-mono;
   font-size: 1em;
 }
 
 kbd {
-  background-color: aqua;
+  color: GhostWhite;
+  background-color: SlateGray;
   padding: 0 0.25em;
+  font-weight: 700;
+  border: 2px solid $color-basic-font;
   border-radius: 0.3em;
 }
 

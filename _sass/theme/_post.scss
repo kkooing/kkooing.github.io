@@ -1,18 +1,22 @@
-.post .content-header {
-  text-align: center;
-  line-height: 1;
-  .content-title {
-    margin: 0.25em 0;
-    font-weight: 300;
+.post {
+  .content-header {
+    text-align: center;
+    .content-title {
+      margin: 0.25em 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    .content-meta {
+      padding: 0.25em 0;
+      font-size: 0.75em;
+      color: LightSlateGray;
+      border-bottom: 1px solid Crimson;
+    }
   }
-  .content-meta {
-    font-size: 0.75em;
-    padding: 0.25em 0;
-    border-bottom: 1px solid red;
+  .content-text {
+    margin: 1em 0;
   }
-}
-
-.breadcrumbs {
-  font-size: 0.75em;
-  line-height: 1;
+  .content-footer {
+    margin: 1em 0;
+  }
 }
