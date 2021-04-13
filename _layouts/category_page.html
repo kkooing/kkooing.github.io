@@ -1,16 +1,14 @@
 ---
 layout: default
 ---
-<section class="core cate" id="core">
-  {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url mode="link" %}
+<section class="category-page">
+  <div class="breadcrumbs">
+    {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url mode="link" %}
+  </div>
   <section class="content" id="content">
 
-    <div class="category-page">
+    <div class="category-list">
       {% include post-list.html url=page.url %}
     </div>
   </section>
-</section>
-
-<section class="featured-posts" id="featured-posts">
-  {% include featured-posts.html %}
 </section>

@@ -1,37 +1,73 @@
-.inner-wrap {
-  margin: auto;
-  padding: $margin-site;
-  max-width: $site-width;
+.l-skip-links {
+  position: absolute;
+  top: (-$line-height-html * 1em);
+  white-space: nowrap;
 }
 
-#header {
-  background-color: $header-bg-color;
-  border-bottom: 1px solid $header-border-color;
-  .inner-wrap {
-    height: $header-height;
+.l-inner-wrap {
+  margin: auto;
+  padding: $margin-inner-wrap;
+  max-width: $max-width-site;
+}
 
+.l-header {
+  background-color: $color-header-bg;
+  border-bottom: 1px solid $color-header-border;
+  .l-inner-wrap {
+    height: $height-header;
+    transition: height 0.1s, padding 0.1s, font-size 0.1s;
     @include font-header;
-    .Hamburger_menu {
+    .l-hamburger-menu {
       display: none;
     }
-    .site_name{
+    .l-site-logo{
       display: inline-block;
     }
   }
 }
 
-#center {
-  background-color: $center-bg-color;
-  .inner-wrap {
+.l-center {
+  background-color: $color-center-bg;
+  .l-inner-wrap {
     @include clearfix;
+    .l-col-left {
+      width: $width-col-left;
+      float: left;
+      outline: 1px dashed black; // temporary
+      .sidebar-menu-title {
+        font-weight: bold;
+      }
+      hr {
+        margin: 5px 5px 5px -5px;
+        border-style: dashed none none none;
+        border-width: 1px;
+        border-color: $sidebar-cat-hr-color;
+      }
+      .l-pages {
+        
+      }
+      .l-categories {
+        ul {
+          margin: 0;
+          padding-left: 10px;
+          list-style-type: none;
+        }
+      }
+    }
+    .l-col-right {
+      max-width: ($max-width-site - $width-col-left - ($margin-inner-wrap * 3));
+      margin-left: ($width-col-left + $margin-inner-wrap);
+      padding: $margin-main;
+      outline: 1px dashed black; // temporary
+    }
   }
 }
 
-#footer {
-  background-color: $footer-bg-color;
-  border-top: 1px solid $footer-border-color;
-  .inner-wrap {
-    height: $footer-height;
+.l-footer {
+  background-color: $color-footer-bg;
+  border-top: 1px solid $color-footer-border;
+  .l-inner-wrap {
+    height: $height-footer;
     .copyright {
       text-align: center;
     }

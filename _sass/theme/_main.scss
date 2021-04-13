@@ -1,7 +1,0 @@
-#main {
-  max-width: ($site-width - $sidebar-width - ($margin-site * 3));
-  margin-left: ($sidebar-width + $margin-site);
-  
-  padding: $margin-main;
-  outline: 1px dashed black; // temporary
-}

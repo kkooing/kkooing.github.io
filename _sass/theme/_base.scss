@@ -1,20 +1,19 @@
 // 문서/메타/섹션
 html {
   box-sizing: border-box;
-  min-height: 100%;
-  //overflow-x: hidden;
-  
+  overflow-x: hidden;
+  word-wrap: break-word;
   @include font-html;
-  line-height: $line-height-html;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit
+  box-sizing: inherit;
 }
 
 body {
   margin: 0;
-  background-color: $footer-bg-color;
+  min-height: 100vh;
+  background-color: $color-footer-bg;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,12 +21,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-h1 { font-size: $font-size-h1; margin: 0.5em 0; }
-h2 { font-size: $font-size-h2; margin: 0.65em 0; }
-h3 { font-size: $font-size-h3; margin: 0.8em 0; }
-h4 { font-size: $font-size-h4; margin: 0.9em 0; }
-h5 { font-size: $font-size-h5; margin: 0.95em 0; }
-h6 { font-size: $font-size-h6; margin: 1em 0; }
+h1 { font-size: $font-size-h1; margin: ((3em - $font-size-h1) / 2) 0; }
+h2 { font-size: $font-size-h2; margin: ((3em - $font-size-h2) / 2) 0; }
+h3 { font-size: $font-size-h3; margin: ((3em - $font-size-h3) / 2) 0; }
+h4 { font-size: $font-size-h4; margin: ((3em - $font-size-h4) / 2) 0; }
+h5 { font-size: $font-size-h5; margin: ((3em - $font-size-h5) / 2) 0; }
+h6 { font-size: $font-size-h6; margin: ((3em - $font-size-h6) / 2) 0; }
 
 // 그룹
 p {

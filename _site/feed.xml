@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-04-09T05:40:41+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">색상</title><link href="https://kkooing.github.io/computer-language/etc/css/css-color/" rel="alternate" type="text/html" title="색상" /><published>2021-04-07T00:00:00+00:00</published><updated>2021-04-07T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-color</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-color/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-04-13T06:45:28+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">색상</title><link href="https://kkooing.github.io/computer-language/etc/css/css-color/" rel="alternate" type="text/html" title="색상" /><published>2021-04-07T00:00:00+00:00</published><updated>2021-04-07T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-color</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-color/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
 
 &lt;p&gt;rgb(&lt;ruby&gt;60&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;, &lt;ruby&gt;179&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;, &lt;ruby&gt;113&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;)&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="css" /><category term="css" /><summary type="html">기본 문법</summary></entry><entry><title type="html">html 샘플</title><link href="https://kkooing.github.io/it/jekyll-blog/html-sample/" rel="alternate" type="text/html" title="html 샘플" /><published>2021-04-07T00:00:00+00:00</published><updated>2021-04-07T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/html-sample</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/html-sample/">&lt;h2 id=&quot;1-단락-요소&quot;&gt;1. 단락 요소&lt;/h2&gt;
 &lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
@@ -180,6 +180,49 @@ This is some text in a paragraph. This is some text in a paragraph.&lt;br /&gt;�
 &lt;/tr&gt;
 &lt;/table&gt;
 &lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;분류&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dpi&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dp&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ldpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;120&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1920&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;mdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;160&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1440&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;hdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;240&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;960&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;320&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;720&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xxhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;480&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;480&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xxxhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;640&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;360&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;https://pixplicity.com/dp-px-converter&quot;&gt;https://pixplicity.com/dp-px-converter&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;

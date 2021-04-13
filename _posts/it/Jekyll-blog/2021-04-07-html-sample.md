@@ -188,7 +188,16 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 </div>
 
 
-
+|분류|dpi|dp|
+|:-:|:-:|:-:|
+|ldpi|<120|1920|
+|mdpi|<160|1440|
+|hdpi|<240|960|
+|xhdpi|<320|720|
+|xxhdpi|<480|480|
+|xxxhdpi|<640|360|
+^
+[https://pixplicity.com/dp-px-converter](https://pixplicity.com/dp-px-converter)
 
 
 <span style="color: red;">&lt;hr&gt;</span><br />

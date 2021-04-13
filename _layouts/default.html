@@ -8,34 +8,27 @@
 </head>
 
 <body>
-  {% include_cached skip-links.html %}
+  {% include_cached l-skip-links.html %}
   {% include_cached browser-upgrade.html %}
 
-  <header class="header" id="header">
-    <div class="inner-wrap">
-      {% include header.html %}
-    </div>
-  </header>
+  {% include l-header.html %}
 
-  <section class="center" id="center">
-    <div class="inner-wrap">
-
-      <aside class="sidebar" id="sidebar">
-        {% include sidebar.html %}
-      </aside>
-
-      <main class="main" id="main">
-        {{ content }}
-      </main>
-
+  <section class="l-center">
+    <div class="l-inner-wrap">
+      {% include l-col-left.html %}
+      <section class="l-col-right">
+        <main class="l-main">
+          {{ content }}
+        </main>
+        {%- include l-comment.html -%}
+        {%- include l-related.html -%}
+        {%- include l-featured.html -%}
+      </section>
     </div>
   </section>
 
-  <footer class="footer" id="footer">
-    <div class="inner-wrap">
-      {% include footer.html %}
-    </div>
-  </footer>
+  {% include l-footer.html %}
+
 </body>
 
 </html>

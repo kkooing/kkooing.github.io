@@ -1,11 +1,18 @@
-.post-header {
+.post .content-header {
   text-align: center;
-  .post-title {
+  line-height: 1;
+  .content-title {
     margin: 0.25em 0;
+    font-weight: 300;
   }
-  .post-meta {
+  .content-meta {
     font-size: 0.75em;
     padding: 0.25em 0;
     border-bottom: 1px solid red;
   }
+}
+
+.breadcrumbs {
+  font-size: 0.75em;
+  line-height: 1;
 }

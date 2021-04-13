@@ -1,0 +1,31 @@
+<section class="l-col-left">
+  <div class="l-hamburger-menu">
+
+  </div>
+  <div class="l-profile">
+    <div class="site_name">
+      <a class="site_name" href="{{ '/' | relative_url }}">
+        {{- site.name -}}
+      </a>
+    </div>
+  </div>
+
+  <nav class="l-pages" id="l-pages">
+    <div class="sidebar-menu-title">{{- site.data.ui-text[site.locale].sidebar_pages | default: 'page' -}}</div>
+    <ul>
+      {%- for page in site.data.navi.pages -%}
+      <li>
+        <a href="{{ page.url }}">{{- page.title -}}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+
+  <nav class="l-categories" id="l-categories">
+    <div class="sidebar-menu-title">{{- site.data.ui-text[site.locale].sidebar_categories | default: 'category' -}}
+    </div>
+    <ul>
+      {%- include category-menu.html list=site.data.navi.categories url="" -%}
+    </ul>
+  </nav>
+</section>

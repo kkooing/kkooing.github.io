@@ -1,17 +1,17 @@
 /* Variables */
-html { box-sizing: border-box; min-height: 100%; font-family: 'Noto Sans KR', sans-serif; font-size: 1.1250em; color: DimGray; letter-spacing: 0.02em; line-height: 1.6; }
+html { box-sizing: border-box; overflow-x: hidden; word-wrap: break-word; font-family: 'Noto Sans KR', sans-serif; font-size: 1.1250em; font-weight: 400; color: #353535; letter-spacing: 0.03em; line-height: 1.6; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-body { margin: 0; background-color: AliceBlue; }
+body { margin: 0; min-height: 100vh; background-color: Snow; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Noto Sans KR", sans-serif; font-weight: bold; }
 
-h1 { font-size: 2em; margin: 0.5em 0; }
+h1 { font-size: 1.5em; margin: 0.75em 0; }
 
-h2 { font-size: 1.7em; margin: 0.65em 0; }
+h2 { font-size: 1.4em; margin: 0.8em 0; }
 
-h3 { font-size: 1.4em; margin: 0.8em 0; }
+h3 { font-size: 1.3em; margin: 0.85em 0; }
 
 h4 { font-size: 1.2em; margin: 0.9em 0; }
 
@@ -21,7 +21,7 @@ h6 { font-size: 1em; margin: 1em 0; }
 
 p { margin: 0.75em 0; }
 
-hr { margin: 1em 0; border: 0; border-top: 1px solid Gainsboro; }
+hr { margin: 1em 0; border: 0; border-top: 1px solid LightGray; }
 
 pre { overflow-x: auto; }
 
@@ -33,11 +33,11 @@ dl { margin: 0.5em 0; padding-left: 1em; }
 
 dl dd { margin-left: 1em; }
 
-a:link { color: DimGray; }
+a:link { color: #353535; }
 
-a:visited { color: DimGray; }
+a:visited { color: #353535; }
 
-a:hover { color: Navy; text-decoration: none; }
+a:hover { color: DimGray; text-decoration: none; }
 
 strong { font-weight: bolder; }
 
@@ -51,51 +51,49 @@ pre, code, kbd, samp { font-family: monospace, monospace; font-size: 1em; }
 
 kbd { background-color: aqua; padding: 0 0.25em; border-radius: 0.3em; }
 
-.inner-wrap { margin: auto; padding: 20px; max-width: 1024px; }
+.l-skip-links { position: absolute; top: -1.6em; white-space: nowrap; }
 
-#header { background-color: White; border-bottom: 1px solid Gainsboro; }
+.l-inner-wrap { margin: auto; padding: 20px; max-width: 1024px; }
 
-#header .inner-wrap { height: 100px; font-family: 'Caveat', sans-serif; font-size: 2em; }
+.l-header { background-color: White; border-bottom: 1px solid Gainsboro; }
 
-#header .inner-wrap .Hamburger_menu { display: none; }
+.l-header .l-inner-wrap { height: 100px; transition: height 0.1s, padding 0.1s, font-size 0.1s; font-family: 'Caveat', sans-serif; font-size: 2em; }
 
-#header .inner-wrap .site_name { display: inline-block; }
+.l-header .l-inner-wrap .l-hamburger-menu { display: none; }
 
-#center { background-color: White; }
+.l-header .l-inner-wrap .l-site-logo { display: inline-block; }
 
-#center .inner-wrap::after { content: ""; clear: both; display: table; }
+.l-center { background-color: White; }
 
-#footer { background-color: AliceBlue; border-top: 1px solid Gainsboro; }
+.l-center .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
-#footer .inner-wrap { height: 100px; }
+.l-center .l-inner-wrap .l-col-left { width: 200px; float: left; outline: 1px dashed black; }
 
-#footer .inner-wrap .copyright { text-align: center; }
+.l-center .l-inner-wrap .l-col-left .sidebar-menu-title { font-weight: bold; }
 
-#sidebar { width: 200px; float: left; outline: 1px dashed black; }
+.l-center .l-inner-wrap .l-col-left hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: DarkGray; }
 
-#sidebar .sidebar-menu-title { font-weight: bold; }
+.l-center .l-inner-wrap .l-col-left .l-categories ul { margin: 0; padding-left: 10px; list-style-type: none; }
 
-#sidebar hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: DarkGray; }
+.l-center .l-inner-wrap .l-col-right { max-width: 764px; margin-left: 220px; padding: 20px; outline: 1px dashed black; }
 
-#sidebar #categories ul { margin: 0; padding-left: 10px; list-style-type: none; }
+.l-footer { background-color: Snow; border-top: 1px solid Gainsboro; }
 
-#main { max-width: 764px; margin-left: 220px; padding: 20px; outline: 1px dashed black; }
+.l-footer .l-inner-wrap { height: 100px; }
 
-.post-header { text-align: center; }
+.l-footer .l-inner-wrap .copyright { text-align: center; }
 
-.post-header .post-title { margin: 0.25em 0; }
+.post .content-header { text-align: center; line-height: 1; }
 
-.post-header .post-meta { font-size: 0.75em; padding: 0.25em 0; border-bottom: 1px solid red; }
+.post .content-header .content-title { margin: 0.25em 0; font-weight: 300; }
 
-.skip-links { position: absolute; top: -4.8em; }
+.post .content-header .content-meta { font-size: 0.75em; padding: 0.25em 0; border-bottom: 1px solid red; }
 
-.skip-links ul { margin: 0; padding: 0; }
+.breadcrumbs { font-size: 0.75em; line-height: 1; }
 
-.breadcrumbs { font-size: 0.75em; }
+@media screen and (max-width: 992px) { .l-col-left { display: none; } .l-center .l-inner-wrap .l-col-right { max-width: 984px; margin-left: 0; } .l-header .l-inner-wrap .l-hamburger-menu { display: inline-block; } }
 
-@media screen and (max-width: 992px) { #sidebar { display: none; } #main { max-width: 984px; margin-left: 0; } #header .inner-wrap .Hamburger_menu { display: inline-block; } }
-
-@media screen and (max-width: 600px) { #main { max-width: 1024px; } #center .inner-wrap { padding: 0; } #header .inner-wrap { height: 50px; padding: 10px 20px; font-size: 1em; } }
+@media screen and (max-width: 600px) { .l-col-right { max-width: 1024px; } .l-center .l-inner-wrap { padding: 0; } .l-header .l-inner-wrap { height: 50px; padding: 10px 20px; font-size: 1em; } }
 
 .highlight .hll { background-color: #ffffcc; }
 

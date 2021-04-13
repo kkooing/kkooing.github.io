@@ -35,12 +35,11 @@
 </head>
 
 <body>
-  <nav class="skip-links">
-  <ul>
-    <li><a href="#content" class="skip_to_content">Skip to content</a></li>
-    <li><a href="#categories" class="skip_to_categories">Skip to categories</a></li>
-    <li><a href="#pages" class="skip_to_pages">Skip to pages</a></li>
-  </ul>
+  <nav class="l-skip-links">
+  Skip to 
+  <a href="#content">content</a> | 
+  <a href="#category-list">category-list</a> |
+  <a href="#page-list">page-list</a>
 </nav>
 
   <!--[if lt IE 9]>
@@ -48,47 +47,46 @@
 <![endif]-->
 
 
-  <header class="header" id="header">
-    <div class="inner-wrap">
-      <div class="Hamburger_menu">
-  <button>h</button>
-</div>
-<div class="site_name">
-  <a class="site_name" href="/">kkooing</a>
-</div>
-<div class="search_blog">
-
-</div>
+  <header class="l-header">
+  <div class="l-inner-wrap">
+    <div class="l-hamburger-menu">
+      <button>h</button>
     </div>
-  </header>
+    <div class="l-site-logo">
+      <a class="site-name" href="/">kkooing</a>
+    </div>
+    <div class="l-search-blog">
 
-  <section class="center" id="center">
-    <div class="inner-wrap">
+    </div>
+  </div>
+</header>
 
-      <aside class="sidebar" id="sidebar">
-        <div class="profile" id="profile">
-  <div class="Hamburger_menu">
+  <section class="l-center">
+    <div class="l-inner-wrap">
+      <section class="l-col-left">
+  <div class="l-hamburger-menu">
 
   </div>
-  <div class="site_name">
-    <a class="site_name" href="/">kkooing</a>
+  <div class="l-profile">
+    <div class="site_name">
+      <a class="site_name" href="/">kkooing</a>
+    </div>
   </div>
-</div>
 
-<nav class="pages" id="pages">
-  <div class="sidebar-menu-title">page</div>
-  <ul><li>
-      <a href="/">home</a>
-    </li><li>
-      <a href="/about/">About</a>
-    </li><li>
-      <a href="/blog/">Blog</a>
-    </li></ul>
-</nav>
+  <nav class="l-pages" id="l-pages">
+    <div class="sidebar-menu-title">page</div>
+    <ul><li>
+        <a href="/">home</a>
+      </li><li>
+        <a href="/about/">About</a>
+      </li><li>
+        <a href="/blog/">Blog</a>
+      </li></ul>
+  </nav>
 
-<nav class="categories" id="categories">
-  <div class="sidebar-menu-title">category</div>
-  <ul><li>
+  <nav class="l-categories" id="l-categories">
+    <div class="sidebar-menu-title">category</div>
+    <ul><li>
   <div class="/computer-language"><a href="/computer-language">컴퓨터 언어</a></div><ul><li>
   <div class="/computer-language/programming"><a href="/computer-language/programming">프로그래밍</a></div><ul><li>
   <div class="/computer-language/programming/cpp"><a href="/computer-language/programming/cpp">C++</a><span>(1)</span></div></li><li>
@@ -113,21 +111,23 @@
   <div class="/tool/auto-cad">AutoCAD</div></li><li>
   <div class="/tool/inventor">인벤터</div></li><li>
   <div class="/tool/affinity-designer">Affinity Designer</div></li></ul></li></ul>
-</nav>
-      </aside>
-
-      <main class="main" id="main">
-        <section class="core post" id="core">
+  </nav>
+</section>
+      <section class="l-col-right">
+        <main class="l-main">
+          <section class="post">
   <div class="breadcrumbs">
+    <div class="breadcrumbs">
 <!-- include.url: relative url string (/).../...(/*) --><a href="/it">IT</a><span> > </span><a href="/it/jekyll-blog">Jekyll 블로그</a></div>
+  </div>
   <section class="content" id="content">
-    <div class="post-header">
-      <h1 class="post-title">Jekyll로 GitHub Pages 블로그 만들기</h1>
-      <div class="post-meta">
+    <div class="content-header">
+      <h1 class="content-title">Jekyll로 GitHub Pages 블로그 만들기</h1>
+      <div class="content-meta">
         2021. 03. 17.
       </div>
     </div>
-    <div class="post-content">
+    <div class="content-text">
       <h2 id="루비-설치">루비 설치</h2>
 
 <p><a href="https://rubyinstaller.org/downloads/"></a></p>
@@ -144,27 +144,24 @@
 </code></pre></div></div>
 
     </div>
-    <div class="post-footer">
+    <div class="content-footer">
       <div class="tag-list">
         
         
-        <span class="tag_word">#blog</span>
+        <span class="tag-word">blog</span>
         
-        <span class="tag_word">#github-pages</span>
+        <span class="tag-word">github-pages</span>
         
-        <span class="tag_word">#jekyll</span>
+        <span class="tag-word">jekyll</span>
         
       </div>
     </div>
   </section>
 </section>
-
-<section class="comment" id="comment">
-
-</section>
-
-<section class="pagenation" id="pagenation">
-  <div>
+        </main><section class="l-comment">
+  
+</section><section class="l-related">
+<div>
   <div class="breadcrumbs">
 <!-- include.url: relative url string (/).../...(/*) --><a href="/it">IT</a><span> > </span><a href="/it/jekyll-blog">Jekyll 블로그</a></div>
 </div>
@@ -206,23 +203,21 @@
       </div>
     </li></ul>
 </div>
-</section>
-
-<section class="featured-posts" id="featured-posts">
+</section><section class="l-featured">
   
-</section>
-      </main>
-
+</section></section>
     </div>
   </section>
 
-  <footer class="footer" id="footer">
-    <div class="inner-wrap">
-      <div class="copyright">
-  &copy;&nbsp;2020-2021&nbsp;<a href="https://github.com/kkooing" target="_blank" rel="nofollow">kkooing</a>.
-</div>
+  <footer class="l-footer">
+  <div class="l-inner-wrap">
+    <div class="copyright">
+      &copy;&nbsp;2020-2021&nbsp;<a href="https://github.com/kkooing"
+        target="_blank" rel="nofollow">kkooing</a>.
     </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 
 </html>
