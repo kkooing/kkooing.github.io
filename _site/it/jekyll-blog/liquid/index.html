@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
 
 
 
@@ -17,7 +17,6 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <!--[if IE]>
   <style>
@@ -51,7 +50,11 @@
   <header class="l-header">
   <div class="l-inner-wrap">
     <div class="l-hamburger-menu">
-      <button>h</button>
+      <button onclick="sidebar_open()">
+        <span class="material-icons-two-tone">
+          menu
+        </span>
+      </button>
     </div>
     <div class="l-site-logo">
       <a class="site-name" href="/">kkooing</a>
@@ -64,7 +67,7 @@
 
   <section class="l-center">
     <div class="l-inner-wrap">
-      <section class="l-col-left">
+      <section class="l-col-left" id="sidebar">
   <div class="l-hamburger-menu">
 
   </div>
@@ -409,6 +412,16 @@
     </div>
   </div>
 </footer>
+
+  <script>
+    function sidebar_open() {
+      document.getElementById("sidebar").style.display = "block";
+    }
+
+    function sidebar_close() {
+      document.getElementById("sidebar").style.display = "none";
+    }
+  </script>
 
 </body>
 

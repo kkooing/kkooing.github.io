@@ -1,5 +1,7 @@
 @media screen and (max-width: $bp-medium) {
   .l-col-left {
+    position: fixed;
+    top: 0;
     display: none;
   }
   .l-center .l-inner-wrap .l-col-right {
@@ -13,7 +15,7 @@
 
 @media screen and (max-width: $bp-small) {
   html {
-    font-size: 1.0625em;
+    font-size: $ftsz-html-small;
   }
   .l-col-right {
     max-width: $max-width-site;

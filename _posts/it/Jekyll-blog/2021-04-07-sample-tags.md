@@ -219,7 +219,7 @@ This text will go right-to-left.
 &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;,<br />
 &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</span><br />
 <table>
-  <caption>Monthly savings</caption>
+  <caption>Tbl.1 - Monthly savings</caption>
   <thead>
     <tr>
       <th>Month</th>

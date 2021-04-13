@@ -31,6 +31,7 @@
   .l-inner-wrap {
     @include clearfix;
     .l-col-left {
+      background-color: $color-sidebar-bg;
       width: $width-col-left;
       float: left;
       outline: 1px dashed black; // temporary

@@ -4,6 +4,9 @@ html {
   overflow-x: hidden;
   word-wrap: break-word;
   @include font-html;
+
+  font-size: $ftsz-html-medium;
+  color: $ftcl-html;
 }
 
 *, *:before, *:after {
@@ -18,15 +21,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-h;
-  font-weight: 700;
+  font-weight: bold;
 }
 
-h1 { font-size: $font-size-h1; margin: ((3rem - $font-size-h1) / 2) 0; }
-h2 { font-size: $font-size-h2; margin: ((3rem - $font-size-h2) / 2) 0; }
-h3 { font-size: $font-size-h3; margin: ((3rem - $font-size-h3) / 2) 0; }
-h4 { font-size: $font-size-h4; margin: ((3rem - $font-size-h4) / 2) 0; }
-h5 { font-size: $font-size-h5; margin: ((3rem - $font-size-h5) / 2) 0; }
-h6 { font-size: $font-size-h6; margin: ((3rem - $font-size-h6) / 2) 0; }
+h1 { font-size: $ftsz-h1; margin: ((3rem - $ftsz-h1) / 2) 0; }
+h2 { font-size: $ftsz-h2; margin: ((3rem - $ftsz-h2) / 2) 0; }
+h3 { font-size: $ftsz-h3; margin: ((3rem - $ftsz-h3) / 2) 0; }
+h4 { font-size: $ftsz-h4; margin: ((3rem - $ftsz-h4) / 2) 0; }
+h5 { font-size: $ftsz-h5; margin: ((3rem - $ftsz-h5) / 2) 0; }
+h6 { font-size: $ftsz-h6; margin: ((3rem - $ftsz-h6) / 2) 0; }
 
 // 그룹
 p {
@@ -50,11 +53,11 @@ blockquote {
 }
 
 ol, ul {
-  margin: 0.5em 0;
+  margin: 0.75em 0;
   padding-left: 2em;
 }
 dl {
-  margin: 0.5em 0;
+  margin: 0.75em 0;
   padding-left: 1em;
   dd {
     margin-left: 1em;
@@ -64,41 +67,57 @@ dl {
 // 택스트
 
 a {
-  &:link{ color: $color-link; }
-  &:visited{ color: $color-visited; }
-  &:hover{ color: $color-hover; text-decoration: none; }
-}
-
-strong {
-  font-weight: bolder;
+  &:link{ color: $ftcl-link; }
+  &:visited{ color: $ftcl-visited; }
+  &:hover{ color: $ftcl-hover; text-decoration: none; }
 }
 
 small {
-  font-size: 75%;
+  font-size: $ftsz-small;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
 }
 
 sub{
-  font-size: 75%;
+  font-size: $ftsz-small;
   vertical-align: sub;
 }
 sup {
-  font-size: 75%;
+  font-size: $ftsz-small;
   vertical-align: super;
 }
 
 pre, code, kbd, samp {
   @include font-mono;
-  font-size: 1em;
+  font-size: $ftsz-medium;
 }
 
 kbd {
-  color: GhostWhite;
-  background-color: SlateGray;
+  color: $ftcl-html-light;
+  background-color: Gainsboro;
   padding: 0 0.25em;
   font-weight: 700;
-  border: 2px solid $color-basic-font;
+  border: 2px solid Gray;
   border-radius: 0.3em;
 }
 
 // 기타
 
+// 표
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: $ftsz-small;
+  color: $ftcl-html-light;
+}
+
+td, th {
+  border: 1px solid Gainsboro;
+  padding: 0 0.3em;
+}
