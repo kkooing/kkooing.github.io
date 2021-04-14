@@ -25,7 +25,7 @@ tags            : [blog]
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 <tr style="font-family: 'Noto Sans', 'Noto Serif KR';">
 <td>Noto Sans</td>
-<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>國참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
 <td>1234567890</td>
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
@@ -33,7 +33,7 @@ tags            : [blog]
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
 <tr style="font-family: 'Noto Sans KR', 'Noto Serif KR'; font-weight: 400;">
 <td>Noto Sans KR@400</td>
-<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>國참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
 <td>The quick brown fox jumps over the lazy dog.</td>
 <td>1234567890</td>
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>

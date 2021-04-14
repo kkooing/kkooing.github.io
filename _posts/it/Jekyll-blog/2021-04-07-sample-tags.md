@@ -34,11 +34,21 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 
 <span style="color: red;">&lt;pre&gt;</span><br />
 <pre>
-Text in a pre element
-is displayed in a fixed-width
-font, and it preserves
-both      spaces and
-line breaks
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i, n, cube;
+  cout << "Input the number of terms : ";
+  cin >> n;
+  for (i = 1; i <= n; i++) {
+    cube = i * i * i;
+    cout << "Number is: " << i << " and its cube is: " << cube << endl;
+  }
+}
+1lI|ㅣ, 0Ooㅇ
+|abcdefghijklmnopqrstuvwxyz|
+|다람쥐 헌 쳇바퀴에 타고파.|
 </pre>
 
 <span style="color: red;">&lt;blockquote&gt;</span><br />

@@ -63,7 +63,8 @@ $line-height-html: 1.6;
   line-height: $line-height-html;
 }
 @mixin font-mono {
-  font-family: 'Nanum Gothic Coding', monospace;
+  //font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'D2Coding', monospace;
   font-weight: normal;
   letter-spacing: 0;
 }
@@ -83,16 +84,6 @@ $font-family-h: 'Noto Sans KR', sans-serif;
 
 
 
-
-
-
-
-
-
-
-
-
-
 // float overflow 방지
 @mixin clearfix{
   &::after{
@@ -103,13 +94,9 @@ $font-family-h: 'Noto Sans KR', sans-serif;
 }
 
 @font-face {
-  font-family: 'Material Icons Two Tone';
+  font-family: 'D2Coding';
   font-style: normal;
   font-weight: 400;
-  src: url(https://example.com/MaterialIconsTwoTone-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons Two Tone'),
-    local('MaterialIconsTwoTone-Regular'),
-    url(https://example.com/MaterialIconsTwoTone-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIconsTwoTone-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIconsTwoTone-Regular.ttf) format('truetype');
+  src: local('@@'),
+    url(/assets/fonts/d2coding/D2Coding-Ver1.3.2-20180524.ttf) format('truetype');
 }
