@@ -16,12 +16,12 @@
   <section class="l-center">
     <div class="l-inner-wrap">
       {% include l-col-left.html %}
-      <section class="l-col-right">
-        <main class="l-main">
-          {{ content }}
-        </main>
-        {%- include l-comment.html -%}
-        {%- include l-related.html -%}
+      <section class="l-column right">
+        {{ content }}
+        {%- if page.layout == "post" -%}
+          {%- include l-comment.html -%}
+          {%- include l-related.html -%}
+        {%- endif -%}
         {%- include l-featured.html -%}
       </section>
     </div>

@@ -1,8 +1,12 @@
-<section class="l-col-left" id="sidebar">
-  <div class="l-hamburger-menu">
-
+<section class="l-column left" id="sidebar">
+  <div class="m-hamburger-menu">
+    <button onclick="sidebar_close()">
+      <span class="material-icons-two-tone">
+        close
+      </span>
+    </button>
   </div>
-  <div class="l-profile">
+  <div class="m-widget profile">
     <div class="site_name">
       <a class="site_name" href="{{ '/' | relative_url }}">
         {{- site.name -}}
@@ -10,8 +14,8 @@
     </div>
   </div>
 
-  <nav class="l-pages" id="l-pages">
-    <div class="sidebar-menu-title">{{- site.data.ui-text[site.locale].sidebar_pages | default: 'page' -}}</div>
+  <nav class="m-widget page-list" id="sl-page-list">
+    <div class="widget-title">{{- site.data.ui-text[site.locale].sidebar_pages | default: 'page' -}}</div>
     <ul>
       {%- for page in site.data.navi.pages -%}
       <li>
@@ -21,8 +25,8 @@
     </ul>
   </nav>
 
-  <nav class="l-categories" id="l-categories">
-    <div class="sidebar-menu-title">{{- site.data.ui-text[site.locale].sidebar_categories | default: 'category' -}}
+  <nav class="m-widget category-list" id="sl-category-list">
+    <div class="widget-title">{{- site.data.ui-text[site.locale].sidebar_categories | default: 'category' -}}
     </div>
     <ul>
       {%- include category-menu.html list=site.data.navi.categories url="" -%}

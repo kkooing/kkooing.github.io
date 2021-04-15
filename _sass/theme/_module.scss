@@ -1,40 +1,73 @@
-.post .breadcrumbs {
-  font-size: $ftsz-small;
+.m-widget {
+  background-color: $bgcl-widget;
+  margin-bottom: $margin-widget-gap;
+  padding: $margin-widget;
+  border: 1px solid $bdcl-layout;
+  .widget-title {
+    font-weight: bold;
+  }
+  ul {
+    margin: 0;
+    padding-left: 10px;
+    list-style-type: none;
+  }
+  hr {
+    margin: 5px 5px 5px -5px;
+    border-style: dashed none none none;
+    border-width: 1px;
+    border-color: DarkGray;
+  }
+  &.profile {
+        
+  }
+  &.page-list {
+        
+  }
+  &.category-list {
+
+  }
 }
 
-.tag-word {
-  font-size: $ftsz-small;
-  padding: 0 0.5em;
-  color: LightSlateGray;
-  background-color: AliceBlue;
-  border: 1px solid LightSteelBlue;
-  border-radius: 0.5em;
-  vertical-align: middle;
+.m-hamburger-menu {
+  display: none;
+}
+.l-center .l-inner-wrap .l-column.left .m-hamburger-menu {
+  text-align: right;
 }
 
-.copyright {
+.m-site-logo{
+  display: inline-block;
+}
+
+.m-site-search {
+  display: inline-block;
+  float: right;
+}
+
+.l-footer .l-inner-wrap .m-copyright {
   text-align: center;
+  font-size: $ftsz-small;
   color: MidnightBlue;
 }
 
-.material-icons-two-tone {
-  font-family: 'Material Icons Two Tone';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+
+
+.post-list {
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      border-bottom: 1px solid Gainsboro;
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
+    .breadcrumbs {
+      font-size: $ftsz-small;
+    }
+    .posted-date {
+      font-size: $ftsz-small;
+    }
+  }
 }

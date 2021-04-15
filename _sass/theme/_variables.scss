@@ -1,37 +1,34 @@
-// Dimension
+//  ========== ==========  Dimension  ========== ==========  //
+//  Length
 $max-width-site: 1024px;
 $width-col-left: 200px;
 $height-header: 100px;
 $height-footer: 100px;
 
-// Margin
+//  Margin
 $margin-inner-wrap: 20px;
-$margin-col-x: 20px;
-$margin-col-y: 20px;
+$margin-column-gap: 20px;
+$margin-widget-gap: 10px;
+$margin-main: 1em;
+$margin-widget: 0.5em;
 
-$margin-main: 20px;
-
-// breakpoint(less than equal)
-// large > 992px
+//  breakpoint(less than equal)
+//    large > 992px
 $bp-medium: 992px;
 $bp-small: 600px;
 
-// color
-$color-header-bg: White;
-$color-header-border: Gainsboro;
+//  ========== ==========  Color  ========== ==========  //
+//  Layout color
+$bgcl-header: White; //  background
+$bgcl-center: White;
+$bgcl-footer: Snow;
+$bgcl-widget: Snow;
 
-$color-center-bg: White;
+$bdcl-layout: Gainsboro; //  border
 
-$color-footer-bg: Snow;
-$color-footer-border: Gainsboro;
+$cl-hr: LightGray;
 
-$color-hr: LightGray;
-
-// sidebar
-$color-sidebar-bg: White;
-$sidebar-cat-hr-color: DarkGray;
-
-//  Font
+//  ========== ==========  Font  ========== ==========  //
 //    font-size (ftsz)
 $ftsz-html-medium: 1.1250em;      // = 18px
 $ftsz-html-small: 1em;     // = 16px
@@ -55,7 +52,7 @@ $ftcl-visited: $ftcl-html;
 $ftcl-hover: $ftcl-html-light;
 
 
-$line-height-html: 1.6;
+$line-height-html: 1.5;
 @mixin font-html {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: normal;
@@ -92,12 +89,3 @@ $font-family-h: 'Noto Sans KR', sans-serif;
     display: table;
   }
 }
-/*
-@font-face {
-  font-family: 'D2Coding';
-  font-style: normal;
-  font-weight: 400;
-  src: local('@@'),
-    url(/assets/fonts/d2coding/D2Coding-Ver1.3.2-20180524.ttf) format('truetype');
-}
-*/

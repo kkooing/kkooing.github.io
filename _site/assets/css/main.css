@@ -1,3 +1,4 @@
+/* Fonts */
 /* [0] */
 @font-face { font-family: 'Noto Sans KR'; font-style: normal; font-weight: 400; font-display: fallback; src: url(/assets/fonts/notosanskr/notosanskr_subset_0.woff2) format("woff2"); unicode-range: U+f9ca-fa0b, U+ff03-ff05, U+ff07, U+ff0a-ff0b, U+ff0d-ff19, U+ff1b, U+ff1d, U+ff20-ff5b, U+ff5d, U+ffe0-ffe3, U+ffe5-ffe6; }
 
@@ -719,8 +720,7 @@
 @font-face { font-family: 'D2Coding'; font-style: normal; font-weight: 400; font-display: fallback; src: url(/assets/fonts/d2coding/d2coding_subset_119.woff2) format("woff2"); unicode-range: U+20-22, U+27-2a, U+2c-38, U+3a-3b, U+3f, U+41-47, U+4a-4c, U+4f-5d, U+61-7b, U+7d, U+a1, U+ab, U+ae, U+b7, U+bb, U+bf, U+2013-2014, U+201c-201d, U+2122, U+ac00, U+ace0, U+ae30, U+b2e4, U+b85c, U+b9ac, U+c0ac, U+c2a4, U+c2dc, U+c774, U+c778, U+c9c0, U+d558; }
 
 /* Variables */
-/* @font-face { font-family: 'D2Coding'; font-style: normal; font-weight: 400; src: local('@@'), url(/assets/fonts/d2coding/D2Coding-Ver1.3.2-20180524.ttf) format('truetype'); } */
-html { box-sizing: border-box; overflow-x: hidden; word-wrap: break-word; font-family: 'Noto Sans KR', sans-serif; font-weight: normal; letter-spacing: 0.03em; line-height: 1.6; font-size: 1.125em; color: #333333; }
+html { box-sizing: border-box; overflow-x: hidden; word-wrap: break-word; font-family: 'Noto Sans KR', sans-serif; font-weight: normal; letter-spacing: 0.03em; line-height: 1.5; font-size: 1.125em; color: #333333; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
@@ -772,13 +772,16 @@ pre, code, kbd, samp { font-family: 'D2Coding', monospace; font-weight: normal; 
 
 kbd { color: #666666; background-color: Gainsboro; padding: 0 0.25em; font-weight: 700; border: 2px solid Gray; border-radius: 0.3em; }
 
+button { border: none; display: inline-block; padding: 0em 1em; vertical-align: middle; overflow: hidden; text-decoration: none; color: inherit; /*background-color:inherit;*/ text-align: center; cursor: pointer; white-space: nowrap; }
+
+/*button {border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}*/
 table { border-collapse: collapse; }
 
 caption { font-size: 0.8em; color: #666666; }
 
 td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
-.l-skip-links { position: absolute; top: -1.6em; white-space: nowrap; }
+.l-skip-links { position: absolute; top: -1.5em; white-space: nowrap; }
 
 .l-inner-wrap { margin: auto; padding: 20px; max-width: 1024px; }
 
@@ -786,27 +789,55 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .l-header .l-inner-wrap { height: 100px; transition: height 0.1s, padding 0.1s, font-size 0.1s; font-family: 'Caveat', sans-serif; font-size: 2em; }
 
-.l-header .l-inner-wrap .l-hamburger-menu { display: none; }
-
-.l-header .l-inner-wrap .l-site-logo { display: inline-block; }
+.l-header .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
 .l-center { background-color: White; }
 
 .l-center .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
-.l-center .l-inner-wrap .l-col-left { background-color: White; width: 200px; float: left; outline: 1px dashed black; }
+.l-center .l-inner-wrap .l-column { background-color: White; }
 
-.l-center .l-inner-wrap .l-col-left .sidebar-menu-title { font-weight: bold; }
+.l-center .l-inner-wrap .l-column.left { width: 200px; float: left; }
 
-.l-center .l-inner-wrap .l-col-left hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: DarkGray; }
-
-.l-center .l-inner-wrap .l-col-left .l-categories ul { margin: 0; padding-left: 10px; list-style-type: none; }
-
-.l-center .l-inner-wrap .l-col-right { max-width: 764px; margin-left: 220px; padding: 20px; outline: 1px dashed black; }
+.l-center .l-inner-wrap .l-column.right { max-width: 764px; margin-left: 220px; padding: 1em; border: 1px solid Gainsboro; }
 
 .l-footer { background-color: Snow; border-top: 1px solid Gainsboro; }
 
 .l-footer .l-inner-wrap { height: 100px; }
+
+.m-widget { background-color: Snow; margin-bottom: 10px; padding: 0.5em; border: 1px solid Gainsboro; }
+
+.m-widget .widget-title { font-weight: bold; }
+
+.m-widget ul { margin: 0; padding-left: 10px; list-style-type: none; }
+
+.m-widget hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: DarkGray; }
+
+.m-hamburger-menu { display: none; }
+
+.l-center .l-inner-wrap .l-column.left .m-hamburger-menu { text-align: right; }
+
+.m-site-logo { display: inline-block; }
+
+.m-site-search { display: inline-block; float: right; }
+
+.l-footer .l-inner-wrap .m-copyright { text-align: center; font-size: 0.8em; color: MidnightBlue; }
+
+.post-list ul { margin: 0; padding-left: 0; list-style-type: none; }
+
+.post-list ul li { border-bottom: 1px solid Gainsboro; }
+
+.post-list ul li:last-child { border-bottom: 0; }
+
+.post-list ul .breadcrumbs { font-size: 0.8em; }
+
+.post-list ul .posted-date { font-size: 0.8em; }
+
+.post .breadcrumbs { font-size: 0.8em; }
+
+.tag-word { font-size: 0.8em; padding: 0 0.5em; color: LightSlateGray; background-color: AliceBlue; border: 1px solid LightSteelBlue; border-radius: 0.5em; vertical-align: middle; }
+
+.material-icons-two-tone { font-family: 'Material Icons Two Tone'; font-weight: normal; font-style: normal; font-size: 24px; /* Preferred icon size */ display: inline-block; line-height: 1; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; /* Support for all WebKit browsers. */ -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */ text-rendering: optimizeLegibility; /* Support for Firefox. */ -moz-osx-font-smoothing: grayscale; /* Support for IE. */ font-feature-settings: 'liga'; }
 
 .post .content-header { text-align: center; }
 
@@ -818,17 +849,9 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .post .content-footer { margin: 1em 0; }
 
-.post .breadcrumbs { font-size: 0.8em; }
+@media screen and (max-width: 992px) { .l-center .l-inner-wrap .l-column.left { position: fixed; top: 0; left: 0; display: none; } .l-center .l-inner-wrap .l-column.right { max-width: 984px; margin-left: 0; } .l-header .l-inner-wrap .m-hamburger-menu { display: inline-block; } .l-center .l-inner-wrap .l-column.left .m-hamburger-menu { display: block; } }
 
-.tag-word { font-size: 0.8em; padding: 0 0.5em; color: LightSlateGray; background-color: AliceBlue; border: 1px solid LightSteelBlue; border-radius: 0.5em; vertical-align: middle; }
-
-.copyright { text-align: center; color: MidnightBlue; }
-
-.material-icons-two-tone { font-family: 'Material Icons Two Tone'; font-weight: normal; font-style: normal; font-size: 24px; /* Preferred icon size */ display: inline-block; line-height: 1; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; /* Support for all WebKit browsers. */ -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */ text-rendering: optimizeLegibility; /* Support for Firefox. */ -moz-osx-font-smoothing: grayscale; /* Support for IE. */ font-feature-settings: 'liga'; }
-
-@media screen and (max-width: 992px) { .l-col-left { position: fixed; top: 0; display: none; } .l-center .l-inner-wrap .l-col-right { max-width: 984px; margin-left: 0; } .l-header .l-inner-wrap .l-hamburger-menu { display: inline-block; } }
-
-@media screen and (max-width: 600px) { html { font-size: 1em; } .l-col-right { max-width: 1024px; } .l-center .l-inner-wrap { padding: 0; } .l-header .l-inner-wrap { height: 50px; padding: 10px 20px; font-size: 1em; } }
+@media screen and (max-width: 600px) { html { font-size: 1em; } .l-center .l-inner-wrap .l-column.right { max-width: 1024px; border: 0; } .l-center .l-inner-wrap { padding: 0; } .l-header .l-inner-wrap { height: 50px; padding: 10px 20px; font-size: 1em; } }
 
 .highlight .hll { background-color: #ffffcc; }
 
