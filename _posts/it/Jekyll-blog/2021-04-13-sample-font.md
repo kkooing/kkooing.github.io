@@ -126,6 +126,13 @@ tags            : [blog]
 <td>1234567890</td>
 <td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
 </tr>
+<tr style="font-family: 'D2Coding', 'Noto Serif KR';">
+<td>D2Coding</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]<>@#$%^&*+-_=/\|`~</td>
+</tr>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 <tr style="font-family: 'Inconsolata', 'Noto Serif KR';">
 <td>Inconsolata</td>

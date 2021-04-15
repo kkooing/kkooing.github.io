@@ -34,16 +34,16 @@ This is some text in a paragraph. This is some text in a paragraph.<br />다음�
 
 <span style="color: red;">&lt;pre&gt;</span><br />
 <pre>
-#include <iostream>
+#include &lt;iostream&gt;
 using namespace std;
 
 int main() {
   int i, n, cube;
-  cout << "Input the number of terms : ";
-  cin >> n;
-  for (i = 1; i <= n; i++) {
+  cout &lt;&lt; "Input the number of terms : ";
+  cin &gt;&gt; n;
+  for (i = 1; i &lt;= n; i++) {
     cube = i * i * i;
-    cout << "Number is: " << i << " and its cube is: " << cube << endl;
+    cout &lt;&lt; "Number is: " &lt;&lt; i &lt;&lt; " and its cube is: " &lt;&lt; cube &lt;&lt; endl;
   }
 }
 1lI|ㅣ, 0Ooㅇ
@@ -189,6 +189,7 @@ This text will go right-to-left.
 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
 
 <span style="color: red;">&lt;iframe&gt;</span><br />
+
 <iframe src="http://192.168.0.152" title="W3Schools Free Online Web Tutorials"></iframe>
 
 <span style="color: red;">&lt;embed&gt; - 비추천</span><br />
