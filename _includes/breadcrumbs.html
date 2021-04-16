@@ -1,12 +1,6 @@
 <div class="breadcrumbs">
-<!-- include.url: relative url string (/).../...(/*) -->
-{%- assign url = include.url -%}
-{%- assign url-begin = url | slice: 0 -%}
-{%- if url-begin == "/" -%}
-  {%- assign url = url | remove_first: "/" -%}
-{%- endif -%}
-
-{%- assign url-array = url | append: "/" | split: "/" -%}
+<!-- include.url: relative url string /.../...(/*) -->
+{%- assign url-array = include.url | remove_first: "/" | split: "/" -%}
 {%- assign title_array = "/" | split: "/" -%}
 
 {%- capture title_array -%}
@@ -26,6 +20,7 @@
 {%- endfor -%}
 {%- assign rel_url_array = rel_url_array | remove_first: ":" | split: ":" -%}
 
+
 {%- case include.mode -%}
   {%- when "plain" -%}
 
@@ -44,9 +39,21 @@
       {%- endif -%}
         <a href="{{- rel_url_array[i] -}}">{{- title_array[i] -}}</a>
     {%- endfor -%}
-  {%- when "last-link" -%}
 
-    {%- for i in (0..rt_num) -%}
+  {%- when "plain-comp" -%}
+
+    {%- assign url-now-array = include.url-now | remove_first: "/" |  split: "/" -%}
+    {%- for i in (url-now-array.size..rt_num) -%}
+      {%- if forloop.first == false -%}
+        <span> > </span>
+      {%- endif -%}
+        <span>{{- title_array[i] -}}</span>
+    {%- endfor -%}
+
+  {%- when "link-comp" -%}
+
+    {%- assign url-now-array = include.url-now | remove_first: "/" |  split: "/" -%}
+    {%- for i in (url-now-array.size..rt_num) -%}
       {%- if forloop.first == false -%}
         <span> > </span>
       {%- endif -%}

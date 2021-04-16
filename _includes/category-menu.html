@@ -1,13 +1,28 @@
 {%- for item in include.list -%}
 {%- assign target_url = item.url | prepend: "/" | prepend: include.url -%}
+
+
+
+{%- assign target_url_array = target_url | remove_first: "/" | split: "/" -%}
+{%- assign page_url_array = page.url | remove_first: "/" | split: "/" -%}
+
+{%- assign is_target_div = true -%}
+{%- assign url_depth = target_url_array.size | minus: 1 -%}
+{%- for i in (0..url_depth) -%}
+  {%- if target_url_array[i] != page_url_array[i] -%}
+  {%- assign is_target_div = false -%}
+  {%- endif -%}
+{%- endfor -%}
+
+
 <li>
-  <div class="{{- target_url -}}">
+  <div class="{%- if is_target_div == true -%}target_div{%- endif -%}">
     {%- assign last-category = target_url | split: "/" | last -%}
     {%- assign my_posts = site.posts | where:"categories", last-category -%}
     {%- if {{my_posts.size}} != 0 -%}
       <a href="{{ target_url }}">{{- item.title -}}</a>
       {%- unless item.sub -%}
-        <span>({{- my_posts.size -}})</span>
+        <span class="posts-num">({{- my_posts.size -}})</span>
       {%- endunless -%}
     {%- else -%}
       {{- item.title -}}

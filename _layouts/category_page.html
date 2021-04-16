@@ -3,7 +3,7 @@ layout: default
 ---
 <main class="l-main category-page">
   <div class="breadcrumbs">
-    {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url mode="link" %}
+    {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url url-now=page.url mode="link" %}
   </div>
   <section class="content" id="content">
     {% include post-list.html url=page.url %}

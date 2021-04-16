@@ -25,18 +25,17 @@
   background-color: $bgcl-center;
   .l-inner-wrap {
     @include clearfix;
-    .l-column {
+    .l-column-left {
       background-color: $bgcl-center;
-      &.left {
-        width: $width-col-left;
-        float: left;
-      }
-      &.right {
-        max-width: ($max-width-site - $width-col-left - ($margin-inner-wrap * 2) - $margin-column-gap);
-        margin-left: ($width-col-left + $margin-inner-wrap);
-        padding: $margin-main;
-        border: 1px solid $bdcl-layout;
-      }
+      width: $width-col-left;
+      float: left;
+    }
+    .l-column-right {
+      background-color: $bgcl-center;
+      max-width: ($max-width-site - $width-col-left - ($margin-inner-wrap * 2) - $margin-column-gap);
+      margin-left: ($width-col-left + $margin-inner-wrap);
+      padding: $margin-main;
+      border: 1px solid $bdcl-layout;
     }
   }
 }
