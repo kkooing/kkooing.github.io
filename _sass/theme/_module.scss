@@ -5,10 +5,12 @@
   border: 1px solid $bdcl-layout;
   .widget-title {
     font-weight: bold;
+    margin: -5px 0 5px 0;
   }
   ul {
     margin: 0;
-    padding-left: 10px;
+    margin-left: 5px;
+    padding-left: 5px;
     list-style-type: none;
   }
   hr {
@@ -21,14 +23,38 @@
         
   }
   &.page-list {
-        
+    .material-icons-two-tone {
+      font-size: $ftsz-large;
+    }
   }
   &.category-list {
-    .target_div {
-      background-color: Lavender;
+    a {
+      text-decoration: 0;
     }
-    .posts-num{
-      float: right;
+    li {
+      position: relative;
+      .stopover_menu_marker{
+        position: absolute;
+        width: 1.1em;
+        left: -1.1em;
+      }
+      .stopover_menu {
+      }
+      .destination_menu {
+        background-color: Lavender;
+      }
+
+      .posts-num {
+        font-size: $ftsz-small;
+        color: darkgray;
+        float: right;
+      }
+      .no-posts {
+        color: lightgray;
+      }
+    }
+    ul ul {
+      border-left: 1px solid darkgray;
     }
   }
 }
@@ -56,31 +82,64 @@
 
 
 
-.post-list {
+.m-post-list {
   ul {
     margin: 0;
     padding-left: 0;
     list-style-type: none;
     li {
       border-bottom: 1px solid Gainsboro;
+      display: grid;
+
       &:last-child{
         border-bottom: 0;
       }
-    }
 
-    .post-info {
-      display: grid;
-      grid-template-columns: auto 4em 7em;
-      font-size: $ftsz-small;
-      .breadcrumbs, .comment-count, .posted-date {
+      .comment-count {
+        display: inline;
+        font-size: $ftsz-small;
+        .material-icons-two-tone {
+          font-size: $ftsz-small;
+        }
+      }
+
+      .pl-breadcrumbs, .pl-date, .pl-size, .pl-thumbnail {
+        font-size: $ftsz-small;
         color: darkgray;
       }
-      .comment-count .material-icons-two-tone {
-        font-size: $ftsz-small;
+
+      .pl-thumbnail {
+        border: 1px dashed black;
       }
-      .posted-date {
-        text-align: right;
-      }
+    }
+  }
+}
+
+.category-page .m-post-list,
+.home .m-post-list {
+  li {
+    grid-template-columns: auto 6em 5em;
+    .pl-title { grid-area: 1 / 1 / span 1 / span 2; }
+    .pl-breadcrumbs { grid-area: 2 / 1 / span 1 / span 1; }
+    .pl-date { grid-area: 2 / 2 / span 1 / span 1; }
+    .pl-size { display: none; }
+    .pl-thumbnail { grid-area: 1 / 3 / span 2 / span 1; }
+    .pl-date {
+      text-align: right;
+    }
+  }
+}
+
+.l-related .m-post-list {
+  li {
+    grid-template-columns: auto 5em;
+    .pl-title { grid-area: 1 / 1 / span 1 / span 1; }
+    .pl-breadcrumbs { display: none; }
+    .pl-date { grid-area: 2 / 1 / span 1 / span 1; }
+    .pl-size { display: none; }
+    .pl-thumbnail { grid-area: 1 / 2 / span 2 / span 1; }
+    .pl-date {
+      text-align: left;
     }
   }
 }

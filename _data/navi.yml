@@ -3,8 +3,8 @@ pages:
     url: /
   - title: About
     url: "/about/"
-  - title: Blog
-    url: "/blog/"
+  - title: Archive
+    url: "/archive/"
 
 # Do not put \, /, :, *, ?, ", <, >, | in the title or url.
 categories:

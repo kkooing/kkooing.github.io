@@ -6,10 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<!--link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=fallback" rel="stylesheet"-->
-<!--link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet"-->
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=fallback" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone&display=fallback" rel="stylesheet">
 
 
 
@@ -86,43 +84,37 @@
   </div>
 
   <nav class="m-widget page-list" id="sl-page-list">
-    <div class="widget-title">page</div>
-    <ul><li>
-        <a href="/">home</a>
-      </li><li>
-        <a href="/about/">About</a>
-      </li><li>
-        <a href="/blog/">Blog</a>
-      </li></ul>
-  </nav>
+    <div class="widget-title">page</div><button onclick="document.location='/'">
+  <span class="material-icons-two-tone">
+    home
+  </span>
+</button>
+
+<button onclick="document.location='/about/'">
+  <span class="material-icons-two-tone">
+    info
+  </span>
+</button>
+
+<button onclick="document.location='/archive/'">
+  <span class="material-icons-two-tone">
+    hourglass_full
+  </span>
+</button></nav>
 
   <nav class="m-widget category-list" id="sl-category-list">
     <div class="widget-title">category</div>
-    <ul><li>
-  <div class=""><a href="/computer-language">컴퓨터 언어</a></div><ul><li>
-  <div class=""><a href="/computer-language/programming">프로그래밍</a></div><ul><li>
-  <div class=""><a href="/computer-language/programming/cpp">C++</a><span class="posts-num">(1)</span></div></li><li>
-  <div class="">Python</div></li><li>
-  <div class="">Ruby</div></li></ul></li><li>
-  <div class="">스크립트</div><ul><li>
-  <div class="">Bash</div></li><li>
-  <div class="">Batch</div></li><li>
-  <div class="">PowerShell</div></li></ul></li><li>
-  <div class=""><a href="/computer-language/etc">기타</a></div><ul><li>
-  <div class="">HTML</div></li><li>
-  <div class=""><a href="/computer-language/etc/css">css</a><span class="posts-num">(2)</span></div></li><li>
-  <div class=""><a href="/computer-language/etc/kramdown">Kramdown</a><span class="posts-num">(2)</span></div></li><li>
-  <div class="">컨테이너</div></li></ul></li></ul></li><hr/><li>
-  <div class="target_div"><a href="/it">IT</a></div><ul><li>
-  <div class="target_div"><a href="/it/jekyll-blog">Jekyll 블로그</a><span class="posts-num">(6)</span></div></li><li>
-  <div class=""><a href="/it/raspberry-pi">라즈베리파이</a><span class="posts-num">(1)</span></div></li><li>
-  <div class=""><a href="/it/etc">기타</a><span class="posts-num">(5)</span></div></li></ul></li><hr/><li>
-  <div class="">역학</div></li><hr/><li>
-  <div class="">설계</div></li><hr/><li>
-  <div class="">tool</div><ul><li>
-  <div class="">AutoCAD</div></li><li>
-  <div class="">인벤터</div></li><li>
-  <div class="">Affinity Designer</div></li></ul></li></ul>
+    <ul><li><div><a href="/computer-language">컴퓨터 언어</a></div><ul><li><div><a href="/computer-language/programming">프로그래밍</a></div><ul><li><div><a href="/computer-language/programming/cpp">C++</a><span class="posts-num">[1]</span></div></li><li><div class="no-posts">Python</div></li><li><div class="no-posts">Ruby</div></li></ul></li><li><div class="no-posts">스크립트</div><ul><li><div class="no-posts">Bash</div></li><li><div class="no-posts">Batch</div></li><li><div class="no-posts">PowerShell</div></li></ul></li><li><div><a href="/computer-language/etc">기타</a></div><ul><li><div class="no-posts">HTML</div></li><li><div><a href="/computer-language/etc/css">css</a><span class="posts-num">[2]</span></div></li><li><div><a href="/computer-language/etc/kramdown">Kramdown</a><span class="posts-num">[2]</span></div></li><li><div class="no-posts">컨테이너</div></li></ul></li></ul></li><hr/><li><div class="stopover_menu_marker">
+      <span class="material-icons-two-tone">
+        play_arrow
+      </span>
+    </div>
+    <div class="stopover_menu "><a href="/it">IT</a></div><ul><li><div class="stopover_menu_marker">
+      <span class="material-icons-two-tone">
+        play_arrow
+      </span>
+    </div>
+    <div class="stopover_menu  destination_menu"><a href="/it/jekyll-blog">Jekyll 블로그</a><span class="posts-num">[6]</span></div></li><li><div><a href="/it/raspberry-pi">라즈베리파이</a><span class="posts-num">[1]</span></div></li><li><div><a href="/it/etc">기타</a><span class="posts-num">[5]</span></div></li></ul></li><hr/><li><div class="no-posts">역학</div></li><hr/><li><div class="no-posts">설계</div></li><hr/><li><div class="no-posts">tool</div><ul><li><div class="no-posts">AutoCAD</div></li><li><div class="no-posts">인벤터</div></li><li><div class="no-posts">Affinity Designer</div></li></ul></li></ul>
   </nav>
 </section>
       <section class="l-column-right">
@@ -591,108 +583,108 @@ This text will go right-to-left.
 
 
 
-<div class="post-list">
+<div class="m-post-list">
   <ul><li>
-      <div class="post-title">
+      <div class="pl-title">
         <a href="/it/jekyll-blog/sample-font/">샘플 폰트</a>
-      </div>
-      <div class="post-info">
-        <div class="breadcrumbs"><div class="breadcrumbs">
-<!-- include.url: relative url string /.../...(/*) --></div></div>
         <div class="comment-count">
-          <span class="material-icons-two-tone">
-            mode_comment
-          </span>
-          <span>
-            0
-          </span>
+          <span class="material-icons-two-tone">mode_comment</span>
+          <span>0</span>
         </div>
-        <div class="posted-date">2021. 04. 13.</div>
+      </div>
+      <div class="pl-breadcrumbs"><div class="breadcrumbs">
+<!-- include.url: relative url string /.../...(/*) --></div></div>
+      <div class="pl-date">2021. 04. 13.</div>
+      <div class="pl-size">
+
+      </div>
+      <div class="pl-thumbnail">
+        
       </div>
     </li><li>
-      <div class="post-title">
+      <div class="pl-title">
         <a href="/it/jekyll-blog/sample-font-size/">샘플 폰트 크기</a>
-      </div>
-      <div class="post-info">
-        <div class="breadcrumbs"><div class="breadcrumbs">
-<!-- include.url: relative url string /.../...(/*) --></div></div>
         <div class="comment-count">
-          <span class="material-icons-two-tone">
-            mode_comment
-          </span>
-          <span>
-            0
-          </span>
+          <span class="material-icons-two-tone">mode_comment</span>
+          <span>0</span>
         </div>
-        <div class="posted-date">2021. 04. 13.</div>
+      </div>
+      <div class="pl-breadcrumbs"><div class="breadcrumbs">
+<!-- include.url: relative url string /.../...(/*) --></div></div>
+      <div class="pl-date">2021. 04. 13.</div>
+      <div class="pl-size">
+
+      </div>
+      <div class="pl-thumbnail">
+        
       </div>
     </li><li>
-      <div class="post-title">
+      <div class="pl-title">
         <a href="/it/jekyll-blog/sample-tags/">샘플 html 태그</a>
-      </div>
-      <div class="post-info">
-        <div class="breadcrumbs"><div class="breadcrumbs">
-<!-- include.url: relative url string /.../...(/*) --></div></div>
         <div class="comment-count">
-          <span class="material-icons-two-tone">
-            mode_comment
-          </span>
-          <span>
-            0
-          </span>
+          <span class="material-icons-two-tone">mode_comment</span>
+          <span>0</span>
         </div>
-        <div class="posted-date">2021. 04. 07.</div>
+      </div>
+      <div class="pl-breadcrumbs"><div class="breadcrumbs">
+<!-- include.url: relative url string /.../...(/*) --></div></div>
+      <div class="pl-date">2021. 04. 07.</div>
+      <div class="pl-size">
+
+      </div>
+      <div class="pl-thumbnail">
+        
       </div>
     </li><li>
-      <div class="post-title">
+      <div class="pl-title">
         <a href="/it/jekyll-blog/jekyll-blog-2/">Jekyll 블로그 잡다 기록</a>
-      </div>
-      <div class="post-info">
-        <div class="breadcrumbs"><div class="breadcrumbs">
-<!-- include.url: relative url string /.../...(/*) --></div></div>
         <div class="comment-count">
-          <span class="material-icons-two-tone">
-            mode_comment
-          </span>
-          <span>
-            0
-          </span>
+          <span class="material-icons-two-tone">mode_comment</span>
+          <span>0</span>
         </div>
-        <div class="posted-date">2021. 03. 31.</div>
+      </div>
+      <div class="pl-breadcrumbs"><div class="breadcrumbs">
+<!-- include.url: relative url string /.../...(/*) --></div></div>
+      <div class="pl-date">2021. 03. 31.</div>
+      <div class="pl-size">
+
+      </div>
+      <div class="pl-thumbnail">
+        
       </div>
     </li><li>
-      <div class="post-title">
+      <div class="pl-title">
         <a href="/it/jekyll-blog/liquid/">Liquid</a>
-      </div>
-      <div class="post-info">
-        <div class="breadcrumbs"><div class="breadcrumbs">
-<!-- include.url: relative url string /.../...(/*) --></div></div>
         <div class="comment-count">
-          <span class="material-icons-two-tone">
-            mode_comment
-          </span>
-          <span>
-            0
-          </span>
+          <span class="material-icons-two-tone">mode_comment</span>
+          <span>0</span>
         </div>
-        <div class="posted-date">2021. 03. 19.</div>
+      </div>
+      <div class="pl-breadcrumbs"><div class="breadcrumbs">
+<!-- include.url: relative url string /.../...(/*) --></div></div>
+      <div class="pl-date">2021. 03. 19.</div>
+      <div class="pl-size">
+
+      </div>
+      <div class="pl-thumbnail">
+        
       </div>
     </li><li>
-      <div class="post-title">
+      <div class="pl-title">
         <a href="/it/jekyll-blog/jekyll-blog-1/">Jekyll로 GitHub Pages 블로그 만들기</a>
-      </div>
-      <div class="post-info">
-        <div class="breadcrumbs"><div class="breadcrumbs">
-<!-- include.url: relative url string /.../...(/*) --></div></div>
         <div class="comment-count">
-          <span class="material-icons-two-tone">
-            mode_comment
-          </span>
-          <span>
-            0
-          </span>
+          <span class="material-icons-two-tone">mode_comment</span>
+          <span>0</span>
         </div>
-        <div class="posted-date">2021. 03. 17.</div>
+      </div>
+      <div class="pl-breadcrumbs"><div class="breadcrumbs">
+<!-- include.url: relative url string /.../...(/*) --></div></div>
+      <div class="pl-date">2021. 03. 17.</div>
+      <div class="pl-size">
+
+      </div>
+      <div class="pl-thumbnail">
+        
       </div>
     </li></ul>
 </div>

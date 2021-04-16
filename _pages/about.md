@@ -3,6 +3,8 @@ title: About
 layout: default
 permalink: /:basename/
 ---
+# About
+
 since 2020. 12. 04
 
 [Jekyll](https://jekyllrb.com/)  

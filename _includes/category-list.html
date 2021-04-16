@@ -1,0 +1,59 @@
+{%- for item in include.list -%}
+  {%- assign target_url = item.url | prepend: "/" | prepend: include.target_url -%}
+
+  {%- assign target_url_array = target_url | remove_first: "/" | split: "/" -%}
+  {%- assign page_url_array = include.page_url | remove_first: "/" | split: "/" -%}
+
+{%- assign is_stopover_menu = true -%}
+{%- assign url_depth = target_url_array.size | minus: 1 -%}
+{%- for i in (0..url_depth) -%}
+  {%- if target_url_array[i] != page_url_array[i] -%}
+    {%- assign is_stopover_menu = false -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign is_destination_menu = false -%}
+{%- if is_stopover_menu -%}
+  {%- if target_url_array.size == page_url_array.size or item.sub == nil -%}
+    {%- assign is_destination_menu = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+<li>
+  {%- assign last-category = target_url | split: "/" | last -%}
+  {%- assign my_posts = site.posts | where:"categories", last-category -%}
+
+  {%- if {{my_posts.size}} != 0 -%}
+
+    {%- if is_stopover_menu -%}
+    <div class="stopover_menu_marker">
+      <span class="material-icons-two-tone">
+        play_arrow
+      </span>
+    </div>
+    <div class="stopover_menu {% if is_destination_menu %} destination_menu{% endif %}">
+    {%- else -%}
+    <div>
+    {%- endif -%}
+
+      <a href="{{ target_url }}">{{- item.title -}}</a>
+      {%- unless item.sub -%}
+        <span class="posts-num">[{{- my_posts.size -}}]</span>
+      {%- endunless -%}
+    </div>
+  {%- else -%}
+    <div class="no-posts">
+      {{- item.title -}}
+    </div>
+  {%- endif -%}
+
+  {%- if item.sub -%}
+    <ul>
+      {%- include category-list.html list=item.sub page_url=include.page_url target_url=target_url -%}
+    </ul>
+  {%- endif -%}
+</li>
+{%- if item.hr -%}
+  <hr/>
+{%- endif -%}
+{%- endfor -%}
