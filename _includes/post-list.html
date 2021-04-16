@@ -29,9 +29,6 @@
         <div class="breadcrumbs">
           {%- include_cached breadcrumbs.html list=site.data.navi.categories url=post.url url-now=page.url mode="plain-comp" -%}
         </div>
-        <div class="posted-date">
-          {{- post.date | date: "%Y. %m. %d." -}}
-        </div>
         <div class="comment-count">
           <span class="material-icons-two-tone">
             mode_comment
@@ -39,6 +36,9 @@
           <span>
             0
           </span>
+        </div>
+        <div class="posted-date">
+          {{- post.date | date: "%Y. %m. %d." -}}
         </div>
       </div>
     </li>

@@ -62,7 +62,6 @@
     padding-left: 0;
     list-style-type: none;
     li {
-      width: 100%;
       border-bottom: 1px solid Gainsboro;
       &:last-child{
         border-bottom: 0;
@@ -70,26 +69,17 @@
     }
 
     .post-info {
-      @include clearfix;
+      display: grid;
+      grid-template-columns: auto 4em 7em;
+      font-size: $ftsz-small;
       .breadcrumbs, .comment-count, .posted-date {
-        display: inline-block;
         color: darkgray;
+      }
+      .comment-count .material-icons-two-tone {
         font-size: $ftsz-small;
       }
-      .breadcrumbs {
-        float: left;
-      }
-      .comment-count {
-        float: right;
-        width: 4em;
-        .material-icons-two-tone {
-          font-size: $ftsz-small;
-        }
-      }
       .posted-date {
-        float: right;
         text-align: right;
-        width: 7em;
       }
     }
   }

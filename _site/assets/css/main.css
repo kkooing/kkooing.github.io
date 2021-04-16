@@ -827,21 +827,17 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .post-list ul { margin: 0; padding-left: 0; list-style-type: none; }
 
-.post-list ul li { width: 100%; border-bottom: 1px solid Gainsboro; }
+.post-list ul li { border-bottom: 1px solid Gainsboro; }
 
 .post-list ul li:last-child { border-bottom: 0; }
 
-.post-list ul .post-info::after { content: ""; clear: both; display: table; }
+.post-list ul .post-info { display: grid; grid-template-columns: auto 4em 7em; font-size: 0.8rem; }
 
-.post-list ul .post-info .breadcrumbs, .post-list ul .post-info .comment-count, .post-list ul .post-info .posted-date { display: inline-block; color: darkgray; font-size: 0.8rem; }
-
-.post-list ul .post-info .breadcrumbs { float: left; }
-
-.post-list ul .post-info .comment-count { float: right; width: 4em; }
+.post-list ul .post-info .breadcrumbs, .post-list ul .post-info .comment-count, .post-list ul .post-info .posted-date { color: darkgray; }
 
 .post-list ul .post-info .comment-count .material-icons-two-tone { font-size: 0.8rem; }
 
-.post-list ul .post-info .posted-date { float: right; text-align: right; width: 7em; }
+.post-list ul .post-info .posted-date { text-align: right; }
 
 .post .breadcrumbs { font-size: 0.8rem; }
 
