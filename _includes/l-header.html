@@ -1,10 +1,8 @@
 <header class="l-header">
   <div class="l-inner-wrap">
     <div class="m-hamburger-menu">
-      <button onclick="sidebar_open()">
-        <span class="material-icons-two-tone">
-          menu
-        </span>
+      <button class="btn-hamburger-menu" onclick="sidebar_open()">
+        {% include svg/menu_black_24dp.svg %}
       </button>
     </div>
     <div class="m-site-logo">
@@ -13,10 +11,8 @@
       </a>
     </div>
     <div class="m-site-search">
-      <button>
-        <span class="material-icons-two-tone">
-          search
-        </span>
+      <button class="btn-search" onclick="document.location='/search'">
+        {% include svg/search_black_24dp.svg %}
       </button>
     </div>
   </div>

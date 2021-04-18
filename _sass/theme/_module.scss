@@ -23,8 +23,9 @@
         
   }
   &.page-list {
-    .material-icons-two-tone {
-      font-size: $ftsz-large;
+    .btn-home svg, .btn-about svg, .btn-archive svg {
+      width: $ftsz-large;
+      height: $ftsz-large;
     }
   }
   &.category-list {
@@ -37,6 +38,10 @@
         position: absolute;
         width: 1.1em;
         left: -1.1em;
+        svg {
+          width: $ftsz-medium;
+          height: $ftsz-medium;
+        }
       }
       .stopover_menu {
       }
@@ -72,6 +77,10 @@
 
 .m-site-search {
   float: right;
+  .btn-search svg {
+    width: $ftsz-large;
+    height: $ftsz-large;
+  }
 }
 
 .l-footer .l-inner-wrap .m-copyright {
@@ -98,8 +107,9 @@
       .comment-count {
         display: inline;
         font-size: $ftsz-small;
-        .material-icons-two-tone {
-          font-size: $ftsz-small;
+        svg {
+          width: $ftsz-small;
+          height: $ftsz-small;
         }
       }
 

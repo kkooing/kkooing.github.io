@@ -33,3 +33,8 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+.custom-svg {
+  width: $ftsz-medium;
+  height: $ftsz-medium;
+}

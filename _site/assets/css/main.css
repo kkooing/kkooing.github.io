@@ -811,13 +811,15 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-widget hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: DarkGray; }
 
-.m-widget.page-list .material-icons-two-tone { font-size: 1.2rem; }
+.m-widget.page-list .btn-home svg, .m-widget.page-list .btn-about svg, .m-widget.page-list .btn-archive svg { width: 1.2rem; height: 1.2rem; }
 
 .m-widget.category-list a { text-decoration: 0; }
 
 .m-widget.category-list li { position: relative; }
 
 .m-widget.category-list li .stopover_menu_marker { position: absolute; width: 1.1em; left: -1.1em; }
+
+.m-widget.category-list li .stopover_menu_marker svg { width: 1rem; height: 1rem; }
 
 .m-widget.category-list li .destination_menu { background-color: Lavender; }
 
@@ -835,6 +837,8 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-site-search { float: right; }
 
+.m-site-search .btn-search svg { width: 1.2rem; height: 1.2rem; }
+
 .l-footer .l-inner-wrap .m-copyright { text-align: center; font-size: 0.8rem; color: MidnightBlue; }
 
 .m-post-list ul { margin: 0; padding-left: 0; list-style-type: none; }
@@ -845,7 +849,7 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-post-list ul li .comment-count { display: inline; font-size: 0.8rem; }
 
-.m-post-list ul li .comment-count .material-icons-two-tone { font-size: 0.8rem; }
+.m-post-list ul li .comment-count svg { width: 0.8rem; height: 0.8rem; }
 
 .m-post-list ul li .pl-breadcrumbs, .m-post-list ul li .pl-date, .m-post-list ul li .pl-size, .m-post-list ul li .pl-thumbnail { font-size: 0.8rem; color: darkgray; }
 
@@ -884,6 +888,8 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 .tag-word { font-size: 0.8rem; padding: 0 0.5em; color: LightSlateGray; background-color: AliceBlue; border: 1px solid LightSteelBlue; border-radius: 0.5em; vertical-align: middle; }
 
 .material-icons-two-tone { font-family: 'Material Icons Two Tone'; font-weight: normal; font-style: normal; font-size: 1rem; /* Preferred icon size */ display: inline-block; line-height: 1; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; /* Support for all WebKit browsers. */ -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */ text-rendering: optimizeLegibility; /* Support for Firefox. */ -moz-osx-font-smoothing: grayscale; /* Support for IE. */ font-feature-settings: 'liga'; }
+
+.custom-svg { width: 1rem; height: 1rem; }
 
 .post .content-header { text-align: center; }
 

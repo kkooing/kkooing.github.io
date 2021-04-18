@@ -1,6 +1,7 @@
 ---
 title           : "문법"
 tags            : [css]
+thumbnail       : 
 ---
 
 ## 기본 문법

@@ -27,9 +27,7 @@
 
     {%- if is_stopover_menu -%}
     <div class="stopover_menu_marker">
-      <span class="material-icons-two-tone">
-        play_arrow
-      </span>
+      {% include svg/play_arrow_black_24dp.svg %}
     </div>
     <div class="stopover_menu {% if is_destination_menu %} destination_menu{% endif %}">
     {%- else -%}
