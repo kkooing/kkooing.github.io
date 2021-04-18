@@ -35,8 +35,10 @@
     .l-inner-wrap {
       height: ($height-header * 0.5);
       padding: ($margin-inner-wrap * 0.5) $margin-inner-wrap;
-      font-size: 1em;
-
+      .m-site-logo .site-name-img {
+        width: auto;
+        height: ($height-header * 0.5) - $margin-inner-wrap;
+      }
     }
   }
 }

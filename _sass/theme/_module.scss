@@ -66,13 +66,21 @@
 
 .m-hamburger-menu {
   display: none;
+  .btn-hamburger-menu svg {
+    width: $ftsz-large;
+    height: $ftsz-large;
+  }
 }
 .l-center .l-inner-wrap .l-column-left .m-hamburger-menu {
   text-align: right;
 }
 
-.m-site-logo{
+.m-site-logo {
   display: inline-block;
+  .site-name-img {
+    width: auto;
+    height: $height-header - ($margin-inner-wrap * 2);
+  }
 }
 
 .m-site-search {

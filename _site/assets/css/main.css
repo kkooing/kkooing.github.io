@@ -774,7 +774,8 @@ kbd { color: #666666; background-color: Gainsboro; padding: 0 0.25em; font-weigh
 
 button { border: none; display: inline-block; padding: 0.25em; vertical-align: middle; overflow: hidden; text-decoration: none; color: inherit; /*background-color:inherit;*/ text-align: center; cursor: pointer; white-space: nowrap; }
 
-/*button {border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}*/
+svg { vertical-align: middle; }
+
 table { border-collapse: collapse; }
 
 caption { font-size: 0.8rem; color: #666666; }
@@ -787,7 +788,7 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .l-header { background-color: White; border-bottom: 1px solid Gainsboro; }
 
-.l-header .l-inner-wrap { height: 100px; transition: height 0.1s, padding 0.1s, font-size 0.1s; font-family: 'Caveat', sans-serif; font-size: 2em; }
+.l-header .l-inner-wrap { height: 100px; transition: height 0.1s, padding 0.1s; }
 
 .l-header .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
@@ -831,9 +832,13 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-hamburger-menu { display: none; }
 
+.m-hamburger-menu .btn-hamburger-menu svg { width: 1.2rem; height: 1.2rem; }
+
 .l-center .l-inner-wrap .l-column-left .m-hamburger-menu { text-align: right; }
 
 .m-site-logo { display: inline-block; }
+
+.m-site-logo .site-name-img { width: auto; height: 60px; }
 
 .m-site-search { float: right; }
 
@@ -903,7 +908,7 @@ td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 @media screen and (max-width: 992px) { .l-header .l-inner-wrap .m-hamburger-menu { display: inline-block; } .l-center .l-inner-wrap .l-column-left { position: fixed; top: 0; left: 0; display: none; } .l-center .l-inner-wrap .l-column-left .m-hamburger-menu { display: block; } .l-center .l-inner-wrap .l-column-right { max-width: 984px; margin-left: 0; } }
 
-@media screen and (max-width: 600px) { html { font-size: 1em; } .l-center .l-inner-wrap { padding: 0; } .l-center .l-inner-wrap .l-column-right { max-width: 1024px; border: 0; } .l-header .l-inner-wrap { height: 50px; padding: 10px 20px; font-size: 1em; } }
+@media screen and (max-width: 600px) { html { font-size: 1em; } .l-center .l-inner-wrap { padding: 0; } .l-center .l-inner-wrap .l-column-right { max-width: 1024px; border: 0; } .l-header .l-inner-wrap { height: 50px; padding: 10px 20px; } .l-header .l-inner-wrap .m-site-logo .site-name-img { width: auto; height: 30px; } }
 
 .highlight .hll { background-color: #ffffcc; }
 
