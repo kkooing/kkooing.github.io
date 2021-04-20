@@ -1,8 +1,9 @@
 {%- for item in include.list -%}
-  {%- assign target_url = item.url | prepend: "/" | prepend: include.target_url -%}
 
-  {%- assign target_url_array = target_url | remove_first: "/" | split: "/" -%}
-  {%- assign page_url_array = include.page_url | remove_first: "/" | split: "/" -%}
+{%- assign target_url = item.url | prepend: "/" | prepend: include.target_url -%}
+
+{%- assign target_url_array = target_url | remove_first: "/" | split: "/" -%}
+{%- assign page_url_array = include.page_url | remove_first: "/" | split: "/" -%}
 
 {%- assign is_stopover_menu = true -%}
 {%- assign url_depth = target_url_array.size | minus: 1 -%}
@@ -20,10 +21,14 @@
 {%- endif -%}
 
 <li>
-  {%- assign last-category = target_url | split: "/" | last -%}
-  {%- assign my_posts = site.posts | where:"categories", last-category -%}
+  {%- assign cat_num = target_url_array.size | minus: 1 -%}
+  
+  {%- assign filtered-posts = site.posts | where:"categories", target_url_array[0] -%}
+  {%- for i in (1..cat_num) -%}
+    {%- assign filtered-posts = filtered-posts | where:"categories", target_url_array[i] -%}
+  {%- endfor -%}
 
-  {%- if {{my_posts.size}} != 0 -%}
+  {%- if {{filtered-posts.size}} != 0 -%}
 
     {%- if is_stopover_menu -%}
     <div class="stopover_menu_marker">
@@ -36,7 +41,7 @@
 
       <a href="{{ target_url }}">{{- item.title -}}</a>
       {%- unless item.sub -%}
-        <span class="posts-num">[{{- my_posts.size -}}]</span>
+        <span class="posts-num">[{{- filtered-posts.size -}}]</span>
       {%- endunless -%}
     </div>
   {%- else -%}
@@ -54,4 +59,5 @@
 {%- if item.hr -%}
   <hr/>
 {%- endif -%}
+
 {%- endfor -%}

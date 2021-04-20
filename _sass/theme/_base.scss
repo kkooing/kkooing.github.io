@@ -113,17 +113,29 @@ svg {
   vertical-align:middle;
 }
 
+//  figure
+
+figure {
+  margin: 1em 0;
+  img {
+    max-width: 100%;
+  }
+  figcaption {
+    font-size: $ftsz-small;
+    color: $ftcl-html-light;
+  }
+}
+
 // 표
 table {
   border-collapse: collapse;
+  caption {
+    font-size: $ftsz-small;
+    color: $ftcl-html-light;
+  }
+  td, th {
+    border: 1px solid Gainsboro;
+    padding: 0 0.3em;
+  }
 }
 
-caption {
-  font-size: $ftsz-small;
-  color: $ftcl-html-light;
-}
-
-td, th {
-  border: 1px solid Gainsboro;
-  padding: 0 0.3em;
-}

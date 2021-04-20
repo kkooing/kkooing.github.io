@@ -776,11 +776,17 @@ button { border: none; display: inline-block; padding: 0.25em; vertical-align: m
 
 svg { vertical-align: middle; }
 
+figure { margin: 1em 0; }
+
+figure img { max-width: 100%; }
+
+figure figcaption { font-size: 0.8rem; color: #666666; }
+
 table { border-collapse: collapse; }
 
-caption { font-size: 0.8rem; color: #666666; }
+table caption { font-size: 0.8rem; color: #666666; }
 
-td, th { border: 1px solid Gainsboro; padding: 0 0.3em; }
+table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .l-skip-links { position: absolute; top: -1.5em; white-space: nowrap; }
 
