@@ -1,70 +1,70 @@
 pages:
-  - title: home
+  - text: home
     url: /
-  - title: About
+  - text: About
     url: "/about/"
-  - title: Archive
+  - text: Archive
     url: "/archive/"
 
-# Do not put \, /, :, *, ?, ", <, >, | in the title or url.
+# Do not put \, /, :, *, ?, ", <, >, | in the text or url.
 categories:
-  - title: "컴퓨터 언어"
+  - text: "컴퓨터 언어"
     url  : "computer-language"
     hr   : true
     sub  :
-      - title: "프로그래밍"
+      - text: "프로그래밍"
         url  : "programming"
         sub  :
-          - title: "C++"
+          - text: "C++"
             url  : "cpp"
-          - title: "Python"
+          - text: "Python"
             url  : "python"
-          - title: "Ruby"
+          - text: "Ruby"
             url  : "ruby"
-      - title: "스크립트"
+      - text: "스크립트"
         url  : "script"
         sub  :
-          - title: "Bash"
+          - text: "Bash"
             url  : "bash"
-          - title: "Batch"
+          - text: "Batch"
             url  : "batch"
-          - title: "PowerShell"
+          - text: "PowerShell"
             url  : "powershell"
-      - title: "기타"
+      - text: "기타"
         url  : "etc"
         sub  :
-          - title: "HTML"
+          - text: "HTML"
             url  : "html"
-          - title: "css"
+          - text: "css"
             url  : "css"
-          - title: "Kramdown"
+          - text: "Kramdown"
             url  : "kramdown"
-          - title: "컨테이너"
+          - text: "컨테이너"
             url  : "container"
-  - title: "IT"
+  - text: "IT"
     url  : "it"
     hr   : true
     sub  :
-      - title: "Jekyll 블로그"
+      - text: "Jekyll 블로그"
         url  : "jekyll-blog"
-      - title: "라즈베리파이"
+      - text: "라즈베리파이"
         url  : "raspberry-pi"
-      - title: "기타"
+      - text: "기타"
         url  : "etc"
-  - title: "역학"
+  - text: "역학"
     url  : "mechanics"
     hr   : true
     sub  :
-  - title: "설계"
+  - text: "설계"
     url  : "design"
     hr   : true
     sub  :
-  - title: "tool"
+  - text: "tool"
     url  : "tool"
     sub  :
-      - title: "AutoCAD"
+      - text: "AutoCAD"
         url  : "auto-cad"
-      - title: "인벤터"
+      - text: "인벤터"
         url  : "inventor"
-      - title: "Affinity Designer"
+      - text: "Affinity Designer"
         url  : "affinity-designer"

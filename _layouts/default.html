@@ -8,26 +8,12 @@
 </head>
 
 <body>
-  {% include_cached l-skip-links.html %}
+  {% include_cached l/skip-links.html %}
   {% include_cached browser-upgrade.html %}
 
-  {% include l-header.html %}
-
-  <section class="l-center">
-    <div class="l-inner-wrap">
-      {% include l-col-left.html %}
-      <section class="l-column-right">
-        {{ content }}
-        {%- if page.layout == "post" -%}
-          {%- include l-comment.html -%}
-          {%- include l-related.html -%}
-        {%- endif -%}
-        {%- include l-featured.html -%}
-      </section>
-    </div>
-  </section>
-
-  {% include l-footer.html %}
+  {% include l/header.html %}
+  {% include l/center.html %}
+  {% include l/footer.html %}
 
   <script>
     function sidebar_open() {

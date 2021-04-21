@@ -1,6 +1,9 @@
 @media screen and (max-width: $bp-medium) {
-  .l-header .l-inner-wrap .m-hamburger-menu{
+  .hamburger-menu-open {
     display: inline-block;
+  }
+  .hamburger-menu-close {
+    display: block;
   }
 
   .l-center .l-inner-wrap {
@@ -8,10 +11,15 @@
       position: fixed;
       top: 0;
       left: 0;
+      bottom: 0;
       display: none;
-      .m-hamburger-menu {
-        display: block;
-      }
+
+      overflow-y:auto;
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      &::-webkit-scrollbar { display: none; }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
     }
     .l-column-right {
       max-width: ($max-width-site - ($margin-inner-wrap * 2));
@@ -34,8 +42,8 @@
   .l-header {
     .l-inner-wrap {
       height: ($height-header * 0.5);
-      padding: ($margin-inner-wrap * 0.5) $margin-inner-wrap;
-      .m-site-logo .site-name-img {
+      padding: ($margin-inner-wrap * 0.5) $margin-main;
+      .site-logo .site-name-img {
         width: auto;
         height: ($height-header * 0.5) - $margin-inner-wrap;
       }

@@ -1,0 +1,26 @@
+{%- comment -%}
+<!--
+  ** Input parameters **
+    list        = site.data.navi.categories
+    text_array  = text_array
+    url-array   = include.url-array
+
+  ** Url format **
+    /abc/def(/*)
+-->
+{%- endcomment -%}
+
+{%- for item in include.list -%}
+  {%- if include.url-array[include.text_array.size] == item.url -%}
+    {%- assign text_now = item.text | append: "/" | split: "/" -%}
+    {%- assign text_array = include.text_array | concat: text_now -%}
+    {%- if item.sub -%}
+      {%- capture text_array -%}
+        {%- include_cached recur-breadcrumbs.html list=item.sub text_array=text_array url-array=include.url-array -%}
+      {%- endcapture -%}
+    {%- endif -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{{- text_array | join: "/" -}}

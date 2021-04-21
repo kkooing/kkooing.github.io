@@ -1,14 +1,29 @@
+{%- comment -%}
+<!--
+  ** Input parameters **
+    list    = site.data.navi.categories
+    url     = Target url.
+    url-now = Current url.
+    mode    = "plain"
+              "link"
+              "plain-comp"
+              "link-comp"
+              
+  ** Url format **
+    /abc/def(/*)
+-->
+{%- endcomment -%}
 <div class="breadcrumbs">
-<!-- include.url: relative url string /.../...(/*) -->
-{%- assign url-array = include.url | remove_first: "/" | split: "/" -%}
-{%- assign title_array = "/" | split: "/" -%}
 
-{%- capture title_array -%}
-{%- include breadcrumbs-lookup list=include.list title_array=title_array url-array=url-array -%}
+{%- assign url-array = include.url | remove_first: "/" | split: "/" -%}
+{%- assign text_array = "/" | split: "/" -%}
+
+{%- capture text_array -%}
+  {%- include_cached recur-breadcrumbs.html list=include.list text_array=text_array url-array=url-array -%}
 {%- endcapture -%}
 
-{%- assign title_array = title_array | split: "/" -%}
-{%- assign rt_num = title_array.size | minus: 1 -%}
+{%- assign text_array = text_array | split: "/" -%}
+{%- assign rt_num = text_array.size | minus: 1 -%}
 
 {%- assign rel_url_array = "" -%}
 {%- for i in (0..rt_num) -%}
@@ -26,9 +41,9 @@
 
     {%- for i in (0..rt_num) -%}
       {%- if forloop.first == false -%}
-        <span> > </span>
+        <span class="separator"> > </span>
       {%- endif -%}
-        <span>{{- title_array[i] -}}</span>
+        <span>{{- text_array[i] -}}</span>
     {%- endfor -%}
 
   {%- when "link" -%}
@@ -37,7 +52,7 @@
       {%- if forloop.first == false -%}
         <span> > </span>
       {%- endif -%}
-        <a href="{{- rel_url_array[i] -}}">{{- title_array[i] -}}</a>
+        <a href="{{- rel_url_array[i] -}}">{{- text_array[i] -}}</a>
     {%- endfor -%}
 
   {%- when "plain-comp" -%}
@@ -47,7 +62,7 @@
       {%- if forloop.first == false -%}
         <span> > </span>
       {%- endif -%}
-        <span>{{- title_array[i] -}}</span>
+        <span>{{- text_array[i] -}}</span>
     {%- endfor -%}
 
   {%- when "link-comp" -%}
@@ -58,15 +73,15 @@
         <span> > </span>
       {%- endif -%}
       {%- if forloop.last == true -%}
-        <a href="{{- rel_url_array[i] -}}">{{- title_array[i] -}}</a>
+        <a href="{{- rel_url_array[i] -}}">{{- text_array[i] -}}</a>
       {%- else -%}
-        <span>{{- title_array[i] -}}</span>
+        <span>{{- text_array[i] -}}</span>
       {%- endif -%}
     {%- endfor -%}
 
   {%- else -%}
 
-    {{- title_array | concat: rel_url_array | join: ":" -}}
+    {{- text_array | concat: rel_url_array | join: ":" -}}
 
 {%- endcase -%}
 </div>

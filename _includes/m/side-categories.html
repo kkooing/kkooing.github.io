@@ -1,0 +1,7 @@
+<nav class="m-side-categories" id="sl-categories">
+  <div class="widget-title">{{- site.data.ui-text[site.locale].sidebar_categories | default: 'category' -}}
+  </div>
+  <ul>
+    {%- include recur-categories.html list=site.data.navi.categories page_url=page.url target_url="" -%}
+  </ul>
+</nav>

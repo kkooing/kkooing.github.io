@@ -3,7 +3,9 @@ title: About
 layout: default
 permalink: /:basename/
 ---
-# About
+<div class="page-title">
+  <h1>About</h1>
+</div>
 
 since 2020. 12. 04
 

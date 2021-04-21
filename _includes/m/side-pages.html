@@ -1,0 +1,20 @@
+<nav class="m-side-pages" id="sl-pages">
+  <div class="widget-title">
+    {{- site.data.ui-text[site.locale].sidebar_pages | default: 'page' -}}
+  </div>
+  
+  <button class="btn-home" onclick="document.location='/'">
+    {% include svg/home_black_24dp.svg %}
+  </button>
+  
+  <button class="btn-about" onclick="document.location='/about/'">
+    {% include svg/info_black_24dp.svg %}
+  </button>
+  
+  <button class="btn-archive" onclick="document.location='/archive/'">
+    {% include svg/hourglass_full_black_24dp.svg %}
+  </button>
+
+</nav>
+
+

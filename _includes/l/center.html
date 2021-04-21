@@ -1,0 +1,26 @@
+<section class="l-center">
+  <div class="l-inner-wrap">
+
+    <section class="l-column-left" id="sidebar">
+      <div class="m-hamburger-menu-close">
+        <button class="hamburger-menu-close" onclick="sidebar_close()">
+          {% include svg/close_black_24dp.svg %}
+        </button>
+      </div>
+
+      {%- include m/side-profile.html -%}
+      {%- include m/side-pages.html -%}
+      {%- include m/side-categories.html -%}
+    </section>
+    
+    <section class="l-column-right">
+      {{ content }}
+      {%- if page.layout == "post" -%}
+        {%- include m/comment.html -%}
+        {%- include m/related.html -%}
+      {%- endif -%}
+      {%- include m/featured.html -%}
+    </section>
+
+  </div>
+</section>

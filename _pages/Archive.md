@@ -3,5 +3,7 @@ title: Archive
 layout: default
 permalink: /:basename/
 ---
-# Archive
+<div class="page-title">
+  <h1>Archive</h1>
+</div>
 

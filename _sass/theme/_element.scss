@@ -2,39 +2,61 @@
   font-size: $ftsz-small;
 }
 
+
+.tag-list .tag-svg {
+  display: inline-block;
+  svg {
+    width: $ftsz-large;
+    height: $ftsz-large;
+  }
+}
 .tag-word {
+  display: inline-block;
   font-size: $ftsz-small;
-  padding: 0 0.5em;
   color: LightSlateGray;
   background-color: AliceBlue;
   border: 1px solid LightSteelBlue;
-  border-radius: 0.5em;
+  border-radius: 1em;
   vertical-align: middle;
+  padding: 0 0.6em 0.1em 0.6em;
 }
 
-.material-icons-two-tone {
-  font-family: 'Material Icons Two Tone';
-  font-weight: normal;
-  font-style: normal;
-  font-size: $ftsz-medium;  /* Preferred icon size */
+.hamburger-menu-open, .hamburger-menu-close {
+  display: none;
+  svg {
+    width: $ftsz-large;
+    height: $ftsz-large;
+  }
+}
+.hamburger-menu-open {
+  float: left;
+}
+.hamburger-menu-close {
+  float: right;
+}
+
+.site-logo {
   display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+  .site-name-img {
+    width: auto;
+    height: $height-header - ($margin-inner-wrap * 2);
+  }
 }
 
-.custom-svg {
-  width: $ftsz-medium;
-  height: $ftsz-medium;
+.site-search {
+  float: right;
+  .btn-search svg {
+    width: $ftsz-large;
+    height: $ftsz-large;
+  }
+}
+
+.l-footer .l-inner-wrap .copyright {
+  text-align: center;
+  font-size: $ftsz-small;
+  color: MidnightBlue;
+}
+
+.page-title h1 {
+  margin-top: 0;
 }
