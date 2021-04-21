@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link type="application/atom+xml" rel="alternate" href="https://kkooing.github.io/feed.xml" title="kkooing" />
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+</head>
+
+<body>
+  <nav class="l-skip-links">
+  Skip to 
+  <a href="#sl-content">content</a> | 
+  <a href="#sl-categories">category-list</a> |
+  <a href="#sl-pages">page-list</a>
+</nav>
+
+  <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+
+  <header class="l-header">
+  <div class="l-inner-wrap">
+    <button class="hamburger-menu-open" onclick="sidebar_open()">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </button>
+    <div class="site-logo">
+      <a class="site-name" href="/">
+        <img class="site-name-img" src="/assets/images/site_name.png" alt="kkooing">
+      </a>
+    </div>
+    <div class="site-search">
+      <button class="btn-search" onclick="document.location='/search'">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+  <section class="l-center">
+  <div class="l-inner-wrap">
+
+    <section class="l-column-left" id="sidebar">
+      <div class="m-hamburger-menu-close">
+        <button class="hamburger-menu-close" onclick="sidebar_close()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </div><div class="m-side-profile">
+  <div class="site_name">
+    <a class="site_name" href="/">kkooing</a>
+  </div>
+</div><nav class="m-side-pages" id="sl-pages">
+  <div class="widget-title">page</div>
+  
+  <button class="btn-home" onclick="document.location='/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-6H9v6H7v-7.81l5-4.5 5 4.5V18z"/><path d="M7 10.19V18h2v-6h6v6h2v-7.81l-5-4.5z" opacity=".3"/></svg>
+  </button>
+  
+  <button class="btn-about" onclick="document.location='/about/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm1 13h-2v-6h2v6zm0-8h-2V7h2v2z" opacity=".3"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+  </button>
+  
+  <button class="btn-archive" onclick="document.location='/archive/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 7.5l4 4 4-4V4H8zm0 9V20h8v-3.5l-4-4z" opacity=".3"/><path d="M18 2H6v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2zm-2 14.5V20H8v-3.5l4-4 4 4zm0-9l-4 4-4-4V4h8v3.5z"/></svg>
+  </button>
+
+</nav>
+
+
+<nav class="m-side-categories" id="sl-categories">
+  <div class="widget-title">category</div>
+  <ul><li><div><a href="/computer-language">컴퓨터 언어</a></div><ul><li><div><a href="/computer-language/programming">프로그래밍</a></div><ul><li><div><a href="/computer-language/programming/cpp">C++</a><span class="posts-num">[1]</span></div></li><li><div class="no-posts">Python</div></li><li><div class="no-posts">Ruby</div></li></ul></li><li><div class="no-posts">스크립트</div><ul><li><div class="no-posts">Bash</div></li><li><div class="no-posts">Batch</div></li><li><div class="no-posts">PowerShell</div></li></ul></li><li><div><a href="/computer-language/etc">기타</a></div><ul><li><div class="no-posts">HTML</div></li><li><div><a href="/computer-language/etc/css">css</a><span class="posts-num">[2]</span></div></li><li><div><a href="/computer-language/etc/kramdown">Kramdown</a><span class="posts-num">[2]</span></div></li><li><div class="no-posts">컨테이너</div></li></ul></li></ul></li><hr/><li><div><a href="/it">IT</a></div><ul><li><div><a href="/it/jekyll-blog">Jekyll 블로그</a><span class="posts-num">[6]</span></div></li><li><div><a href="/it/raspberry-pi">라즈베리파이</a><span class="posts-num">[1]</span></div></li><li><div><a href="/it/etc">기타</a><span class="posts-num">[1]</span></div></li></ul></li><hr/><li><div class="no-posts">역학</div></li><hr/><li><div class="no-posts">설계</div></li><hr/><li><div class="no-posts">tool</div><ul><li><div class="no-posts">AutoCAD</div></li><li><div class="no-posts">인벤터</div></li><li><div class="no-posts">Affinity Designer</div></li></ul></li></ul>
+</nav></section>
+    
+    <section class="l-column-right">
+      <main class="l-main home">
+  <div class="page-title">
+    <h1>Home</h1>
+  </div>
+  <section class="content" id="content">
+    <div class="m-posts-stream">
+  <ul><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/it/jekyll-blog/sample-font/">샘플 폰트</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>IT</span><span> > </span><span>Jekyll 블로그</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 04. 13.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/it/jekyll-blog/sample-font-size/">샘플 폰트 크기</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>IT</span><span> > </span><span>Jekyll 블로그</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 04. 13.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/it/jekyll-blog/sample-tags/">샘플 html 태그</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>IT</span><span> > </span><span>Jekyll 블로그</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 04. 07.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/computer-language/etc/css/css-color/">색상</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>컴퓨터 언어</span><span> > </span><span>기타</span><span> > </span><span>css</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 04. 07.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/computer-language/etc/css/css-syntax/">문법</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>컴퓨터 언어</span><span> > </span><span>기타</span><span> > </span><span>css</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 04. 06.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/it/jekyll-blog/jekyll-blog-2/">Jekyll 블로그 잡다 기록</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>IT</span><span> > </span><span>Jekyll 블로그</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 03. 31.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/it/jekyll-blog/liquid/">Liquid</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>IT</span><span> > </span><span>Jekyll 블로그</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 03. 19.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/it/jekyll-blog/jekyll-blog-1/">Jekyll로 GitHub Pages 블로그 만들기</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>IT</span><span> > </span><span>Jekyll 블로그</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 03. 17.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/it/etc/managing-windows-startup-programs/">윈도우 시작프로그램 관리</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>IT</span><span> > </span><span>기타</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 02. 24.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/computer-language/etc/kramdown/kramdown-syntax-advanced/">kramdown 문법 심화</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>컴퓨터 언어</span><span> > </span><span>기타</span><span> > </span><span>Kramdown</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 02. 18.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/computer-language/etc/kramdown/kramdown-syntax-elementary/">kramdown 문법 기초</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>컴퓨터 언어</span><span> > </span><span>기타</span><span> > </span><span>Kramdown</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 02. 15.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/computer-language/programming/cpp/cpp-1-type/">1. 타입</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>컴퓨터 언어</span><span> > </span><span>프로그래밍</span><span> > </span><span>C++</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;21. 01. 05.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li><li>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="/it/raspberry-pi/get-ip-address-by-curl-in-iptime-router/">curl로 iptime 공유기 공인 IP 주소 가져오기</a>
+        </div>
+      </div>
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs"><div class="breadcrumbs"><span>IT</span><span> > </span><span>라즈베리파이</span></div></div>
+      <div class="gr-comment">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg>
+        <span>0</span>
+      </div>
+      <div class="gr-date">
+        &#39;20. 12. 04.</div>
+      <div class="gr-size">
+        
+      </div>
+    </li></ul>
+</div>
+  </section>
+</main><section class="m-featured">
+  
+</section></section>
+
+  </div>
+</section>
+  <footer class="l-footer">
+  <div class="l-inner-wrap">
+    <div class="copyright">
+      &copy;&nbsp;2020-2021&nbsp;<a href="https://github.com/kkooing"
+        target="_blank" rel="nofollow">kkooing</a>.
+    </div>
+  </div>
+</footer>
+
+  <script>
+    function sidebar_open() {
+      document.getElementById("sidebar").style.display = "block";
+    }
+
+    function sidebar_close() {
+      document.getElementById("sidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

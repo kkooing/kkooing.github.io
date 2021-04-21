@@ -22,23 +22,27 @@
   <ul>
     {%- for post in filtered-posts -%}
     <li>
-      <div class="pl-title">
-        <a href="{{ post.url }}">{{- post.title -}}</a>
-        <div class="comment-count">
-          {% include svg/mode_comment_black_24dp.svg %}
-          <span>0</span>
+      <div class="gr-title">
+        <div class="title-wrap">
+          <a href="{{ post.url }}">{{- post.title -}}</a>
         </div>
       </div>
-      <div class="pl-breadcrumbs">
+      <div class="gr-thumbnail">
+        <div class="thumbnail">
+          
+        </div>
+      </div>
+      <div class="gr-breadcrumbs">
         {%- include_cached breadcrumbs.html list=site.data.navi.categories url=post.url url-now=page.url mode="plain-comp" -%}
       </div>
-      <div class="pl-date">
-        {{- post.date | date: "%Y. %m. %d." -}}
+      <div class="gr-comment">
+        {% include svg/mode_comment_black_24dp.svg %}
+        <span>0</span>
       </div>
-      <div class="pl-size">
-
+      <div class="gr-date">
+        &#39;{{- post.date | date: "%y. %m. %d." -}}
       </div>
-      <div class="pl-thumbnail">
+      <div class="gr-size">
         
       </div>
     </li>
