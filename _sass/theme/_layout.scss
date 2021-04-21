@@ -28,6 +28,7 @@
       background-color: $bgcl-center;
       width: $width-col-left;
       float: left;
+      z-index: 1;
     }
     .l-column-right {
       background-color: $bgcl-center;
