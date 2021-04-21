@@ -31,18 +31,21 @@
   {%- if {{filtered-posts.size}} != 0 -%}
 
     {%- if is_stopover_menu -%}
-    <div class="stopover_menu_marker">
-      {% include svg/play_arrow_black_24dp.svg %}
-    </div>
-    <div class="stopover_menu {% if is_destination_menu %} destination_menu{% endif %}">
-    {%- else -%}
-    <div>
+      <div class="stopover_menu_marker">
+        {% include svg/play_arrow_black_24dp.svg %}
+      </div>
     {%- endif -%}
 
-      <a href="{{ target_url }}">{{- item.text -}}</a>
-      {%- unless item.sub -%}
-        <span class="posts-num">[{{- filtered-posts.size -}}]</span>
-      {%- endunless -%}
+    <div class="{% if is_stopover_menu %} stopover_menu{%- endif -%}{% if is_destination_menu %} destination_menu{% endif %}{% unless item.sub %} terminal_menu{% endunless %}">
+
+      <a href="{{ target_url }}">
+        <div>
+          {{- item.text -}}
+          {%- unless item.sub -%}
+          <span class="posts-num">[{{- filtered-posts.size -}}]</span>
+          {%- endunless -%}
+        </div>
+      </a>
     </div>
   {%- else -%}
     <div class="no-posts">

@@ -1,6 +1,7 @@
 ---
 title           : "샘플 폰트 크기"
 tags            : [blog]
+thumbnail       : 
 ---
 ## 1. 평행 비교
 

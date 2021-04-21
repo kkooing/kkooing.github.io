@@ -1,6 +1,7 @@
 ---
 title           : "샘플 html 태그"
-tags            : [blog]
+tags            : [blog, html]
+thumbnail       : 
 ---
 ## 1. 단락 요소
 <span style="color: red;">&lt;h1&gt; ~ &lt;h6&gt;</span><br />

@@ -1,7 +1,7 @@
 ---
 title           : "Jekyll 블로그 잡다 기록"
 tags            : [jekyll, github-pages, blog]
-last_modified_at: 
+thumbnail       : 
 ---
 ## 플러그인 추가
 /_posts 폴더 아래에 카테고리별 폴더를 만들어서 게시물을 분류하려고 한다. Jekyll은 폴더 안에 포스트를 넣으면 해당 포스트에 자동으로 카테고리를 달아준다. 

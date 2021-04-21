@@ -1,6 +1,7 @@
 ---
 title           : "샘플 폰트"
-tags            : [blog]
+tags            : [blog, 폰트]
+thumbnail       : 
 ---
 ## 1. 평행 비교
 

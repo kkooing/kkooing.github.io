@@ -724,7 +724,7 @@ html { box-sizing: border-box; overflow-x: hidden; word-wrap: break-word; scroll
 
 *, *:before, *:after { box-sizing: inherit; }
 
-body { margin: 0; min-height: 100vh; background-color: Snow; }
+body { margin: 0; min-height: 100vh; background-color: rgba(240, 248, 255, 0.5); }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Noto Sans KR", sans-serif; font-weight: bold; }
 
@@ -754,11 +754,13 @@ dl { margin: 0.75em 0; padding-left: 1em; }
 
 dl dd { margin-left: 1em; }
 
-a:link { color: #333333; }
+a { text-decoration-color: MediumSlateBlue; }
 
-a:visited { color: #333333; }
+a:link { color: MediumBlue; }
 
-a:hover { color: #666666; text-decoration: none; }
+a:visited { color: MediumBlue; }
+
+a:hover { color: rgba(0, 0, 205, 0.5); text-decoration: none; }
 
 small { font-size: 0.8rem; }
 
@@ -770,7 +772,7 @@ sup { font-size: 0.8rem; vertical-align: super; }
 
 pre, code, kbd, samp { font-family: 'D2Coding', monospace; font-weight: normal; letter-spacing: 0; font-size: 1rem; }
 
-kbd { color: #666666; background-color: Gainsboro; padding: 0 0.25em; font-weight: 700; border: 2px solid Gray; border-radius: 0.3em; }
+kbd { color: DarkGray; background-color: Gainsboro; padding: 0 0.25em; font-weight: 700; border: 2px solid Gray; border-radius: 0.3em; }
 
 button { border: none; display: inline-block; padding: 0.25em; vertical-align: middle; overflow: hidden; text-decoration: none; color: inherit; /*background-color:inherit;*/ text-align: center; cursor: pointer; white-space: nowrap; }
 
@@ -780,11 +782,11 @@ figure { margin: 1em 0; }
 
 figure img { max-width: 100%; }
 
-figure figcaption { font-size: 0.8rem; color: #666666; }
+figure figcaption { font-size: 0.8rem; color: DarkGray; }
 
 table { border-collapse: collapse; }
 
-table caption { font-size: 0.8rem; color: #666666; }
+table caption { font-size: 0.8rem; color: DarkGray; }
 
 table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
@@ -806,7 +808,7 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .l-center .l-inner-wrap .l-column-right { background-color: White; max-width: 764px; margin-left: 220px; padding: 1em; border: 1px solid Gainsboro; }
 
-.l-footer { background-color: Snow; border-top: 1px solid Gainsboro; }
+.l-footer { background-color: rgba(240, 248, 255, 0.5); border-top: 1px solid Gainsboro; }
 
 .l-footer .l-inner-wrap { height: 100px; }
 
@@ -824,7 +826,7 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-side-categories { margin-bottom: 0; }
 
-.m-side-categories a { text-decoration: 0; }
+.m-side-categories a { text-decoration: 0; color: MidnightBlue; }
 
 .m-side-categories li { position: relative; }
 
@@ -832,9 +834,13 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-side-categories li .stopover_menu_marker svg { width: 1rem; height: 1rem; }
 
+.m-side-categories li .terminal_menu a { color: CornflowerBlue; }
+
+.m-side-categories li .terminal_menu a:hover div { background-color: Lavender; }
+
 .m-side-categories li .destination_menu { background-color: Lavender; }
 
-.m-side-categories li .posts-num { font-size: 0.8rem; color: darkgray; float: right; }
+.m-side-categories li .posts-num { font-size: 0.8rem; color: DarkGray; float: right; }
 
 .m-side-categories li .no-posts { color: lightgray; }
 
@@ -850,15 +856,19 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-posts-stream ul li .gr-title .title-wrap { position: absolute; top: 50%; transform: translate(0, -50%); }
 
-.m-posts-stream ul li .thumbnail { min-height: 3em; border: 1px dashed black; }
+.m-posts-stream ul li .gr-title .title-wrap a { color: #333333; text-decoration: none; }
 
-.m-posts-stream ul li .gr-breadcrumbs, .m-posts-stream ul li .gr-comment, .m-posts-stream ul li .gr-date, .m-posts-stream ul li .gr-size { font-size: 0.75rem; color: darkgray; }
+.m-posts-stream ul li .thumbnail { min-height: 3em; line-height: 1; }
+
+.m-posts-stream ul li .thumbnail img { display: table-cell; object-fit: cover; width: 4.5rem; height: 3em; }
+
+.m-posts-stream ul li .gr-breadcrumbs, .m-posts-stream ul li .gr-comment, .m-posts-stream ul li .gr-date, .m-posts-stream ul li .gr-size { font-size: 0.75rem; color: DarkGray; }
 
 .m-posts-stream ul li .gr-comment svg { width: 0.8rem; height: 0.8rem; }
 
 .m-posts-stream ul li .gr-date { text-align: right; }
 
-.l-main.category-page .m-posts-stream li, .l-main.home .m-posts-stream li { grid-template-columns: auto 3em 4.5em; }
+.l-main.category-page .m-posts-stream li, .l-main.home .m-posts-stream li { grid-template-columns: auto 3rem 4.5rem; }
 
 .l-main.category-page .m-posts-stream li .gr-title, .l-main.home .m-posts-stream li .gr-title { grid-area: 1 / 1 / span 1 / span 2; }
 
@@ -870,7 +880,7 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .l-main.category-page .m-posts-stream li .gr-date, .l-main.home .m-posts-stream li .gr-date { grid-area: 2 / 3 / span 1 / span 1; }
 
-.m-related .m-posts-stream li { grid-template-columns: auto 3em 4.5em; }
+.m-related .m-posts-stream li { grid-template-columns: auto 3rem 4.5rem; }
 
 .m-related .m-posts-stream li .gr-title { grid-area: 1 / 1 / span 1 / span 2; }
 
@@ -883,8 +893,6 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 .m-related .m-posts-stream li .gr-date { grid-area: 2 / 3 / span 1 / span 1; }
 
 .m-related .m-posts-stream li .gr-size { display: none; }
-
-.post .breadcrumbs { font-size: 0.8rem; }
 
 .tag-list .tag-svg { display: inline-block; }
 
@@ -908,15 +916,21 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .site-search .btn-search svg { width: 1.2rem; height: 1.2rem; }
 
-.l-footer .l-inner-wrap .copyright { text-align: center; font-size: 0.8rem; color: MidnightBlue; }
+.l-footer .l-inner-wrap .copyright { text-align: center; font-size: 0.8rem; color: DarkSlateBlue; }
+
+.l-footer .l-inner-wrap .copyright a { color: SlateBlue; text-decoration: none; }
 
 .page-title h1 { margin-top: 0; }
+
+.post .breadcrumbs { font-size: 0.8rem; font-weight: bold; }
+
+.post .breadcrumbs a { color: CornflowerBlue; text-decoration: none; }
 
 .post .content-header { text-align: center; }
 
 .post .content-header .content-title { margin: 0.25em 0; font-weight: 400; }
 
-.post .content-header .content-meta { padding: 0.25em 0; font-size: 0.8rem; color: LightSlateGray; border-bottom: 1px solid Crimson; }
+.post .content-header .content-meta { padding: 0.25em 0; font-size: 0.75rem; color: DarkGray; border-bottom: 1px solid Tomato; }
 
 .post .content-text { margin: 1em 0; }
 

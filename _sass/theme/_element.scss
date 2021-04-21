@@ -1,6 +1,4 @@
-.post .breadcrumbs {
-  font-size: $ftsz-small;
-}
+
 
 
 .tag-list .tag-svg {
@@ -54,7 +52,11 @@
 .l-footer .l-inner-wrap .copyright {
   text-align: center;
   font-size: $ftsz-small;
-  color: MidnightBlue;
+  color: DarkSlateBlue;
+  a {
+    color: SlateBlue;
+    text-decoration: none;
+  }
 }
 
 .page-title h1 {

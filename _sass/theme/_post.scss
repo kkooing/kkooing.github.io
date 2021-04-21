@@ -1,4 +1,12 @@
 .post {
+  .breadcrumbs {
+    font-size: $ftsz-small;
+    font-weight: bold;
+    a {
+      color: CornflowerBlue;
+      text-decoration: none;
+    }
+  }
   .content-header {
     text-align: center;
     .content-title {
@@ -7,9 +15,9 @@
     }
     .content-meta {
       padding: 0.25em 0;
-      font-size: $ftsz-small;
-      color: LightSlateGray;
-      border-bottom: 1px solid Crimson;
+      font-size: 0.75rem;
+      color: $ftcl-html-light;
+      border-bottom: 1px solid Tomato;
     }
   }
   .content-text {

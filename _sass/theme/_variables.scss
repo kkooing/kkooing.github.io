@@ -21,7 +21,7 @@ $bp-small: 600px;
 //  Layout color
 $bgcl-header: White; //  background
 $bgcl-center: White;
-$bgcl-footer: Snow;
+$bgcl-footer: transparentize(AliceBlue, .5);
 $bgcl-widget: White;
 
 $bdcl-layout: Gainsboro; //  border
@@ -46,13 +46,15 @@ $ftsz-h6: 1.000rem;    // = 18    | 16
 
 //    color (ftcl)
 $ftcl-html: #333333;
-$ftcl-html-light: #666666;
+$ftcl-html-light: DarkGray;
 
-$ftcl-link: $ftcl-html;
-$ftcl-visited: $ftcl-html;
-$ftcl-hover: $ftcl-html-light;
+$ftcl-a-link: MediumBlue;
+$ftcl-a-visited: MediumBlue;
+$ftcl-a-hover: transparentize(MediumBlue, .5);
+$ftcl-a-underline: MediumSlateBlue;
 
 
+//    font-family
 $line-height-html: 1.5;
 @mixin font-html {
   font-family: 'Noto Sans KR', sans-serif;
@@ -71,7 +73,7 @@ $font-family-h: 'Noto Sans KR', sans-serif;
 
 
 
-
+//  ========== ==========  etc.  ========== ==========  //
 // float overflow 방지
 @mixin clearfix{
   &::after{

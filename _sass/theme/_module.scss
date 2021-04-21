@@ -40,6 +40,7 @@
   margin-bottom: 0;
   a {
     text-decoration: 0;
+    color: MidnightBlue;
   }
   li {
     position: relative;
@@ -52,7 +53,16 @@
         height: $ftsz-medium;
       }
     }
+    .terminal_menu {
+      a{
+        color: CornflowerBlue;
+        &:hover {
+          div { background-color: Lavender; }
+        }
+      }
+    }
     .stopover_menu {
+
     }
     .destination_menu {
       background-color: Lavender;
@@ -60,7 +70,7 @@
 
     .posts-num {
       font-size: $ftsz-small;
-      color: darkgray;
+      color: $ftcl-html-light;
       float: right;
     }
     .no-posts {
@@ -80,10 +90,9 @@
     padding-left: 0;
     list-style-type: none;
     li {
-      border-bottom: 1px solid Gainsboro;
+      border-bottom: 1px solid $bdcl-layout;
       padding: 0.25em 0;
       display: grid;
-
       &:last-child{
         border-bottom: 0;
       }
@@ -94,17 +103,28 @@
           position: absolute;
           top: 50%;
           transform: translate(0, -50%);
+          a {
+            color: $ftcl-html;
+            text-decoration: none;
+          }
         }
       }
 
       .thumbnail {
         min-height: 2em * $line-height-html;
-        border: 1px dashed black;
+        //border: 1px dashed DarkGray;
+        line-height: 1;
+        img {
+          display: table-cell;
+          object-fit: cover;
+          width: 4.5rem;
+          height: 2em * $line-height-html;
+        }
       }
 
       .gr-breadcrumbs, .gr-comment, .gr-date, .gr-size {
-        font-size: $ftsz-small * (0.75 / 0.8);
-        color: darkgray;
+        font-size: 0.75rem;
+        color: $ftcl-html-light;
       }
 
       .gr-comment {
@@ -124,7 +144,7 @@
 .l-main.category-page .m-posts-stream,
 .l-main.home .m-posts-stream {
   li {
-    grid-template-columns: auto 3em 4.5em;
+    grid-template-columns: auto 3rem 4.5rem;
     .gr-title { grid-area: 1 / 1 / span 1 / span 2; }
     .gr-thumbnail { grid-area: 1 / 3 / span 1 / span 1; }
     .gr-breadcrumbs { grid-area: 2 / 1 / span 1 / span 1; }
@@ -135,7 +155,7 @@
 
 .m-related .m-posts-stream {
   li {
-    grid-template-columns: auto 3em 4.5em;
+    grid-template-columns: auto 3rem 4.5rem;
     .gr-title { grid-area: 1 / 1 / span 1 / span 2; }
     .gr-thumbnail { grid-area: 1 / 3 / span 1 / span 1; }
     .gr-breadcrumbs { display: none; }

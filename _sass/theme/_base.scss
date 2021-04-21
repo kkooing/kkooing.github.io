@@ -68,9 +68,10 @@ dl {
 // 택스트
 
 a {
-  &:link{ color: $ftcl-link; }
-  &:visited{ color: $ftcl-visited; }
-  &:hover{ color: $ftcl-hover; text-decoration: none; }
+  text-decoration-color: $ftcl-a-underline;
+  &:link{ color: $ftcl-a-link; }
+  &:visited{ color: $ftcl-a-visited; }
+  &:hover{ color: $ftcl-a-hover; text-decoration: none; }
 }
 
 small {

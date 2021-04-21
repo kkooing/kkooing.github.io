@@ -1,7 +1,7 @@
 ---
 title           : "curl로 iptime 공유기 공인 IP 주소 가져오기"
 tags            : [bash, IP, curl, 공유기, iptime]
-last_modified_at: 2021-02-22T17:48:19+09:00
+thumbnail       : "https://1.bp.blogspot.com/-gV8bLJ7y_Bw/YDNHHNFun7I/AAAAAAAAAZQ/xgp2_-xtHZ0183is4dKjDlzfEN8_MHsNwCLcBGAsYHQ/s0/%25EA%25B8%25B0%25EB%25B3%25B8%25EB%25B0%25A9%25EC%258B%259D%2B%25EC%25B2%25AB%2B%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png"
 ---
 ## 0. 주제
 curl을 통해 iptime 공유기 공인 IP 주소를 가져온다.
@@ -62,7 +62,7 @@ curl -s4 'http://192.168.0.1/login/login.cgi' -H "Cookie: efm_session_id=${cooki
 ## 3. 결론
 이제 타 사이트에 접속하지 않고도 공인 IP를 알 수 있게 되었다. 공유기에 로그인을 할 수 있으니 IP 말고 다른 정보를 조회하는 데에도 유용하게 사용할 수 있을것 같다. 추후에 공유기 제조사에서 펌웨어를 업그레이드하면 이 방법이 소용없을 수도 있지만... 그땐 그냥 기본인증으로 사용해야겠다.
 
-*(의문점: 공유기에 로그인 기록이 안 남는것 같다...)*
+*(의문점: 공유기에 로그인 기록이 안 남는것 같다)*
 
 ## A. 참고
 [^IP-addr]: *Tecmint: Linux Howtos, Tutorials & Guides, "4 Ways to Find Server Public IP Address in Linux Terminal", <https://www.tecmint.com/find-linux-server-public-ip-address/>*

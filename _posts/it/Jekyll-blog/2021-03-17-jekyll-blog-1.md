@@ -1,7 +1,7 @@
 ---
 title           : "Jekyll로 GitHub Pages 블로그 만들기"
 tags            : [jekyll, github-pages, blog]
-last_modified_at: 
+thumbnail       : 
 ---
 
 ## 루비 설치

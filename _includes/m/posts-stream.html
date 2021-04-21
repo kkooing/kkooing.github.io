@@ -29,7 +29,11 @@
       </div>
       <div class="gr-thumbnail">
         <div class="thumbnail">
-          
+          {% if post.thumbnail %}
+          <a href="{{ post.url }}">
+            <img src="{{ post.thumbnail }}" alt="thumbnail"/>
+          </a>
+          {% endif %}
         </div>
       </div>
       <div class="gr-breadcrumbs">
