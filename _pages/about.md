@@ -1,6 +1,5 @@
 ---
-title: About
-layout: default
+layout: page
 permalink: /:basename/
 ---
 <div class="page-title">
