@@ -39,6 +39,8 @@ categories:
             url  : "css"
           - text: "Kramdown"
             url  : "kramdown"
+          - text: "LaTeX"
+            url  : "latex"
           - text: "컨테이너"
             url  : "container"
   - text: "IT"

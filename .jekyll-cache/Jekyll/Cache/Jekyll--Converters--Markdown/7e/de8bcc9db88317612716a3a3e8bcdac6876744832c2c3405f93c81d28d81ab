@@ -1,0 +1,11 @@
+I"l<h2 id="0-기타">0. 기타</h2>
+<div>
+  참고  
+  [Detexify](http://detexify.kirelabs.org/)  
+  [wikibooks LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+  sad
+</div>
+<p>
+  markdown 파일에서 LaTeX를 작성 할 때는 <code>display: block</code> 스타일의 html 태그 안에 있어야지만 오류 없이 작동하는것 같다.
+</p>
+:ET

@@ -41,7 +41,7 @@
 
     {%- for i in (0..rt_num) -%}
       {%- if forloop.first == false -%}
-        <span class="separator"> > </span>
+        <span class="separator"> / </span>
       {%- endif -%}
         <span>{{- text_array[i] -}}</span>
     {%- endfor -%}
@@ -50,7 +50,7 @@
 
     {%- for i in (0..rt_num) -%}
       {%- if forloop.first == false -%}
-        <span> > </span>
+        <span> / </span>
       {%- endif -%}
         <a href="{{- rel_url_array[i] -}}">{{- text_array[i] -}}</a>
     {%- endfor -%}
@@ -60,7 +60,7 @@
     {%- assign url-now-array = include.url-now | remove_first: "/" |  split: "/" -%}
     {%- for i in (url-now-array.size..rt_num) -%}
       {%- if forloop.first == false -%}
-        <span> > </span>
+        <span> / </span>
       {%- endif -%}
         <span>{{- text_array[i] -}}</span>
     {%- endfor -%}
@@ -70,7 +70,7 @@
     {%- assign url-now-array = include.url-now | remove_first: "/" |  split: "/" -%}
     {%- for i in (url-now-array.size..rt_num) -%}
       {%- if forloop.first == false -%}
-        <span> > </span>
+        <span> / </span>
       {%- endif -%}
       {%- if forloop.last == true -%}
         <a href="{{- rel_url_array[i] -}}">{{- text_array[i] -}}</a>

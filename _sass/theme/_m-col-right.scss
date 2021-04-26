@@ -1,0 +1,90 @@
+.m-main, .m-comment, .m-related, .m-featured {
+  background-color: $bgcl-widget;
+  padding: $margin-main;
+  margin-bottom: $margin-widget-gap;
+  border: 1px solid $bdcl-layout;
+}
+
+.m-posts-stream {
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      border-bottom: 1px solid $bdcl-layout;
+      padding: 0.25em 0;
+      display: grid;
+      &:last-child{
+        border-bottom: 0;
+      }
+
+      .gr-title {
+        position: relative;
+        .title-wrap {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          a {
+            color: $ftcl-html;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .thumbnail {
+        min-height: 2em * $line-height-html;
+        //border: 1px dashed DarkGray;
+        line-height: 1;
+        img {
+          display: table-cell;
+          object-fit: cover;
+          width: 4.5rem;
+          height: 2em * $line-height-html;
+        }
+      }
+
+      .gr-breadcrumbs, .gr-comment, .gr-date, .gr-size {
+        font-size: 0.75rem;
+        color: $ftcl-html-light;
+      }
+
+      .gr-comment {
+        svg {
+          width: $ftsz-s;
+          height: $ftsz-s;
+        }
+      }
+
+      .gr-date {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.m-main .m-posts-stream {
+  li {
+    grid-template-columns: auto 3rem 4.5rem;
+    .gr-title { grid-area: 1 / 1 / span 1 / span 2; }
+    .gr-thumbnail { grid-area: 1 / 3 / span 1 / span 1; }
+    .gr-breadcrumbs { grid-area: 2 / 1 / span 1 / span 1; }
+    .gr-comment { grid-area: 2 / 2 / span 1 / span 1; }
+    .gr-date { grid-area: 2 / 3 / span 1 / span 1; }
+  }
+}
+
+.m-related .m-posts-stream {
+  li {
+    grid-template-columns: auto 3rem 4.5rem;
+    .gr-title { grid-area: 1 / 1 / span 1 / span 2; }
+    .gr-thumbnail { grid-area: 1 / 3 / span 1 / span 1; }
+    .gr-breadcrumbs { display: none; }
+    .gr-comment { grid-area: 2 / 2 / span 1 / span 1; }
+    .gr-date { grid-area: 2 / 3 / span 1 / span 1; }
+    .gr-size { display: none; }
+  }
+}
+
+.m-featured {
+  margin-bottom: 0;
+}
