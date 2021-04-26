@@ -6,7 +6,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
 <!--[if IE]>
   <style>
     /* old IE unsupported flexbox fixes */

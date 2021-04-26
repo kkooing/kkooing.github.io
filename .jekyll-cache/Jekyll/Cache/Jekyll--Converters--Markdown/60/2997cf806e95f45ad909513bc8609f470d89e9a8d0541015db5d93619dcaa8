@@ -1,0 +1,224 @@
+I"�<p>참고 <a href="http://detexify.kirelabs.org/">Detexify</a></p>
+<h2 id="1-text-모드-displayed-모드">1. text 모드, displayed 모드</h2>
+<p>text 모드 = 인라인 모드: <code>&#92;(</code>, <code>&#92;)</code><br />
+인라인 모드 \( \LaTeX \) 이다.<br /></p>
+<p><br /></p>
+<p>displayed 모드 = 블록 모드: <code>&#92;[</code>, <code>&#92;]</code><br />
+블록 모드 <p> \[ \LaTeX \] </p> 이다.<br /></p>
+<p><br /></p>
+
+<h2 id="2-알파벳-숫자-기호">2. 알파벳, 숫자, 기호</h2>
+<p>그냥 쓰면 된다</p>
+<pre><code>a b c d e f g h i j k l m n o p q r s t u v w x y z
+0 1 2 3 4 5 6 7 8 9
++ - = ! / ( ) [ ] &lt; &gt; | ' : *</code></pre>
+<p>
+\[
+a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &lt; &gt; | ' : *
+\]
+</p>
+
+<h2 id="3-그리스-문자">3. 그리스 문자</h2>
+<table class="inline-block">
+  <thead>
+    <tr>
+      <th> 문자 </th>
+      <th> 수식 </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\( \alpha, A \)</td>
+      <td><code>&#92;alpha</code>,<code>A</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>\( \beta \)</td>
+      <td><code>&#92;beta</code></td>
+      <td>\( B \)</td>
+      <td><code>B</code></td>
+    </tr>
+    <tr>
+      <td>\( \gamma \)</td>
+      <td><code>&#92;gamma</code></td>
+      <td>\( \Gamma \)</td>
+      <td><code>&#92;Gamma</code></td>
+    </tr>
+    <tr>
+      <td>\( \delta \)</td>
+      <td><code>&#92;delta</code></td>
+      <td>\( \Delta \)</td>
+      <td><code>&#92;Delta</code></td>
+    </tr>
+    <tr>
+      <td>\( \epsilon \)</td>
+      <td><code>&#92;epsilon</code></td>
+      <td>\( E \)</td>
+      <td><code>E</code></td>
+    </tr>
+    <tr>
+      <td>\( \varepsilon \)</td>
+      <td><code>&#92;varepsilon</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>\( \zeta \)</td>
+      <td><code>&#92;zeta</code></td>
+      <td>\( Z \)</td>
+      <td><code>Z</code></td>
+    </tr>
+    <tr>
+      <td>\( \eta \)</td>
+      <td><code>&#92;eta</code></td>
+      <td>\( H \)</td>
+      <td><code>H</code></td>
+    </tr>
+    <tr>
+      <td>\( \iota \)</td>
+      <td><code>&#92;iota</code></td>
+      <td>\( I \)</td>
+      <td><code>I</code></td>
+    </tr>
+    <tr>
+      <td>\( \kappa \)</td>
+      <td><code>&#92;kappa</code></td>
+      <td>\( K \)</td>
+      <td><code>K</code></td>
+    </tr>
+    <tr>
+      <td>\( \varkappa \)</td>
+      <td><code>&#92;varkappa</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>\( \lambda \)</td>
+      <td><code>&#92;lambda</code></td>
+      <td>\( \Lambda \)</td>
+      <td><code>&#92;Lambda</code></td>
+    </tr>
+    <tr>
+      <td>\( \mu \)</td>
+      <td><code>&#92;mu</code></td>
+      <td>\( M \)</td>
+      <td><code>M</code></td>
+    </tr>
+    <tr>
+      <td>\( \nu \)</td>
+      <td><code>&#92;nu</code></td>
+      <td>\( N \)</td>
+      <td><code>N</code></td>
+    </tr>
+    <tr>
+      <td>\( \xi \)</td>
+      <td><code>&#92;xi</code></td>
+      <td>\( \Xi \)</td>
+      <td><code>&#92;Xi</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="inline-block">
+  <thead>
+    <tr>
+      <th> 소문자 </th>
+      <th> 수식 </th>
+      <th> 대문자 </th>
+      <th> 수식 </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\( \alpha \)</td>
+      <td><code>&#92;alpha</code></td>
+      <td>\( A \)</td>
+      <td><code>A</code></td>
+    </tr>
+    <tr>
+      <td>\( \beta \)</td>
+      <td><code>&#92;beta</code></td>
+      <td>\( B \)</td>
+      <td><code>B</code></td>
+    </tr>
+    <tr>
+      <td>\( \gamma \)</td>
+      <td><code>&#92;gamma</code></td>
+      <td>\( \Gamma \)</td>
+      <td><code>&#92;Gamma</code></td>
+    </tr>
+    <tr>
+      <td>\( \delta \)</td>
+      <td><code>&#92;delta</code></td>
+      <td>\( \Delta \)</td>
+      <td><code>&#92;Delta</code></td>
+    </tr>
+    <tr>
+      <td>\( \epsilon \)</td>
+      <td><code>&#92;epsilon</code></td>
+      <td>\( E \)</td>
+      <td><code>E</code></td>
+    </tr>
+    <tr>
+      <td>\( \varepsilon \)</td>
+      <td><code>&#92;varepsilon</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>\( \zeta \)</td>
+      <td><code>&#92;zeta</code></td>
+      <td>\( Z \)</td>
+      <td><code>Z</code></td>
+    </tr>
+    <tr>
+      <td>\( \eta \)</td>
+      <td><code>&#92;eta</code></td>
+      <td>\( H \)</td>
+      <td><code>H</code></td>
+    </tr>
+    <tr>
+      <td>\( \iota \)</td>
+      <td><code>&#92;iota</code></td>
+      <td>\( I \)</td>
+      <td><code>I</code></td>
+    </tr>
+    <tr>
+      <td>\( \kappa \)</td>
+      <td><code>&#92;kappa</code></td>
+      <td>\( K \)</td>
+      <td><code>K</code></td>
+    </tr>
+    <tr>
+      <td>\( \varkappa \)</td>
+      <td><code>&#92;varkappa</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>\( \lambda \)</td>
+      <td><code>&#92;lambda</code></td>
+      <td>\( \Lambda \)</td>
+      <td><code>&#92;Lambda</code></td>
+    </tr>
+    <tr>
+      <td>\( \mu \)</td>
+      <td><code>&#92;mu</code></td>
+      <td>\( M \)</td>
+      <td><code>M</code></td>
+    </tr>
+    <tr>
+      <td>\( \nu \)</td>
+      <td><code>&#92;nu</code></td>
+      <td>\( N \)</td>
+      <td><code>N</code></td>
+    </tr>
+    <tr>
+      <td>\( \xi \)</td>
+      <td><code>&#92;xi</code></td>
+      <td>\( \Xi \)</td>
+      <td><code>&#92;Xi</code></td>
+    </tr>
+  </tbody>
+</table>
+:ET

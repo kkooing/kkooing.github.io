@@ -133,6 +133,7 @@ figure {
 // 표
 table {
   border-collapse: collapse;
+  margin: 0.75em 0;
   caption {
     font-size: $ftsz-s;
     color: $ftcl-html-light;

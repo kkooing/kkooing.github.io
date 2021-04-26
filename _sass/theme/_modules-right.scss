@@ -1,5 +1,7 @@
-.m-main {
+.m-main, .m-comment, .m-related, .m-featured {
+  background-color: $bgcl-widget;
   padding: $margin-main;
+  margin-bottom: $margin-widget-gap;
   border: 1px solid $bdcl-layout;
 }
 

@@ -1,0 +1,9 @@
+I"�<p>참고 <a href="http://detexify.kirelabs.org/">Detexify</a></p>
+<h2 id="1-text-모드-displayed-모드">1. text 모드, displayed 모드</h2>
+<p>text 모드 = 인라인 모드: <code>&#92;&#92;(</code>, <code>&#92;&#92;)</code><br />
+인라인 모드 \( \LaTeX \) 이다.<br /></p>
+<p><br /></p>
+<p>displayed 모드 = 블록 모드: <code>&#92;&#92;[</code>, <code>&#92;&#92;]</code><br />
+블록 모드 <p> \\[ \LaTeX \\] </p> 이다.<br /></p>
+<p><br /></p>
+:ET

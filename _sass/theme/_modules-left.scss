@@ -29,13 +29,13 @@
   margin-bottom: 0;
   a {
     text-decoration: 0;
-    color: MidnightBlue;
+    color: Indigo;
   }
   hr {
     margin: 5px 5px 5px -5px;
-    border-style: dashed none none none;
+    border-style: solid none none none;
     border-width: 1px;
-    border-color: DarkGray;
+    border-color: Gainsboro;
   }
 
   ul {
@@ -56,7 +56,7 @@
       }
       .terminal_menu {
         a{
-          color: CornflowerBlue;
+          color: MidnightBlue;
           &:hover {
             div { background-color: Lavender; }
           }
@@ -75,7 +75,7 @@
         float: right;
       }
       .no-posts {
-        color: lightgray;
+        color: Gainsboro;
       }
     }
 

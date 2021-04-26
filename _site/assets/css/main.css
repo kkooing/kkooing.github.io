@@ -724,7 +724,7 @@ html { box-sizing: border-box; overflow-x: hidden; word-wrap: break-word; scroll
 
 *, *::after, *::before { box-sizing: inherit; }
 
-body { margin: 0; min-height: 100vh; background-color: rgba(240, 248, 255, 0.5); }
+body { margin: 0; min-height: 100vh; background-color: #f5f5ff; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Noto Sans KR", sans-serif; font-weight: bold; }
 
@@ -754,13 +754,13 @@ dl { margin: 0.75em 0; padding-left: 1em; }
 
 dl dd { margin-left: 1em; }
 
-a { text-decoration-color: MediumSlateBlue; }
+a { text-decoration-color: #0080ff; }
 
-a:link { color: MediumBlue; }
+a:link { color: #0080ff; }
 
-a:visited { color: MediumBlue; }
+a:visited { color: #0080ff; }
 
-a:hover { color: rgba(0, 0, 205, 0.5); text-decoration: none; }
+a:hover { color: #00aaff; text-decoration: none; }
 
 small { font-size: 0.8125rem; }
 
@@ -772,7 +772,7 @@ sup { font-size: 0.8125rem; vertical-align: super; }
 
 pre, code, kbd, samp { font-family: "D2Coding", monospace; font-size: 1rem; }
 
-kbd { color: DarkGray; background-color: Gainsboro; padding: 0 0.25em; font-weight: 700; border: 2px solid Gray; border-radius: 0.3em; }
+kbd { color: #bfbfbf; background-color: Gainsboro; padding: 0 0.25em; font-weight: 700; border: 2px solid Gray; border-radius: 0.3em; }
 
 button { border: none; display: inline-block; padding: 0.25em; vertical-align: middle; overflow: hidden; text-decoration: none; color: inherit; /*background-color:inherit;*/ text-align: center; cursor: pointer; white-space: nowrap; }
 
@@ -782,11 +782,11 @@ figure { margin: 1em 0; }
 
 figure img { max-width: 100%; }
 
-figure figcaption { font-size: 0.8125rem; color: DarkGray; }
+figure figcaption { font-size: 0.8125rem; color: #bfbfbf; }
 
-table { border-collapse: collapse; }
+table { border-collapse: collapse; margin: 0.75em 0; }
 
-table caption { font-size: 0.8125rem; color: DarkGray; }
+table caption { font-size: 0.8125rem; color: #bfbfbf; }
 
 table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
@@ -794,21 +794,21 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .l-inner-wrap { margin: auto; padding: 20px; max-width: 1024px; }
 
-.l-header { background-color: White; border-bottom: 1px solid Gainsboro; }
+.l-header { background-color: #fcfaff; border-bottom: 1px solid Gainsboro; }
 
 .l-header .l-inner-wrap { height: 100px; transition: height 0.1s, padding 0.1s; }
 
 .l-header .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
-.l-center { background-color: White; }
+.l-center { background-color: #fafaff; }
 
 .l-center .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
-.l-center .l-inner-wrap .l-column-left { background-color: White; width: 200px; float: left; z-index: 1; }
+.l-center .l-inner-wrap .l-column-left { background-color: #fafaff; width: 200px; float: left; z-index: 1; }
 
-.l-center .l-inner-wrap .l-column-right { background-color: White; max-width: 764px; margin-left: 220px; }
+.l-center .l-inner-wrap .l-column-right { background-color: #fafaff; max-width: 764px; margin-left: 220px; }
 
-.l-footer { background-color: rgba(240, 248, 255, 0.5); border-top: 1px solid Gainsboro; }
+.l-footer { background-color: #f5f5ff; }
 
 .l-footer .l-inner-wrap { height: 100px; }
 
@@ -822,9 +822,9 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-side-categories { margin-bottom: 0; }
 
-.m-side-categories a { text-decoration: 0; color: MidnightBlue; }
+.m-side-categories a { text-decoration: 0; color: Indigo; }
 
-.m-side-categories hr { margin: 5px 5px 5px -5px; border-style: dashed none none none; border-width: 1px; border-color: DarkGray; }
+.m-side-categories hr { margin: 5px 5px 5px -5px; border-style: solid none none none; border-width: 1px; border-color: Gainsboro; }
 
 .m-side-categories ul { margin: 0; margin-left: 5px; padding-left: 5px; list-style-type: none; }
 
@@ -834,19 +834,19 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-side-categories ul li .stopover_menu_marker svg { width: 1rem; height: 1rem; }
 
-.m-side-categories ul li .terminal_menu a { color: CornflowerBlue; }
+.m-side-categories ul li .terminal_menu a { color: MidnightBlue; }
 
 .m-side-categories ul li .terminal_menu a:hover div { background-color: Lavender; }
 
 .m-side-categories ul li .destination_menu { background-color: Lavender; }
 
-.m-side-categories ul li .posts-num { font-size: 0.8125rem; color: DarkGray; float: right; }
+.m-side-categories ul li .posts-num { font-size: 0.8125rem; color: #bfbfbf; float: right; }
 
-.m-side-categories ul li .no-posts { color: lightgray; }
+.m-side-categories ul li .no-posts { color: Gainsboro; }
 
 .m-side-categories ul ul { border-left: 1px solid darkgray; }
 
-.m-main { padding: 1em; border: 1px solid Gainsboro; }
+.m-main, .m-comment, .m-related, .m-featured { background-color: White; padding: 1rem; margin-bottom: 10px; border: 1px solid Gainsboro; }
 
 .m-posts-stream ul { margin: 0; padding-left: 0; list-style-type: none; }
 
@@ -864,7 +864,7 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-posts-stream ul li .thumbnail img { display: table-cell; object-fit: cover; width: 4.5rem; height: 2.9em; }
 
-.m-posts-stream ul li .gr-breadcrumbs, .m-posts-stream ul li .gr-comment, .m-posts-stream ul li .gr-date, .m-posts-stream ul li .gr-size { font-size: 0.75rem; color: DarkGray; }
+.m-posts-stream ul li .gr-breadcrumbs, .m-posts-stream ul li .gr-comment, .m-posts-stream ul li .gr-date, .m-posts-stream ul li .gr-size { font-size: 0.75rem; color: #bfbfbf; }
 
 .m-posts-stream ul li .gr-comment svg { width: 0.8125rem; height: 0.8125rem; }
 
@@ -924,15 +924,17 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .page-title h1 { margin-top: 0; }
 
+.inline-table-container table { vertical-align: top; display: inline-block; }
+
 .post .breadcrumbs { font-size: 0.8125rem; font-weight: bold; }
 
-.post .breadcrumbs a { color: CornflowerBlue; text-decoration: none; }
+.post .breadcrumbs a { color: #7733ff; text-decoration: none; }
 
 .post .content-header { text-align: center; }
 
 .post .content-header .content-title { margin: 0.25em 0; font-weight: 400; }
 
-.post .content-header .content-meta { padding: 0.25em 0; font-size: 0.75rem; color: DarkGray; border-bottom: 1px solid Tomato; }
+.post .content-header .content-meta { padding: 0.25em 0; font-size: 0.75rem; color: #bfbfbf; border-bottom: 1px solid #ff5533; }
 
 .post .content-text { margin: 1em 0; letter-spacing: 0.02em; }
 
@@ -940,7 +942,7 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 @media screen and (max-width: 992px) { .hamburger-menu-open { display: inline-block; } .hamburger-menu-close { display: block; } .l-center .l-inner-wrap .l-column-left { position: fixed; top: 0; left: 0; bottom: 0; display: none; overflow-y: auto; /* Hide scrollbar for Chrome, Safari and Opera */ /* Hide scrollbar for IE, Edge and Firefox */ -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */ } .l-center .l-inner-wrap .l-column-left::-webkit-scrollbar { display: none; } .l-center .l-inner-wrap .l-column-right { max-width: 984px; margin-left: 0; } }
 
-@media screen and (max-width: 600px) { html { font-size: 1em; } .l-center .l-inner-wrap { padding: 0; } .l-center .l-inner-wrap .l-column-right { max-width: 1024px; border: 0; } .l-header .l-inner-wrap { height: 50px; padding: 10px 1em; } .l-header .l-inner-wrap .site-logo .site-name-img { width: auto; height: 30px; } }
+@media screen and (max-width: 600px) { html { font-size: 1em; } .l-center .l-inner-wrap { padding: 0; } .l-center .l-inner-wrap .l-column-right { max-width: 1024px; border: 0; } .l-header .l-inner-wrap { height: 50px; padding: 10px 1rem; } .l-header .l-inner-wrap .site-logo .site-name-img { width: auto; height: 30px; } }
 
 .highlight .hll { background-color: #ffffcc; }
 
