@@ -2,7 +2,7 @@
   background-color: $bgcl-widget;
   margin-bottom: $margin-widget-gap;
   padding: $margin-widget;
-  font-size: $ftsz-ms;
+  font-size: $ftsz-sm;
   border: 1px solid $bdcl-layout;
   .widget-title {
     font-weight: bold;
@@ -29,10 +29,10 @@
   margin-bottom: 0;
   a {
     text-decoration: 0;
-    color: Indigo;
+    color: $ftcl-html;
   }
   hr {
-    margin: 5px 5px 5px -5px;
+    margin: 0.5em -0.5em 0.5em -0.5em;
     border-style: solid none none none;
     border-width: 1px;
     border-color: Gainsboro;
@@ -40,47 +40,46 @@
 
   ul {
     margin: 0;
-    margin-left: 5px;
-    padding-left: 5px;
+    padding-left: 0.5em;
     list-style-type: none;
     li {
       position: relative;
-      .stopover_menu_marker{
-        position: absolute;
-        width: 1.1em;
-        left: -1.1em;
-        svg {
-          width: $ftsz-m;
-          height: $ftsz-m;
-        }
+      .menu {
+        padding-left: 0.25em;
       }
-      .terminal_menu {
-        a{
+      .terminal-menu {
+        border-left: 1px solid darkgray;
+        a {
           color: MidnightBlue;
-          &:hover {
-            div { background-color: Lavender; }
-          }
         }
+        &:not(.no-post):hover { background-color: Lavender; }
       }
-      .stopover_menu {
+      .selected-menu-marker {
+        position: absolute;
+        width: 0.6em;
+        left: -0.6em;
+      }
+      .selected-menu {
   
       }
-      .destination_menu {
+      .terminal-menu.selected-menu {
         background-color: Lavender;
       }
   
-      .posts-num {
-        font-size: $ftsz-s;
+      .posts-count {
+        font-size: $ftsz-st;
         color: $ftcl-html-light;
         float: right;
       }
-      .no-posts {
-        color: Gainsboro;
+      .no-post {
+        color: $ftcl-html-hazy;
+        .posts-count {
+          display: none;
+        }
       }
     }
-
-    ul {
-      border-left: 1px solid darkgray;
-    }
+  }
+  &>ul {
+    padding: 0;
   }
 }

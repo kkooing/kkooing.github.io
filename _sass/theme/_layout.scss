@@ -32,7 +32,7 @@
     }
     .l-column-right {
       background-color: $bgcl-center;
-      max-width: ($max-width-site - $width-col-left - ($margin-inner-wrap * 2) - $margin-column-gap);
+      max-width: calc(#{$max-width-site} - #{$width-col-left} - (#{$margin-inner-wrap} * 2) - #{$margin-column-gap});
       margin-left: ($width-col-left + $margin-inner-wrap);
     }
   }

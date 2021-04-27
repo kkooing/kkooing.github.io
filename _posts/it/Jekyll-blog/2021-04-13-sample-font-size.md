@@ -102,4 +102,9 @@ thumbnail       :
 |xxhdpi|<480|480|
 |xxxhdpi|<640|360|
 ^
-[https://pixplicity.com/dp-px-converter](https://pixplicity.com/dp-px-converter)
+[https://pixplicity.com/dp-px-converter](https://pixplicity.com/dp-px-converter)  
+[https://screensizemap.com/](https://screensizemap.com/)  
+[https://material.io/blog/device-metrics](https://material.io/blog/device-metrics)  
+[https://screensiz.es/](https://screensiz.es/)  
+[https://yesviz.com/](https://yesviz.com/)
+[https://viewportsizer.com/devices/](https://viewportsizer.com/devices/)

@@ -1,0 +1,136 @@
+I"�<h2 id="1-평행-비교">1. 평행 비교</h2>
+
+<div class="scroll-x-container" style="white-space: nowrap;">
+<table>
+<caption>Sans Serif</caption>
+
+<tr style="font-size: 20px;">
+<td>20px</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 19px;">
+<td>19px</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 18px;">
+<td>18px</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 17px;">
+<td>17px</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 16px;">
+<td>16px</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 15px;">
+<td>15px</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 14px;">
+<td>14px</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 1.25em;">
+<td>1.25em</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 1em;">
+<td>1em</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+<tr style="font-size: 0.75em;">
+<td>0.75em</td>
+<td>참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.</td>
+<td>The quick brown fox jumps over the lazy dog.</td>
+<td>1234567890</td>
+<td>!?.,'";:(){}[]&lt;&gt;@#$%^&amp;*+-_=/\|`~</td>
+</tr>
+
+</table>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">분류</th>
+      <th style="text-align: center">dpi</th>
+      <th style="text-align: center">dp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">ldpi</td>
+      <td style="text-align: center">&lt;120</td>
+      <td style="text-align: center">1920</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">mdpi</td>
+      <td style="text-align: center">&lt;160</td>
+      <td style="text-align: center">1440</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">hdpi</td>
+      <td style="text-align: center">&lt;240</td>
+      <td style="text-align: center">960</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">xhdpi</td>
+      <td style="text-align: center">&lt;320</td>
+      <td style="text-align: center">720</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">xxhdpi</td>
+      <td style="text-align: center">&lt;480</td>
+      <td style="text-align: center">480</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">xxxhdpi</td>
+      <td style="text-align: center">&lt;640</td>
+      <td style="text-align: center">360</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="https://pixplicity.com/dp-px-converter">https://pixplicity.com/dp-px-converter</a><br />
+<a href="https://screensizemap.com/">https://screensizemap.com/</a><br />
+<a href="https://material.io/blog/device-metrics">https://material.io/blog/device-metrics</a><br />
+<a href="https://screensiz.es/">https://screensiz.es/</a><br />
+<a href="https://yesviz.com/">https://yesviz.com/</a></p>
+:ET

@@ -31,32 +31,30 @@
   <ul>
     {%- for post in filtered-posts -%}
     <li>
-      <div class="gr-title">
-        <div class="title-wrap">
-          <a href="{{ post.url }}">{{- post.title -}}</a>
-        </div>
-      </div>
       <div class="gr-thumbnail">
-        <div class="thumbnail">
-          {% if post.thumbnail %}
-          <a href="{{ post.url }}">
-            <img src="{{ post.thumbnail }}" alt="thumbnail"/>
-          </a>
-          {% endif %}
-        </div>
+        <a href="{{ post.url }}">
+          <img src="{{ post.thumbnail }}" alt="thumbnail"/>
+        </a>
       </div>
-      <div class="gr-breadcrumbs">
-        {%- include_cached breadcrumbs.html list=site.data.navi.categories url=post.url url-now=page.url mode="plain-comp" -%}
+      <div class="gr-title">
+        <a href="{{ post.url }}">{{- post.title -}}</a>
       </div>
-      <div class="gr-comment">
+      <div class="gr-info">
+        {% include svg/schedule_black_24dp.svg %}
+        <span class="posted-date">
+          &#39;{{- post.date | date: "%y. %m. %d." -}}
+        </span>&nbsp;
         {% include svg/mode_comment_black_24dp.svg %}
-        <span>0</span>
-      </div>
-      <div class="gr-date">
-        &#39;{{- post.date | date: "%y. %m. %d." -}}
-      </div>
-      <div class="gr-size">
-        
+        <span class="comment-count">000</span>
+
+        {%- capture breadcrumbs-text -%}
+          {%- include_cached breadcrumbs.html list=site.data.navi.categories url=post.url url-now=page.url mode="plain-comp" -%}
+        {%- endcapture -%}
+
+        {%- if breadcrumbs-text.size != 31 -%}
+          &nbsp;&nbsp;{% include svg/mode_comment_black_24dp.svg %}
+          {{ breadcrumbs-text }}
+        {%- endif -%}
       </div>
     </li>
     {%- endfor -%}

@@ -5,20 +5,13 @@
 {%- assign target_url_array = target_url | remove_first: "/" | split: "/" -%}
 {%- assign page_url_array = include.page_url | remove_first: "/" | split: "/" -%}
 
-{%- assign is_stopover_menu = true -%}
+{%- assign is_selected_menu = true -%}
 {%- assign url_depth = target_url_array.size | minus: 1 -%}
 {%- for i in (0..url_depth) -%}
   {%- if target_url_array[i] != page_url_array[i] -%}
-    {%- assign is_stopover_menu = false -%}
+    {%- assign is_selected_menu = false -%}
   {%- endif -%}
 {%- endfor -%}
-
-{%- assign is_destination_menu = false -%}
-{%- if is_stopover_menu -%}
-  {%- if target_url_array.size == page_url_array.size or item.sub == nil -%}
-    {%- assign is_destination_menu = true -%}
-  {%- endif -%}
-{%- endif -%}
 
 <li>
   {%- assign cat_num = target_url_array.size | minus: 1 -%}
@@ -28,30 +21,33 @@
     {%- assign filtered-posts = filtered-posts | where:"categories", target_url_array[i] -%}
   {%- endfor -%}
 
-  {%- if {{filtered-posts.size}} != 0 -%}
+  {%- assign is_no_post = false -%}
+  {% if {{filtered-posts.size}} == 0 %}
+    {%- assign is_no_post = true -%}
+  {% endif %}
 
-    {%- if is_stopover_menu -%}
-      <div class="stopover_menu_marker">
-        {% include svg/play_arrow_black_24dp.svg %}
-      </div>
-    {%- endif -%}
-
-    <div class="{% if is_stopover_menu %} stopover_menu{%- endif -%}{% if is_destination_menu %} destination_menu{% endif %}{% unless item.sub %} terminal_menu{% endunless %}">
-
-      <a href="{{ target_url }}">
-        <div>
-          {{- item.text -}}
-          {%- unless item.sub -%}
-          <span class="posts-num">[{{- filtered-posts.size -}}]</span>
-          {%- endunless -%}
-        </div>
-      </a>
-    </div>
-  {%- else -%}
-    <div class="no-posts">
-      {{- item.text -}}
+  {%- if is_selected_menu -%}
+    <div class="selected-menu-marker">
+      {% include svg/play_arrow_black_24dp.svg %}
     </div>
   {%- endif -%}
+    <div class="menu{% if is_selected_menu %} selected-menu{%- endif -%}{% unless item.sub %} terminal-menu{% endunless %}{% if is_no_post %} no-post{% endif %}">
+      {%- if is_no_post -%}
+        {{- item.text -}}
+        {%- unless item.sub -%}
+          <span class="posts-count">[{{- filtered-posts.size -}}]</span>
+        {%- endunless -%}
+      {%- else -%}
+        <a href="{{ target_url }}">
+          <div>
+            {{- item.text -}}
+            {%- unless item.sub -%}
+              <span class="posts-count">[{{- filtered-posts.size -}}]</span>
+            {%- endunless -%}
+          </div>
+        </a>
+      {%- endif -%}
+    </div>
 
   {%- if item.sub -%}
     <ul>

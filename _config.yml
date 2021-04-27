@@ -129,6 +129,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      thumbnail: "/assets/images/text_only.png"
   - scope:
       path: ""
       type: "categories"
