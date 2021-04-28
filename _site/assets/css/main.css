@@ -720,11 +720,11 @@
 @font-face { font-family: 'D2Coding'; font-style: normal; font-weight: 400; font-display: fallback; src: url(/assets/fonts/d2coding/d2coding_subset_119.woff2) format("woff2"); unicode-range: U+20-22, U+27-2a, U+2c-38, U+3a-3b, U+3f, U+41-47, U+4a-4c, U+4f-5d, U+61-7b, U+7d, U+a1, U+ab, U+ae, U+b7, U+bb, U+bf, U+2013-2014, U+201c-201d, U+2122, U+ac00, U+ace0, U+ae30, U+b2e4, U+b85c, U+b9ac, U+c0ac, U+c2a4, U+c2dc, U+c774, U+c778, U+c9c0, U+d558; }
 
 /* Variables */
-html { box-sizing: border-box; overflow-x: hidden; word-wrap: break-word; scroll-behavior: smooth; font-family: "Noto Sans KR", sans-serif; line-height: 1.45; color: #333333; }
+html { box-sizing: border-box; overflow-x: hidden; word-wrap: break-word; scroll-behavior: smooth; font-family: "Noto Sans KR", sans-serif; line-height: 1.45; color: black; }
 
 *, *::after, *::before { box-sizing: inherit; }
 
-body { margin: 0; min-height: 100vh; background-color: #fafaff; }
+body { margin: 0; min-height: 100vh; background-color: #fafbff; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Noto Sans KR", sans-serif; font-weight: bold; }
 
@@ -754,13 +754,13 @@ dl { margin: 0.75em 0; padding-left: 1em; }
 
 dl dd { margin-left: 1em; }
 
-a { text-decoration-color: #0080ff; }
+a { text-decoration-color: #0099e6; }
 
-a:link { color: #0080ff; }
+a:link { color: #00aaff; }
 
-a:visited { color: #0080ff; }
+a:visited { color: #00aaff; }
 
-a:hover { color: #00aaff; text-decoration: none; }
+a:hover { color: #66ccff; text-decoration: none; }
 
 small { font-size: 0.8125rem; }
 
@@ -772,7 +772,7 @@ sup { font-size: 0.8125rem; vertical-align: super; }
 
 pre, code, kbd, samp { font-family: "D2Coding", monospace; font-size: 1rem; }
 
-kbd { color: #bfbfbf; background-color: Gainsboro; padding: 0 0.25em; font-weight: 700; border: 2px solid Gray; border-radius: 0.3em; }
+kbd { color: #a6a6a6; background-color: Gainsboro; padding: 0 0.25em; font-weight: 700; border: 2px solid Gray; border-radius: 0.3em; }
 
 button { border: none; display: inline-block; padding: 0.25em; vertical-align: middle; overflow: hidden; text-decoration: none; color: inherit; /*background-color:inherit;*/ text-align: center; cursor: pointer; white-space: nowrap; }
 
@@ -782,11 +782,11 @@ figure { margin: 1em 0; }
 
 figure img { max-width: 100%; }
 
-figure figcaption { font-size: 0.8125rem; color: #bfbfbf; }
+figure figcaption { font-size: 0.8125rem; color: #a6a6a6; }
 
 table { border-collapse: collapse; margin: 0.75em 0; }
 
-table caption { font-size: 0.8125rem; color: #bfbfbf; }
+table caption { font-size: 0.8125rem; color: #a6a6a6; }
 
 table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
@@ -794,35 +794,37 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .l-inner-wrap { margin: auto; padding: 1rem; max-width: 1020px; }
 
-.l-header { background-color: #fafaff; border-bottom: 1px solid Gainsboro; }
+.l-header { background-color: #fafbff; border-bottom: 1px solid Gainsboro; }
 
 .l-header .l-inner-wrap { height: 100px; transition: height 0.1s, padding 0.1s; }
 
 .l-header .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
-.l-center { background-color: #fafaff; }
+.l-center { background-color: #fafbff; }
 
 .l-center .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
-.l-center .l-inner-wrap .l-column-left { background-color: #fafaff; width: 11rem; float: left; z-index: 1; }
+.l-center .l-inner-wrap .l-column-left { background-color: #fafbff; width: 11rem; float: left; z-index: 1; }
 
-.l-center .l-inner-wrap .l-column-right { background-color: #fafaff; max-width: calc(1020px - 11rem - (1rem * 2) - 1rem); margin-left: 12rem; }
+.l-center .l-inner-wrap .l-column-right { background-color: #fafbff; max-width: calc(1020px - 11rem - (1rem * 2) - 1rem); margin-left: 12rem; }
 
-.l-footer { background-color: #fafaff; }
+.l-footer { background-color: #fafbff; }
 
 .l-footer .l-inner-wrap { height: 100px; }
 
 .m-side-profile, .m-side-pages, .m-side-categories { background-color: White; margin-bottom: 0.5rem; padding: 0.5rem; font-size: 0.875rem; border: 1px solid Gainsboro; }
 
-.m-side-profile .widget-title, .m-side-pages .widget-title, .m-side-categories .widget-title { font-weight: bold; margin: -5px 0 5px 0; }
+.m-side-profile .widget-title, .m-side-pages .widget-title, .m-side-categories .widget-title { font-weight: bold; color: #4d4d4d; margin: -5px 0 5px 0; }
 
 .m-hamburger-menu-close::after { content: ""; clear: both; display: table; }
+
+.m-side-profile img { width: 60%; padding: 0.25em; object-fit: cover; border: 1px solid Gainsboro; border-radius: 0.25em; }
 
 .m-side-pages .btn-home svg, .m-side-pages .btn-about svg, .m-side-pages .btn-archive svg { width: 1rem; height: 1rem; }
 
 .m-side-categories { margin-bottom: 0; }
 
-.m-side-categories a { text-decoration: 0; color: #333333; }
+.m-side-categories a { text-decoration: 0; color: #4d4d4d; }
 
 .m-side-categories hr { margin: 0.5em -0.5em 0.5em -0.5em; border-style: solid none none none; border-width: 1px; border-color: Gainsboro; }
 
@@ -834,7 +836,7 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-side-categories ul li .terminal-menu { border-left: 1px solid darkgray; }
 
-.m-side-categories ul li .terminal-menu a { color: MidnightBlue; }
+.m-side-categories ul li .terminal-menu a { color: #003399; }
 
 .m-side-categories ul li .terminal-menu:not(.no-post):hover { background-color: Lavender; }
 
@@ -842,9 +844,9 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-side-categories ul li .terminal-menu.selected-menu { background-color: Lavender; }
 
-.m-side-categories ul li .posts-count { font-size: 0.75rem; color: #bfbfbf; float: right; }
+.m-side-categories ul li .posts-count { font-size: 0.75rem; color: #a6a6a6; float: right; }
 
-.m-side-categories ul li .no-post { color: #e6e6e6; }
+.m-side-categories ul li .no-post { color: #d9d9d9; }
 
 .m-side-categories ul li .no-post .posts-count { display: none; }
 
@@ -860,13 +862,13 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-posts-stream ul li .gr-thumbnail { height: 3.9875rem; width: auto; }
 
-.m-posts-stream ul li .gr-thumbnail img { display: table-cell; object-fit: cover; width: 5rem; height: 3.9875rem; }
+.m-posts-stream ul li .gr-thumbnail img { display: table-cell; object-fit: cover; width: 100%; height: 100%; }
 
 .m-posts-stream ul li .gr-title { height: 2.9rem; padding-left: 0.5em; overflow: hidden; }
 
-.m-posts-stream ul li .gr-title a { color: #333333; text-decoration: none; }
+.m-posts-stream ul li .gr-title a { color: black; text-decoration: none; }
 
-.m-posts-stream ul li .gr-info { font-size: 0.75rem; color: #bfbfbf; padding-left: 0.5em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.m-posts-stream ul li .gr-info { font-size: 0.75rem; color: #a6a6a6; padding-left: 0.5em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
 .m-posts-stream ul li .gr-info .breadcrumbs { display: inline; }
 
@@ -892,15 +894,13 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-post .content-header .content-title { margin: 0.25em 0; font-weight: 400; }
 
-.m-post .content-header .content-meta { padding: 0.25em 0; font-size: 0.75rem; color: #bfbfbf; border-bottom: 1px solid #ff5533; }
+.m-post .content-header .content-meta { padding: 0.25em 0; font-size: 0.75rem; color: #a6a6a6; border-bottom: 1px solid #ff5533; }
 
 .m-post .content-text { margin: 1em 0; letter-spacing: 0.02em; line-height: 1.65; }
 
 .m-post .content-footer { margin: 1em 0; }
 
 .tag-list .tag-svg { display: inline-block; }
-
-.tag-list .tag-svg svg { width: 1rem; height: 1rem; }
 
 .tag-word { display: inline-block; font-size: 0.8125rem; color: LightSlateGray; background-color: AliceBlue; border: 1px solid LightSteelBlue; border-radius: 1em; vertical-align: middle; padding: 0 0.6em 0.1em 0.6em; }
 
@@ -918,11 +918,9 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .site-search { float: right; }
 
-.site-search .btn-search svg { width: 1rem; height: 1rem; }
+.copyright { text-align: center; font-size: 0.8125rem; color: DarkSlateBlue; }
 
-.l-footer .l-inner-wrap .copyright { text-align: center; font-size: 0.8125rem; color: DarkSlateBlue; }
-
-.l-footer .l-inner-wrap .copyright a { color: SlateBlue; text-decoration: none; }
+.copyright a { color: SlateBlue; text-decoration: none; }
 
 .page-title h1 { margin-top: 0; }
 

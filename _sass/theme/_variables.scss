@@ -23,9 +23,9 @@ $bp-medium: 900px;
 
 //  ========== ==========  Color  ========== ==========  //
 //  Layout color
-$bgcl-header: hsl(240, 100, 99);
-$bgcl-center: hsl(240, 100, 99);
-$bgcl-footer: hsl(240, 100, 99);
+$bgcl-header: hsl(230, 100, 99);
+$bgcl-center: hsl(230, 100, 99);
+$bgcl-footer: hsl(230, 100, 99);
 $bgcl-widget: White;
 
 $bdcl-layout: Gainsboro; //  border
@@ -56,14 +56,15 @@ $ftsz-h5: 1.125rem;     // = 20.25 | 18
 $ftsz-h6: 1.000rem;     // = 18    | 16
 
 //    color (ftcl)
-$ftcl-html: hsl(0, 0, 20);
-$ftcl-html-light: hsl(0, 0, 75);
-$ftcl-html-hazy: hsl(0, 0, 90);
+$ftcl-html-dark: hsl(0, 0, 0);
+$ftcl-html: hsl(0, 0, 30);
+$ftcl-html-light: hsl(0, 0, 65);
+$ftcl-html-hazy: hsl(0, 0, 85);
 
-$ftcl-a-link: hsl(210, 100, 50);
+$ftcl-a-link: hsl(200, 100, 50);
 $ftcl-a-visited: $ftcl-a-link;
-$ftcl-a-hover: hsl(200, 100, 50);
-$ftcl-a-underline: hsl(210, 100, 50);
+$ftcl-a-hover: hsl(200, 100, 70);
+$ftcl-a-underline: hsl(200, 100, 45);
 
 //    font-family (ftfm)
 $ftfm-sans: 'Noto Sans KR', sans-serif;

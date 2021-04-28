@@ -6,6 +6,7 @@
   border: 1px solid $bdcl-layout;
   .widget-title {
     font-weight: bold;
+    color: $ftcl-html;
     margin: -5px 0 5px 0;
   }
 }
@@ -15,7 +16,13 @@
 }
 
 .m-side-profile {
-
+  img {
+    width: 60%;
+    padding: 0.25em;
+    object-fit: cover;
+    border: 1px solid $bdcl-layout;
+    border-radius: 0.25em;
+  }
 }
 
 .m-side-pages {
@@ -50,7 +57,7 @@
       .terminal-menu {
         border-left: 1px solid darkgray;
         a {
-          color: MidnightBlue;
+          color: hsl(220, 100, 30);
         }
         &:not(.no-post):hover { background-color: Lavender; }
       }
