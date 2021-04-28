@@ -1,6 +1,6 @@
 //  ========== ==========  Dimension  ========== ==========  //
 //  Length
-$max-width-site: 1080px;
+$max-width-site: 1020px;
 $width-col-left: 11rem;
 $height-header: 100px;
 $height-footer: 100px;
@@ -9,15 +9,17 @@ $height-footer: 100px;
 $margin-inner-wrap: 1rem;
 $margin-column-gap: 1rem;
 $margin-widget-gap: 0.5rem;
-$margin-main: 1rem;
+$margin-main: 0.75rem;
 $margin-widget: 0.5rem;
 
 //  breakpoint(less than equal)
+$bp-tiny: 300px;
 $bp-360: 360px;
+$bp-420: 420px;
 $bp-480: 480px;
 $bp-small: 600px;
 $bp-720: 720px;
-$bp-medium: 960px;
+$bp-medium: 900px;
 
 //  ========== ==========  Color  ========== ==========  //
 //  Layout color
@@ -32,10 +34,13 @@ $cl-hr: LightGray;
 
 //  ========== ==========  Font  ========== ==========  //
 //    font-size (ftsz)
-$ftsz-global-large: 1.25em;          // = 20px
-$ftsz-global-medium: 1.1250em;    // = 18px
-$ftsz-global-small: 1em;          // = 16px
-$ftsz-global-tiny: 0.875em;          // = 16px
+$ftsz-global-20: 1.25em;
+$ftsz-global-19: 1.1875em;
+$ftsz-global-18: 1.125em;
+$ftsz-global-17: 1.0625em;
+$ftsz-global-16: 1em;
+$ftsz-global-15: 0.9375em;
+$ftsz-global-14: 0.875em;
 
 $ftsz-m: 1rem;          // = 18     | 16 (m for medium)
 $ftsz-sm: 0.875rem;     // = 15.75  | 14
@@ -66,7 +71,7 @@ $ftfm-mono: 'D2Coding', monospace;
 
 //    line-height
 $line-height-html: 1.45;
-$line-height-content: 1.55;
+$line-height-content: 1.65;
 $line-height-code: 1.45;
 
 

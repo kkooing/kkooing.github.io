@@ -1,4 +1,4 @@
-@media screen and (max-width: $bp-medium) {
+@media screen and (max-width: ($bp-medium - 1)) {
   .hamburger-menu-open {
     display: inline-block;
   }
@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (max-width: $bp-small) {
+@media screen and (max-width: ($bp-small - 1)) {
   .l-center .l-inner-wrap {
     padding: 0;
     .l-column-right {
@@ -50,21 +50,27 @@
 }
 
 
-@media screen and (min-width: ($bp-medium + 1)) {
-  html { font-size: $ftsz-global-medium; }
+@media screen and (min-width: $bp-medium) {
+  html { font-size: $ftsz-global-18; }
 }
-@media screen and (max-width: $bp-medium) {
-  html { font-size: $ftsz-global-large; }
+@media screen and (max-width: ($bp-medium - 1)) {
+  html { font-size: $ftsz-global-20; }
 }
-@media screen and (max-width: $bp-720) {
-  html { font-size: $ftsz-global-medium; }
+@media screen and (max-width: ($bp-720 - 1)) {
+  html { font-size: $ftsz-global-18; }
 }
-@media screen and (max-width: $bp-small) {
-  html { font-size: $ftsz-global-medium; }
+@media screen and (max-width: ($bp-small - 1)) {
+  html { font-size: $ftsz-global-19; }
 }
-@media screen and (max-width: $bp-480) {
-  html { font-size: $ftsz-global-small; }
+@media screen and (max-width: ($bp-480 - 1)) {
+  html { font-size: $ftsz-global-18; }
 }
-@media screen and (max-width: $bp-360) {
-  html { font-size: $ftsz-global-tiny; }
+@media screen and (max-width: ($bp-420 - 1)) {
+  html { font-size: $ftsz-global-17; }
+}
+@media screen and (max-width: ($bp-360 - 1)) {
+  html { font-size: $ftsz-global-16; }
+}
+@media screen and (max-width: ($bp-tiny - 1)) {
+  html { font-size: $ftsz-global-14; }
 }
