@@ -774,7 +774,7 @@ pre, code, kbd, samp { font-family: "D2Coding", monospace; font-size: 1rem; }
 
 kbd { color: #a6a6a6; background-color: Gainsboro; padding: 0 0.25em; font-weight: 700; border: 2px solid Gray; border-radius: 0.3em; }
 
-button { border: none; display: inline-block; padding: 0.25em; vertical-align: middle; overflow: hidden; text-decoration: none; color: inherit; /*background-color:inherit;*/ text-align: center; cursor: pointer; white-space: nowrap; }
+button { border: none; display: inline-block; padding: 0.25em; vertical-align: middle; overflow: hidden; text-decoration: none; color: inherit; /*background-color:inherit;*/ text-align: center; cursor: pointer; white-space: nowrap; line-height: 0; }
 
 svg { vertical-align: middle; width: auto; height: 1em; fill: currentcolor; }
 
@@ -796,7 +796,7 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .l-header { background-color: #fafbff; border-bottom: 1px solid Gainsboro; }
 
-.l-header .l-inner-wrap { height: 100px; transition: height 0.1s, padding 0.1s; }
+.l-header .l-inner-wrap { height: 100px; padding: 18px 1rem; transition: height 0.1s, padding 0.1s; }
 
 .l-header .l-inner-wrap::after { content: ""; clear: both; display: table; }
 
@@ -816,11 +816,15 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-side-profile .widget-title, .m-side-pages .widget-title, .m-side-categories .widget-title { font-weight: bold; color: #4d4d4d; margin: -5px 0 5px 0; }
 
-.m-hamburger-menu-close::after { content: ""; clear: both; display: table; }
+.hamburger-close { display: none; padding: 9px; }
 
-.m-side-profile img { width: 60%; padding: 0.25em; object-fit: cover; border: 1px solid Gainsboro; border-radius: 0.25em; }
+.hamburger-close::after { content: ""; clear: both; display: table; }
 
-.m-side-pages .btn-home svg, .m-side-pages .btn-about svg, .m-side-pages .btn-archive svg { width: 1rem; height: 1rem; }
+.hamburger-close .btn-hamburger { font-size: 1rem; float: right; }
+
+.m-side-profile img { width: 60%; height: auto; padding: 0.25em; object-fit: cover; border: 1px solid Gainsboro; border-radius: 0.25em; }
+
+.m-side-pages button { font-size: 1rem; }
 
 .m-side-categories { margin-bottom: 0; }
 
@@ -886,6 +890,18 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-featured { margin-bottom: 0; }
 
+.m-header .hamburger-open { display: none; float: left; }
+
+.m-header .hamburger-open .btn-hamburger { font-size: 42.6666666667px; }
+
+.m-header .site-logo { display: inline-block; }
+
+.m-header .site-logo .site-name-img { width: auto; height: 64px; margin: 0; padding: 0; border-bottom-width: 5px; }
+
+.copyright { text-align: center; font-size: 0.8125rem; color: DarkSlateBlue; }
+
+.copyright a { color: SlateBlue; text-decoration: none; }
+
 .m-post .breadcrumbs { font-size: 0.8125rem; font-weight: bold; }
 
 .m-post .breadcrumbs a { color: #7733ff; text-decoration: none; }
@@ -904,33 +920,15 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .tag-word { display: inline-block; font-size: 0.8125rem; color: LightSlateGray; background-color: AliceBlue; border: 1px solid LightSteelBlue; border-radius: 1em; vertical-align: middle; padding: 0 0.6em 0.1em 0.6em; }
 
-.hamburger-menu-open, .hamburger-menu-close { display: none; }
-
-.hamburger-menu-open svg, .hamburger-menu-close svg { width: 1rem; height: 1rem; }
-
-.hamburger-menu-open { float: left; }
-
-.hamburger-menu-close { float: right; }
-
-.site-logo { display: inline-block; }
-
-.site-logo .site-name-img { width: auto; height: calc(100px - (1rem * 2)); }
-
-.site-search { float: right; }
-
-.copyright { text-align: center; font-size: 0.8125rem; color: DarkSlateBlue; }
-
-.copyright a { color: SlateBlue; text-decoration: none; }
-
 .page-title h1 { margin-top: 0; }
 
 .inline-table-container table { vertical-align: top; display: inline-block; }
 
 .scroll-x-container { overflow-x: auto; }
 
-@media screen and (max-width: 899px) { .hamburger-menu-open { display: inline-block; } .hamburger-menu-close { display: block; } .l-center .l-inner-wrap .l-column-left { position: fixed; top: 0; left: 0; bottom: 0; display: none; overflow-y: auto; /* Hide scrollbar for Chrome, Safari and Opera */ /* Hide scrollbar for IE, Edge and Firefox */ -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */ } .l-center .l-inner-wrap .l-column-left::-webkit-scrollbar { display: none; } .l-center .l-inner-wrap .l-column-right { max-width: calc(1020px - (1rem * 2)); margin-left: 0; } }
+@media screen and (max-width: 899px) { .m-header .hamburger-open { display: inline-block; } .hamburger-close { display: block; } .l-center .l-inner-wrap .l-column-left { position: fixed; top: 0; left: 0; bottom: 0; display: none; overflow-y: auto; /* Hide scrollbar for Chrome, Safari and Opera */ /* Hide scrollbar for IE, Edge and Firefox */ -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */ } .l-center .l-inner-wrap .l-column-left::-webkit-scrollbar { display: none; } .l-center .l-inner-wrap .l-column-right { max-width: calc(1020px - (1rem * 2)); margin-left: 0; } .l-header .l-inner-wrap .m-header .btn-hamburger { font-size: 21.3333333333px; } .l-header .l-inner-wrap .m-header .site-logo { display: block; text-align: center; /*.site-name-img { width: auto; height: ($height-header - ($margin-header-tb * 2)) * $margin-header-tb-shrink; }*/ } }
 
-@media screen and (max-width: 599px) { .l-center .l-inner-wrap { padding: 0; } .l-center .l-inner-wrap .l-column-right { max-width: 1020px; border: 0; } .l-header .l-inner-wrap { height: 50px; padding: 0.5rem 0.75rem; } .l-header .l-inner-wrap .site-logo .site-name-img { width: auto; height: calc((100px * 0.5) - 1rem); } }
+@media screen and (max-width: 599px) { .l-center .l-inner-wrap { padding: 0; } .l-center .l-inner-wrap .l-column-right { max-width: 1020px; border: 0; } .l-header .l-inner-wrap { height: 50px; padding: 9px 1rem; } .l-header .l-inner-wrap .m-header { /*.btn-hamburger { font-size: ($height-header - ($margin-header-tb * 2)) / 3 * 2 * $margin-header-tb-shrink; }*/ } .l-header .l-inner-wrap .m-header .site-logo .site-name-img { width: auto; height: 32px; } }
 
 @media screen and (min-width: 900px) { html { font-size: 1.125em; } }
 

@@ -1,4 +1,3 @@
-
 .tag-list .tag-svg {
   display: inline-block;
 }
@@ -11,42 +10,6 @@
   border-radius: 1em;
   vertical-align: middle;
   padding: 0 0.6em 0.1em 0.6em;
-}
-
-.hamburger-menu-open, .hamburger-menu-close {
-  display: none;
-  svg {
-    width: $ftsz-m;
-    height: $ftsz-m;
-  }
-}
-.hamburger-menu-open {
-  float: left;
-}
-.hamburger-menu-close {
-  float: right;
-}
-
-.site-logo {
-  display: inline-block;
-  .site-name-img {
-    width: auto;
-    height: calc(#{$height-header} - (#{$margin-inner-wrap} * 2));
-  }
-}
-
-.site-search {
-  float: right;
-}
-
-.copyright {
-  text-align: center;
-  font-size: $ftsz-s;
-  color: DarkSlateBlue;
-  a {
-    color: SlateBlue;
-    text-decoration: none;
-  }
 }
 
 .page-title h1 {

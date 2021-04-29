@@ -1,0 +1,32 @@
+
+.m-header {
+  .hamburger-open {
+    display: none;
+    float: left;
+    .btn-hamburger {
+      font-size: ($height-header - ($margin-header-tb * 2)) / 3 * 2;
+    }
+  }
+
+  .site-logo {
+    display: inline-block;
+    .site-name-img {
+      width: auto;
+      height: ($height-header - ($margin-header-tb * 2));
+      margin:0;
+      padding:0;
+      border-bottom-width: 5px;
+    }
+  }
+}
+
+
+.copyright {
+  text-align: center;
+  font-size: $ftsz-s;
+  color: DarkSlateBlue;
+  a {
+    color: SlateBlue;
+    text-decoration: none;
+  }
+}

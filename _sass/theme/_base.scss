@@ -111,10 +111,10 @@ kbd {
 
 // 기타
 
-button {border:none;display:inline-block;padding:0.25em;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;/*background-color:inherit;*/text-align:center;cursor:pointer;white-space:nowrap}
+button {border:none;display:inline-block;padding:0.25em;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;/*background-color:inherit;*/text-align:center;cursor:pointer;white-space:nowrap;line-height:0;}
 
 svg {
-  vertical-align:middle;
+  vertical-align: middle;
   width: auto;
   height: 1em;
   fill: currentcolor;

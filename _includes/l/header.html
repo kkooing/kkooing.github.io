@@ -1,17 +1,16 @@
 <header class="l-header">
   <div class="l-inner-wrap">
-    <button class="hamburger-menu-open" onclick="sidebar_open()">
-      {% include svg/menu_black_24dp.svg %}
-    </button>
-    <div class="site-logo">
-      <a class="site-name" href="{{ '/' | relative_url }}">
-        <img class="site-name-img" src="/assets/images/site_name.png" alt="{{- site.name -}}">
-      </a>
-    </div>
-    <div class="site-search">
-      <button class="btn-search" onclick="document.location='/search'">
-        {% include svg/search_black_24dp.svg %}
-      </button>
+    <div class="m-header">
+      <div class="hamburger-open">
+        <button class="btn-hamburger" onclick="sidebar_open()">
+          {% include svg/menu_black_24dp.svg %}
+        </button>
+      </div>
+      <div class="site-logo">
+        <a class="site-name" href="{{ '/' | relative_url }}">
+          <img class="site-name-img" src="/assets/images/site_name.png" alt="{{- site.name -}}">
+        </a>
+      </div>
     </div>
   </div>
 </header>

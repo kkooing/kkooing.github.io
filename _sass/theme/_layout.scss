@@ -16,6 +16,7 @@
   .l-inner-wrap {
     @include clearfix;
     height: $height-header;
+    padding: 18px $margin-inner-wrap;
     transition: height 0.1s, padding 0.1s;
   }
 }

@@ -11,13 +11,20 @@
   }
 }
 
-.m-hamburger-menu-close {
+.hamburger-close {
+  display: none;
   @include clearfix;
+  padding: ($margin-header-tb * $margin-header-tb-shrink);
+  .btn-hamburger {
+    font-size: $ftsz-m;
+    float: right;
+  }
 }
 
 .m-side-profile {
   img {
     width: 60%;
+    height: auto;
     padding: 0.25em;
     object-fit: cover;
     border: 1px solid $bdcl-layout;
@@ -26,9 +33,8 @@
 }
 
 .m-side-pages {
-  .btn-home svg, .btn-about svg, .btn-archive svg {
-    width: $ftsz-m;
-    height: $ftsz-m;
+  button {
+    font-size: $ftsz-m;
   }
 }
 
