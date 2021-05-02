@@ -22,3 +22,6 @@ Icons by
 
 Image hosted by  
 [Blogger](https://www.blogger.com/)
+
+Other features of  
+[MathJax](https://www.mathjax.org/)

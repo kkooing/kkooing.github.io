@@ -353,7 +353,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 
 
 <div class="m-posts-stream">
-  <ul><li>
+  <ul id="posts-stream"><li class="posts-stream-item">
       <div class="gr-thumbnail">
         <a href="/computer-language/etc/latex/latex/">
           <img src="/assets/images/text_only.png" alt="thumbnail"/>
@@ -365,6 +365,67 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
       <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 4. 26.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
     </li></ul>
 </div>
+
+<div class="pagination", id="pagination">
+</div>
+
+<style>
+  .pagination {
+    text-align: center;
+  }
+  .btn-pagination {
+    line-height: 1.45;
+    padding: 0 0.5em;
+    margin: 0.5em;
+  }
+</style>
+
+<script>
+  var dataPerPage = Number('5');
+  var pageButtonCount = Number('5');
+
+  var dataCount = Number('1');
+  var pageCount = Math.ceil(dataCount / dataPerPage);    // 총 페이지 수
+
+  var pagination = document.getElementById("pagination");
+  pagination.querySelectorAll('*').forEach( n => n.remove() );
+  for (let i = 0; i < pageCount; i++) {
+    var button = document.createElement("button");
+    var btn_class = document.createAttribute("class");
+    var btn_onclick = document.createAttribute("onclick");
+    btn_class.value = "btn-pagination";
+    btn_onclick.value = "gotoPage(" + (i+1) + ")";
+    button.setAttributeNode(btn_class);
+    button.setAttributeNode(btn_onclick);
+    button.appendChild(document.createTextNode(i+1));
+    pagination.appendChild(button);
+  }
+
+  var posts_stream = document.getElementById("posts-stream");
+  var x = posts_stream.getElementsByClassName("posts-stream-item");
+
+  gotoPage(1);
+
+  function gotoPage(page) {
+    for (let k of x) {
+      var li_style = document.createAttribute("style");
+      li_style.value = "display: none;";
+      k.setAttributeNode(li_style);
+    }
+
+    var data_begin = (page - 1) * dataPerPage;
+    var data_end = (page * dataPerPage) - 1;
+    if (data_end >= dataCount) { data_end = dataCount - 1 }
+
+    for (let j = data_begin; j < data_end + 1; j++) {
+      var li_style2 = document.createAttribute("style");
+      li_style2.value = "display: grid;";
+      x[j].setAttributeNode(li_style2);
+    }
+
+    
+  }
+</script>
 </section><section class="m-featured">
   <div>
     Featured
@@ -383,15 +444,16 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 </footer>
 
   <script>
-    function sidebar_open() {
-      document.getElementById("sidebar").style.display = "block";
-    }
+  function sidebar_open() {
+    document.getElementById("sidebar").style.display = "block";
+  }
 
-    function sidebar_close() {
-      document.getElementById("sidebar").style.display = "none";
-    }
-  </script>
+  function sidebar_close() {
+    document.getElementById("sidebar").style.display = "none";
+  }
 
+  
+</script>
 </body>
 
 </html>

@@ -7,6 +7,10 @@ locale                   : "ko-KR"
 
 since                    : 2020
 
+# Pagenation
+dataPerPage              : 5
+pageButtonCount          : 5
+
 # Comments
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"

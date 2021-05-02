@@ -28,9 +28,9 @@
 {%- endif -%}
 
 <div class="m-posts-stream">
-  <ul>
+  <ul id="posts-stream">
     {%- for post in filtered-posts -%}
-    <li>
+    <li class="posts-stream-item">
       <div class="gr-thumbnail">
         <a href="{{ post.url }}">
           <img src="{{ post.thumbnail }}" alt="thumbnail"/>
@@ -59,3 +59,64 @@
     {%- endfor -%}
   </ul>
 </div>
+
+<div class="pagination", id="pagination">
+</div>
+
+<style>
+  .pagination {
+    text-align: center;
+  }
+  .btn-pagination {
+    line-height: 1.45;
+    padding: 0 0.5em;
+    margin: 0.5em;
+  }
+</style>
+
+<script>
+  var dataPerPage = Number('{{site.dataPerPage}}');
+  var pageButtonCount = Number('{{site.pageButtonCount}}');
+
+  var dataCount = Number('{{filtered-posts.size}}');
+  var pageCount = Math.ceil(dataCount / dataPerPage);    // 총 페이지 수
+
+  var pagination = document.getElementById("pagination");
+  pagination.querySelectorAll('*').forEach( n => n.remove() );
+  for (let i = 0; i < pageCount; i++) {
+    var button = document.createElement("button");
+    var btn_class = document.createAttribute("class");
+    var btn_onclick = document.createAttribute("onclick");
+    btn_class.value = "btn-pagination";
+    btn_onclick.value = "gotoPage(" + (i+1) + ")";
+    button.setAttributeNode(btn_class);
+    button.setAttributeNode(btn_onclick);
+    button.appendChild(document.createTextNode(i+1));
+    pagination.appendChild(button);
+  }
+
+  var posts_stream = document.getElementById("posts-stream");
+  var x = posts_stream.getElementsByClassName("posts-stream-item");
+
+  gotoPage(1);
+
+  function gotoPage(page) {
+    for (let k of x) {
+      var li_style = document.createAttribute("style");
+      li_style.value = "display: none;";
+      k.setAttributeNode(li_style);
+    }
+
+    var data_begin = (page - 1) * dataPerPage;
+    var data_end = (page * dataPerPage) - 1;
+    if (data_end >= dataCount) { data_end = dataCount - 1 }
+
+    for (let j = data_begin; j < data_end + 1; j++) {
+      var li_style2 = document.createAttribute("style");
+      li_style2.value = "display: grid;";
+      x[j].setAttributeNode(li_style2);
+    }
+
+    
+  }
+</script>
