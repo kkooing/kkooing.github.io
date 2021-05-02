@@ -1,0 +1,25 @@
+@import "unicode-range-array";
+
+@each $unicode-range in $unicode-range-array {
+  $i: index($unicode-range-array, $unicode-range) - 1;
+  @font-face {
+    font-family: 'D2Coding';
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: url(/assets/fonts/d2coding/d2coding_subset_#{$i}.woff2) format('woff2');
+    unicode-range: $unicode-range;
+  }
+}
+@each $unicode-range in $unicode-range-array {
+  $i: index($unicode-range-array, $unicode-range) - 1;
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: url(/assets/fonts/notosanskr/notosanskr_subset_#{$i}.woff2) format('woff2');
+    unicode-range: $unicode-range;
+  }
+}
+
