@@ -46,17 +46,11 @@ $cl-hr: LightGray;
 
 //  ========== ==========  Font  ========== ==========  //
 //    font-size (ftsz)
-$ftsz-m: (16 / 16) * 1rem; // m for medium
-$ftsz-sm: (14 / 16) * 1rem;
-$ftsz-s: (13 / 16) * 1rem; // s for small
-$ftsz-st: (12 / 16) * 1rem; 
-$ftsz-t: (10 / 16) * 1rem; //t for tiny
-
-$ftsz-m: 1rem;          // = 18     | 16 (m for medium)
-$ftsz-sm: 0.875rem;     // = 15.75  | 14
-$ftsz-s: 0.8125rem;     // = 14.625 | 13 (s for small)
-$ftsz-st: 0.75rem;      // = 13.5   | 12
-$ftsz-t: 0.625rem;      // = 11.25  | 10 (t for tiny)
+$ftsz-m: 1rem; // m for medium
+$ftsz-ms: 0.9rem;
+$ftsz-s: 0.8rem; // s for small
+$ftsz-st: 0.7rem; 
+$ftsz-t: 0.6rem; //t for tiny
 
 $ftsz-h1: 1.625rem;     // = 29.25 | 26
 $ftsz-h2: 1.500rem;     // = 27    | 24
@@ -82,7 +76,7 @@ $ftfm-mono: 'D2Coding', monospace;
 
 //    line-height
 $line-height-html: 1.45;
-$line-height-content: 1.65;
+$line-height-content: 1.7;
 $line-height-code: 1.45;
 
 

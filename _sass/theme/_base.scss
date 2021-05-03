@@ -35,7 +35,7 @@ h6 { font-size: $ftsz-h6; margin: ((3rem - $ftsz-h6) / 2) 0; }
 
 // 그룹
 p {
-  margin: 0.75em 0;
+  margin: 1em 0;
 }
 
 hr {
@@ -111,10 +111,10 @@ kbd {
 
 // 기타
 
-button {border:none;display:inline-block;padding:0.25em;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;/*background-color:inherit;*/text-align:center;cursor:pointer;white-space:nowrap;line-height:0;}
+button {border:none;display:inline-block;padding:0.25em;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;/*background-color:inherit;*/text-align:center;cursor:pointer;white-space:nowrap;line-height:0;font-size:1em;}
 
 svg {
-  vertical-align: middle;
+  vertical-align: -0.1em;
   width: auto;
   height: 1em;
   fill: currentcolor;

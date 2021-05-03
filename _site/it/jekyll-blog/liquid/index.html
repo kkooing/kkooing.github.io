@@ -66,6 +66,16 @@
         </button>
       </div><div class="m-side-profile">
   <img src="/assets/images/profile.png" alt="profile"/>
+  <div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"/><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"/></svg>
+      kd???68@?????.com
+    </div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" version="1" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M18.5,10.2c0,2.57-2.1,5.79-6.16,9.51L12,20.01l-0.34-0.31C7.6,15.99,5.5,12.77,5.5,10.2 c0-3.84,2.82-6.7,6.5-6.7S18.5,6.35,18.5,10.2z" fill-opacity=".3"/><path d="M12,2c4.2,0,8,3.22,8,8.2c0,3.32-2.67,7.25-8,11.8c-5.33-4.55-8-8.48-8-11.8C4,5.22,7.8,2,12,2z M18,10.2 C18,6.57,15.35,4,12,4s-6,2.57-6,6.2c0,2.34,1.95,5.44,6,9.14C16.05,15.64,18,12.54,18,10.2z M12,12c-1.1,0-2-0.9-2-2s0.9-2,2-2 s2,0.9,2,2S13.1,12,12,12z"/><path d="M0,0h24v24H0V0z" fill="none"/></svg>
+      South Korea
+    </div>
+  </div>
 </div><nav class="m-side-pages" id="sl-pages">
   <div class="widget-title">page</div>
   
@@ -120,9 +130,7 @@
     
     <section class="l-column-right">
       <main class="m-main m-post">
-  <div class="breadcrumbs">
-    <div class="breadcrumbs"><a href="/it">IT</a><span> / </span><a href="/it/jekyll-blog">Jekyll 블로그</a></div>
-  </div>
+  <div class="breadcrumbs"><a href="/it">IT</a><span> / </span><a href="/it/jekyll-blog">Jekyll 블로그</a></div>
   <section class="content" id="content">
     <div class="content-header">
       <h1 class="content-title">Liquid 문법</h1>
@@ -328,9 +336,9 @@
     </div>
     <div class="content-footer">
       <div class="tag-list">
-        <div class="tag-svg">
+        <span class="tag-svg">
           <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><path d="M20,10V8h-4V4h-2v4h-4V4H8v4H4v2h4v4H4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4H20z M14,14h-4v-4h4V14z"/></g></svg>
-        </div>
+        </span>
 
         
         
@@ -348,11 +356,7 @@
 </section><section class="m-related">
 <div>
   <div class="breadcrumbs"><a href="/it">IT</a><span> / </span><a href="/it/jekyll-blog">Jekyll 블로그</a></div>
-</div>
-
-
-
-<div class="m-posts-stream">
+</div><div class="m-posts-stream">
   <ul class="data-ul" id="data-ul"><li class="data-li">
       <div class="gr-thumbnail">
         <a href="/it/jekyll-blog/sample-font/">
@@ -418,11 +422,11 @@
   <div id="m-pagination"></div>
 
 <script>
-  const dataPerPage = Number('2');   // 페이지당 자료 수
+  const dataPerPage = Number('5');  // 페이지당 자료 수
   const buttonCount = Number('5');  // 최대 버튼 개수
 
-  const dataCount = Number('6');     // 총 자료 수
-  const pageCount = Math.ceil(dataCount / dataPerPage);    // 총 페이지 수
+  const dataCount = Number('6');  // 총 자료 수
+  const pageCount = Math.ceil(dataCount / dataPerPage);  // 총 페이지 수
 
   //  get
   let data_ul = document.getElementById("data-ul");
@@ -449,6 +453,7 @@
   gotoPage(1);
 
   function gotoPage(page) {
+    // li 관리
     for (let i of data_li_array) { i.style = "display: none;"; }
 
     let data_begin = (page - 1) * dataPerPage;
@@ -457,9 +462,10 @@
 
     for (let i = data_begin; i <= data_end; i++) { data_li_array[i].style = "display: grid;"; }
 
-
+    // button 관리
     if (pageCount <= buttonCount) {
-
+      wrap_btn_first.style = "display: none;";
+      wrap_btn_last.style = "display: none;";
     }
     else {
       for (let i of btn_page_array) { i.style = "display: none;"; }
@@ -481,6 +487,9 @@
       }
       for (let i = btn_begin - 1; i < btn_end; i++) { btn_page_array[i].style = "display: inline-block;"; }
     }
+    for (let i of btn_page_array) { i.className = "btn-page"; }
+    btn_page_array[page-1].className = "btn-page active";
+
   }
 </script>
 </section><section class="m-featured">

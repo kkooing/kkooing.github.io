@@ -1,7 +1,9 @@
 {%- comment -%}
 <!--
   ** Input parameters **
-    url     = Target url.
+    url         = Target url.
+    dataPerPage = dataPerPage
+    buttonCount = buttonCount
               
   ** Url format **
     /abc/def(/*)
@@ -63,14 +65,14 @@
     {%- comment -%}
     <div id="wrap-btn-first">
       <button id="btn-first"></button>
-      |
+      ...
     </div>
     <div id="group-btn-page">
-      <button class="btn-page" onclick="gotoPage(1)">1</button>
+      <button class="btn-page active" onclick="gotoPage(1)">1</button>
       <button class="btn-page" onclick="gotoPage(2)">2</button>
     </div>
     <div id="wrap-btn-last">
-      |
+      ...
       <button id="btn-last"></button>
     </div>
   </div>
@@ -78,11 +80,11 @@
 </div>
 
 <script>
-  const dataPerPage = Number('{{site.dataPerPage}}');   // 페이지당 자료 수
-  const buttonCount = Number('{{site.buttonCount}}');  // 최대 버튼 개수
+  const dataPerPage = Number('{{include.dataPerPage}}');  // 페이지당 자료 수
+  const buttonCount = Number('{{include.buttonCount}}');  // 최대 버튼 개수
 
-  const dataCount = Number('{{filtered-posts.size}}');     // 총 자료 수
-  const pageCount = Math.ceil(dataCount / dataPerPage);    // 총 페이지 수
+  const dataCount = Number('{{filtered-posts.size}}');  // 총 자료 수
+  const pageCount = Math.ceil(dataCount / dataPerPage);  // 총 페이지 수
 
   //  get
   let data_ul = document.getElementById("data-ul");
@@ -109,6 +111,7 @@
   gotoPage(1);
 
   function gotoPage(page) {
+    // li 관리
     for (let i of data_li_array) { i.style = "display: none;"; }
 
     let data_begin = (page - 1) * dataPerPage;
@@ -117,9 +120,10 @@
 
     for (let i = data_begin; i <= data_end; i++) { data_li_array[i].style = "display: grid;"; }
 
-
+    // button 관리
     if (pageCount <= buttonCount) {
-
+      wrap_btn_first.style = "display: none;";
+      wrap_btn_last.style = "display: none;";
     }
     else {
       for (let i of btn_page_array) { i.style = "display: none;"; }
@@ -141,5 +145,8 @@
       }
       for (let i = btn_begin - 1; i < btn_end; i++) { btn_page_array[i].style = "display: inline-block;"; }
     }
+    for (let i of btn_page_array) { i.className = "btn-page"; }
+    btn_page_array[page-1].className = "btn-page active";
+
   }
 </script>

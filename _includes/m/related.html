@@ -2,12 +2,12 @@
 <div>
   {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url mode="link" %}
 </div>
-{% assign post-url = page.url | remove_first: "/" | split: "/" %}
-{% assign post-url-num = post-url.size | minus: 2 %}
+{%- assign post-url = page.url | remove_first: "/" | split: "/" -%}
+{%- assign post-url-num = post-url.size | minus: 2 -%}
 {%- assign cat-url = "" -%}
-{% for i in (0..post-url-num) %}
-{% assign cat-url = cat-url | append: "/" | append: post-url[i] %}
-{% endfor %}
+{%- for i in (0..post-url-num) -%}
+  {%- assign cat-url = cat-url | append: "/" | append: post-url[i] -%}
+{%- endfor -%}
 
-{% include m/posts-stream.html url=cat-url %}
+{% include m/posts-stream.html url=cat-url dataPerPage=5 buttonCount=site.buttonCount %}
 </section>

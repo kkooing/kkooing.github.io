@@ -1,12 +1,4 @@
 .m-post {
-  .breadcrumbs {
-    font-size: $ftsz-s;
-    font-weight: bold;
-    a {
-      color: hsl(260, 100, 60);
-      text-decoration: none;
-    }
-  }
   .content-header {
     text-align: center;
     .content-title {
@@ -15,7 +7,7 @@
     }
     .content-meta {
       padding: 0.25em 0;
-      font-size: 0.75rem;
+      font-size: $ftsz-st;
       color: $ftcl-html-light;
       border-bottom: 1px solid hsl(10, 100, 60);
     }
@@ -26,6 +18,22 @@
     line-height: $line-height-content;
   }
   .content-footer {
-    margin: 1em 0;
+    //margin: 1em 0;
+
+    .tag-list {
+      .tag-svg {
+        color: hsl(250, 100, 40);
+      }
+      .tag-word {
+        display: inline-block;
+        font-size: $ftsz-s;
+        color: hsl(210, 100, 60);
+        background-color: AliceBlue;
+        border: 1px solid hsl(210, 100, 60);
+        border-radius: 1em;
+        vertical-align: middle;
+        padding: 0 0.6em 0.1em 0.6em;
+      }
+    }
   }
 }

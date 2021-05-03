@@ -2,7 +2,6 @@
   background-color: $bgcl-widget;
   margin-bottom: $margin-widget-gap;
   padding: $margin-widget;
-  font-size: $ftsz-sm;
   border: 1px solid $bdcl-layout;
   .widget-title {
     font-weight: bold;
@@ -30,6 +29,7 @@
     border: 1px solid $bdcl-layout;
     border-radius: 0.25em;
   }
+  font-size: $ftsz-s;
 }
 
 .m-side-pages {
@@ -58,14 +58,17 @@
     li {
       position: relative;
       .menu {
-        padding-left: 0.25em;
+        padding: 0.15em 0 0.15em 0.25em;
+        font-size: $ftsz-ms;
       }
       .terminal-menu {
         border-left: 1px solid darkgray;
+        font-size: $ftsz-s;
+        //padding: 0.25em 0;
         a {
           color: hsl(220, 100, 30);
+          div:hover { background-color: Lavender; }
         }
-        &:not(.no-post):hover { background-color: Lavender; }
       }
       .selected-menu-marker {
         position: absolute;
@@ -76,12 +79,14 @@
   
       }
       .terminal-menu.selected-menu {
-        background-color: Lavender;
+        a div{
+          background-color: Lavender;
+        }
       }
   
       .posts-count {
-        font-size: $ftsz-st;
         color: $ftcl-html-light;
+        font-size: $ftsz-st;
         float: right;
       }
       .no-post {

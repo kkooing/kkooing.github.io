@@ -2,14 +2,9 @@
 layout: default
 ---
 <main class="m-main m-category-page">
-  <div class="page-title">
-    <h1>
-      <div class="breadcrumbs">
-        {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url url-now=page.url mode="plain" %}
-      </div>
-    </h1>
-  </div>
+  {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url url-now=page.url mode="link" %}
+  <h1 style="display: none;">{% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url url-now=page.url mode="link" %}</h1>
   <section class="content" id="content">
-    {% include m/posts-stream.html url=page.url %}
+    {% include m/posts-stream.html url=page.url dataPerPage=site.dataPerPage buttonCount=site.buttonCount %}
   </section>
 </main>

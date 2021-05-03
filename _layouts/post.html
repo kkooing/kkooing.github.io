@@ -2,9 +2,7 @@
 layout: default
 ---
 <main class="m-main m-post">
-  <div class="breadcrumbs">
-    {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url url-now=page.url mode="link" %}
-  </div>
+  {% include_cached breadcrumbs.html list=site.data.navi.categories url=page.url url-now=page.url mode="link" %}
   <section class="content" id="content">
     <div class="content-header">
       <h1 class="content-title">{{ page.title }}</h1>
@@ -17,9 +15,9 @@ layout: default
     </div>
     <div class="content-footer">
       <div class="tag-list">
-        <div class="tag-svg">
+        <span class="tag-svg">
           {% include svg/tag_black_24dp.svg %}
-        </div>
+        </span>
 
         {% assign tags_sorted = page.tags | sort_natural %}
         {% for tag_word in tags_sorted %}

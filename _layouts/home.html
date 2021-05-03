@@ -6,6 +6,6 @@ layout: default
     <h1>Home</h1>
   </div>
   <section class="content" id="content">
-    {% include m/posts-stream.html url=page.url %}
+    {% include m/posts-stream.html url=page.url dataPerPage=site.dataPerPage buttonCount=site.buttonCount %}
   </section>
 </main>
