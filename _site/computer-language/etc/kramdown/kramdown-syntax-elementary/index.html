@@ -770,7 +770,7 @@
 
 
 <div class="m-posts-stream">
-  <ul id="posts-stream"><li class="posts-stream-item">
+  <ul class="data-ul" id="data-ul"><li class="data-li">
       <div class="gr-thumbnail">
         <a href="/computer-language/etc/kramdown/kramdown-syntax-advanced/">
           <img src="/assets/images/text_only.png" alt="thumbnail"/>
@@ -780,7 +780,7 @@
         <a href="/computer-language/etc/kramdown/kramdown-syntax-advanced/">kramdown 문법 심화</a>
       </div>
       <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 2. 18.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
-    </li><li class="posts-stream-item">
+    </li><li class="data-li">
       <div class="gr-thumbnail">
         <a href="/computer-language/etc/kramdown/kramdown-syntax-elementary/">
           <img src="/assets/images/text_only.png" alt="thumbnail"/>
@@ -791,66 +791,73 @@
       </div>
       <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 2. 15.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
     </li></ul>
-</div>
 
-<div class="pagination", id="pagination">
-</div>
-
-<style>
-  .pagination {
-    text-align: center;
-  }
-  .btn-pagination {
-    line-height: 1.45;
-    padding: 0 0.5em;
-    margin: 0.5em;
-  }
-</style>
+  <div id="m-pagination"></div>
 
 <script>
-  var dataPerPage = Number('5');
-  var pageButtonCount = Number('5');
+  const dataPerPage = Number('2');   // 페이지당 자료 수
+  const buttonCount = Number('5');  // 최대 버튼 개수
 
-  var dataCount = Number('2');
-  var pageCount = Math.ceil(dataCount / dataPerPage);    // 총 페이지 수
+  const dataCount = Number('2');     // 총 자료 수
+  const pageCount = Math.ceil(dataCount / dataPerPage);    // 총 페이지 수
 
-  var pagination = document.getElementById("pagination");
-  pagination.querySelectorAll('*').forEach( n => n.remove() );
+  //  get
+  let data_ul = document.getElementById("data-ul");
+  let data_li_array = document.getElementsByClassName("data-li");
+  let m_pagination = document.getElementById("m-pagination");
+  
+  // let
+  m_pagination.innerHTML = 
+    "<div id=\"wrap-btn-first\">" +
+      "<button id=\"btn-first\" onclick=\"gotoPage(1)\">1</button>&#133;" +
+    "</div>" +
+    "<div id=\"group-btn-page\"></div>" +
+    "<div id=\"wrap-btn-last\">" +
+      "&#133;<button id=\"btn-last\" onclick=\"gotoPage(" + pageCount + ")\">" + pageCount + "</button>" +
+    "</div>";
+  let wrap_btn_first = document.getElementById("wrap-btn-first");
+  let wrap_btn_last = document.getElementById("wrap-btn-last");
+  let group_btn_page = document.getElementById("group-btn-page");
   for (let i = 0; i < pageCount; i++) {
-    var button = document.createElement("button");
-    var btn_class = document.createAttribute("class");
-    var btn_onclick = document.createAttribute("onclick");
-    btn_class.value = "btn-pagination";
-    btn_onclick.value = "gotoPage(" + (i+1) + ")";
-    button.setAttributeNode(btn_class);
-    button.setAttributeNode(btn_onclick);
-    button.appendChild(document.createTextNode(i+1));
-    pagination.appendChild(button);
+    group_btn_page.innerHTML += "<button class=\"btn-page\" onclick=\"gotoPage(" + (i+1) + ")\">" + (i+1) + "</button>";
   }
-
-  var posts_stream = document.getElementById("posts-stream");
-  var x = posts_stream.getElementsByClassName("posts-stream-item");
+  let btn_page_array = document.getElementsByClassName("btn-page");
 
   gotoPage(1);
 
   function gotoPage(page) {
-    for (let k of x) {
-      var li_style = document.createAttribute("style");
-      li_style.value = "display: none;";
-      k.setAttributeNode(li_style);
-    }
+    for (let i of data_li_array) { i.style = "display: none;"; }
 
-    var data_begin = (page - 1) * dataPerPage;
-    var data_end = (page * dataPerPage) - 1;
+    let data_begin = (page - 1) * dataPerPage;
+    let data_end = (page * dataPerPage) - 1;
     if (data_end >= dataCount) { data_end = dataCount - 1 }
 
-    for (let j = data_begin; j < data_end + 1; j++) {
-      var li_style2 = document.createAttribute("style");
-      li_style2.value = "display: grid;";
-      x[j].setAttributeNode(li_style2);
-    }
+    for (let i = data_begin; i <= data_end; i++) { data_li_array[i].style = "display: grid;"; }
 
-    
+
+    if (pageCount <= buttonCount) {
+
+    }
+    else {
+      for (let i of btn_page_array) { i.style = "display: none;"; }
+      let btn_begin = Math.ceil(page - ((buttonCount - 1) / 2));
+      let btn_end = Math.ceil(page + ((buttonCount - 1) / 2));
+      if ( btn_begin <= 1 ) {
+        btn_end += 1 - btn_begin; btn_begin = 1;
+        wrap_btn_first.style = "display: none;";
+      }
+      else {
+        wrap_btn_first.style = "display: inline-block;";
+      }
+      if ( btn_end >= pageCount ) {
+        btn_begin -= btn_end - pageCount; btn_end = pageCount;
+        wrap_btn_last.style = "display: none;";
+      }
+      else {
+        wrap_btn_last.style = "display: inline-block;";
+      }
+      for (let i = btn_begin - 1; i < btn_end; i++) { btn_page_array[i].style = "display: inline-block;"; }
+    }
   }
 </script>
 </section><section class="m-featured">

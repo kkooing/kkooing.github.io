@@ -57,6 +57,21 @@
       }
     }
   }
+
+  .data-li {
+    display: none;
+  }
+  #m-pagination {
+    text-align: center;
+    #wrap-btn-first, #wrap-btn-last, #group-btn-page {
+      display: inline-block;
+    }
+    #btn-first, #btn-last ,.btn-page {
+      line-height: 1.45;
+      padding: 0 0.5em;
+      margin: 0.5em;
+    }
+  }
 }
 
 .m-posts-stream {

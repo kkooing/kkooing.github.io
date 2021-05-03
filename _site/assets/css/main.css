@@ -639,6 +639,14 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-posts-stream ul li .gr-info .breadcrumbs span:last-child { display: inline; }
 
+.m-posts-stream .data-li { display: none; }
+
+.m-posts-stream #m-pagination { text-align: center; }
+
+.m-posts-stream #m-pagination #wrap-btn-first, .m-posts-stream #m-pagination #wrap-btn-last, .m-posts-stream #m-pagination #group-btn-page { display: inline-block; }
+
+.m-posts-stream #m-pagination #btn-first, .m-posts-stream #m-pagination #btn-last, .m-posts-stream #m-pagination .btn-page { line-height: 1.45; padding: 0 0.5em; margin: 0.5em; }
+
 .m-posts-stream li { grid-template-columns: 5rem auto; }
 
 .m-posts-stream li .gr-thumbnail { grid-area: 1 / 1 / span 2 / span 1; }

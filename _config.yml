@@ -8,8 +8,8 @@ locale                   : "ko-KR"
 since                    : 2020
 
 # Pagenation
-dataPerPage              : 5
-pageButtonCount          : 5
+dataPerPage              : 2
+buttonCount              : 5
 
 # Comments
 comments:
