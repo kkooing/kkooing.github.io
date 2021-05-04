@@ -122,6 +122,9 @@ kramdown:
   toc_levels        : 1..6
   smart_quotes      : lsquo,rsquo,ldquo,rdquo
   show_warnings     : false
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 defaults:
   - scope:

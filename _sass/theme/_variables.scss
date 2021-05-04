@@ -27,15 +27,17 @@ $bp-phone: 600px;
 $bp-tablet: 1020px;
 
 //  ========== ==========  Color  ========== ==========  //
-$cl-header-bg: hsl(220, 0, 99);
+$cl-header-bg: hsl(220, 50, 99);
 $cl-center-bg: hsl(220, 50, 99);
 $cl-footer-bg: hsl(220, 50, 99);
 $cl-widget-bg: White;
 
 $cl-g-dark: hsl(0, 0, 0);
 $cl-g-normal: hsl(0, 0, 30);
-$cl-g-light: hsl(0, 0, 65);
+$cl-g-gray: hsl(0, 0, 50);
+$cl-g-light: hsl(0, 0, 70);
 $cl-g-hazy: hsl(0, 0, 85);
+
 
 $cl-layout: $cl-g-hazy;
 $cl-hr: $cl-g-hazy;

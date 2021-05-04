@@ -24,14 +24,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $ftfm-sans;
   font-weight: bold;
+  margin: 0.75rem 0;
 }
-
-h1 { font-size: $ftsz-h1; margin: ((3rem - $ftsz-h1) / 2) 0; }
-h2 { font-size: $ftsz-h2; margin: ((3rem - $ftsz-h2) / 2) 0; }
-h3 { font-size: $ftsz-h3; margin: ((3rem - $ftsz-h3) / 2) 0; }
-h4 { font-size: $ftsz-h4; margin: ((3rem - $ftsz-h4) / 2) 0; }
-h5 { font-size: $ftsz-h5; margin: ((3rem - $ftsz-h5) / 2) 0; }
-h6 { font-size: $ftsz-h6; margin: ((3rem - $ftsz-h6) / 2) 0; }
+h1 { font-size: $ftsz-h1; }
+h2 { font-size: $ftsz-h2; }
+h3 { font-size: $ftsz-h3; }
+h4 { font-size: $ftsz-h4; }
+h5 { font-size: $ftsz-h5; }
+h6 { font-size: $ftsz-h6; }
 
 // 그룹
 p {
@@ -53,6 +53,7 @@ blockquote {
   margin: 1em 0;
   padding: 0 1em;
   border-left: 0.25em solid $cl-g-light;
+  background-color: hsl(210, 10, 98);
 }
 
 ol, ul {
@@ -101,11 +102,11 @@ pre, code, kbd, samp {
 }
 
 kbd {
-  color: $cl-g-light;
+  color: $cl-g-normal;
   background-color: $cl-g-hazy;
   padding: 0 0.25em;
   font-weight: 700;
-  border: 2px solid $cl-g-normal;
+  border: 2px solid $cl-g-gray;
   border-radius: 0.3em;
 }
 
@@ -139,7 +140,7 @@ table {
   margin: 0.75em 0;
   caption {
     font-size: $ftsz-s;
-    color: $cl-layout;
+    color: $cl-g-light;
   }
   td, th {
     border: 1px solid Gainsboro;
@@ -147,3 +148,11 @@ table {
   }
 }
 
+.highlight table {
+  border-collapse: collapse;
+  margin: 0;
+  td, th {
+    border: 0;
+    padding: 0;
+  }
+}

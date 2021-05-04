@@ -1,7 +1,30 @@
-I"�<h2 id="플러그인-추가">플러그인 추가</h2>
+I"�<h2 id="플러그인-추가">플러그인 추가</h2>
 <p>/_posts 폴더 아래에 카테고리별 폴더를 만들어서 게시물을 분류하려고 한다. Jekyll은 폴더 안에 포스트를 넣으면 해당 포스트에 자동으로 카테고리를 달아준다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>폴더 구조:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre>폴더 구조:
 ./
 ├── cat-A/
 │   ├── cat-1/
@@ -24,22 +47,47 @@
 
 결론:
   _posts/ 아래의 폴더는 무시된다.
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>이러한 결과에 대해서는 <code class="language-plaintext highlighter-rouge">Jekyll::Document::categories_from_path</code>에도 설명되어있다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Jekyll::Document::categories_from_path
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>// Jekyll::Document::categories_from_path
 
 # Add superdirectories of the special_dir to categories.
 # In the case of es/_posts, 'es' is added as a category.
 # In the case of _posts/es, 'es' is NOT added as a category.
 #
 # Returns nothing.
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>플러그인을 통해 다음의 결과를 얻으려 한다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>폴더 구조:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre>폴더 구조:
 ./
 └── _posts/
     ├── cat-A/
@@ -57,11 +105,23 @@
   sample-post-2의 카테고리: [cat-A, cat-2]
   sample-post-3의 카테고리: [cat-B]
   sample-post-4의 카테고리: [cat-C]
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>_plugins/에 다음 파일을 생성한다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// jekyll-auto-cat.rb
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre>// jekyll-auto-cat.rb
 
 module Jekyll
   class Document
@@ -73,7 +133,7 @@ module Jekyll
     end
   end
 end
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>분명히 소문자로 폴더명을 지었고 로컬에서 블로그를 실행하면 아무 문제 없는데 git에 올릴때는 알 수 없는 이유로 대문자 카테고리가 추가 생성되는 오류가 있었다. 그래서 일단은 4번째 줄의 downcase로 임시조치해 놓았다.</p>
 

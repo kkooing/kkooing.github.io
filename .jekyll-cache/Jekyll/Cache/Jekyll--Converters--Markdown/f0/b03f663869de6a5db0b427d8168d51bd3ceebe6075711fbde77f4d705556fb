@@ -1,15 +1,18 @@
-I"�<h2 id="루비-설치">루비 설치</h2>
+I"�<h2 id="루비-설치">루비 설치</h2>
 
 <p><a href="https://rubyinstaller.org/downloads/"></a></p>
 
 <p>마지막 설치 프로그램을 관리자권한으로 다시 실행</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ridk install
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ridk install
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>gem install bundler
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>블로그 홈에서</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler jekyll minima jekyll-feed tzinfo-data rdiscount
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>gem install bundler jekyll minima jekyll-feed tzinfo-data rdiscount
+</pre></td></tr></tbody></table></code></pre></div></div>
 :ET

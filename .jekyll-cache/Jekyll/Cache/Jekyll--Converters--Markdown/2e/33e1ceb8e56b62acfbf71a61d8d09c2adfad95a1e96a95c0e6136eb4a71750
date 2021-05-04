@@ -1,4 +1,4 @@
-I"<h2 id="1-liquid-핵심-요소">1. Liquid 핵심 요소</h2>
+I"P<h2 id="1-liquid-핵심-요소">1. Liquid 핵심 요소</h2>
 
 <p>Liquid 코드는 object, tag, filter의 세가지로 정리할 수 있다.</p>
 
@@ -7,26 +7,32 @@
 <p><code class="language-plaintext highlighter-rouge">{{</code>와 <code class="language-plaintext highlighter-rouge">}}</code>로 object와 변수를 사용한다.</p>
 
 <p>input</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ page.title }}
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{{ page.title }}
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>output</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Introduction
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Introduction
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h3 id="12-tag">1.2. Tag</h3>
 
 <p><code class="language-plaintext highlighter-rouge">{%</code>와 <code class="language-plaintext highlighter-rouge">%}</code>로 tag를 사용한다. Liquid 문법 구성에 사용된다.</p>
 
 <p>input</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if user %}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>{% if user %}
   Hello {{ user.name }}!
 {% endif %}
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>output</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello Adam!
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Hello Adam!
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>Tag는 다시 세 가지로 나뉜다.</p>
 
@@ -41,22 +47,26 @@
 <p>파이프 <code class="language-plaintext highlighter-rouge">|</code>를 이용해 object와 변수의 출력형식을 지정한다.</p>
 
 <p>input</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ "/my/fancy/url" | append: ".html" }}
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{{ "/my/fancy/url" | append: ".html" }}
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>output</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/my/fancy/url.html
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>/my/fancy/url.html
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>filter는 중첩가능하다.</p>
 
 <p>input</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ "adam!" | capitalize | prepend: "Hello " }}
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{{ "adam!" | capitalize | prepend: "Hello " }}
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>output</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello Adam!
-</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Hello Adam!
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h2 id="2-liquid-기타-요소">2. Liquid 기타 요소</h2>
 
@@ -108,15 +118,21 @@
 문자열 탐색 연산자이다.</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if product.title contains "Pack" %}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>{% if product.title contains "Pack" %}
   This product's title contains the word Pack.
 {% endif %}
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if product.tags contains "Hello" %}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>{% if product.tags contains "Hello" %}
   This product has been tagged with "Hello".
 {% endif %}
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>*기타</p>
 
