@@ -11,8 +11,8 @@
 }
 
 .l-header {
-  background-color: $bgcl-header;
-  border-bottom: 1px solid $bdcl-layout;
+  background-color: $cl-header-bg;
+  border-bottom: 1px solid $cl-layout;
   .l-inner-wrap {
     @include clearfix;
     height: $height-header;
@@ -22,17 +22,17 @@
 }
 
 .l-center {
-  background-color: $bgcl-center;
+  background-color: $cl-center-bg;
   .l-inner-wrap {
     @include clearfix;
     .l-column-left {
-      background-color: $bgcl-center;
+      background-color: $cl-center-bg;
       width: $width-col-left;
       float: left;
       z-index: 1;
     }
     .l-column-right {
-      background-color: $bgcl-center;
+      background-color: $cl-center-bg;
       max-width: calc(#{$max-width-site} - #{$width-col-left} - (#{$margin-inner-wrap} * 2) - #{$margin-column-gap});
       margin-left: ($width-col-left + $margin-inner-wrap);
     }
@@ -40,7 +40,7 @@
 }
 
 .l-footer {
-  background-color: $bgcl-footer;
+  background-color: $cl-footer-bg;
   .l-inner-wrap {
     height: $height-footer;
   }

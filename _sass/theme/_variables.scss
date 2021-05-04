@@ -17,16 +17,9 @@ $margin-header-tb-shrink: 0.5;
 //  breakpoint
 //  (gte px: px)
 $bp: (
-  0: 14,
-  300: 15,
-  360: 16.5,
-  420: 18,
-  480: 19.5,
-  600: 16,
-  720: 18.5,
-  840: 21,
-  1020: 18,
-  1140: 18
+  0: 14, 300: 15, 360: 16.5, 420: 18, 480: 19.5,
+  600: 16, 720: 18.5, 840: 21,
+  1020: 18, 1140: 18
 );
 
 //  (lte)
@@ -34,15 +27,28 @@ $bp-phone: 600px;
 $bp-tablet: 1020px;
 
 //  ========== ==========  Color  ========== ==========  //
-//  Layout color
-$bgcl-header: hsl(230, 100, 99);
-$bgcl-center: hsl(230, 100, 99);
-$bgcl-footer: hsl(230, 100, 99);
-$bgcl-widget: White;
+$cl-header-bg: hsl(220, 0, 99);
+$cl-center-bg: hsl(220, 50, 99);
+$cl-footer-bg: hsl(220, 50, 99);
+$cl-widget-bg: White;
 
-$bdcl-layout: Gainsboro; //  border
+$cl-g-dark: hsl(0, 0, 0);
+$cl-g-normal: hsl(0, 0, 30);
+$cl-g-light: hsl(0, 0, 65);
+$cl-g-hazy: hsl(0, 0, 85);
 
-$cl-hr: LightGray;
+$cl-layout: $cl-g-hazy;
+$cl-hr: $cl-g-hazy;
+
+//    <a>
+$cl-link: hsl(200, 90, 50);
+$cl-hover: hsl(200, 100, 65);
+
+$cl-link-2: hsl(250, 100, 40);
+$cl-hover-2: hsl(250, 100, 60);
+
+$cl-link-3: hsl(200, 35, 92);
+$cl-hover-3: hsl(200, 65, 85);
 
 //  ========== ==========  Font  ========== ==========  //
 //    font-size (ftsz)
@@ -59,17 +65,6 @@ $ftsz-h4: 1.250rem;     // = 22.5  | 20
 $ftsz-h5: 1.125rem;     // = 20.25 | 18
 $ftsz-h6: 1.000rem;     // = 18    | 16
 
-//    color (ftcl)
-$ftcl-html-dark: hsl(0, 0, 0);
-$ftcl-html: hsl(0, 0, 30);
-$ftcl-html-light: hsl(0, 0, 65);
-$ftcl-html-hazy: hsl(0, 0, 85);
-
-$ftcl-a-link: hsl(200, 100, 50);
-$ftcl-a-visited: $ftcl-a-link;
-$ftcl-a-hover: hsl(200, 100, 70);
-$ftcl-a-underline: hsl(200, 100, 45);
-
 //    font-family (ftfm)
 $ftfm-sans: 'Noto Sans KR', sans-serif;
 $ftfm-mono: 'D2Coding', monospace;
@@ -78,7 +73,6 @@ $ftfm-mono: 'D2Coding', monospace;
 $line-height-html: 1.45;
 $line-height-content: 1.7;
 $line-height-code: 1.45;
-
 
 //  ========== ==========  etc.  ========== ==========  //
 // float overflow 방지
