@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-05T03:30:59+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">LaTeX 수식</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="LaTeX 수식" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-기타&quot;&gt;0. 기타&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-05T07:19:55+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">LaTeX 수식</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="LaTeX 수식" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-기타&quot;&gt;0. 기타&lt;/h2&gt;
 &lt;p&gt;참고&lt;br /&gt;
 &lt;a href=&quot;http://detexify.kirelabs.org/&quot;&gt;Detexify&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;/p&gt;
@@ -7,26 +7,30 @@
 &lt;p&gt;text 모드 = 인라인 수식: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;br /&gt;
 인라인 모드 \( \LaTeX \) 이다.&lt;/p&gt;
 
-&lt;p&gt;displayed 모드 = 블록 모드: &lt;code&gt;\[&lt;/code&gt;, &lt;code&gt;\]&lt;/code&gt;&lt;br /&gt;
-블록 모드&lt;/p&gt;
-&lt;p&gt;
+&lt;p&gt;displayed 모드 = 블록 모드: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\]&lt;/code&gt;&lt;br /&gt;
+블록 모드
 \[ \LaTeX \]
-&lt;/p&gt;
-&lt;p&gt;이다.&lt;/p&gt;
+이다.&lt;/p&gt;
 
-&lt;h3 id=&quot;-markdown-주의&quot;&gt;※ markdown 주의&lt;/h3&gt;
-&lt;p&gt;markdown 파일에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;
+  &lt;p&gt;※ markdown 주의&lt;br /&gt;
+markdown 파일에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;2-알파벳-숫자-기호&quot;&gt;2. 알파벳, 숫자, 기호&lt;/h2&gt;
 &lt;p&gt;그냥 쓰면 된다&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;a b c d e f g h i j k l m n o p q r s t u v w x y z
 0 1 2 3 4 5 6 7 8 9
-+ - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;
-\[
-a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *
-\]
-&lt;/p&gt;
++ - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;\[
+a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ‘ : *
+\]&lt;/p&gt;
 
 &lt;h2 id=&quot;3-그리스-문자&quot;&gt;3. 그리스 문자&lt;/h2&gt;
 
@@ -41,7 +45,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;\( \alpha, A \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;alpha, A&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\alpha, A&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;\( \beta, B \)&lt;/td&gt;

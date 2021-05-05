@@ -33,10 +33,10 @@
       margin-left: 12px;
       &:before {
         left: -12px; width: 12px;
-        background-color: lighten($cl-h, 18);
+        background-color: lighten($cl-h, 17);
         border-width: 3px;
         border-style: solid;
-        border-color: lighten($cl-h, 5) lighten($cl-h, 0) lighten($cl-h, 30) lighten($cl-h, 35);
+        border-color: lighten($cl-h, 5) lighten($cl-h, 0) lighten($cl-h, 25) lighten($cl-h, 30);
         border-radius: 3px;
       }
     }
@@ -63,7 +63,22 @@
       border-width: 2px;
       border-color: hsl(220, 100, 90);
     }
-
+    a.footnote {
+      &:before { content: "["; }
+      &:after { content: "]"; }
+    }
+    .footnotes {
+      ol {
+        list-style: none;
+        counter-reset: my-counter;
+        li {
+          counter-increment: my-counter;
+          &::marker {
+            content: "[" counter(my-counter) "] ";
+          }
+        }
+      }
+    }
   }
   .content-footer {
     //margin: 1em 0;

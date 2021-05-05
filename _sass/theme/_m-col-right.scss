@@ -14,11 +14,11 @@
     border-top: 1px solid $cl-layout;
     li {
       border-bottom: 1px solid $cl-layout;
-      padding: 0.3em 0;
+      padding: 0.15em 0;
       display: grid;
 
       .gr-thumbnail {
-        height: (( $ftsz-m * 2 + $ftsz-st ) * $line-height-html);
+        height: ($ftsz-m * $line-height-html) + $ftsz-st + 1rem;
         width: auto;
         img {
           display: table-cell;
@@ -29,9 +29,13 @@
       }
 
       .gr-title {
-        height: (( $ftsz-m * 2 ) * $line-height-html);
+        font-size: $ftsz-m;
+        align-self: flex-end;
         padding-left: 0.5em;
+        white-space: nowrap;
         overflow: hidden;
+        text-overflow: ellipsis;
+        
         a {
           color: $cl-g-dark;
           text-decoration: none;
@@ -41,10 +45,11 @@
       .gr-info {
         font-size: $ftsz-st;
         color: $cl-g-light;
+        letter-spacing: -0.05em;
         padding-left: 0.5em;
-        
-        overflow: hidden;
+
         white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis;
         .breadcrumbs {
           display: inline;
@@ -52,12 +57,16 @@
             display: none;
             &:last-child {
               display: inline;
-              font-size: $ftsz-st;
-              font-weight: normal;
             }
           }
         }
       }
+
+
+      grid-template-columns: 5rem auto;
+      .gr-thumbnail { grid-area: 1 / 1 / span 2 / span 1; }
+      .gr-title { grid-area: 1 / 2 / span 1 / span 1; }
+      .gr-info { grid-area: 2 / 2 / span 1 / span 1; }
     }
   }
 
@@ -87,15 +96,17 @@
   }
 }
 
-.m-posts-stream {
-  li {
-    grid-template-columns: 5rem auto;
-    .gr-thumbnail { grid-area: 1 / 1 / span 2 / span 1; }
-    .gr-title { grid-area: 1 / 2 / span 1 / span 1; }
-    .gr-info { grid-area: 2 / 2 / span 1 / span 1; }
-  }
-}
-
 .m-featured {
   margin-bottom: 0;
+}
+
+.m-post, .m-category-page, .m-related {
+  &>.breadcrumbs {
+    font-size: $ftsz-s;
+    font-weight: bold;
+    a {
+      color: hsl(250, 100, 40);
+      text-decoration: none;
+    }
+  }  
 }

@@ -55,6 +55,15 @@
     .l-column-right {
       max-width: $max-width-site;
       border: 0;
+      .m-posts-stream ul li {
+        .gr-thumbnail {
+          height: ($ftsz-m * $line-height-html) + $ftsz-st + 1rem;
+        }
+        .gr-title {
+          font-size: $ftsz-ms;
+          white-space: nowrap;
+        }
+      }
     }
   }
   .l-header {

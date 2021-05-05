@@ -53,15 +53,15 @@ categories:
         url  : "raspberry-pi"
       - text: "기타"
         url  : "etc"
-  - text: "역학"
-    url  : "mechanics"
+  - text: "기계공학"
+    url  : "mechanical-engineering"
     hr   : true
     sub  :
-  - text: "설계"
-    url  : "design"
-    hr   : true
-    sub  :
-  - text: "tool"
+      - text: "고체역학"
+        url  : "solid-mechanics"
+      - text: "기계설계"
+        url  : "machine-component-design"
+  - text: "도구"
     url  : "tool"
     sub  :
       - text: "AutoCAD"

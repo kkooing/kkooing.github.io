@@ -39,7 +39,7 @@ p {
 }
 
 hr {
-  margin: 1em 0;
+  margin: 2em 0 1em 0;
   border: 0;
   border-top: 1px solid $cl-hr;
 }
@@ -158,6 +158,6 @@ table {
 }
 
 //  math jax
-mjx-container {
+.MathJax {
   overflow-x: auto;
 }
