@@ -18,47 +18,46 @@
     line-height: $line-height-content;
 
     h1, h2, h3, h4, h5, h6 {
-      padding-left: 0.5rem;
+      padding-left: 0.4rem;
       line-height: $line-height-html;
       position: relative;
+      color: darken(desaturate($cl-h, 25), 25);
       &:before {
         content:"";
-        height: 100%;
+        height: $line-height-html * 1em;
         display: block;
         position: absolute;
-        border-radius: 2px;
       }
     }
     h1, h2 {
-      margin-left: 9px;
+      margin-left: 12px;
       &:before {
-        left: -9px; width: 9px;
-        background-color: hsl(220, 90, 70);
+        left: -12px; width: 12px;
+        background-color: lighten($cl-h, 18);
         border-width: 3px;
         border-style: solid;
-        border-color: hsl(220, 90, 60) hsl(220, 90, 55) hsl(220, 90, 80) hsl(220, 90, 85);
+        border-color: lighten($cl-h, 5) lighten($cl-h, 0) lighten($cl-h, 30) lighten($cl-h, 35);
         border-radius: 3px;
       }
     }
     h3, h4 {
       &:before {
-        left: -6px; width: 6px;
-        background-color: hsl(220, 90, 85);
-        border-right: 3px solid hsl(220, 90, 55);
+        left: -12px; width: 12px;
+        background-image: linear-gradient(to left, lighten($cl-h, 35) 30%, hsla(0,0,0,0));
+        border-right: 3px solid lighten($cl-h, 0);
       }
     }
-    h3 { margin-left: calc(9px + 0.5rem); }
-    h4 { margin-left: calc(9px + 1rem); }
+    h3 { margin-left: calc(12px + 0.4rem); }
+    h4 { margin-left: calc(12px + 0.8rem); }
     h5, h6 {
       &:before {
-        left: -3px; width: 3px;
-        background-color: hsl(220, 90, 85);
-        border-right: 3px dashed hsl(220, 90, 55);
+        left: -2px; width: 2px;
+        border-right: 3px solid lighten($cl-h, 0);
         border-radius: 0;
       }
     }
-    h5 { margin-left: calc(9px + 1.5rem); }
-    h6 { margin-left: calc(9px + 2rem); }
+    h5 { margin-left: calc(12px + 1.2rem); }
+    h6 { margin-left: calc(12px + 1.6rem); }
 
     hr {
       border-width: 2px;
