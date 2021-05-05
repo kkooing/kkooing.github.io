@@ -1,26 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-05T07:19:55+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">LaTeX 수식</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="LaTeX 수식" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-기타&quot;&gt;0. 기타&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-05T16:50:56+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">LaTeX 수식</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="LaTeX 수식" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-기타&quot;&gt;0. 기타&lt;/h2&gt;
 &lt;p&gt;참고&lt;br /&gt;
-&lt;a href=&quot;http://detexify.kirelabs.org/&quot;&gt;Detexify&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://detexify.kirelabs.org/&quot;&gt;Detexify&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;1-인라인-수식-text-블록-수식-displayed&quot;&gt;1. 인라인 수식 (text), 블록 수식 (displayed)&lt;/h2&gt;
-&lt;p&gt;text 모드 = 인라인 수식: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;br /&gt;
-인라인 모드 \( \LaTeX \) 이다.&lt;/p&gt;
+&lt;p&gt;text 모드 (인라인): &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;br /&gt;
+문장 내부에 text 모드 \( \LaTeX \) 가 들어있다.&lt;/p&gt;
 
-&lt;p&gt;displayed 모드 = 블록 모드: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\]&lt;/code&gt;&lt;br /&gt;
-블록 모드
+&lt;p&gt;displayed 모드 (블록): &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\]&lt;/code&gt;&lt;br /&gt;
+아래에는 display 모드&lt;/p&gt;
+&lt;div class=&quot;cf-scroll&quot;&gt;
 \[ \LaTeX \]
-이다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;가 들어있다.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;
-  &lt;p&gt;※ markdown 주의&lt;br /&gt;
-markdown 파일에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를&lt;/p&gt;
+  &lt;div class=&quot;title&quot;&gt;kramdown 에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;/div&gt;
+  &lt;p&gt;kramdown 에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를 이스케이프 문자로 사용하기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt; 대신에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\)&lt;/code&gt; 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를 한 개만 써도 된다.&lt;/p&gt;
 &lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;2-알파벳-숫자-기호&quot;&gt;2. 알파벳, 숫자, 기호&lt;/h2&gt;
 &lt;p&gt;그냥 쓰면 된다&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;a b c d e f g h i j k l m n o p q r s t u v w x y z
@@ -28,170 +34,219 @@ markdown 파일에서는 &lt;code class=&quot;language-plaintext highlighter-rou
 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;\[
-a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ‘ : *
-\]&lt;/p&gt;
+&lt;div class=&quot;cf-scroll&quot;&gt;
+\[
+a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *
+\]
+&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;3-그리스-문자&quot;&gt;3. 그리스 문자&lt;/h2&gt;
 
-&lt;div class=&quot;inline-table-container&quot;&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; 문자 &lt;/th&gt;
-      &lt;th&gt; 수식 &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \alpha, A \)&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\alpha, A&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \beta, B \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;beta, B&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \gamma, \Gamma \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;gamma, &amp;#92;Gamma&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \delta, \Delta \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;delta, &amp;#92;Delta&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \epsilon, E \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;epsilon, E&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \zeta, Z \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;zeta, Z&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \eta, H \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;eta, H&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \theta, \Theta \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;theta, &amp;#92;Theta&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \iota, I \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;iota, I&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \kappa, K \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;kappa, K&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \lambda, \Lambda \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;lambda, &amp;#92;Lambda&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \mu, M \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;mu, M&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class=&quot;cf-inline cf-scroll&quot;&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\(\alpha, A\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\alpha, A&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\beta, B\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\beta, B&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\gamma, \Gamma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\gamma, \Gamma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\delta, \Delta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\delta, \Delta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\epsilon, E\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\epsilon, E&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\zeta, Z\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\zeta, Z&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\eta, H\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\eta, H&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\theta, \Theta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\theta, \Theta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\iota, I\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\iota, I&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\kappa, K\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\kappa, K&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\lambda, \Lambda\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\lambda, \Lambda&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\mu, M\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mu, M&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\(\nu, N\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\nu, N&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\xi, \Xi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\xi, \Xi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(o, O\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;o, O&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\pi, \Pi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\pi, \Pi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\rho, P\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\rho, P&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sigma, \Sigma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sigma, \Sigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\tau, T\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tau, T&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\upsilon. \Upsilon\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\upsilon, \Upsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\phi, \Phi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\phi, \Phi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\chi, X\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\chi, X&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\psi, \Psi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\psi, \Psi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\omega, \Omega\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\omega, \Omega&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\(\varepsilon\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varepsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\vartheta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vartheta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\varkappa\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varkappa&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\varpi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varpi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\varrho\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varrho&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\varsigma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varsigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\varphi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varphi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-삼각함수&quot;&gt;4. 삼각함수&lt;/h2&gt;
+
+&lt;p&gt;그대로 쓰면 된다.&lt;/p&gt;
+&lt;div class=&quot;cf-inline cf-scroll&quot;&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sin\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\cos\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cos&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\tan\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sec\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sec&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\csc\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\csc&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\cot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arcsin\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arccos\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccos&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arctan\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arctan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arcsec\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsec&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arccsc\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccsc&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arccot\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccot&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sinh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sinh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\cosh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cosh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\tanh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tanh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sech\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sech&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\csch\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\csch&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\coth\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\coth&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arcsinh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsinh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arccosh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccosh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arctanh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arctanh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arcsech\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsech&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arccsch\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccsch&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\arccoth\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccoth&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-이항연산자&quot;&gt;4. 이항연산자&lt;/h2&gt;
 
 &lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; 문자 &lt;/th&gt;
-      &lt;th&gt; 수식 &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \nu, N \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;nu, N&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \xi, \Xi \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;xi, &amp;#92;Xi&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( o, O \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;o, O&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \pi, \Pi \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;pi, &amp;#92;Pi&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \rho, P \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;rho, P&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \sigma, \Sigma \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;sigma, &amp;#92;Sigma&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \tau, T \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;tau, T&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \upsilon. \Upsilon \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;upsilon, &amp;#92;Upsilon&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \phi, \Phi \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;phi, &amp;#92;Phi&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \chi, X \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;chi, X&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \psi, \Psi \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;\psi, &amp;#92;\Psi&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \omega, \Omega \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;omega, &amp;#92;Omega&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;연산자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\(\pm\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\pm&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\mp\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mp&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\div\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\div&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\times\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\times&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\cdot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cdot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\cap\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cap&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\cup\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cup&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\vee\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vee&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\wedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\wedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\wedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\wedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-분수&quot;&gt;4. 분수&lt;/h2&gt;
+
+&lt;div class=&quot;cf-scroll&quot;&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\frac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\frac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;분수는 가독성을 위해 display 모드보다 text 모드일 때의 크기가 더 작다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tfrac&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dfrac&lt;/code&gt; 을 사용해 이 크기를 강제할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;cf-scroll&quot;&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tfrac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\tfrac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dfrac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\dfrac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;번분수를 표현할 때는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\frac&lt;/code&gt; 대신에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cfrac&lt;/code&gt; 을 사용해 가독성을 높일 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;cf-scroll&quot;&gt;
+\[\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}\]
+&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;cf-scroll&quot;&gt;
+\[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\]
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-기타&quot;&gt;4. 기타&lt;/h2&gt;
 
 &lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; 문자 &lt;/th&gt;
-      &lt;th&gt; 수식 &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \varepsilon \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;varepsilon&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \vartheta \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;vartheta&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \varkappa \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;varkappa&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \varpi \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;varpi&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \varrho \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;varrho&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \varsigma \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;varsigma&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;\( \varphi \)&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;&amp;#92;varphi&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="latex" /><summary type="html">0. 기타 참고 Detexify wikibooks LaTeX/Mathematics</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\( \lim\limits_{x \to \infty} \)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\limits_{x \to \infty}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(k_n^2\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k_n^2&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(k^n_2\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k^n_2&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(n^{22}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n^{22}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(n |_{n=17}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n |_{n=17}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\binom{a}{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;binom{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\tbinom{a}{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tbinom{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\dbinom{a}{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dbinom{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sqrt{a}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sqrt{a}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sum_{i=1}^{10}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sum_{i=1}^{10}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\displaystyle\sum_{i=1}^{10}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\displaystyle\sum_{i=1}^{10}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\int_0^\infty\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int_0^\infty&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\int\limits_0^\infty\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int\limits_0^\infty&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="latex" /><summary type="html">0. 기타 참고 wikibooks LaTeX/Mathematics Detexify</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
 
 &lt;div class=&quot;scroll-x-container&quot; style=&quot;white-space: nowrap;&quot;&gt;
 &lt;table&gt;

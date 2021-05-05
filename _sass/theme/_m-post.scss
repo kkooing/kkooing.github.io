@@ -63,6 +63,9 @@
       border-width: 2px;
       border-color: hsl(220, 100, 90);
     }
+
+    
+
     a.footnote {
       &:before { content: "["; }
       &:after { content: "]"; }

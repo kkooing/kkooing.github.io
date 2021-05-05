@@ -1,14 +1,42 @@
-.inline-table-container {
-  table {
-    vertical-align: top;
-    display: inline-block;
-  }
+//  cf (container for ~) series
+.cf-inline>* {
+  vertical-align: top;
+  display: inline-block;
+}
+.cf-inline>mjx-container[jax="CHTML"][display="true"] {
+  vertical-align: top;
+  display: inline-block;
 }
 
-.scroll-x-container {
+.cf-scroll {
   overflow-x: auto;
 }
 
+//  ※ Note
 .note {
   background-color: hsl(55, 95, 90);
+  padding: 0.5em;
+  position: relative;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  &:before {
+    content: "\203B  Note";
+
+  }
+  &:after {
+    content: "";
+    border-bottom: 1px solid hsl(50, 100, 50);
+    position: absolute;
+    top: (($line-height-content * 1em) + 0.5em);
+    left: 0.5em;
+    width: calc(100% - 1em);
+  }
+  .title:first-of-type {
+    &:before {
+      content: " - ";
+    }
+    display: inline-block;
+  }
 }

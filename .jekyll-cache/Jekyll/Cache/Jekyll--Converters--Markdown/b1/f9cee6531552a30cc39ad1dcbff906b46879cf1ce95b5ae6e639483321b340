@@ -1,0 +1,93 @@
+I"�<h2 id="0-기타">0. 기타</h2>
+<p>참고<br />
+<a href="http://detexify.kirelabs.org/">Detexify</a><br />
+<a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">wikibooks LaTeX/Mathematics</a></p>
+
+<h2 id="1-인라인-수식-text-블록-수식-displayed">1. 인라인 수식 (text), 블록 수식 (displayed)</h2>
+<p>text 모드 = 인라인 수식: <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code><br />
+인라인 수식 \( \LaTeX \) 이다.</p>
+
+<p>displayed 모드 = 블록 수식: <code class="language-plaintext highlighter-rouge">\[</code>, <code class="language-plaintext highlighter-rouge">\]</code><br />
+블록 수식
+\[ \LaTeX \]
+이다.</p>
+
+<div class="note">
+  <div class="title">markdown, kramdown 에서 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code></div>
+  <p>markdown 파일에서는 <code class="language-plaintext highlighter-rouge">\</code> 를 이스케이프 문자로 사용하기 때문에 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code> 대신에 <code class="language-plaintext highlighter-rouge">\\(</code>, <code class="language-plaintext highlighter-rouge">\\)</code> 를 사용해야 한다. kramdown 의 경우에는 HTML 태그 안에서의 markdown 문법이 작동하지 않기 때문에 <code class="language-plaintext highlighter-rouge">\</code> 를 한 개만 써도 된다. 나는 확장성을 위해 <code class="language-plaintext highlighter-rouge">markdown=span</code></p>
+</div>
+
+<h2 id="2-알파벳-숫자-기호">2. 알파벳, 숫자, 기호</h2>
+<p>그냥 쓰면 된다</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>a b c d e f g h i j k l m n o p q r s t u v w x y z
+0 1 2 3 4 5 6 7 8 9
++ - = ! / ( ) [ ] &lt; &gt; | ' : *
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>\[
+a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &lt; &gt; | ‘ : *
+\]</p>
+
+<h2 id="3-그리스-문자">3. 그리스 문자</h2>
+
+<div class="inline-table-container">
+  <table>
+    <thead>
+      <tr><th>문자</th><th>수식</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\( \alpha, A \)</td><td><code class="language-plaintext highlighter-rouge">\alpha, A</code></td></tr>
+      <tr><td>\( \beta, B \)</td><td><code class="language-plaintext highlighter-rouge">\beta, B</code></td></tr>
+      <tr><td>\( \gamma, \Gamma \)</td><td><code class="language-plaintext highlighter-rouge">\gamma, \Gamma</code></td></tr>
+      <tr><td>\( \delta, \Delta \)</td><td><code class="language-plaintext highlighter-rouge">\delta, \Delta</code></td></tr>
+      <tr><td>\( \epsilon, E \)</td><td><code class="language-plaintext highlighter-rouge">\epsilon, E</code></td></tr>
+      <tr><td>\( \zeta, Z \)</td><td><code class="language-plaintext highlighter-rouge">\zeta, Z</code></td></tr>
+      <tr><td>\( \eta, H \)</td><td><code class="language-plaintext highlighter-rouge">\eta, H</code></td></tr>
+      <tr><td>\( \theta, \Theta \)</td><td><code class="language-plaintext highlighter-rouge">\theta, \Theta</code></td></tr>
+      <tr><td>\( \iota, I \)</td><td><code class="language-plaintext highlighter-rouge">\iota, I</code></td></tr>
+      <tr><td>\( \kappa, K \)</td><td><code class="language-plaintext highlighter-rouge">\kappa, K</code></td></tr>
+      <tr><td>\( \lambda, \Lambda \)</td><td><code class="language-plaintext highlighter-rouge">\lambda, \Lambda</code></td></tr>
+      <tr><td>\( \mu, M \)</td><td><code class="language-plaintext highlighter-rouge">\mu, M</code></td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr><th>문자</th><th>수식</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\( \nu, N \)</td><td><code class="language-plaintext highlighter-rouge">\nu, N</code></td></tr>
+      <tr><td>\( \xi, \Xi \)</td><td><code class="language-plaintext highlighter-rouge">\xi, \Xi</code></td></tr>
+      <tr><td>\( o, O \)</td><td><code class="language-plaintext highlighter-rouge">o, O</code></td></tr>
+      <tr><td>\( \pi, \Pi \)</td><td><code class="language-plaintext highlighter-rouge">\pi, \Pi</code></td></tr>
+      <tr><td>\( \rho, P \)</td><td><code class="language-plaintext highlighter-rouge">\rho, P</code></td></tr>
+      <tr><td>\( \sigma, \Sigma \)</td><td><code class="language-plaintext highlighter-rouge">\sigma, \Sigma</code></td></tr>
+      <tr><td>\( \tau, T \)</td><td><code class="language-plaintext highlighter-rouge">\tau, T</code></td></tr>
+      <tr><td>\( \upsilon. \Upsilon \)</td><td><code class="language-plaintext highlighter-rouge">\upsilon, \Upsilon</code></td></tr>
+      <tr><td>\( \phi, \Phi \)</td><td><code class="language-plaintext highlighter-rouge">\phi, \Phi</code></td></tr>
+      <tr><td>\( \chi, X \)</td><td><code class="language-plaintext highlighter-rouge">\chi, X</code></td></tr>
+      <tr><td>\( \psi, \Psi \)</td><td><code class="language-plaintext highlighter-rouge">\psi, \Psi</code></td></tr>
+      <tr><td>\( \omega, \Omega \)</td><td><code class="language-plaintext highlighter-rouge">\omega, \Omega</code></td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr><th>문자</th><th>수식</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\( \varepsilon \)</td><td><code class="language-plaintext highlighter-rouge">\varepsilon</code></td></tr>
+      <tr><td>\( \vartheta \)</td><td><code class="language-plaintext highlighter-rouge">\vartheta</code></td></tr>
+      <tr><td>\( \varkappa \)</td><td><code class="language-plaintext highlighter-rouge">\varkappa</code></td></tr>
+      <tr><td>\( \varpi \)</td><td><code class="language-plaintext highlighter-rouge">\varpi</code></td></tr>
+      <tr><td>\( \varrho \)</td><td><code class="language-plaintext highlighter-rouge">\varrho</code></td></tr>
+      <tr><td>\( \varsigma \)</td><td><code class="language-plaintext highlighter-rouge">\varsigma</code></td></tr>
+      <tr><td>\( \varphi \)</td><td><code class="language-plaintext highlighter-rouge">\varphi</code></td></tr>
+    </tbody>
+  </table>
+</div>
+:ET

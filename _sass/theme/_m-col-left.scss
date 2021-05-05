@@ -4,6 +4,7 @@
   padding: $margin-widget;
   border: 1px solid $cl-layout;
   .widget-title {
+    font-size: $ftsz-s;
     font-weight: bold;
     color: $cl-g-normal;
     margin: -5px 0 5px 0;
@@ -38,12 +39,17 @@
   .profile-info {
     flex: 4;
     padding-left: 0.5em;
+    align-self: flex-end;
+    a {
+      text-decoration: 0;
+      color: $cl-link-2;
+    }
   }
 }
 
 .m-side-pages {
   button {
-    font-size: $ftsz-m;
+    font-size: $ftsz-m * 1.2;
   }
 }
 
