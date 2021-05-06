@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-05T16:50:56+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">LaTeX 수식</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="LaTeX 수식" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-기타&quot;&gt;0. 기타&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-06T03:28:19+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">LaTeX 수식</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="LaTeX 수식" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-기타&quot;&gt;0. 기타&lt;/h2&gt;
 &lt;p&gt;참고&lt;br /&gt;
 &lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://detexify.kirelabs.org/&quot;&gt;Detexify&lt;/a&gt;&lt;/p&gt;
@@ -227,7 +227,8 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 
 &lt;h2 id=&quot;4-기타&quot;&gt;4. 기타&lt;/h2&gt;
 
-&lt;table&gt;
+&lt;div class=&quot;cf-scroll&quot;&gt;
+  &lt;table&gt;
     &lt;thead&gt;
       &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
     &lt;/thead&gt;
@@ -241,12 +242,39 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
       &lt;tr&gt;&lt;td&gt;\(\tbinom{a}{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tbinom{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
       &lt;tr&gt;&lt;td&gt;\(\dbinom{a}{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dbinom{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
       &lt;tr&gt;&lt;td&gt;\(\sqrt{a}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sqrt{a}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sqrt[a]{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sqrt[a]{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
       &lt;tr&gt;&lt;td&gt;\(\sum_{i=1}^{10}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sum_{i=1}^{10}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
       &lt;tr&gt;&lt;td&gt;\(\displaystyle\sum_{i=1}^{10}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\displaystyle\sum_{i=1}^{10}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
       &lt;tr&gt;&lt;td&gt;\(\int_0^\infty\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int_0^\infty&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
       &lt;tr&gt;&lt;td&gt;\(\int\limits_0^\infty\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int\limits_0^\infty&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
     &lt;/tbody&gt;
-  &lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="latex" /><summary type="html">0. 기타 참고 wikibooks LaTeX/Mathematics Detexify</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cf-scroll&quot;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sum\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sum&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\prod\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\prod&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\coprod\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\coprod&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigoplus\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigoplus&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigotimes\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigotimes&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigodot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigodot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigcup\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigcup&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigcap\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigcap&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\biguplus\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\biguplus&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigsqcup\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigsqcup&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigvee\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigvee&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigwedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigwedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\int\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\oint\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\oint&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\fint\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\oint&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="latex" /><summary type="html">0. 기타 참고 wikibooks LaTeX/Mathematics Detexify</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
 
 &lt;div class=&quot;scroll-x-container&quot; style=&quot;white-space: nowrap;&quot;&gt;
 &lt;table&gt;
