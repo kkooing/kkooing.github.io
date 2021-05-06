@@ -1,0 +1,20 @@
+I"*<h2 id="1-축하중">1. 축하중</h2>
+<h3 id="법선응력">법선응력</h3>
+<p>하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.
+\[
+\sigma = \frac{P}{A}
+\]</p>
+
+<p>법선응력은 하중의 압축(compression), 인장(tensile)상태에 따라 분류됨.
+\[
+\sigma_c = \frac{P_c}{A}, \sigma_t = \frac{P_t}{A}
+\]</p>
+
+<h3 id="법선변형률">법선변형률</h3>
+<p>변형량 \(\delta\), 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.
+\[
+\varepsilon = \frac{\delta}{L}
+\]</p>
+
+<h3 id="열변형률">열변형률</h3>
+:ET

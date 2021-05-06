@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-06T03:28:19+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">LaTeX 수식</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="LaTeX 수식" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-기타&quot;&gt;0. 기타&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-06T13:28:40+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">축하중</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/" rel="alternate" type="text/html" title="축하중" /><published>2021-05-06T00:00:00+00:00</published><updated>2021-05-06T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/">&lt;h2 id=&quot;1-축하중&quot;&gt;1. 축하중&lt;/h2&gt;
+&lt;h3 id=&quot;법선응력&quot;&gt;법선응력&lt;/h3&gt;
+&lt;p&gt;하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.
+\[
+\sigma = \frac{P}{A}
+\]&lt;/p&gt;
+
+&lt;p&gt;법선응력은 하중의 압축(compression), 인장(tensile)상태에 따라 분류됨.
+\[
+\sigma_c = \frac{P_c}{A}, \sigma_t = \frac{P_t}{A}
+\]&lt;/p&gt;
+
+&lt;h3 id=&quot;법선변형률&quot;&gt;법선변형률&lt;/h3&gt;
+&lt;p&gt;변형량 \(\delta\), 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.
+\[
+\varepsilon = \frac{\delta}{L}
+\]&lt;/p&gt;
+
+&lt;h5 id=&quot;열변형률&quot;&gt;열변형률&lt;/h5&gt;
+&lt;p&gt;열팽창계수 \(\alpha\), 온도변화 \(\Delta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.
+\[
+\varepsilon_T = \alpha\Delta T
+\]&lt;/p&gt;
+
+&lt;h3 id=&quot;후크-법칙hooks-law&quot;&gt;후크 법칙(Hook’s law)&lt;/h3&gt;
+&lt;p&gt;\[
+\sigma = E\varepsilon
+\]&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><category term="축하중" /><summary type="html">1. 축하중 법선응력 하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식. \[ \sigma = \frac{P}{A} \]</summary></entry><entry><title type="html">LaTeX 수식</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="LaTeX 수식" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-기타&quot;&gt;0. 기타&lt;/h2&gt;
 &lt;p&gt;참고&lt;br /&gt;
 &lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://detexify.kirelabs.org/&quot;&gt;Detexify&lt;/a&gt;&lt;/p&gt;
@@ -616,7 +643,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;p&gt;&lt;a href=&quot;https://pixplicity.com/dp-px-converter&quot;&gt;https://pixplicity.com/dp-px-converter&lt;/a&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><category term="폰트" /><summary type="html">1. 평행 비교</summary></entry><entry><title type="html">색상</title><link href="https://kkooing.github.io/computer-language/etc/css/css-color/" rel="alternate" type="text/html" title="색상" /><published>2021-04-07T00:00:00+00:00</published><updated>2021-04-07T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-color</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-color/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
 
 &lt;p&gt;rgb(&lt;ruby&gt;60&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;, &lt;ruby&gt;179&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;, &lt;ruby&gt;113&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;)&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="css" /><category term="css" /><summary type="html">기본 문법</summary></entry><entry><title type="html">샘플 html 태그</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-tags/" rel="alternate" type="text/html" title="샘플 html 태그" /><published>2021-04-07T00:00:00+00:00</published><updated>2021-04-07T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-tags</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-tags/">&lt;h2 id=&quot;1-단락-요소&quot;&gt;1. 단락 요소&lt;/h2&gt;
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;h1--h6&quot;&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/h6&gt;
 &lt;h1&gt;&amp;lt;h1&amp;gt;&lt;/h1&gt;
 &lt;h2&gt;&amp;lt;h2&amp;gt;&lt;/h2&gt;
 &lt;h3&gt;&amp;lt;h3&amp;gt;&lt;/h3&gt;
@@ -624,7 +651,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;h5&gt;&amp;lt;h5&amp;gt;&lt;/h5&gt;
 &lt;h6&gt;&amp;lt;h6&amp;gt;&lt;/h6&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;address&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;address&quot;&gt;&amp;lt;address&amp;gt;&lt;/h6&gt;
 &lt;address&gt;
 Written by &lt;a href=&quot;mailto:webmaster@example.com&quot;&gt;Jon Doe&lt;/a&gt;.&lt;br /&gt;
 Visit us at:&lt;br /&gt;
@@ -633,19 +660,20 @@ Box 564, Disneyland&lt;br /&gt;
 USA
 &lt;/address&gt;
 
-&lt;h2 id=&quot;2-그룹-요소&quot;&gt;2. 그룹 요소&lt;/h2&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-그룹-요소&quot;&gt;2. 그룹 요소&lt;/h2&gt;
+&lt;h6 id=&quot;p&quot;&gt;&amp;lt;p&amp;gt;&lt;/h6&gt;
 &lt;p&gt;This is some text in a paragraph. This is some text in a paragraph.&lt;br /&gt;
 This is some text in a paragraph. This is some text in a paragraph.&lt;br /&gt;다음은 이러한 스택이 웹 디자인에 사용되는 방식과 모든 웹 페이지에 사용해야하는 이유를 포함하여 &quot;글꼴 스택&quot;이라는 CSS 용어의 정의입니다.
 &lt;/p&gt;
 &lt;p&gt;This is some text in a paragraph.&lt;/p&gt;
 &lt;p&gt;This is some text in a paragraph.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;hr&quot;&gt;&amp;lt;hr&amp;gt;&lt;/h6&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;pre&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;pre&quot;&gt;&amp;lt;pre&amp;gt;&lt;/h6&gt;
 &lt;pre&gt;
 #include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -664,26 +692,26 @@ int main() {
 |다람쥐 헌 쳇바퀴에 타고파.|
 &lt;/pre&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;blockquote&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/h6&gt;
 &lt;blockquote cite=&quot;http://www.worldwildlife.org/who/index.html&quot;&gt;
 For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in &lt;cite&gt;100&lt;/cite&gt; countries and is supported by 1.2 million members in the United States and close to 5 million globally.
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;ol&quot;&gt;&amp;lt;ol&amp;gt;&lt;/h6&gt;
 &lt;ol&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
   &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;ul&quot;&gt;&amp;lt;ul&amp;gt;&lt;/h6&gt;
 &lt;ul&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
   &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;dl&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;dl&quot;&gt;&amp;lt;dl&amp;gt;&lt;/h6&gt;
 &lt;dl&gt;
   &lt;dt&gt;Coffee&lt;/dt&gt;
   &lt;dd&gt;Black hot drink&lt;/dd&gt;
@@ -691,106 +719,113 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
   &lt;dd&gt;White cold drink&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;figure&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;figure-figcaption-img&quot;&gt;&amp;lt;figure&amp;gt;, &amp;lt;figcaption&amp;gt;, &amp;lt;img&amp;gt;&lt;/h6&gt;
 &lt;figure&gt;
   &lt;img src=&quot;https://www.w3schools.com/tags/pic_trulli.jpg&quot; alt=&quot;Trulli&quot; style=&quot;width:100%&quot; /&gt;
   &lt;figcaption&gt;Fig.1 - Trulli, Puglia, Italy.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;h2 id=&quot;3-택스트-요소&quot;&gt;3. 택스트 요소&lt;/h2&gt;
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;a&amp;gt;&lt;/span&gt;&lt;br /&gt;
-&lt;a href=&quot;https://www.w3schools.com&quot;&gt;Visit W3Schools.com!&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;em&amp;gt; - 강조&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-택스트-요소&quot;&gt;3. 택스트 요소&lt;/h2&gt;
+&lt;h6 id=&quot;a&quot;&gt;&amp;lt;a&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.w3schools.com&quot;&gt;Visit W3Schools.com!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;em&quot;&gt;&amp;lt;em&amp;gt;&lt;/h6&gt;
 &lt;p&gt;You &lt;em&gt;have&lt;/em&gt; to hurry up!&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;strong&amp;gt; - 중요&lt;/span&gt;&lt;br /&gt;
-&lt;strong&gt;This text is important!&lt;/strong&gt;&lt;/p&gt;
+&lt;h6 id=&quot;strong&quot;&gt;&amp;lt;strong&amp;gt;&lt;/h6&gt;
+&lt;p&gt;This text is &lt;strong&gt;important!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;small&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;This is some smaller text.&lt;/small&gt;&lt;/p&gt;
+&lt;h6 id=&quot;small&quot;&gt;&amp;lt;small&amp;gt;&lt;/h6&gt;
+&lt;p&gt;This is some &lt;small&gt;smaller text.&lt;/small&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;s&amp;gt; - 정정&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;s&gt;Only 50 tickets left!&lt;/s&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;cite&amp;gt; - 작품명&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;cite&quot;&gt;&amp;lt;cite&amp;gt;&lt;/h6&gt;
 &lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch. Painted in 1893.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;q&amp;gt; - 인용&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;q&quot;&gt;&amp;lt;q&amp;gt;&lt;/h6&gt;
 &lt;p&gt;WWF's goal is to:
 &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;
 We hope they succeed.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;dfn&amp;gt; - 정의&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;dfn&quot;&gt;&amp;lt;dfn&amp;gt;&lt;/h6&gt;
 &lt;p&gt;&lt;dfn&gt;HTML&lt;/dfn&gt; is the standard markup language for creating web pages.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;abbr&amp;gt; - 약어, 두문자어&lt;/span&gt;&lt;br /&gt;
-The &lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+&lt;h6 id=&quot;abbr&quot;&gt;&amp;lt;abbr&amp;gt;&lt;/h6&gt;
+&lt;p&gt;The &lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;ruby&amp;gt; - 후리가나&lt;/span&gt;&lt;br /&gt;
-&lt;ruby&gt;
+&lt;h6 id=&quot;ruby-rt&quot;&gt;&amp;lt;ruby&amp;gt;, &amp;lt;rt&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;ruby&gt;
 漢 &lt;rt&gt; ㄏㄢˋ &lt;/rt&gt;
 &lt;/ruby&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;data&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;data&quot;&gt;&amp;lt;data&amp;gt;&lt;/h6&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;data value=&quot;21053&quot;&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt;
   &lt;li&gt;&lt;data value=&quot;21054&quot;&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt;
   &lt;li&gt;&lt;data value=&quot;21055&quot;&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;time&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;time&quot;&gt;&amp;lt;time&amp;gt;&lt;/h6&gt;
 &lt;p&gt;Open from &lt;time&gt;10:00&lt;/time&gt; to &lt;time&gt;21:00&lt;/time&gt; every weekday.&lt;/p&gt;
 &lt;p&gt;I have a date on &lt;time datetime=&quot;2008-02-14 20:00&quot;&gt;Valentines day&lt;/time&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;code&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;code&quot;&gt;&amp;lt;code&amp;gt;&lt;/h6&gt;
 &lt;p&gt;The HTML &lt;code&gt;button&lt;/code&gt; tag defines a clickable button.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;var&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;var&quot;&gt;&amp;lt;var&amp;gt;&lt;/h6&gt;
 &lt;p&gt;The area of a triangle is: 1/2 x &lt;var&gt;b&lt;/var&gt; x &lt;var&gt;h&lt;/var&gt;, where &lt;var&gt;b&lt;/var&gt; is the base, and &lt;var&gt;h&lt;/var&gt; is the vertical height.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;samp&amp;gt; - 코드 출력&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;samp&quot;&gt;&amp;lt;samp&amp;gt;&lt;/h6&gt;
 &lt;p&gt;&lt;samp&gt;File not found.&lt;br /&gt;Press F1 to continue&lt;/samp&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;kbd&amp;gt; - 코드 입력&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;kbd&quot;&gt;&amp;lt;kbd&amp;gt;&lt;/h6&gt;
 &lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; to copy text (Windows).&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;sub&amp;gt;, &amp;lt;sup&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;sub-sup&quot;&gt;&amp;lt;sub&amp;gt;, &amp;lt;sup&amp;gt;&lt;/h6&gt;
 &lt;p&gt;This text contains &lt;sub&gt;subscript&lt;/sub&gt;&lt;sup&gt;superscript&lt;/sup&gt; text.&lt;/p&gt;
 &lt;p&gt;This text contains &lt;sup&gt;superscript&lt;/sup&gt; text.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;i&amp;gt; - 기울임 (무의미, 부각됨)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;Lorem ipsum&lt;/i&gt; is the most popular filler text in history.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;b&amp;gt; - 두껍게 (무의미)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;This is normal text - &lt;b&gt;and this is bold text&lt;/b&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;u&amp;gt; - 모호한 (지양됨)&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;This is some &lt;u&gt;mispeled&lt;/u&gt; text.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;mark&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;mark&quot;&gt;&amp;lt;mark&amp;gt;&lt;/h6&gt;
 &lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;bdi&amp;gt;, &amp;lt;bdo&amp;gt;&lt;/span&gt;&lt;br /&gt;
-User &lt;bdi&gt;إيان&lt;/bdi&gt;: 90 points&lt;br /&gt;
+&lt;h6 id=&quot;bdi-bdo&quot;&gt;&amp;lt;bdi&amp;gt;, &amp;lt;bdo&amp;gt;&lt;/h6&gt;
+&lt;p&gt;User &lt;bdi&gt;إيان&lt;/bdi&gt;: 90 points&lt;br /&gt;
 &lt;bdo dir=&quot;rtl&quot;&gt;
 This text will go right-to-left.
 &lt;/bdo&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;span&quot;&gt;&amp;lt;span&amp;gt;&lt;/h6&gt;
 &lt;p&gt;My mother has &lt;span style=&quot;color:blue&quot;&gt;blue&lt;/span&gt; eyes.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;To force&lt;br /&gt; line breaks&lt;br /&gt; in a text,&lt;br /&gt; use the br&lt;br /&gt; element.&lt;/p&gt;
+&lt;h6 id=&quot;br&quot;&gt;&amp;lt;br&amp;gt;&lt;/h6&gt;
+&lt;p&gt;To force&lt;br /&gt; line breaks&lt;br /&gt; in a text&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;wbr&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;wbr&quot;&gt;&amp;lt;wbr&amp;gt;&lt;/h6&gt;
 &lt;p&gt;This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery&lt;wbr /&gt;longwordthatwillbreakatspecific&lt;wbr /&gt;placeswhenthebrowserwindowisresized.&lt;/p&gt;
 
+&lt;h6 id=&quot;s---정정-지양&quot;&gt;&amp;lt;s&amp;gt; - 정정 (지양)&lt;/h6&gt;
+&lt;p&gt;&lt;s&gt;Only 50 tickets left!&lt;/s&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;i---기울임-무의미-부각됨-지양&quot;&gt;&amp;lt;i&amp;gt; - 기울임 (무의미, 부각됨) (지양)&lt;/h6&gt;
+&lt;p&gt;&lt;i&gt;Lorem ipsum&lt;/i&gt; is the most popular filler text in history.&lt;/p&gt;
+
+&lt;h6 id=&quot;b---두껍게-무의미-지양&quot;&gt;&amp;lt;b&amp;gt; - 두껍게 (무의미) (지양)&lt;/h6&gt;
+&lt;p&gt;This is normal text - &lt;b&gt;and this is bold text&lt;/b&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;u---언더라인-지양&quot;&gt;&amp;lt;u&amp;gt; - 언더라인 (지양)&lt;/h6&gt;
+&lt;p&gt;This is some &lt;u&gt;mispeled&lt;/u&gt; text.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;3-편집-요소&quot;&gt;3. 편집 요소&lt;/h2&gt;
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;ins&amp;gt;, &amp;lt;del&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;ins-del&quot;&gt;&amp;lt;ins&amp;gt;, &amp;lt;del&amp;gt;&lt;/h6&gt;
 &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;4-임베드-요소&quot;&gt;4. 임베드 요소&lt;/h2&gt;
+&lt;h6 id=&quot;picture-source&quot;&gt;&amp;lt;picture&amp;gt;, &amp;lt;source&amp;gt;&lt;/h6&gt;
 &lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;picture&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;picture&gt;
   &lt;source media=&quot;(min-width:650px)&quot; srcset=&quot;https://www.w3schools.com/tags/img_white_flower.jpg&quot; /&gt;
@@ -798,31 +833,27 @@ This text will go right-to-left.
   &lt;img src=&quot;img_orange_flowers.jpg&quot; alt=&quot;Flowers&quot; style=&quot;width:auto;&quot; /&gt;
 &lt;/picture&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;img&amp;gt;&lt;/span&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.w3schools.com/tags/img_girl.jpg&quot; alt=&quot;Girl in a jacket&quot; width=&quot;500&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;iframe&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
+&lt;h6 id=&quot;iframe&quot;&gt;&amp;lt;iframe&amp;gt;&lt;/h6&gt;
 &lt;iframe src=&quot;http://192.168.0.152&quot; title=&quot;W3Schools Free Online Web Tutorials&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;embed&amp;gt; - 비추천&lt;/span&gt;&lt;br /&gt;
-&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;object&amp;gt;, &amp;lt;param&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;embed---비추천&quot;&gt;&amp;lt;embed&amp;gt; - 비추천&lt;/h6&gt;
+&lt;h6 id=&quot;object-param&quot;&gt;&amp;lt;object&amp;gt;, &amp;lt;param&amp;gt;&lt;/h6&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;video&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;video&quot;&gt;&amp;lt;video&amp;gt;&lt;/h6&gt;
 &lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;&quot;&gt;
   &lt;source src=&quot;https://www.w3schools.com/tags/movie.mp4&quot; type=&quot;video/mp4&quot; /&gt;
   &lt;source src=&quot;https://www.w3schools.com/tags/movie.ogg&quot; type=&quot;video/ogg&quot; /&gt;
   Your browser does not support the video tag.
 &lt;/video&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;audio&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;audio&quot;&gt;&amp;lt;audio&amp;gt;&lt;/h6&gt;
 &lt;audio controls=&quot;&quot;&gt;
   &lt;source src=&quot;https://www.w3schools.com/tags/horse.ogg&quot; type=&quot;audio/ogg&quot; /&gt;
   &lt;source src=&quot;https://www.w3schools.com/tags/horse.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
   Your browser does not support the audio element.
 &lt;/audio&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;track&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;track&quot;&gt;&amp;lt;track&amp;gt;&lt;/h6&gt;
 &lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;&quot;&gt;
   &lt;source src=&quot;https://www.w3schools.com/tags/forrest_gump.mp4&quot; type=&quot;video/mp4&quot; /&gt;
   &lt;source src=&quot;https://www.w3schools.com/tags/forrest_gump.ogg&quot; type=&quot;video/ogg&quot; /&gt;
@@ -830,18 +861,18 @@ This text will go right-to-left.
   &lt;track src=&quot;https://www.w3schools.com/tags/fgsubtitles_no.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;no&quot; label=&quot;Norwegian&quot; /&gt;
 &lt;/video&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;map&amp;gt;, &amp;lt;area&amp;gt;&lt;/span&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.w3schools.com/tags/workplace.jpg&quot; alt=&quot;Workplace&quot; usemap=&quot;#workmap&quot; width=&quot;400&quot; height=&quot;379&quot; /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;map-area&quot;&gt;&amp;lt;map&amp;gt;, &amp;lt;area&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.w3schools.com/tags/workplace.jpg&quot; alt=&quot;Workplace&quot; usemap=&quot;#workmap&quot; width=&quot;400&quot; height=&quot;379&quot; /&gt;&lt;/p&gt;
 &lt;map name=&quot;workmap&quot;&gt;
   &lt;area shape=&quot;rect&quot; coords=&quot;34,44,270,350&quot; alt=&quot;Computer&quot; href=&quot;computer.htm&quot; /&gt;
   &lt;area shape=&quot;rect&quot; coords=&quot;290,172,333,250&quot; alt=&quot;Phone&quot; href=&quot;phone.htm&quot; /&gt;
   &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; alt=&quot;Cup of coffee&quot; href=&quot;coffee.htm&quot; /&gt;
 &lt;/map&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;5-표-요소&quot;&gt;5. 표 요소&lt;/h2&gt;
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;table&amp;gt;, &amp;lt;caption&amp;gt;&lt;br /&gt;
-&amp;lt;thead&amp;gt;, &amp;lt;tbody&amp;gt;, &amp;lt;tfoot&amp;gt;,&lt;br /&gt;
-&amp;lt;tr&amp;gt;, &amp;lt;td&amp;gt;, &amp;lt;th&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;table-caption-thead-tbody-tfoot-tr-td-th&quot;&gt;&amp;lt;table&amp;gt;, &amp;lt;caption&amp;gt;, &amp;lt;thead&amp;gt;, &amp;lt;tbody&amp;gt;, &amp;lt;tfoot&amp;gt;, &amp;lt;tr&amp;gt;, &amp;lt;td&amp;gt;, &amp;lt;th&amp;gt;&lt;/h6&gt;
 &lt;table&gt;
   &lt;caption&gt;Tbl.1 - Monthly savings&lt;/caption&gt;
   &lt;thead&gt;
@@ -868,7 +899,7 @@ This text will go right-to-left.
   &lt;/tfoot&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;colgroup&amp;gt;, &amp;lt;col&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;colgroup-col&quot;&gt;&amp;lt;colgroup&amp;gt;, &amp;lt;col&amp;gt;&lt;/h6&gt;
 &lt;table&gt;
   &lt;colgroup&gt;
     &lt;col span=&quot;2&quot; style=&quot;background-color:red&quot; /&gt;
@@ -886,8 +917,10 @@ This text will go right-to-left.
   &lt;/tr&gt;
 &lt;/table&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;6-폼-요소&quot;&gt;6. 폼 요소&lt;/h2&gt;
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;form&amp;gt;, &amp;lt;label&amp;gt;, &amp;lt;input type=”“&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;form-label-input-type&quot;&gt;&amp;lt;form&amp;gt;, &amp;lt;label&amp;gt;, &amp;lt;input type=”“&amp;gt;&lt;/h6&gt;
 &lt;form action=&quot;/action_page.php&quot;&gt;
   &lt;label for=&quot;i-hidden&quot;&gt;text:&lt;/label&gt;
   &lt;input type=&quot;hidden&quot; id=&quot;i-hidden&quot; name=&quot;i-hidden&quot; value=&quot;Submit&quot; /&gt;&lt;br /&gt;
@@ -947,10 +980,10 @@ This text will go right-to-left.
   &lt;input type=&quot;reset&quot; /&gt;
 &lt;/form&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;button&amp;gt;&lt;/span&gt;&lt;br /&gt;
-&lt;button type=&quot;button&quot;&gt;Click Me!&lt;/button&gt;&lt;/p&gt;
+&lt;h6 id=&quot;button&quot;&gt;&amp;lt;button&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot;&gt;Click Me!&lt;/button&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;select&amp;gt;, &amp;lt;optgroup&amp;gt;, &amp;lt;option&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;select-optgroup-option&quot;&gt;&amp;lt;select&amp;gt;, &amp;lt;optgroup&amp;gt;, &amp;lt;option&amp;gt;&lt;/h6&gt;
 &lt;form action=&quot;/action_page.php&quot;&gt;
   &lt;label for=&quot;cars&quot;&gt;Choose a car:&lt;/label&gt;
   &lt;select name=&quot;cars&quot; id=&quot;cars&quot;&gt;
@@ -967,7 +1000,7 @@ This text will go right-to-left.
   &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
 &lt;/form&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;datalist&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;datalist&quot;&gt;&amp;lt;datalist&amp;gt;&lt;/h6&gt;
 &lt;form action=&quot;/action_page.php&quot; method=&quot;get&quot;&gt;
   &lt;label for=&quot;browser&quot;&gt;Choose your browser from the list:&lt;/label&gt;
   &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; id=&quot;browser&quot; /&gt;
@@ -981,7 +1014,7 @@ This text will go right-to-left.
   &lt;input type=&quot;submit&quot; /&gt;
 &lt;/form&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;textarea&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;textarea&quot;&gt;&amp;lt;textarea&amp;gt;&lt;/h6&gt;
 &lt;form action=&quot;/action_page.php&quot;&gt;
 &lt;label for=&quot;w3review&quot;&gt;Review of W3Schools:&lt;/label&gt;
 &lt;textarea id=&quot;w3review&quot; name=&quot;w3review&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;
@@ -991,21 +1024,21 @@ This text will go right-to-left.
   &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
 &lt;/form&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;output&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;output&quot;&gt;&amp;lt;output&amp;gt;&lt;/h6&gt;
 &lt;form oninput=&quot;x.value=parseInt(a.value)+parseInt(b.value)&quot;&gt;
 &lt;input type=&quot;range&quot; id=&quot;a&quot; value=&quot;50&quot; /&gt;
 +&lt;input type=&quot;number&quot; id=&quot;b&quot; value=&quot;25&quot; /&gt;
 =&lt;output name=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;
 &lt;/form&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;progress&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;progress&quot;&gt;&amp;lt;progress&amp;gt;&lt;/h6&gt;
 &lt;progress id=&quot;file&quot; value=&quot;32&quot; max=&quot;100&quot;&gt; 32% &lt;/progress&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;meter&amp;gt;&lt;/span&gt;&lt;br /&gt;
-&lt;label for=&quot;disk_c&quot;&gt;Disk usage C:&lt;/label&gt;&lt;/p&gt;
+&lt;h6 id=&quot;meter&quot;&gt;&amp;lt;meter&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;label for=&quot;disk_c&quot;&gt;Disk usage C:&lt;/label&gt;&lt;/p&gt;
 &lt;meter id=&quot;disk_c&quot; value=&quot;2&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;2 out of 10&lt;/meter&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;fieldset&amp;gt;, &amp;lt;legend&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;fieldset-legend&quot;&gt;&amp;lt;fieldset&amp;gt;, &amp;lt;legend&amp;gt;&lt;/h6&gt;
 &lt;form action=&quot;/action_page.php&quot;&gt;
  &lt;fieldset&gt;
   &lt;legend&gt;Personalia:&lt;/legend&gt;
@@ -1021,14 +1054,16 @@ This text will go right-to-left.
  &lt;/fieldset&gt;
 &lt;/form&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;7-상호작용-요소&quot;&gt;7. 상호작용 요소&lt;/h2&gt;
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;details&amp;gt;, &amp;lt;summary&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;details-summary&quot;&gt;&amp;lt;details&amp;gt;, &amp;lt;summary&amp;gt;&lt;/h6&gt;
 &lt;details&gt;
   &lt;summary&gt;Epcot Center&lt;/summary&gt;
   &lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;
 &lt;/details&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;dialog&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h6 id=&quot;dialog&quot;&gt;&amp;lt;dialog&amp;gt;&lt;/h6&gt;
 &lt;p&gt;This is some text.&lt;/p&gt;
 
 &lt;p&gt;This is some text.&lt;/p&gt;
@@ -1039,13 +1074,17 @@ This text will go right-to-left.
 
 &lt;p&gt;This is some text.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;8-스크립트-요소&quot;&gt;8. 스크립트 요소&lt;/h2&gt;
+&lt;h6 id=&quot;script&quot;&gt;&amp;lt;script&amp;gt;&lt;/h6&gt;
 &lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
+&lt;h6 id=&quot;noscript&quot;&gt;&amp;lt;noscript&amp;gt;&lt;/h6&gt;
 &lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;noscript&amp;gt;&lt;/span&gt;&lt;br /&gt;
 &amp;lt;noscript&amp;gt;Sorry, your browser does not support JavaScript!&amp;lt;/noscript&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><category term="html" /><summary type="html">1. 단락 요소 &amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt; &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt;</summary></entry><entry><title type="html">문법</title><link href="https://kkooing.github.io/computer-language/etc/css/css-syntax/" rel="alternate" type="text/html" title="문법" /><published>2021-04-06T00:00:00+00:00</published><updated>2021-04-06T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-syntax</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-syntax/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
+&lt;h6 id=&quot;template&quot;&gt;&amp;lt;template&amp;gt;&lt;/h6&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><category term="html" /><summary type="html">1. 단락 요소 &amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt; &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt;</summary></entry><entry><title type="html">문법</title><link href="https://kkooing.github.io/computer-language/etc/css/css-syntax/" rel="alternate" type="text/html" title="문법" /><published>2021-04-06T00:00:00+00:00</published><updated>2021-04-06T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-syntax</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-syntax/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
 
 &lt;p&gt;h1 {color: blue; font-size: 12px;}&lt;/p&gt;
 
@@ -1493,22 +1532,4 @@ end
 &lt;p&gt;블로그 홈에서&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;gem install bundler jekyll minima jekyll-feed tzinfo-data rdiscount
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="jekyll" /><category term="github-pages" /><category term="blog" /><summary type="html">루비 설치</summary></entry><entry><title type="html">윈도우 시작프로그램 관리</title><link href="https://kkooing.github.io/it/etc/managing-windows-startup-programs/" rel="alternate" type="text/html" title="윈도우 시작프로그램 관리" /><published>2021-02-24T00:00:00+00:00</published><updated>2021-02-24T00:00:00+00:00</updated><id>https://kkooing.github.io/it/etc/managing-windows-startup-programs</id><content type="html" xml:base="https://kkooing.github.io/it/etc/managing-windows-startup-programs/">&lt;h3 id=&quot;관리자-계정&quot;&gt;관리자 계정&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\RunOnce&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;현재-유저&quot;&gt;현재 유저&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows&lt;/code&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="etc" /><category term="windows" /><category term="startup" /><category term="regedit" /><summary type="html">관리자 계정</summary></entry></feed>
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="jekyll" /><category term="github-pages" /><category term="blog" /><summary type="html">루비 설치</summary></entry></feed>

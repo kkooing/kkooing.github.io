@@ -128,7 +128,11 @@
           <div>라즈베리파이<span class="posts-count">[1]</span></div>
         </a></div></li><li><div class="menu terminal-menu"><a href="/it/etc">
           <div>기타<span class="posts-count">[1]</span></div>
-        </a></div></li></ul></li><hr/><li><div class="menu no-post">기계공학</div><ul><li><div class="menu terminal-menu no-post">고체역학<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">기계설계<span class="posts-count">[0]</span></div></li></ul></li><hr/><li><div class="menu no-post">도구</div><ul><li><div class="menu terminal-menu no-post">AutoCAD<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">인벤터<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Affinity Designer<span class="posts-count">[0]</span></div></li></ul></li></ul>
+        </a></div></li></ul></li><hr/><li><div class="menu"><a href="/mechanical-engineering">
+          <div>기계공학</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/mechanical-engineering/solid-mechanics">
+          <div>고체역학<span class="posts-count">[1]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">기계설계<span class="posts-count">[0]</span></div></li></ul></li><hr/><li><div class="menu no-post">도구</div><ul><li><div class="menu terminal-menu no-post">AutoCAD<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">인벤터<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Affinity Designer<span class="posts-count">[0]</span></div></li></ul></li></ul>
 </nav></section>
     
     <section class="l-column-right">
@@ -143,7 +147,7 @@
     </div>
     <div class="content-text">
       <h2 id="1-단락-요소">1. 단락 요소</h2>
-<p><span style="color: red;">&lt;h1&gt; ~ &lt;h6&gt;</span><br /></p>
+<h6 id="h1--h6">&lt;h1&gt; ~ &lt;h6&gt;</h6>
 <h1>&lt;h1&gt;</h1>
 <h2>&lt;h2&gt;</h2>
 <h3>&lt;h3&gt;</h3>
@@ -151,7 +155,7 @@
 <h5>&lt;h5&gt;</h5>
 <h6>&lt;h6&gt;</h6>
 
-<p><span style="color: red;">&lt;address&gt;</span><br /></p>
+<h6 id="address">&lt;address&gt;</h6>
 <address>
 Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
 Visit us at:<br />
@@ -160,19 +164,20 @@ Box 564, Disneyland<br />
 USA
 </address>
 
-<h2 id="2-그룹-요소">2. 그룹 요소</h2>
+<hr />
 
-<p><span style="color: red;">&lt;p&gt;</span><br /></p>
+<h2 id="2-그룹-요소">2. 그룹 요소</h2>
+<h6 id="p">&lt;p&gt;</h6>
 <p>This is some text in a paragraph. This is some text in a paragraph.<br />
 This is some text in a paragraph. This is some text in a paragraph.<br />다음은 이러한 스택이 웹 디자인에 사용되는 방식과 모든 웹 페이지에 사용해야하는 이유를 포함하여 "글꼴 스택"이라는 CSS 용어의 정의입니다.
 </p>
 <p>This is some text in a paragraph.</p>
 <p>This is some text in a paragraph.</p>
 
-<p><span style="color: red;">&lt;hr&gt;</span><br /></p>
+<h6 id="hr">&lt;hr&gt;</h6>
 <hr />
 
-<p><span style="color: red;">&lt;pre&gt;</span><br /></p>
+<h6 id="pre">&lt;pre&gt;</h6>
 <pre>
 #include &lt;iostream&gt;
 using namespace std;
@@ -191,26 +196,26 @@ int main() {
 |다람쥐 헌 쳇바퀴에 타고파.|
 </pre>
 
-<p><span style="color: red;">&lt;blockquote&gt;</span><br /></p>
+<h6 id="blockquote">&lt;blockquote&gt;</h6>
 <blockquote cite="http://www.worldwildlife.org/who/index.html">
 For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in <cite>100</cite> countries and is supported by 1.2 million members in the United States and close to 5 million globally.
 </blockquote>
 
-<p><span style="color: red;">&lt;ol&gt;</span><br /></p>
+<h6 id="ol">&lt;ol&gt;</h6>
 <ol>
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ol>
 
-<p><span style="color: red;">&lt;ul&gt;</span><br /></p>
+<h6 id="ul">&lt;ul&gt;</h6>
 <ul>
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ul>
 
-<p><span style="color: red;">&lt;dl&gt;</span><br /></p>
+<h6 id="dl">&lt;dl&gt;</h6>
 <dl>
   <dt>Coffee</dt>
   <dd>Black hot drink</dd>
@@ -218,106 +223,113 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
   <dd>White cold drink</dd>
 </dl>
 
-<p><span style="color: red;">&lt;figure&gt;</span><br /></p>
+<h6 id="figure-figcaption-img">&lt;figure&gt;, &lt;figcaption&gt;, &lt;img&gt;</h6>
 <figure>
   <img src="https://www.w3schools.com/tags/pic_trulli.jpg" alt="Trulli" style="width:100%" />
   <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
 </figure>
 
-<h2 id="3-택스트-요소">3. 택스트 요소</h2>
-<p><span style="color: red;">&lt;a&gt;</span><br />
-<a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
+<hr />
 
-<p><span style="color: red;">&lt;em&gt; - 강조</span><br /></p>
+<h2 id="3-택스트-요소">3. 택스트 요소</h2>
+<h6 id="a">&lt;a&gt;</h6>
+<p><a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
+
+<h6 id="em">&lt;em&gt;</h6>
 <p>You <em>have</em> to hurry up!</p>
 
-<p><span style="color: red;">&lt;strong&gt; - 중요</span><br />
-<strong>This text is important!</strong></p>
+<h6 id="strong">&lt;strong&gt;</h6>
+<p>This text is <strong>important!</strong></p>
 
-<p><span style="color: red;">&lt;small&gt;</span><br /></p>
-<p><small>This is some smaller text.</small></p>
+<h6 id="small">&lt;small&gt;</h6>
+<p>This is some <small>smaller text.</small></p>
 
-<p><span style="color: red;">&lt;s&gt; - 정정</span><br /></p>
-<p><s>Only 50 tickets left!</s></p>
-
-<p><span style="color: red;">&lt;cite&gt; - 작품명</span><br /></p>
+<h6 id="cite">&lt;cite&gt;</h6>
 <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
 
-<p><span style="color: red;">&lt;q&gt; - 인용</span><br /></p>
+<h6 id="q">&lt;q&gt;</h6>
 <p>WWF's goal is to:
 <q>Build a future where people live in harmony with nature.</q>
 We hope they succeed.</p>
 
-<p><span style="color: red;">&lt;dfn&gt; - 정의</span><br /></p>
+<h6 id="dfn">&lt;dfn&gt;</h6>
 <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
 
-<p><span style="color: red;">&lt;abbr&gt; - 약어, 두문자어</span><br />
-The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<h6 id="abbr">&lt;abbr&gt;</h6>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 
-<p><span style="color: red;">&lt;ruby&gt; - 후리가나</span><br />
-<ruby>
+<h6 id="ruby-rt">&lt;ruby&gt;, &lt;rt&gt;</h6>
+<p><ruby>
 漢 <rt> ㄏㄢˋ </rt>
 </ruby></p>
 
-<p><span style="color: red;">&lt;data&gt;</span><br /></p>
+<h6 id="data">&lt;data&gt;</h6>
 <ul>
   <li><data value="21053">Cherry Tomato</data></li>
   <li><data value="21054">Beef Tomato</data></li>
   <li><data value="21055">Snack Tomato</data></li>
 </ul>
 
-<p><span style="color: red;">&lt;time&gt;</span><br /></p>
+<h6 id="time">&lt;time&gt;</h6>
 <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
 <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
 
-<p><span style="color: red;">&lt;code&gt;</span><br /></p>
+<h6 id="code">&lt;code&gt;</h6>
 <p>The HTML <code>button</code> tag defines a clickable button.</p>
 
-<p><span style="color: red;">&lt;var&gt;</span><br /></p>
+<h6 id="var">&lt;var&gt;</h6>
 <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
 
-<p><span style="color: red;">&lt;samp&gt; - 코드 출력</span><br /></p>
+<h6 id="samp">&lt;samp&gt;</h6>
 <p><samp>File not found.<br />Press F1 to continue</samp></p>
 
-<p><span style="color: red;">&lt;kbd&gt; - 코드 입력</span><br /></p>
+<h6 id="kbd">&lt;kbd&gt;</h6>
 <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
 
-<p><span style="color: red;">&lt;sub&gt;, &lt;sup&gt;</span><br /></p>
+<h6 id="sub-sup">&lt;sub&gt;, &lt;sup&gt;</h6>
 <p>This text contains <sub>subscript</sub><sup>superscript</sup> text.</p>
 <p>This text contains <sup>superscript</sup> text.</p>
 
-<p><span style="color: red;">&lt;i&gt; - 기울임 (무의미, 부각됨)</span><br /></p>
-<p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
-
-<p><span style="color: red;">&lt;b&gt; - 두껍게 (무의미)</span><br /></p>
-<p>This is normal text - <b>and this is bold text</b>.</p>
-
-<p><span style="color: red;">&lt;u&gt; - 모호한 (지양됨)</span><br /></p>
-<p>This is some <u>mispeled</u> text.</p>
-
-<p><span style="color: red;">&lt;mark&gt;</span><br /></p>
+<h6 id="mark">&lt;mark&gt;</h6>
 <p>Do not forget to buy <mark>milk</mark> today.</p>
 
-<p><span style="color: red;">&lt;bdi&gt;, &lt;bdo&gt;</span><br />
-User <bdi>إيان</bdi>: 90 points<br />
+<h6 id="bdi-bdo">&lt;bdi&gt;, &lt;bdo&gt;</h6>
+<p>User <bdi>إيان</bdi>: 90 points<br />
 <bdo dir="rtl">
 This text will go right-to-left.
 </bdo></p>
 
-<p><span style="color: red;">&lt;span&gt;</span><br /></p>
+<h6 id="span">&lt;span&gt;</h6>
 <p>My mother has <span style="color:blue">blue</span> eyes.</p>
 
-<p><span style="color: red;">&lt;br&gt;</span><br /></p>
-<p>To force<br /> line breaks<br /> in a text,<br /> use the br<br /> element.</p>
+<h6 id="br">&lt;br&gt;</h6>
+<p>To force<br /> line breaks<br /> in a text</p>
 
-<p><span style="color: red;">&lt;wbr&gt;</span><br /></p>
+<h6 id="wbr">&lt;wbr&gt;</h6>
 <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr />longwordthatwillbreakatspecific<wbr />placeswhenthebrowserwindowisresized.</p>
 
+<h6 id="s---정정-지양">&lt;s&gt; - 정정 (지양)</h6>
+<p><s>Only 50 tickets left!</s></p>
+
+<h6 id="i---기울임-무의미-부각됨-지양">&lt;i&gt; - 기울임 (무의미, 부각됨) (지양)</h6>
+<p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+
+<h6 id="b---두껍게-무의미-지양">&lt;b&gt; - 두껍게 (무의미) (지양)</h6>
+<p>This is normal text - <b>and this is bold text</b>.</p>
+
+<h6 id="u---언더라인-지양">&lt;u&gt; - 언더라인 (지양)</h6>
+<p>This is some <u>mispeled</u> text.</p>
+
+<hr />
+
 <h2 id="3-편집-요소">3. 편집 요소</h2>
-<p><span style="color: red;">&lt;ins&gt;, &lt;del&gt;</span><br /></p>
+<h6 id="ins-del">&lt;ins&gt;, &lt;del&gt;</h6>
 <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
 
+<hr />
+
 <h2 id="4-임베드-요소">4. 임베드 요소</h2>
+<h6 id="picture-source">&lt;picture&gt;, &lt;source&gt;</h6>
 <p><span style="color: red;">&lt;picture&gt;</span><br /></p>
 <picture>
   <source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg" />
@@ -325,31 +337,27 @@ This text will go right-to-left.
   <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;" />
 </picture>
 
-<p><span style="color: red;">&lt;img&gt;</span><br />
-<img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="500" height="600" /></p>
-
-<p><span style="color: red;">&lt;iframe&gt;</span><br /></p>
-
+<h6 id="iframe">&lt;iframe&gt;</h6>
 <iframe src="http://192.168.0.152" title="W3Schools Free Online Web Tutorials"></iframe>
 
-<p><span style="color: red;">&lt;embed&gt; - 비추천</span><br />
-<span style="color: red;">&lt;object&gt;, &lt;param&gt;</span><br /></p>
+<h6 id="embed---비추천">&lt;embed&gt; - 비추천</h6>
+<h6 id="object-param">&lt;object&gt;, &lt;param&gt;</h6>
 
-<p><span style="color: red;">&lt;video&gt;</span><br /></p>
+<h6 id="video">&lt;video&gt;</h6>
 <video width="320" height="240" controls="">
   <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
   <source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
   Your browser does not support the video tag.
 </video>
 
-<p><span style="color: red;">&lt;audio&gt;</span><br /></p>
+<h6 id="audio">&lt;audio&gt;</h6>
 <audio controls="">
   <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
   <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
   Your browser does not support the audio element.
 </audio>
 
-<p><span style="color: red;">&lt;track&gt;</span><br /></p>
+<h6 id="track">&lt;track&gt;</h6>
 <video width="320" height="240" controls="">
   <source src="https://www.w3schools.com/tags/forrest_gump.mp4" type="video/mp4" />
   <source src="https://www.w3schools.com/tags/forrest_gump.ogg" type="video/ogg" />
@@ -357,18 +365,18 @@ This text will go right-to-left.
   <track src="https://www.w3schools.com/tags/fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian" />
 </video>
 
-<p><span style="color: red;">&lt;map&gt;, &lt;area&gt;</span><br />
-<img src="https://www.w3schools.com/tags/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" /></p>
+<h6 id="map-area">&lt;map&gt;, &lt;area&gt;</h6>
+<p><img src="https://www.w3schools.com/tags/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" /></p>
 <map name="workmap">
   <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm" />
   <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" />
   <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm" />
 </map>
 
+<hr />
+
 <h2 id="5-표-요소">5. 표 요소</h2>
-<p><span style="color: red;">&lt;table&gt;, &lt;caption&gt;<br />
-&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;,<br />
-&lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</span><br /></p>
+<h6 id="table-caption-thead-tbody-tfoot-tr-td-th">&lt;table&gt;, &lt;caption&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h6>
 <table>
   <caption>Tbl.1 - Monthly savings</caption>
   <thead>
@@ -395,7 +403,7 @@ This text will go right-to-left.
   </tfoot>
 </table>
 
-<p><span style="color: red;">&lt;colgroup&gt;, &lt;col&gt;</span><br /></p>
+<h6 id="colgroup-col">&lt;colgroup&gt;, &lt;col&gt;</h6>
 <table>
   <colgroup>
     <col span="2" style="background-color:red" />
@@ -413,8 +421,10 @@ This text will go right-to-left.
   </tr>
 </table>
 
+<hr />
+
 <h2 id="6-폼-요소">6. 폼 요소</h2>
-<p><span style="color: red;">&lt;form&gt;, &lt;label&gt;, &lt;input type=”“&gt;</span><br /></p>
+<h6 id="form-label-input-type">&lt;form&gt;, &lt;label&gt;, &lt;input type=”“&gt;</h6>
 <form action="/action_page.php">
   <label for="i-hidden">text:</label>
   <input type="hidden" id="i-hidden" name="i-hidden" value="Submit" /><br />
@@ -474,10 +484,10 @@ This text will go right-to-left.
   <input type="reset" />
 </form>
 
-<p><span style="color: red;">&lt;button&gt;</span><br />
-<button type="button">Click Me!</button></p>
+<h6 id="button">&lt;button&gt;</h6>
+<p><button type="button">Click Me!</button></p>
 
-<p><span style="color: red;">&lt;select&gt;, &lt;optgroup&gt;, &lt;option&gt;</span><br /></p>
+<h6 id="select-optgroup-option">&lt;select&gt;, &lt;optgroup&gt;, &lt;option&gt;</h6>
 <form action="/action_page.php">
   <label for="cars">Choose a car:</label>
   <select name="cars" id="cars">
@@ -494,7 +504,7 @@ This text will go right-to-left.
   <input type="submit" value="Submit" />
 </form>
 
-<p><span style="color: red;">&lt;datalist&gt;</span><br /></p>
+<h6 id="datalist">&lt;datalist&gt;</h6>
 <form action="/action_page.php" method="get">
   <label for="browser">Choose your browser from the list:</label>
   <input list="browsers" name="browser" id="browser" />
@@ -508,7 +518,7 @@ This text will go right-to-left.
   <input type="submit" />
 </form>
 
-<p><span style="color: red;">&lt;textarea&gt;</span><br /></p>
+<h6 id="textarea">&lt;textarea&gt;</h6>
 <form action="/action_page.php">
 <label for="w3review">Review of W3Schools:</label>
 <textarea id="w3review" name="w3review" rows="4" cols="50">
@@ -518,21 +528,21 @@ This text will go right-to-left.
   <input type="submit" value="Submit" />
 </form>
 
-<p><span style="color: red;">&lt;output&gt;</span><br /></p>
+<h6 id="output">&lt;output&gt;</h6>
 <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
 <input type="range" id="a" value="50" />
 +<input type="number" id="b" value="25" />
 =<output name="x" for="a b"></output>
 </form>
 
-<p><span style="color: red;">&lt;progress&gt;</span><br /></p>
+<h6 id="progress">&lt;progress&gt;</h6>
 <progress id="file" value="32" max="100"> 32% </progress>
 
-<p><span style="color: red;">&lt;meter&gt;</span><br />
-<label for="disk_c">Disk usage C:</label></p>
+<h6 id="meter">&lt;meter&gt;</h6>
+<p><label for="disk_c">Disk usage C:</label></p>
 <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
 
-<p><span style="color: red;">&lt;fieldset&gt;, &lt;legend&gt;</span><br /></p>
+<h6 id="fieldset-legend">&lt;fieldset&gt;, &lt;legend&gt;</h6>
 <form action="/action_page.php">
  <fieldset>
   <legend>Personalia:</legend>
@@ -548,14 +558,16 @@ This text will go right-to-left.
  </fieldset>
 </form>
 
+<hr />
+
 <h2 id="7-상호작용-요소">7. 상호작용 요소</h2>
-<p><span style="color: red;">&lt;details&gt;, &lt;summary&gt;</span><br /></p>
+<h6 id="details-summary">&lt;details&gt;, &lt;summary&gt;</h6>
 <details>
   <summary>Epcot Center</summary>
   <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
 </details>
 
-<p><span style="color: red;">&lt;dialog&gt;</span><br /></p>
+<h6 id="dialog">&lt;dialog&gt;</h6>
 <p>This is some text.</p>
 
 <p>This is some text.</p>
@@ -566,13 +578,17 @@ This text will go right-to-left.
 
 <p>This is some text.</p>
 
+<hr />
+
 <h2 id="8-스크립트-요소">8. 스크립트 요소</h2>
+<h6 id="script">&lt;script&gt;</h6>
 <p><span style="color: red;">&lt;script&gt;</span><br /></p>
 
+<h6 id="noscript">&lt;noscript&gt;</h6>
 <p><span style="color: red;">&lt;noscript&gt;</span><br />
 &lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;</p>
 
-<p><span style="color: red;">&lt;template&gt;</span><br /></p>
+<h6 id="template">&lt;template&gt;</h6>
 
     </div>
     <div class="content-footer">
