@@ -725,7 +725,7 @@ html { box-sizing: border-box; overflow-x: hidden; word-wrap: break-word; scroll
 
 body { margin: 0; min-height: 100vh; background-color: #fbfcfe; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Noto Sans KR", sans-serif; font-weight: bold; margin: 0.75rem 0; }
+h1, h2, h3, h4, h5, h6 { font-family: "Noto Sans KR", sans-serif; font-weight: bold; margin: 1rem 0; }
 
 h1 { font-size: 1.5rem; }
 
@@ -741,15 +741,15 @@ h6 { font-size: 0.875rem; }
 
 p { margin: 1em 0; }
 
-hr { margin: 2em 0 1em 0; border: 0; border-top: 1px solid #d9d9d9; }
+hr { margin: 1em 0 1em 0; border: 0; border-top: 1px solid #d9d9d9; }
 
-pre { overflow-x: auto; line-height: 1.45; }
+pre { overflow-x: auto; line-height: 1.45; margin: 1em 0; }
 
 blockquote { margin: 1em 0; padding: 0 1em; border-left: 0.25em solid #b3b3b3; background-color: #f9fafa; }
 
-ol, ul { margin: 0.75em 0; padding-left: 2em; }
+ol, ul { margin: 1em 0; padding-left: 2em; }
 
-dl { margin: 0.75em 0; padding-left: 1em; }
+dl { margin: 1em 0; padding-left: 1em; }
 
 dl dd { margin-left: 1em; }
 
@@ -940,25 +940,25 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-post .content-text { margin: 1em 0; letter-spacing: 0.02em; line-height: 1.7; }
 
-.m-post .content-text h1, .m-post .content-text h2, .m-post .content-text h3, .m-post .content-text h4, .m-post .content-text h5, .m-post .content-text h6 { padding-left: 0.4rem; line-height: 1.45; position: relative; color: #103070; }
+.m-post .content-text h1, .m-post .content-text h2, .m-post .content-text h3, .m-post .content-text h4, .m-post .content-text h5, .m-post .content-text h6 { line-height: 1.45; position: relative; color: #103070; }
 
-.m-post .content-text h1:before, .m-post .content-text h2:before, .m-post .content-text h3:before, .m-post .content-text h4:before, .m-post .content-text h5:before, .m-post .content-text h6:before { content: ""; height: 1.45em; display: block; position: absolute; }
+.m-post .content-text h1:before, .m-post .content-text h2:before, .m-post .content-text h3:before, .m-post .content-text h4:before, .m-post .content-text h5:before, .m-post .content-text h6:before { content: ""; display: block; position: absolute; }
 
-.m-post .content-text h1, .m-post .content-text h2 { margin-left: 12px; }
+.m-post .content-text h1, .m-post .content-text h2 { margin: 2.5rem 0 1rem 0; padding-left: 1.25rem; border-top: 2px solid #0055ff; }
 
-.m-post .content-text h1:before, .m-post .content-text h2:before { left: -12px; width: 12px; background-color: #578fff; border-width: 3px; border-style: solid; border-color: #1a66ff #0055ff #80aaff #99bbff; border-radius: 3px; }
+.m-post .content-text h1:before, .m-post .content-text h2:before { height: 1.45em; width: 0.75rem; top: 0; left: 0; background-color: #80aaff; border: 2px solid #0055ff; border-top: none; }
 
-.m-post .content-text h3:before, .m-post .content-text h4:before { left: -12px; width: 12px; background-image: linear-gradient(to left, #b3ccff 30%, rgba(0, 0, 0, 0)); border-right: 3px solid #0055ff; }
+.m-post .content-text h3, .m-post .content-text h4 { margin: 1rem 0; padding-left: 1.25rem; }
 
-.m-post .content-text h3 { margin-left: calc(12px + 0.4rem); }
+.m-post .content-text h3:before, .m-post .content-text h4:before { height: 1em; width: 0.75rem; top: 0.225em; left: 0; border-right: 0.3em solid #0055ff; }
 
-.m-post .content-text h4 { margin-left: calc(12px + 0.8rem); }
+.m-post .content-text h5, .m-post .content-text h6 { padding-left: 1.5rem; }
 
-.m-post .content-text h5:before, .m-post .content-text h6:before { left: -2px; width: 2px; border-right: 3px solid #0055ff; border-radius: 0; }
+.m-post .content-text h5:before, .m-post .content-text h6:before { height: 0.5em; width: 0.5em; top: 0.475em; left: calc(1rem - 0.5em); background-color: #80aaff; border: 0.15em solid #0055ff; border-radius: 50%; }
 
-.m-post .content-text h5 { margin-left: calc(12px + 1.2rem); }
+.m-post .content-text h1:first-child, .m-post .content-text h2:first-child { margin-top: 0; }
 
-.m-post .content-text h6 { margin-left: calc(12px + 1.6rem); }
+.m-post .content-text h1 + h2, .m-post .content-text h2 + h3, .m-post .content-text h3 + h4, .m-post .content-text h4 + h5, .m-post .content-text h5 + h6 { margin-top: -1rem; }
 
 .m-post .content-text hr { border-width: 2px; border-color: #ccddff; }
 

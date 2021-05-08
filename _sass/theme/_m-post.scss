@@ -18,46 +18,58 @@
     line-height: $line-height-content;
 
     h1, h2, h3, h4, h5, h6 {
-      padding-left: 0.4rem;
       line-height: $line-height-html;
       position: relative;
       color: darken(desaturate($cl-h, 25), 25);
       &:before {
         content:"";
-        height: $line-height-html * 1em;
         display: block;
         position: absolute;
       }
     }
     h1, h2 {
-      margin-left: 12px;
+      margin: 2.5rem 0 1rem 0;
+      padding-left: 1.25rem;
+      border-top: 2px solid lighten($cl-h, 0);
       &:before {
-        left: -12px; width: 12px;
-        background-color: lighten($cl-h, 17);
-        border-width: 3px;
-        border-style: solid;
-        border-color: lighten($cl-h, 5) lighten($cl-h, 0) lighten($cl-h, 25) lighten($cl-h, 30);
-        border-radius: 3px;
+        height: $line-height-html * 1em;
+        width: 0.75rem;
+        top: 0;
+        left: 0;
+        background-color: lighten($cl-h, 25);
+        border: 2px solid lighten($cl-h, 0);
+        border-top: none;
       }
     }
     h3, h4 {
+      margin: 1rem 0;
+      padding-left: 1.25rem;
       &:before {
-        left: -12px; width: 12px;
-        background-image: linear-gradient(to left, lighten($cl-h, 35) 30%, hsla(0,0,0,0));
-        border-right: 3px solid lighten($cl-h, 0);
+        height: 1em;
+        width: 0.75rem;
+        top: (($line-height-html - 1) / 2 * 1em);
+        left: 0;
+        border-right: 0.3em solid lighten($cl-h, 0);
       }
     }
-    h3 { margin-left: calc(12px + 0.4rem); }
-    h4 { margin-left: calc(12px + 0.8rem); }
     h5, h6 {
+      padding-left: 1.5rem;
       &:before {
-        left: -2px; width: 2px;
-        border-right: 3px solid lighten($cl-h, 0);
-        border-radius: 0;
+        height: 0.5em;
+        width: 0.5em;
+        top: (($line-height-html - 0.5) / 2 * 1em);
+        left: calc(1rem - 0.5em);
+        background-color: lighten($cl-h, 25);
+        border: 0.15em solid lighten($cl-h, 0);
+        border-radius: 50%;
       }
     }
-    h5 { margin-left: calc(12px + 1.2rem); }
-    h6 { margin-left: calc(12px + 1.6rem); }
+    h1:first-child, h2:first-child {
+      margin-top: 0;
+    }
+    h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
+      margin-top: -1rem;
+    }
 
     hr {
       border-width: 2px;

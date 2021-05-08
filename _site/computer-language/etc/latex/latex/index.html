@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 <!--[if IE]>
@@ -146,18 +146,100 @@
   <div class="breadcrumbs"><a href="/computer-language">컴퓨터 언어</a><span> / </span><a href="/computer-language/etc">기타</a><span> / </span><a href="/computer-language/etc/latex">LaTeX</a></div>
   <section class="content" id="content">
     <div class="content-header">
-      <h1 class="content-title">LaTeX 수식</h1>
+      <h1 class="content-title">MathJax 1</h1>
       <div class="content-meta">
         2021. 04. 26.
       </div>
     </div>
     <div class="content-text">
-      <h2 id="0-기타">0. 기타</h2>
+      <h2 id="0-mathjax-기본">0. MathJax 기본</h2>
+<h3 id="01-mathjax-와-latex의-차이">0.1 MathJax 와 LaTeX의 차이</h3>
 <p>참고<br />
+<a href="http://docs.mathjax.org/en/latest/input/tex/differences.html">Differences from Actual TeX</a><br />
 <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">wikibooks LaTeX/Mathematics</a><br />
-<a href="http://detexify.kirelabs.org/">Detexify</a></p>
+<a href="https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm">onemathematicalcat</a><br />
+<a href="https://www.onemathematicalcat.org/MathJaxDocumentation/MathJaxKorean/TeXSyntax_ko.html">onemathematicalcat(한글 번역)</a></p>
 
-<hr />
+<p> MathJax는 실제 Tex/LaTeX의 수학 모드만 지원한다. 두 가지 예외가 있는데 첫째는 <code class="language-plaintext highlighter-rouge">\ref</code> 이고, 둘째는 <code class="language-plaintext highlighter-rouge">$</code>기호를 이스케이프 하기 위한 <code class="language-plaintext highlighter-rouge">\text{}</code>이다.</p>
+
+<h3 id="02-mathjax-입력">0.2 MathJax 입력</h3>
+<p> MathJax 입력 방법으로는 display 모드를 위한 <code class="language-plaintext highlighter-rouge">\[...\]</code>, <code class="language-plaintext highlighter-rouge">$$...$$</code>와 text 모드를 위한 <code class="language-plaintext highlighter-rouge">\(...\)</code> 가 있다. text 모드의 다른 표현인 <code class="language-plaintext highlighter-rouge">$...$</code>를 사용하려면 아래처럼 설정해야한다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">inlineMath</span><span class="p">:</span> <span class="p">[[</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="dl">'</span><span class="se">\\</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">)</span><span class="dl">'</span><span class="p">]]</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> 수식 내부에서 <code class="language-plaintext highlighter-rouge">\begin{equation}...\end{equation}</code> 같은 환경명령을 실행할 수 있다. (관련 성정: processEnvironments <a href="http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options">TeX Input Processor Options</a>)</p>
+
+<h3 id="03-html에서의-주의사항">0.3 HTML에서의 주의사항</h3>
+<p> MathJax 구문 안에서 &lt;, &gt;, &amp; 를 입력하려면 앞뒤로 공백을 두거나 HTML entity 를 사용한다.</p>
+
+<h3 id="04-tex-매크로">0.4 TeX 매크로</h3>
+<p> <code class="language-plaintext highlighter-rouge">\def</code>, <code class="language-plaintext highlighter-rouge">\newcommand</code>, <code class="language-plaintext highlighter-rouge">\renewcommand</code>, <code class="language-plaintext highlighter-rouge">\newenvironment</code>, <code class="language-plaintext highlighter-rouge">\renewenvironment</code>, <code class="language-plaintext highlighter-rouge">\let</code> 를 사용할 수 있다.</p>
+
+<h3 id="05-자동-방정식-번호-지정">0.5 자동 방정식 번호 지정</h3>
+<p> 기본적으로 꺼져있지만 아래 설정으로 활성화한다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">tags</span><span class="p">:</span> <span class="dl">'</span><span class="s1">ams</span><span class="dl">'</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> <code class="language-plaintext highlighter-rouge">notag</code>또는 <code class="language-plaintext highlighter-rouge">\nonumber</code>로 개별적으로 번호를 끄거나, <code class="language-plaintext highlighter-rouge">\tag{}</code>로 수동 번호지정이 가능하다.</p>
+
+<p> ams 환경에서는 <code class="language-plaintext highlighter-rouge">*</code>로 번호를 끄고 켤 수 있다.
+번호 O</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+   <span class="nx">E</span> <span class="o">=</span> <span class="nx">mc</span><span class="o">^</span><span class="mi">2</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>번호 X</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="o">*</span><span class="p">}</span>
+   <span class="nx">e</span><span class="o">^</span><span class="p">{</span><span class="err">\</span><span class="nx">pi</span> <span class="nx">i</span><span class="p">}</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="o">*</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> <code class="language-plaintext highlighter-rouge">\label</code>과 <code class="language-plaintext highlighter-rouge">\ref</code> 또는 <code class="language-plaintext highlighter-rouge">\eqref</code>로 방정식 참조하는법</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nx">In</span> <span class="nx">equation</span> <span class="err">\</span><span class="nx">eqref</span><span class="p">{</span><span class="nl">eq</span><span class="p">:</span><span class="nx">sample</span><span class="p">},</span> <span class="nx">we</span> <span class="nx">find</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">an</span>
+<span class="nx">interesting</span> <span class="nx">integral</span><span class="p">:</span>
+
+<span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+  <span class="err">\</span><span class="nx">int_0</span><span class="o">^</span><span class="err">\</span><span class="nx">infty</span> <span class="err">\</span><span class="nx">frac</span><span class="p">{</span><span class="nx">x</span><span class="o">^</span><span class="mi">3</span><span class="p">}{</span><span class="nx">e</span><span class="o">^</span><span class="nx">x</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span><span class="err">\</span><span class="p">,</span><span class="nx">dx</span> <span class="o">=</span> <span class="err">\</span><span class="nx">frac</span><span class="p">{</span><span class="err">\</span><span class="nx">pi</span><span class="o">^</span><span class="mi">4</span><span class="p">}{</span><span class="mi">15</span><span class="p">}</span>
+  <span class="err">\</span><span class="nx">label</span><span class="p">{</span><span class="nl">eq</span><span class="p">:</span><span class="nx">sample</span><span class="p">}</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h2 id="1-인라인-수식-text-블록-수식-displayed">1. 인라인 수식 (text), 블록 수식 (displayed)</h2>
 <p>text 모드 (인라인): <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code><br />
@@ -175,8 +257,6 @@
   <p>kramdown 에서는 <code class="language-plaintext highlighter-rouge">\</code> 를 이스케이프 문자로 사용하기 때문에 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code> 대신에 <code class="language-plaintext highlighter-rouge">\\(</code>, <code class="language-plaintext highlighter-rouge">\\)</code> 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 <code class="language-plaintext highlighter-rouge">\</code> 를 한 개만 써도 된다.</p>
 </div>
 
-<hr />
-
 <h2 id="2-알파벳-숫자-기호">2. 알파벳, 숫자, 기호</h2>
 <p>그냥 쓰면 된다</p>
 
@@ -193,8 +273,6 @@
 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &lt; &gt; | ' : *
 \]
 </div>
-
-<hr />
 
 <h2 id="3-그리스-문자">3. 그리스 문자</h2>
 
@@ -254,8 +332,6 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
     </tbody>
   </table>
 </div>
-
-<hr />
 
 <h2 id="4-삼각함수">4. 삼각함수</h2>
 
@@ -318,8 +394,6 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
   </table>
 </div>
 
-<hr />
-
 <h2 id="4-이항연산자">4. 이항연산자</h2>
 
 <table>
@@ -339,8 +413,6 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
       <tr><td>\(\wedge\)</td><td><code class="language-plaintext highlighter-rouge">\wedge</code></td></tr>
     </tbody>
   </table>
-
-<hr />
 
 <h2 id="4-분수">4. 분수</h2>
 
@@ -376,8 +448,6 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 <div class="cf-scroll">
 \[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\]
 </div>
-
-<hr />
 
 <h2 id="4-기타">4. 기타</h2>
 
@@ -441,6 +511,8 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
         
         <span class="tag-word">latex</span>
         
+        <span class="tag-word">mathjax</span>
+        
       </div>
     </div>
   </section>
@@ -457,7 +529,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
         </a>
       </div>
       <div class="gr-title">
-        <a href="/computer-language/etc/latex/latex/">LaTeX 수식</a>
+        <a href="/computer-language/etc/latex/latex/">MathJax 1</a>
       </div>
       <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 4. 26.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
     </li></ul>

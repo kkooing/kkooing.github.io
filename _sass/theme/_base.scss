@@ -24,7 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $ftfm-sans;
   font-weight: bold;
-  margin: 0.75rem 0;
+  margin: 1rem 0;
 }
 h1 { font-size: $ftsz-h1; }
 h2 { font-size: $ftsz-h2; }
@@ -39,7 +39,7 @@ p {
 }
 
 hr {
-  margin: 2em 0 1em 0;
+  margin: 1em 0 1em 0;
   border: 0;
   border-top: 1px solid $cl-hr;
 }
@@ -47,6 +47,7 @@ hr {
 pre {
   overflow-x: auto;
   line-height: $line-height-code;
+  margin: 1em 0;
 }
 
 blockquote {
@@ -57,11 +58,11 @@ blockquote {
 }
 
 ol, ul {
-  margin: 0.75em 0;
+  margin: 1em 0;
   padding-left: 2em;
 }
 dl {
-  margin: 0.75em 0;
+  margin: 1em 0;
   padding-left: 1em;
   dd {
     margin-left: 1em;
