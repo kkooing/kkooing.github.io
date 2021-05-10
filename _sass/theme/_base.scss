@@ -160,8 +160,9 @@ table {
     padding: 0;
   }
 }
-/*
+
 //  math jax
-.MathJax {
+mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
-}*/
+  overflow-y: hidden;
+}

@@ -1,43 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-08T16:29:41+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">축하중</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/" rel="alternate" type="text/html" title="축하중" /><published>2021-05-06T00:00:00+00:00</published><updated>2021-05-06T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/">&lt;h2 id=&quot;1-축하중&quot;&gt;1. 축하중&lt;/h2&gt;
-&lt;h3 id=&quot;법선응력&quot;&gt;법선응력&lt;/h3&gt;
-&lt;p&gt;하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.
-\[
-\sigma = \frac{P}{A}
-\]&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-10T18:11:53+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">번역: TeX and LaTeX Support</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex-trans/" rel="alternate" type="text/html" title="번역: TeX and LaTeX Support" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex-trans</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex-trans/">&lt;p&gt;원문: &lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/index.html&quot;&gt;TeX and LaTeX Support&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;법선응력은 하중의 압축(compression), 인장(tensile)상태에 따라 분류됨.
-\[
-\sigma_c = \frac{P_c}{A},\quad \sigma_t = \frac{P_t}{A}
-\]&lt;/p&gt;
+&lt;h2 id=&quot;0-tex-latex-지원&quot;&gt;0. TeX, LaTeX 지원&lt;/h2&gt;
+&lt;p&gt; MathJax는 두 가지 기능이 포함되어있다. 첫 번째는 문서에서 수식 구문(ex: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt;)을 찾는 것이고, 두 번째는 Tex 표현식을 MathJax 내부 형식으로 변환하고 웹 페이지에 표시하는것 이다. 버전2 에서는 이 두 가지 기능이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tex2jax&lt;/code&gt;전처리기와 TeX input jax로 분리되어 있었지만, 버전3 에서는 통합되었다.&lt;/p&gt;
 
-&lt;h3 id=&quot;법선변형률&quot;&gt;법선변형률&lt;/h3&gt;
-&lt;p&gt;변형량 \(\delta\), 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.
-\[
-\varepsilon = \frac{\delta}{L}
-\]&lt;/p&gt;
+&lt;p&gt; TeX input jax는 원하는 수식 구문 마커를 찾도록 설정할 수 있다. &lt;a href=&quot;http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options&quot;&gt;TeX configuration options&lt;/a&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;열변형률&quot;&gt;열변형률&lt;/h5&gt;
-&lt;p&gt;열팽창계수 \(\alpha\), 온도변화 \(\Delta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.
-\[
-\varepsilon_T = \alpha\Delta T
-\]&lt;/p&gt;
+&lt;p&gt; MathJax는 수식 구문을 MathJax 내부 형식(기본적으로 MathML)으로 변환한다. 또한 추가 기능을 위한 확장을 사용할 수 있다. &lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/extensions.html#tex-extensions&quot;&gt;TeX and LaTeX extensions&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;후크-법칙hooks-law&quot;&gt;후크 법칙(Hook’s law)&lt;/h3&gt;
+&lt;h2 id=&quot;1-실제-tex와의-차이&quot;&gt;1. 실제 TeX와의 차이&lt;/h2&gt;
+&lt;p&gt; 웹 표현을 위한 MathJax는 인쇄를 위한 TeX 지원에 한계가 있다. 그래서 실제 TeX/LaTeX와 MathJax의 TeX 입력에는 일부 차이점이 있다.&lt;/p&gt;
 
-&lt;p&gt;\[
-\sigma = E\varepsilon
-\]&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><category term="축하중" /><summary type="html">1. 축하중 법선응력 하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식. \[ \sigma = \frac{P}{A} \]</summary></entry><entry><title type="html">MathJax 1</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="MathJax 1" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-mathjax-기본&quot;&gt;0. MathJax 기본&lt;/h2&gt;
-&lt;h3 id=&quot;01-mathjax-와-latex의-차이&quot;&gt;0.1 MathJax 와 LaTeX의 차이&lt;/h3&gt;
-&lt;p&gt;참고&lt;br /&gt;
-&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/differences.html&quot;&gt;Differences from Actual TeX&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm&quot;&gt;onemathematicalcat&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://www.onemathematicalcat.org/MathJaxDocumentation/MathJaxKorean/TeXSyntax_ko.html&quot;&gt;onemathematicalcat(한글 번역)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 우선, MathJax는 text모드 없이 오직 math모드만을 구현한다. 문서의 텍스트 처리는 표준 HTML 태그로 이루어져야 하고, MathJax는 수식 부분만 처리한다. 그러므로 MathJax는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\emph&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{enumerate}...\end{enumerate}&lt;/code&gt; 등의 text모드 매크로나 환경을 구현하지 못한다. 이러한 형식 지정 작업을 위해서는 HTML을 사용해야한다. LaTeX-to-HTML변환기가 필요하다면 MathJax 이외의 옵션을 고려해야한다.&lt;/p&gt;
 
-&lt;p&gt; MathJax는 실제 Tex/LaTeX의 수학 모드만 지원한다. 두 가지 예외가 있는데 첫째는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ref&lt;/code&gt; 이고, 둘째는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;기호를 이스케이프 하기 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\text{}&lt;/code&gt;이다.&lt;/p&gt;
+&lt;p&gt; 위 규칙에서 두 가지 예외가 있는데 첫째는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ref&lt;/code&gt; 이고, 둘째는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;기호를 이스케이프 하기 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\text{}&lt;/code&gt;같은 매크로이다. 하지만 일반적으로 이러한 텍스트 블록 내에서 다른 매크로는 작동하지 않는다. 즉, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\text{some \textbf{bold} text}&lt;/code&gt;는 &quot;some \textbf{bold} text&quot; 로 축력된다.&lt;/p&gt;
 
-&lt;h3 id=&quot;02-mathjax-입력&quot;&gt;0.2 MathJax 입력&lt;/h3&gt;
-&lt;p&gt; MathJax 입력 방법으로는 display 모드를 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[...\]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt;와 text 모드를 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(...\)&lt;/code&gt; 가 있다. text 모드의 다른 표현인 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$...$&lt;/code&gt;를 사용하려면 아래처럼 설정해야한다.&lt;/p&gt;
+&lt;p&gt; 버전3.1에서는 text모드 매크로를 위한 확장 기능이 있다.&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/extensions/textmacros.html#tex-textmacros&quot;&gt;textmacros&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; 두 번째로, MathJax의 일부 기능은 제한될 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-texlatex-수식-구문-마커&quot;&gt;2. TeX/LaTeX 수식 구문 마커&lt;/h2&gt;
+&lt;p&gt; MathJax에서 수식을 입력하는 방법은 display모드를 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[...\]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt;와 text모드를 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(...\)&lt;/code&gt; 가 있다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$...$&lt;/code&gt;를 text모드 입력 구문으로 사용하려면 아래처럼 설정해야한다.&lt;/p&gt;
 
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -51,15 +33,53 @@
 &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt; 수식 내부에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{equation}...\end{equation}&lt;/code&gt; 같은 환경명령을 실행할 수 있다. (관련 성정: processEnvironments &lt;a href=&quot;http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options&quot;&gt;TeX Input Processor Options&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt; 수식 내부에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{equation}...\end{equation}&lt;/code&gt; 같은 환경명령을 실행할 수 있게 설정할 수 있다.. (&lt;a href=&quot;http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options&quot;&gt;TeX Input Processor Options&lt;/a&gt;의 processEnvironments 설정)&lt;/p&gt;
 
-&lt;h3 id=&quot;03-html에서의-주의사항&quot;&gt;0.3 HTML에서의 주의사항&lt;/h3&gt;
+&lt;p&gt; Tex 입력기의 추가 설정 방법: &lt;a href=&quot;http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options&quot;&gt;tex configuration options&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-html에서의-주의사항&quot;&gt;3. HTML에서의 주의사항&lt;/h2&gt;
+&lt;h3 id=&quot;31-html-특수기호&quot;&gt;3.1 HTML 특수기호&lt;/h3&gt;
 &lt;p&gt; MathJax 구문 안에서 &amp;lt;, &amp;gt;, &amp;amp; 를 입력하려면 앞뒤로 공백을 두거나 HTML entity 를 사용한다.&lt;/p&gt;
 
-&lt;h3 id=&quot;04-tex-매크로&quot;&gt;0.4 TeX 매크로&lt;/h3&gt;
-&lt;p&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\def&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\newcommand&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\renewcommand&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\newenvironment&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\renewenvironment&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\let&lt;/code&gt; 를 사용할 수 있다.&lt;/p&gt;
+&lt;h3 id=&quot;32-cms와의-상호작용&quot;&gt;3.2 CMS와의 상호작용&lt;/h3&gt;
+&lt;p&gt;CMS(Content-Management Systems: markdown 같은거)를 사용할 때는 이스케이프에 주의한다.&lt;/p&gt;
 
-&lt;h3 id=&quot;05-자동-방정식-번호-지정&quot;&gt;0.5 자동 방정식 번호 지정&lt;/h3&gt;
+&lt;h2 id=&quot;4-tex-매크로-정의&quot;&gt;4. TeX 매크로 정의&lt;/h2&gt;
+&lt;p&gt; 사용자 정의 매크로와 환경을 만들기 위해 &lt;strong&gt;수식구문 내에서&lt;/strong&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\def&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\newcommand&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\renewcommand&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\newenvironment&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\renewenvironment&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\let&lt;/code&gt; 를 사용할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;RR&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;환경 설정을 통해 매크롤르 정의할 수도 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;macros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;RR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;bf R}&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+     &lt;span class=&quot;na&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;bf #1}&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/extensions/configmacros.html#tex-configmacros-options&quot;&gt;configmacros Options&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-자동-방정식-번호-지정&quot;&gt;5. 자동 방정식 번호 지정&lt;/h2&gt;
 &lt;p&gt; 기본적으로 꺼져있지만 아래 설정으로 활성화한다.&lt;/p&gt;
 
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
@@ -115,15 +135,146 @@
 &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;equation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/extensions/tagformat.html#tex-tagformat&quot;&gt;tagformat&lt;/a&gt; 확장&lt;br /&gt;
+&lt;a href=&quot;http://docs.mathjax.org/en/latest/web/typeset.html#tex-reset&quot;&gt;Resetting Automatic Equation Numbering&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-texlatex-확장&quot;&gt;6. TeX/LaTeX 확장&lt;/h2&gt;
+
+&lt;h3 id=&quot;61-tex-확장-로드&quot;&gt;6.1. TeX 확장 로드&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[tex]/color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[+]&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[-]&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;autoload&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;62-런타임에-tex-확장-로드&quot;&gt;6.2. 런타임에 TeX 확장 로드&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;63-tex-확장-설정&quot;&gt;6.3. TeX 확장 설정&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[tex]/color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[+]&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]},&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[tex]/color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;7-texlatex-확장-목록&quot;&gt;7. TeX/LaTeX 확장 목록&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;action&lt;/li&gt;
+  &lt;li&gt;ams&lt;/li&gt;
+  &lt;li&gt;amscd&lt;/li&gt;
+  &lt;li&gt;autoload&lt;/li&gt;
+  &lt;li&gt;bbox&lt;/li&gt;
+  &lt;li&gt;boldsymbol&lt;/li&gt;
+  &lt;li&gt;braket&lt;/li&gt;
+  &lt;li&gt;bussproofs&lt;/li&gt;
+  &lt;li&gt;cancel&lt;/li&gt;
+  &lt;li&gt;color&lt;/li&gt;
+  &lt;li&gt;colorv2&lt;/li&gt;
+  &lt;li&gt;configmacros&lt;/li&gt;
+  &lt;li&gt;enclose&lt;/li&gt;
+  &lt;li&gt;extpfeil&lt;/li&gt;
+  &lt;li&gt;html&lt;/li&gt;
+  &lt;li&gt;mhchem&lt;/li&gt;
+  &lt;li&gt;newcommand&lt;/li&gt;
+  &lt;li&gt;noerrors&lt;/li&gt;
+  &lt;li&gt;noundefined&lt;/li&gt;
+  &lt;li&gt;physics&lt;/li&gt;
+  &lt;li&gt;require&lt;/li&gt;
+  &lt;li&gt;tagformat&lt;/li&gt;
+  &lt;li&gt;textmacros&lt;/li&gt;
+  &lt;li&gt;unicode&lt;/li&gt;
+  &lt;li&gt;verb&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; 커스텀 TeX 확장을 만들기 위해서는 &lt;a href=&quot;http://docs.mathjax.org/en/latest/web/webpack.html#custom-extension&quot;&gt;A Custom Extension&lt;/a&gt; 참조.&lt;/p&gt;
+
+&lt;h2 id=&quot;8-texlatex-명령어&quot;&gt;8. TeX/LaTeX 명령어&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">원문: TeX and LaTeX Support</summary></entry><entry><title type="html">축하중</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/" rel="alternate" type="text/html" title="축하중" /><published>2021-05-06T00:00:00+00:00</published><updated>2021-05-06T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/">&lt;h2 id=&quot;1-축하중&quot;&gt;1. 축하중&lt;/h2&gt;
+&lt;h3 id=&quot;법선응력&quot;&gt;법선응력&lt;/h3&gt;
+&lt;p&gt;하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.
+\[
+\sigma = \frac{P}{A}
+\]&lt;/p&gt;
+
+&lt;p&gt;법선응력은 하중의 압축(compression), 인장(tensile)상태에 따라 분류됨.
+\[
+\sigma_c = \frac{P_c}{A},\quad \sigma_t = \frac{P_t}{A}
+\]&lt;/p&gt;
+
+&lt;h3 id=&quot;법선변형률&quot;&gt;법선변형률&lt;/h3&gt;
+&lt;p&gt;변형량 \(\delta\), 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.
+\[
+\varepsilon = \frac{\delta}{L}
+\]&lt;/p&gt;
+
+&lt;h5 id=&quot;열변형률&quot;&gt;열변형률&lt;/h5&gt;
+&lt;p&gt;열팽창계수 \(\alpha\), 온도변화 \(\Delta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.
+\[
+\varepsilon_T = \alpha\Delta T
+\]&lt;/p&gt;
+
+&lt;h3 id=&quot;후크-법칙hooks-law&quot;&gt;후크 법칙(Hook’s law)&lt;/h3&gt;
+
+&lt;p&gt;\[
+\sigma = E\varepsilon
+\]&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><category term="축하중" /><summary type="html">1. 축하중 법선응력 하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식. \[ \sigma = \frac{P}{A} \]</summary></entry><entry><title type="html">MathJax 1</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="MathJax 1" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-참고&quot;&gt;0. 참고&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/differences.html&quot;&gt;Differences from Actual TeX&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm&quot;&gt;onemathematicalcat&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.onemathematicalcat.org/MathJaxDocumentation/MathJaxKorean/TeXSyntax_ko.html&quot;&gt;onemathematicalcat(한글 번역)&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;1-인라인-수식-text-블록-수식-displayed&quot;&gt;1. 인라인 수식 (text), 블록 수식 (displayed)&lt;/h2&gt;
 &lt;p&gt;text 모드 (인라인): &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;br /&gt;
 문장 내부에 text 모드 \( \LaTeX \) 가 들어있다.&lt;/p&gt;
 
 &lt;p&gt;displayed 모드 (블록): &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\]&lt;/code&gt;&lt;br /&gt;
 아래에는 display 모드&lt;/p&gt;
-&lt;div class=&quot;cf-scroll&quot;&gt;
-\[ \LaTeX \]
-&lt;/div&gt;
+
+&lt;p&gt;\[ \LaTeX \]&lt;/p&gt;
+
 &lt;p&gt;가 들어있다.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;
@@ -142,15 +293,13 @@
 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;cf-scroll&quot;&gt;
-\[
-a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *
-\]
-&lt;/div&gt;
+&lt;p&gt;\[
+a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ‘ : *
+\]&lt;/p&gt;
 
 &lt;h2 id=&quot;3-그리스-문자&quot;&gt;3. 그리스 문자&lt;/h2&gt;
 
-&lt;div class=&quot;cf-inline cf-scroll&quot;&gt;
+&lt;div class=&quot;c-inl c-scr&quot;&gt;
   &lt;table&gt;
     &lt;thead&gt;
       &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
@@ -210,7 +359,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;h2 id=&quot;4-삼각함수&quot;&gt;4. 삼각함수&lt;/h2&gt;
 
 &lt;p&gt;그대로 쓰면 된다.&lt;/p&gt;
-&lt;div class=&quot;cf-inline cf-scroll&quot;&gt;
+&lt;div class=&quot;c-inl c-scr&quot;&gt;
   &lt;table&gt;
     &lt;thead&gt;
       &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
@@ -290,7 +439,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 
 &lt;h2 id=&quot;4-분수&quot;&gt;4. 분수&lt;/h2&gt;
 
-&lt;div class=&quot;cf-scroll&quot;&gt;
+&lt;div class=&quot;c-scr&quot;&gt;
   &lt;table&gt;
     &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\frac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\frac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
   &lt;/table&gt;
@@ -298,7 +447,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 
 &lt;p&gt;분수는 가독성을 위해 display 모드보다 text 모드일 때의 크기가 더 작다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tfrac&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dfrac&lt;/code&gt; 을 사용해 이 크기를 강제할 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;cf-scroll&quot;&gt;
+&lt;div class=&quot;c-scr&quot;&gt;
   &lt;table&gt;
     &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tfrac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\tfrac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dfrac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\dfrac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
@@ -311,21 +460,17 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;cf-scroll&quot;&gt;
-\[\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}\]
-&lt;/div&gt;
+&lt;p&gt;\[\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}\tag{frac}\]&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;cf-scroll&quot;&gt;
-\[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\]
-&lt;/div&gt;
+&lt;p&gt;\[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\tag{cfrac}\]&lt;/p&gt;
 
 &lt;h2 id=&quot;4-기타&quot;&gt;4. 기타&lt;/h2&gt;
 
-&lt;div class=&quot;cf-scroll&quot;&gt;
+&lt;div class=&quot;c-scr&quot;&gt;
   &lt;table&gt;
     &lt;thead&gt;
       &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
@@ -349,8 +494,9 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
   &lt;/table&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;cf-scroll&quot;&gt;
+&lt;div class=&quot;c-scr&quot;&gt;
 &lt;table&gt;
+  &lt;div&gt;
   &lt;thead&gt;
     &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
   &lt;/thead&gt;
@@ -371,8 +517,11 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
     &lt;tr&gt;&lt;td&gt;\(\oint\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\oint&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;&lt;td&gt;\(\fint\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\oint&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
   &lt;/tbody&gt;
+  &lt;/div&gt;
 &lt;/table&gt;
-&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">0. MathJax 기본 0.1 MathJax 와 LaTeX의 차이 참고 Differences from Actual TeX wikibooks LaTeX/Mathematics onemathematicalcat onemathematicalcat(한글 번역)</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;p&gt;\[\atan\]&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">0. 참고 Differences from Actual TeX wikibooks LaTeX/Mathematics onemathematicalcat onemathematicalcat(한글 번역)</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
 
 &lt;div class=&quot;scroll-x-container&quot; style=&quot;white-space: nowrap;&quot;&gt;
 &lt;table&gt;
@@ -1587,20 +1736,4 @@ end
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><category term="liquid" /><summary type="html">1. Liquid 핵심 요소</summary></entry><entry><title type="html">Jekyll로 GitHub Pages 블로그 만들기</title><link href="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1/" rel="alternate" type="text/html" title="Jekyll로 GitHub Pages 블로그 만들기" /><published>2021-03-17T00:00:00+00:00</published><updated>2021-03-17T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-1/">&lt;h2 id=&quot;루비-설치&quot;&gt;루비 설치&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;마지막 설치 프로그램을 관리자권한으로 다시 실행&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;ridk install
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;gem install bundler
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;블로그 홈에서&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;gem install bundler jekyll minima jekyll-feed tzinfo-data rdiscount
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="jekyll" /><category term="github-pages" /><category term="blog" /><summary type="html">루비 설치</summary></entry></feed>
+&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><category term="liquid" /><summary type="html">1. Liquid 핵심 요소</summary></entry></feed>

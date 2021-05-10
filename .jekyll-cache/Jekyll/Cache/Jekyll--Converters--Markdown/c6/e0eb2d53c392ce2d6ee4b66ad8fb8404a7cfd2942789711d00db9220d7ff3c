@@ -1,0 +1,358 @@
+I"�h<p>원문: <a href="http://docs.mathjax.org/en/latest/input/tex/index.html">TeX and LaTeX Support</a></p>
+
+<h2 id="0-tex-latex-지원">0. TeX, LaTeX 지원</h2>
+<p> MathJax는 두 가지 기능이 포함되어있다. 첫 번째는 문서에서 수식 구문(ex: <code class="language-plaintext highlighter-rouge">$$...$$</code>)을 찾는 것이고, 두 번째는 Tex 표현식을 MathJax 내부 형식으로 변환하고 웹 페이지에 표시하는것 이다. 버전2 에서는 이 두 가지 기능이 <code class="language-plaintext highlighter-rouge">tex2jax</code>전처리기와 TeX input jax로 분리되어 있었지만, 버전3 에서는 통합되었다.</p>
+
+<p> TeX input jax는 원하는 수식 구문 마커를 찾도록 설정할 수 있다. <a href="http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options">TeX configuration options</a></p>
+
+<p> MathJax는 수식 구문을 MathJax 내부 형식(기본적으로 MathML)으로 변환한다. 또한 추가 기능을 위한 확장을 사용할 수 있다. <a href="http://docs.mathjax.org/en/latest/input/tex/extensions.html#tex-extensions">TeX and LaTeX extensions</a></p>
+
+<h2 id="1-실제-tex와의-차이">1. 실제 TeX와의 차이</h2>
+<p> 웹 표현을 위한 MathJax는 인쇄를 위한 TeX 지원에 한계가 있다. 그래서 실제 TeX/LaTeX와 MathJax의 TeX 입력에는 일부 차이점이 있다.</p>
+
+<p> 우선, MathJax는 text모드 없이 오직 math모드만을 구현한다. 문서의 텍스트 처리는 표준 HTML 태그로 이루어져야 하고, MathJax는 수식 부분만 처리한다. 그러므로 MathJax는 <code class="language-plaintext highlighter-rouge">\emph</code>, <code class="language-plaintext highlighter-rouge">\begin{enumerate}...\end{enumerate}</code> 등의 text모드 매크로나 환경을 구현하지 못한다. 이러한 형식 지정 작업을 위해서는 HTML을 사용해야한다. LaTeX-to-HTML변환기가 필요하다면 MathJax 이외의 옵션을 고려해야한다.</p>
+
+<p> 위 규칙에서 두 가지 예외가 있는데 첫째는 <code class="language-plaintext highlighter-rouge">\ref</code> 이고, 둘째는 <code class="language-plaintext highlighter-rouge">$</code>기호를 이스케이프 하기 위한 <code class="language-plaintext highlighter-rouge">\text{}</code>같은 매크로이다. 하지만 일반적으로 이러한 텍스트 블록 내에서 다른 매크로는 작동하지 않는다. 즉, <code class="language-plaintext highlighter-rouge">\text{some \textbf{bold} text}</code>는 "some \textbf{bold} text" 로 축력된다.</p>
+
+<p> 버전3.1에서는 text모드 매크로를 위한 확장 기능이 있다.<a href="http://docs.mathjax.org/en/latest/input/tex/extensions/textmacros.html#tex-textmacros">textmacros</a></p>
+
+<p> 두 번째로, MathJax의 일부 기능은 제한될 수 있다.</p>
+
+<h2 id="2-texlatex-수식-구문-마커">2 TeX/LaTeX 수식 구문 마커</h2>
+<p> MathJax에서 수식을 입력하는 방법은 display모드를 위한 <code class="language-plaintext highlighter-rouge">\[...\]</code>, <code class="language-plaintext highlighter-rouge">$$...$$</code>와 text모드를 위한 <code class="language-plaintext highlighter-rouge">\(...\)</code> 가 있다. <code class="language-plaintext highlighter-rouge">$...$</code>를 text모드 입력 구문으로 사용하려면 아래처럼 설정해야한다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">inlineMath</span><span class="p">:</span> <span class="p">[[</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="dl">'</span><span class="se">\\</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">)</span><span class="dl">'</span><span class="p">]]</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> 수식 내부에서 <code class="language-plaintext highlighter-rouge">\begin{equation}...\end{equation}</code> 같은 환경명령을 실행할 수 있게 설정할 수 있다.. (관련 설정: processEnvironments <a href="http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options">TeX Input Processor Options</a>)</p>
+
+<h3 id="03-html에서의-주의사항">0.3 HTML에서의 주의사항</h3>
+<p> MathJax 구문 안에서 &lt;, &gt;, &amp; 를 입력하려면 앞뒤로 공백을 두거나 HTML entity 를 사용한다.</p>
+
+<h3 id="04-tex-매크로">0.4 TeX 매크로</h3>
+<p> <code class="language-plaintext highlighter-rouge">\def</code>, <code class="language-plaintext highlighter-rouge">\newcommand</code>, <code class="language-plaintext highlighter-rouge">\renewcommand</code>, <code class="language-plaintext highlighter-rouge">\newenvironment</code>, <code class="language-plaintext highlighter-rouge">\renewenvironment</code>, <code class="language-plaintext highlighter-rouge">\let</code> 를 사용할 수 있다.</p>
+
+<h3 id="05-자동-방정식-번호-지정">0.5 자동 방정식 번호 지정</h3>
+<p> 기본적으로 꺼져있지만 아래 설정으로 활성화한다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">tags</span><span class="p">:</span> <span class="dl">'</span><span class="s1">ams</span><span class="dl">'</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> <code class="language-plaintext highlighter-rouge">notag</code>또는 <code class="language-plaintext highlighter-rouge">\nonumber</code>로 개별적으로 번호를 끄거나, <code class="language-plaintext highlighter-rouge">\tag{}</code>로 수동 번호지정이 가능하다.</p>
+
+<p> ams 환경에서는 <code class="language-plaintext highlighter-rouge">*</code>로 번호를 끄고 켤 수 있다.
+번호 O</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+   <span class="nx">E</span> <span class="o">=</span> <span class="nx">mc</span><span class="o">^</span><span class="mi">2</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>번호 X</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="o">*</span><span class="p">}</span>
+   <span class="nx">e</span><span class="o">^</span><span class="p">{</span><span class="err">\</span><span class="nx">pi</span> <span class="nx">i</span><span class="p">}</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="o">*</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> <code class="language-plaintext highlighter-rouge">\label</code>과 <code class="language-plaintext highlighter-rouge">\ref</code> 또는 <code class="language-plaintext highlighter-rouge">\eqref</code>로 방정식 참조하는법</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nx">In</span> <span class="nx">equation</span> <span class="err">\</span><span class="nx">eqref</span><span class="p">{</span><span class="nl">eq</span><span class="p">:</span><span class="nx">sample</span><span class="p">},</span> <span class="nx">we</span> <span class="nx">find</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">an</span>
+<span class="nx">interesting</span> <span class="nx">integral</span><span class="p">:</span>
+
+<span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+  <span class="err">\</span><span class="nx">int_0</span><span class="o">^</span><span class="err">\</span><span class="nx">infty</span> <span class="err">\</span><span class="nx">frac</span><span class="p">{</span><span class="nx">x</span><span class="o">^</span><span class="mi">3</span><span class="p">}{</span><span class="nx">e</span><span class="o">^</span><span class="nx">x</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span><span class="err">\</span><span class="p">,</span><span class="nx">dx</span> <span class="o">=</span> <span class="err">\</span><span class="nx">frac</span><span class="p">{</span><span class="err">\</span><span class="nx">pi</span><span class="o">^</span><span class="mi">4</span><span class="p">}{</span><span class="mi">15</span><span class="p">}</span>
+  <span class="err">\</span><span class="nx">label</span><span class="p">{</span><span class="nl">eq</span><span class="p">:</span><span class="nx">sample</span><span class="p">}</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="06">0.6</h3>
+
+<h2 id="1-인라인-수식-text-블록-수식-displayed">1. 인라인 수식 (text), 블록 수식 (displayed)</h2>
+<p>text 모드 (인라인): <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code><br />
+문장 내부에 text 모드 \( \LaTeX \) 가 들어있다.</p>
+
+<p>displayed 모드 (블록): <code class="language-plaintext highlighter-rouge">\[</code>, <code class="language-plaintext highlighter-rouge">\]</code><br />
+아래에는 display 모드</p>
+
+<p>\[ \LaTeX \]</p>
+
+<p>가 들어있다.</p>
+
+<div class="note">
+  <div class="title">kramdown 에서 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code></div>
+  <p>kramdown 에서는 <code class="language-plaintext highlighter-rouge">\</code> 를 이스케이프 문자로 사용하기 때문에 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code> 대신에 <code class="language-plaintext highlighter-rouge">\\(</code>, <code class="language-plaintext highlighter-rouge">\\)</code> 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 <code class="language-plaintext highlighter-rouge">\</code> 를 한 개만 써도 된다.</p>
+</div>
+
+<h2 id="2-알파벳-숫자-기호">2. 알파벳, 숫자, 기호</h2>
+<p>그냥 쓰면 된다</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>a b c d e f g h i j k l m n o p q r s t u v w x y z
+0 1 2 3 4 5 6 7 8 9
++ - = ! / ( ) [ ] &lt; &gt; | ' : *
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>\[
+a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &lt; &gt; | ‘ : *
+\]</p>
+
+<h2 id="3-그리스-문자">3. 그리스 문자</h2>
+
+<div class="c-inl c-scr">
+  <table>
+    <thead>
+      <tr><th>문자</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(\alpha, A\)</td><td><code class="language-plaintext highlighter-rouge">\alpha, A</code></td></tr>
+      <tr><td>\(\beta, B\)</td><td><code class="language-plaintext highlighter-rouge">\beta, B</code></td></tr>
+      <tr><td>\(\gamma, \Gamma\)</td><td><code class="language-plaintext highlighter-rouge">\gamma, \Gamma</code></td></tr>
+      <tr><td>\(\delta, \Delta\)</td><td><code class="language-plaintext highlighter-rouge">\delta, \Delta</code></td></tr>
+      <tr><td>\(\epsilon, E\)</td><td><code class="language-plaintext highlighter-rouge">\epsilon, E</code></td></tr>
+      <tr><td>\(\zeta, Z\)</td><td><code class="language-plaintext highlighter-rouge">\zeta, Z</code></td></tr>
+      <tr><td>\(\eta, H\)</td><td><code class="language-plaintext highlighter-rouge">\eta, H</code></td></tr>
+      <tr><td>\(\theta, \Theta\)</td><td><code class="language-plaintext highlighter-rouge">\theta, \Theta</code></td></tr>
+      <tr><td>\(\iota, I\)</td><td><code class="language-plaintext highlighter-rouge">\iota, I</code></td></tr>
+      <tr><td>\(\kappa, K\)</td><td><code class="language-plaintext highlighter-rouge">\kappa, K</code></td></tr>
+      <tr><td>\(\lambda, \Lambda\)</td><td><code class="language-plaintext highlighter-rouge">\lambda, \Lambda</code></td></tr>
+      <tr><td>\(\mu, M\)</td><td><code class="language-plaintext highlighter-rouge">\mu, M</code></td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr><th>문자</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(\nu, N\)</td><td><code class="language-plaintext highlighter-rouge">\nu, N</code></td></tr>
+      <tr><td>\(\xi, \Xi\)</td><td><code class="language-plaintext highlighter-rouge">\xi, \Xi</code></td></tr>
+      <tr><td>\(o, O\)</td><td><code class="language-plaintext highlighter-rouge">o, O</code></td></tr>
+      <tr><td>\(\pi, \Pi\)</td><td><code class="language-plaintext highlighter-rouge">\pi, \Pi</code></td></tr>
+      <tr><td>\(\rho, P\)</td><td><code class="language-plaintext highlighter-rouge">\rho, P</code></td></tr>
+      <tr><td>\(\sigma, \Sigma\)</td><td><code class="language-plaintext highlighter-rouge">\sigma, \Sigma</code></td></tr>
+      <tr><td>\(\tau, T\)</td><td><code class="language-plaintext highlighter-rouge">\tau, T</code></td></tr>
+      <tr><td>\(\upsilon. \Upsilon\)</td><td><code class="language-plaintext highlighter-rouge">\upsilon, \Upsilon</code></td></tr>
+      <tr><td>\(\phi, \Phi\)</td><td><code class="language-plaintext highlighter-rouge">\phi, \Phi</code></td></tr>
+      <tr><td>\(\chi, X\)</td><td><code class="language-plaintext highlighter-rouge">\chi, X</code></td></tr>
+      <tr><td>\(\psi, \Psi\)</td><td><code class="language-plaintext highlighter-rouge">\psi, \Psi</code></td></tr>
+      <tr><td>\(\omega, \Omega\)</td><td><code class="language-plaintext highlighter-rouge">\omega, \Omega</code></td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr><th>문자</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(\varepsilon\)</td><td><code class="language-plaintext highlighter-rouge">\varepsilon</code></td></tr>
+      <tr><td>\(\vartheta\)</td><td><code class="language-plaintext highlighter-rouge">\vartheta</code></td></tr>
+      <tr><td>\(\varkappa\)</td><td><code class="language-plaintext highlighter-rouge">\varkappa</code></td></tr>
+      <tr><td>\(\varpi\)</td><td><code class="language-plaintext highlighter-rouge">\varpi</code></td></tr>
+      <tr><td>\(\varrho\)</td><td><code class="language-plaintext highlighter-rouge">\varrho</code></td></tr>
+      <tr><td>\(\varsigma\)</td><td><code class="language-plaintext highlighter-rouge">\varsigma</code></td></tr>
+      <tr><td>\(\varphi\)</td><td><code class="language-plaintext highlighter-rouge">\varphi</code></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="4-삼각함수">4. 삼각함수</h2>
+
+<p>그대로 쓰면 된다.</p>
+<div class="c-inl c-scr">
+  <table>
+    <thead>
+      <tr><th>함수</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(\sin\)</td><td><code class="language-plaintext highlighter-rouge">\sin</code></td></tr>
+      <tr><td>\(\cos\)</td><td><code class="language-plaintext highlighter-rouge">\cos</code></td></tr>
+      <tr><td>\(\tan\)</td><td><code class="language-plaintext highlighter-rouge">\tan</code></td></tr>
+      <tr><td>\(\sec\)</td><td><code class="language-plaintext highlighter-rouge">\sec</code></td></tr>
+      <tr><td>\(\csc\)</td><td><code class="language-plaintext highlighter-rouge">\csc</code></td></tr>
+      <tr><td>\(\cot\)</td><td><code class="language-plaintext highlighter-rouge">\cot</code></td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr><th>함수</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(\arcsin\)</td><td><code class="language-plaintext highlighter-rouge">\arcsin</code></td></tr>
+      <tr><td>\(\arccos\)</td><td><code class="language-plaintext highlighter-rouge">\arccos</code></td></tr>
+      <tr><td>\(\arctan\)</td><td><code class="language-plaintext highlighter-rouge">\arctan</code></td></tr>
+      <tr><td>\(\arcsec\)</td><td><del><code class="language-plaintext highlighter-rouge">\arcsec</code></del></td></tr>
+      <tr><td>\(\arccsc\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccsc</code></del></td></tr>
+      <tr><td>\(\arccot\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccot</code></del></td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr><th>함수</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(\sinh\)</td><td><code class="language-plaintext highlighter-rouge">\sinh</code></td></tr>
+      <tr><td>\(\cosh\)</td><td><code class="language-plaintext highlighter-rouge">\cosh</code></td></tr>
+      <tr><td>\(\tanh\)</td><td><code class="language-plaintext highlighter-rouge">\tanh</code></td></tr>
+      <tr><td>\(\sech\)</td><td><del><code class="language-plaintext highlighter-rouge">\sech</code></del></td></tr>
+      <tr><td>\(\csch\)</td><td><del><code class="language-plaintext highlighter-rouge">\csch</code></del></td></tr>
+      <tr><td>\(\coth\)</td><td><code class="language-plaintext highlighter-rouge">\coth</code></td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr><th>함수</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(\arcsinh\)</td><td><del><code class="language-plaintext highlighter-rouge">\arcsinh</code></del></td></tr>
+      <tr><td>\(\arccosh\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccosh</code></del></td></tr>
+      <tr><td>\(\arctanh\)</td><td><del><code class="language-plaintext highlighter-rouge">\arctanh</code></del></td></tr>
+      <tr><td>\(\arcsech\)</td><td><del><code class="language-plaintext highlighter-rouge">\arcsech</code></del></td></tr>
+      <tr><td>\(\arccsch\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccsch</code></del></td></tr>
+      <tr><td>\(\arccoth\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccoth</code></del></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="4-이항연산자">4. 이항연산자</h2>
+
+<table>
+    <thead>
+      <tr><th>연산자</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(\pm\)</td><td><code class="language-plaintext highlighter-rouge">\pm</code></td></tr>
+      <tr><td>\(\mp\)</td><td><code class="language-plaintext highlighter-rouge">\mp</code></td></tr>
+      <tr><td>\(\div\)</td><td><code class="language-plaintext highlighter-rouge">\div</code></td></tr>
+      <tr><td>\(\times\)</td><td><code class="language-plaintext highlighter-rouge">\times</code></td></tr>
+      <tr><td>\(\cdot\)</td><td><code class="language-plaintext highlighter-rouge">\cdot</code></td></tr>
+      <tr><td>\(\cap\)</td><td><code class="language-plaintext highlighter-rouge">\cap</code></td></tr>
+      <tr><td>\(\cup\)</td><td><code class="language-plaintext highlighter-rouge">\cup</code></td></tr>
+      <tr><td>\(\vee\)</td><td><code class="language-plaintext highlighter-rouge">\vee</code></td></tr>
+      <tr><td>\(\wedge\)</td><td><code class="language-plaintext highlighter-rouge">\wedge</code></td></tr>
+      <tr><td>\(\wedge\)</td><td><code class="language-plaintext highlighter-rouge">\wedge</code></td></tr>
+    </tbody>
+  </table>
+
+<h2 id="4-분수">4. 분수</h2>
+
+<div class="c-scr">
+  <table>
+    <tr><td><code class="language-plaintext highlighter-rouge">\frac{a}{b}</code></td><td>\(\frac{a}{b}\)</td></tr>
+  </table>
+</div>
+
+<p>분수는 가독성을 위해 display 모드보다 text 모드일 때의 크기가 더 작다. <code class="language-plaintext highlighter-rouge">\tfrac</code>, <code class="language-plaintext highlighter-rouge">\dfrac</code> 을 사용해 이 크기를 강제할 수 있다.</p>
+
+<div class="c-scr">
+  <table>
+    <tr><td><code class="language-plaintext highlighter-rouge">\tfrac{a}{b}</code></td><td>\(\tfrac{a}{b}\)</td></tr>
+    <tr><td><code class="language-plaintext highlighter-rouge">\dfrac{a}{b}</code></td><td>\(\dfrac{a}{b}\)</td></tr>
+  </table>
+</div>
+
+<p>번분수를 표현할 때는 <code class="language-plaintext highlighter-rouge">\frac</code> 대신에 <code class="language-plaintext highlighter-rouge">\cfrac</code> 을 사용해 가독성을 높일 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>\[\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}\tag{frac}\]</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>\[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\tag{cfrac}\]</p>
+
+<h2 id="4-기타">4. 기타</h2>
+
+<div class="c-scr">
+  <table>
+    <thead>
+      <tr><th>출력</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\( \lim\limits_{x \to \infty} \)</td><td><code class="language-plaintext highlighter-rouge">\limits_{x \to \infty}</code></td></tr>
+      <tr><td>\(k_n^2\)</td><td><code class="language-plaintext highlighter-rouge">k_n^2</code></td></tr>
+      <tr><td>\(k^n_2\)</td><td><code class="language-plaintext highlighter-rouge">k^n_2</code></td></tr>
+      <tr><td>\(n^{22}\)</td><td><code class="language-plaintext highlighter-rouge">n^{22}</code></td></tr>
+      <tr><td>\(n |_{n=17}\)</td><td><code class="language-plaintext highlighter-rouge">n |_{n=17}</code></td></tr>
+      <tr><td>\(\binom{a}{b}\)</td><td><code class="language-plaintext highlighter-rouge">binom{a}{b}</code></td></tr>
+      <tr><td>\(\tbinom{a}{b}\)</td><td><code class="language-plaintext highlighter-rouge">tbinom{a}{b}</code></td></tr>
+      <tr><td>\(\dbinom{a}{b}\)</td><td><code class="language-plaintext highlighter-rouge">dbinom{a}{b}</code></td></tr>
+      <tr><td>\(\sqrt{a}\)</td><td><code class="language-plaintext highlighter-rouge">\sqrt{a}</code></td></tr>
+      <tr><td>\(\sqrt[a]{b}\)</td><td><code class="language-plaintext highlighter-rouge">\sqrt[a]{b}</code></td></tr>
+      <tr><td>\(\sum_{i=1}^{10}\)</td><td><code class="language-plaintext highlighter-rouge">\sum_{i=1}^{10}</code></td></tr>
+      <tr><td>\(\displaystyle\sum_{i=1}^{10}\)</td><td><code class="language-plaintext highlighter-rouge">\displaystyle\sum_{i=1}^{10}</code></td></tr>
+      <tr><td>\(\int_0^\infty\)</td><td><code class="language-plaintext highlighter-rouge">\int_0^\infty</code></td></tr>
+      <tr><td>\(\int\limits_0^\infty\)</td><td><code class="language-plaintext highlighter-rouge">\int\limits_0^\infty</code></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="c-scr">
+<table>
+  <div>
+  <thead>
+    <tr><th>출력</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\sum\)</td><td><code class="language-plaintext highlighter-rouge">\sum</code></td></tr>
+    <tr><td>\(\prod\)</td><td><code class="language-plaintext highlighter-rouge">\prod</code></td></tr>
+    <tr><td>\(\coprod\)</td><td><code class="language-plaintext highlighter-rouge">\coprod</code></td></tr>
+    <tr><td>\(\bigoplus\)</td><td><code class="language-plaintext highlighter-rouge">\bigoplus</code></td></tr>
+    <tr><td>\(\bigotimes\)</td><td><code class="language-plaintext highlighter-rouge">\bigotimes</code></td></tr>
+    <tr><td>\(\bigodot\)</td><td><code class="language-plaintext highlighter-rouge">\bigodot</code></td></tr>
+    <tr><td>\(\bigcup\)</td><td><code class="language-plaintext highlighter-rouge">\bigcup</code></td></tr>
+    <tr><td>\(\bigcap\)</td><td><code class="language-plaintext highlighter-rouge">\bigcap</code></td></tr>
+    <tr><td>\(\biguplus\)</td><td><code class="language-plaintext highlighter-rouge">\biguplus</code></td></tr>
+    <tr><td>\(\bigsqcup\)</td><td><code class="language-plaintext highlighter-rouge">\bigsqcup</code></td></tr>
+    <tr><td>\(\bigvee\)</td><td><code class="language-plaintext highlighter-rouge">\bigvee</code></td></tr>
+    <tr><td>\(\bigwedge\)</td><td><code class="language-plaintext highlighter-rouge">\bigwedge</code></td></tr>
+    <tr><td>\(\int\)</td><td><code class="language-plaintext highlighter-rouge">\int</code></td></tr>
+    <tr><td>\(\oint\)</td><td><code class="language-plaintext highlighter-rouge">\oint</code></td></tr>
+    <tr><td>\(\fint\)</td><td><code class="language-plaintext highlighter-rouge">\oint</code></td></tr>
+  </tbody>
+  </div>
+</table>
+</div>
+
+<p>\[\atan\]</p>
+:ET

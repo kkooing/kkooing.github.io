@@ -1,0 +1,236 @@
+I"�K<p>원문: <a href="http://docs.mathjax.org/en/latest/input/tex/index.html">TeX and LaTeX Support</a></p>
+
+<h2 id="0-tex-latex-지원">0. TeX, LaTeX 지원</h2>
+<p> MathJax는 두 가지 기능이 포함되어있다. 첫 번째는 문서에서 수식 구문(ex: <code class="language-plaintext highlighter-rouge">$$...$$</code>)을 찾는 것이고, 두 번째는 Tex 표현식을 MathJax 내부 형식으로 변환하고 웹 페이지에 표시하는것 이다. 버전2 에서는 이 두 가지 기능이 <code class="language-plaintext highlighter-rouge">tex2jax</code>전처리기와 TeX input jax로 분리되어 있었지만, 버전3 에서는 통합되었다.</p>
+
+<p> TeX input jax는 원하는 수식 구문 마커를 찾도록 설정할 수 있다. <a href="http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options">TeX configuration options</a></p>
+
+<p> MathJax는 수식 구문을 MathJax 내부 형식(기본적으로 MathML)으로 변환한다. 또한 추가 기능을 위한 확장을 사용할 수 있다. <a href="http://docs.mathjax.org/en/latest/input/tex/extensions.html#tex-extensions">TeX and LaTeX extensions</a></p>
+
+<h2 id="1-실제-tex와의-차이">1. 실제 TeX와의 차이</h2>
+<p> 웹 표현을 위한 MathJax는 인쇄를 위한 TeX 지원에 한계가 있다. 그래서 실제 TeX/LaTeX와 MathJax의 TeX 입력에는 일부 차이점이 있다.</p>
+
+<p> 우선, MathJax는 text모드 없이 오직 math모드만을 구현한다. 문서의 텍스트 처리는 표준 HTML 태그로 이루어져야 하고, MathJax는 수식 부분만 처리한다. 그러므로 MathJax는 <code class="language-plaintext highlighter-rouge">\emph</code>, <code class="language-plaintext highlighter-rouge">\begin{enumerate}...\end{enumerate}</code> 등의 text모드 매크로나 환경을 구현하지 못한다. 이러한 형식 지정 작업을 위해서는 HTML을 사용해야한다. LaTeX-to-HTML변환기가 필요하다면 MathJax 이외의 옵션을 고려해야한다.</p>
+
+<p> 위 규칙에서 두 가지 예외가 있는데 첫째는 <code class="language-plaintext highlighter-rouge">\ref</code> 이고, 둘째는 <code class="language-plaintext highlighter-rouge">$</code>기호를 이스케이프 하기 위한 <code class="language-plaintext highlighter-rouge">\text{}</code>같은 매크로이다. 하지만 일반적으로 이러한 텍스트 블록 내에서 다른 매크로는 작동하지 않는다. 즉, <code class="language-plaintext highlighter-rouge">\text{some \textbf{bold} text}</code>는 "some \textbf{bold} text" 로 축력된다.</p>
+
+<p> 버전3.1에서는 text모드 매크로를 위한 확장 기능이 있다.<a href="http://docs.mathjax.org/en/latest/input/tex/extensions/textmacros.html#tex-textmacros">textmacros</a></p>
+
+<p> 두 번째로, MathJax의 일부 기능은 제한될 수 있다.</p>
+
+<h2 id="2-texlatex-수식-구문-마커">2. TeX/LaTeX 수식 구문 마커</h2>
+<p> MathJax에서 수식을 입력하는 방법은 display모드를 위한 <code class="language-plaintext highlighter-rouge">\[...\]</code>, <code class="language-plaintext highlighter-rouge">$$...$$</code>와 text모드를 위한 <code class="language-plaintext highlighter-rouge">\(...\)</code> 가 있다. <code class="language-plaintext highlighter-rouge">$...$</code>를 text모드 입력 구문으로 사용하려면 아래처럼 설정해야한다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">inlineMath</span><span class="p">:</span> <span class="p">[[</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="dl">'</span><span class="se">\\</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">)</span><span class="dl">'</span><span class="p">]]</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> 수식 내부에서 <code class="language-plaintext highlighter-rouge">\begin{equation}...\end{equation}</code> 같은 환경명령을 실행할 수 있게 설정할 수 있다.. (<a href="http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options">TeX Input Processor Options</a>의 processEnvironments 설정)</p>
+
+<p> Tex 입력기의 추가 설정 방법: <a href="http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options">tex configuration options</a></p>
+
+<h2 id="3-html에서의-주의사항">3. HTML에서의 주의사항</h2>
+<h3 id="31-html-특수기호">3.1 HTML 특수기호</h3>
+<p> MathJax 구문 안에서 &lt;, &gt;, &amp; 를 입력하려면 앞뒤로 공백을 두거나 HTML entity 를 사용한다.</p>
+
+<h3 id="32-cms와의-상호작용">3.2 CMS와의 상호작용</h3>
+<p>CMS(Content-Management Systems: markdown 같은거)를 사용할 때는 이스케이프에 주의한다.</p>
+
+<h2 id="4-tex-매크로-정의">4. TeX 매크로 정의</h2>
+<p> 사용자 정의 매크로와 환경을 만들기 위해 <strong>수식구문 내에서</strong>  <code class="language-plaintext highlighter-rouge">\def</code>, <code class="language-plaintext highlighter-rouge">\newcommand</code>, <code class="language-plaintext highlighter-rouge">\renewcommand</code>, <code class="language-plaintext highlighter-rouge">\newenvironment</code>, <code class="language-plaintext highlighter-rouge">\renewenvironment</code>, <code class="language-plaintext highlighter-rouge">\let</code> 를 사용할 수 있다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="err">\</span><span class="p">(</span>
+   <span class="err">\</span><span class="nx">def</span><span class="err">\</span><span class="nx">RR</span>
+   <span class="err">\</span><span class="nx">def</span><span class="err">\</span><span class="nx">bold</span><span class="err">#</span><span class="mi">1</span>
+<span class="err">\</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>환경 설정을 통해 매크롤르 정의할 수도 있다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">macros</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">RR</span><span class="p">:</span> <span class="dl">"</span><span class="s2">{</span><span class="se">\\\</span><span class="s2">bf R}</span><span class="dl">"</span><span class="p">,</span>
+     <span class="na">bold</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">{</span><span class="se">\\\</span><span class="s2">bf #1}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="http://docs.mathjax.org/en/latest/input/tex/extensions/configmacros.html#tex-configmacros-options">configmacros Options</a></p>
+
+<h2 id="5-자동-방정식-번호-지정">5. 자동 방정식 번호 지정</h2>
+<p> 기본적으로 꺼져있지만 아래 설정으로 활성화한다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">tags</span><span class="p">:</span> <span class="dl">'</span><span class="s1">ams</span><span class="dl">'</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> <code class="language-plaintext highlighter-rouge">notag</code>또는 <code class="language-plaintext highlighter-rouge">\nonumber</code>로 개별적으로 번호를 끄거나, <code class="language-plaintext highlighter-rouge">\tag{}</code>로 수동 번호지정이 가능하다.</p>
+
+<p> ams 환경에서는 <code class="language-plaintext highlighter-rouge">*</code>로 번호를 끄고 켤 수 있다.
+번호 O</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+   <span class="nx">E</span> <span class="o">=</span> <span class="nx">mc</span><span class="o">^</span><span class="mi">2</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>번호 X</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="o">*</span><span class="p">}</span>
+   <span class="nx">e</span><span class="o">^</span><span class="p">{</span><span class="err">\</span><span class="nx">pi</span> <span class="nx">i</span><span class="p">}</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="o">*</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p> <code class="language-plaintext highlighter-rouge">\label</code>과 <code class="language-plaintext highlighter-rouge">\ref</code> 또는 <code class="language-plaintext highlighter-rouge">\eqref</code>로 방정식 참조하는법</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nx">In</span> <span class="nx">equation</span> <span class="err">\</span><span class="nx">eqref</span><span class="p">{</span><span class="nl">eq</span><span class="p">:</span><span class="nx">sample</span><span class="p">},</span> <span class="nx">we</span> <span class="nx">find</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">an</span>
+<span class="nx">interesting</span> <span class="nx">integral</span><span class="p">:</span>
+
+<span class="err">\</span><span class="nx">begin</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+  <span class="err">\</span><span class="nx">int_0</span><span class="o">^</span><span class="err">\</span><span class="nx">infty</span> <span class="err">\</span><span class="nx">frac</span><span class="p">{</span><span class="nx">x</span><span class="o">^</span><span class="mi">3</span><span class="p">}{</span><span class="nx">e</span><span class="o">^</span><span class="nx">x</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span><span class="err">\</span><span class="p">,</span><span class="nx">dx</span> <span class="o">=</span> <span class="err">\</span><span class="nx">frac</span><span class="p">{</span><span class="err">\</span><span class="nx">pi</span><span class="o">^</span><span class="mi">4</span><span class="p">}{</span><span class="mi">15</span><span class="p">}</span>
+  <span class="err">\</span><span class="nx">label</span><span class="p">{</span><span class="nl">eq</span><span class="p">:</span><span class="nx">sample</span><span class="p">}</span>
+<span class="err">\</span><span class="nx">end</span><span class="p">{</span><span class="nx">equation</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="http://docs.mathjax.org/en/latest/input/tex/extensions/tagformat.html#tex-tagformat">tagformat</a> 확장<br />
+<a href="http://docs.mathjax.org/en/latest/web/typeset.html#tex-reset">Resetting Automatic Equation Numbering</a></p>
+
+<h2 id="6-texlatex-확장">6. TeX/LaTeX 확장</h2>
+
+<h3 id="61-tex-확장-로드">6.1. TeX 확장 로드</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">loader</span><span class="p">:</span> <span class="p">{</span><span class="na">load</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">[tex]/color</span><span class="dl">'</span><span class="p">]},</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span><span class="na">packages</span><span class="p">:</span> <span class="p">{</span><span class="dl">'</span><span class="s1">[+]</span><span class="dl">'</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">color</span><span class="dl">'</span><span class="p">]}}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span><span class="na">packages</span><span class="p">:</span> <span class="p">{</span><span class="dl">'</span><span class="s1">[-]</span><span class="dl">'</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">require</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">autoload</span><span class="dl">'</span><span class="p">]}}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="62-런타임에-tex-확장-로드">6.2. 런타임에 TeX 확장 로드</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="err">\</span><span class="p">(</span><span class="err">\</span><span class="nx">require</span><span class="p">{</span><span class="nx">color</span><span class="p">}</span><span class="err">\</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="63-tex-확장-설정">6.3. TeX 확장 설정</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">loader</span><span class="p">:</span> <span class="p">{</span><span class="na">load</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">[tex]/color</span><span class="dl">'</span><span class="p">]},</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">packages</span><span class="p">:</span> <span class="p">{</span><span class="dl">'</span><span class="s1">[+]</span><span class="dl">'</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">color</span><span class="dl">'</span><span class="p">]},</span>
+    <span class="na">color</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">padding</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5px</span><span class="dl">'</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="dl">'</span><span class="s1">[tex]/color</span><span class="dl">'</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">padding</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5px</span><span class="dl">'</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="7-texlatex-확장-목록">7. TeX/LaTeX 확장 목록</h2>
+
+<ul>
+  <li>action</li>
+  <li>ams</li>
+  <li>amscd</li>
+  <li>autoload</li>
+  <li>bbox</li>
+  <li>boldsymbol</li>
+  <li>braket</li>
+  <li>bussproofs</li>
+  <li>cancel</li>
+  <li>color</li>
+  <li>colorv2</li>
+  <li>configmacros</li>
+  <li>enclose</li>
+  <li>extpfeil</li>
+  <li>html</li>
+  <li>mhchem</li>
+  <li>newcommand</li>
+  <li>noerrors</li>
+  <li>noundefined</li>
+  <li>physics</li>
+  <li>require</li>
+  <li>tagformat</li>
+  <li>textmacros</li>
+  <li>unicode</li>
+  <li>verb</li>
+</ul>
+
+<p> 커스텀 TeX 확장을 만들기 위해서는 <a href="http://docs.mathjax.org/en/latest/web/webpack.html#custom-extension">A Custom Extension</a> 참조.</p>
+
+<h2 id="8-texlatex-명령어">8. TeX/LaTeX 명령어</h2>
+:ET

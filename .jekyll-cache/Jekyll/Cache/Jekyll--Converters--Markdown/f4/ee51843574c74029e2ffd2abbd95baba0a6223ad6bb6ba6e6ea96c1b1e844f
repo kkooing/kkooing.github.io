@@ -1,0 +1,7 @@
+I"<h2 id="1-인라인-수식-text-블록-수식-displayed">1. 인라인 수식 (text), 블록 수식 (displayed)</h2>
+<p>text 모드 (인라인): <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code><br />
+문장 내부에 text 모드 \( \LaTeX \) 가 들어있다.</p>
+
+<p>displayed 모드 (블록): <code class="language-plaintext highlighter-rouge">\[</code>, <code class="language-plaintext highlighter-rouge">\]</code><br />
+아래에는 display 모드</p>
+:ET
