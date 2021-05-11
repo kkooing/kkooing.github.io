@@ -13,7 +13,13 @@
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
+<script>
+window.MathJax = {
+  tex: {
+    tags: 'ams'
+  }
+};
+</script>
 
 <!--[if IE]>
   <style>
@@ -170,8 +176,8 @@
 <p>가 들어있다.</p>
 
 <div class="note">
-  <div class="title">kramdown 에서 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code></div>
-  <p>kramdown 에서는 <code class="language-plaintext highlighter-rouge">\</code> 를 이스케이프 문자로 사용하기 때문에 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code> 대신에 <code class="language-plaintext highlighter-rouge">\\(</code>, <code class="language-plaintext highlighter-rouge">\\)</code> 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 <code class="language-plaintext highlighter-rouge">\</code> 를 한 개만 써도 된다.</p>
+  <p>Note - kramdown 에서 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code><br />
+kramdown 에서는 <code class="language-plaintext highlighter-rouge">\</code> 를 이스케이프 문자로 사용하기 때문에 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code> 대신에 <code class="language-plaintext highlighter-rouge">\\(</code>, <code class="language-plaintext highlighter-rouge">\\)</code> 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 <code class="language-plaintext highlighter-rouge">\</code> 를 한 개만 써도 된다.</p>
 </div>
 
 <h2 id="2-알파벳-숫자-기호">2. 알파벳, 숫자, 기호</h2>

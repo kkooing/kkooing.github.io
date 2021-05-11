@@ -1,0 +1,30 @@
+I"�<h2 id="1-축하중">1. 축하중</h2>
+<h3 id="법선응력">법선응력</h3>
+<p> 하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.
+\[\begin{equation}
+\sigma = \frac{P}{A}
+\end{equation}\]</p>
+
+<p> 법선응력은 하중의 압축(compression), 인장(tensile)상태에 따라 분류됨.
+\[\begin{equation}
+\sigma_c = \frac{P_c}{A},\quad \sigma_t = \frac{P_t}{A}
+\end{equation}\]</p>
+
+<h3 id="법선변형률">법선변형률</h3>
+<p> 변형량 \(\delta\), 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.
+\[\begin{equation}
+\varepsilon = \frac{\delta}{L}
+\end{equation}\]</p>
+
+<h4 id="열변형률">열변형률</h4>
+<p> 열팽창계수 \(\alpha\), 온도변화 \(\Delta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.
+\[\begin{equation}
+\varepsilon_T = \alpha\Delta T
+\end{equation}\]</p>
+
+<h3 id="후크-법칙hooks-law">후크 법칙(Hook’s law)</h3>
+
+<p>\[\begin{equation}
+\sigma = E\varepsilon
+\end{equation}\]</p>
+:ET

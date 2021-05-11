@@ -20,63 +20,68 @@
     h1, h2, h3, h4, h5, h6 {
       line-height: $line-height-html;
       position: relative;
-      color: darken(desaturate($cl-h, 25), 25);
-      &:before {
-        content:"";
-        display: block;
-        position: absolute;
-      }
+      color: $cl-h;
     }
     h1, h2 {
       margin: 2.5rem 0 1rem 0;
-      padding-left: 1.25rem;
-      border-top: 2px solid lighten($cl-h, 0);
+      padding-left: 0.4rem;
+      border-top: 2px solid $cl-h;
+      border-left: 0.8rem solid $cl-h;
+    }
+    h3, h4, h5, h6 {
+      margin: 1rem 0;
+      padding-left: 0.4rem;
+    }
+    h3 {
+      margin-left: 0.4rem;
+      border-left: 0.4rem solid $cl-h;
+    }
+    h4, h5, h6 {
       &:before {
-        height: $line-height-html * 1em;
-        width: 0.75rem;
-        top: 0;
-        left: 0;
-        background-color: lighten($cl-h, 25);
-        border: 2px solid lighten($cl-h, 0);
-        border-top: none;
+        content: "";
+        position: absolute;
       }
     }
-    h3, h4 {
-      margin: 1rem 0;
-      padding-left: 1.25rem;
+    h4 {
+      margin-left: 1.2rem;
       &:before {
         height: 1em;
-        width: 0.75rem;
+        width: 0.4rem;
         top: (($line-height-html - 1) / 2 * 1em);
-        left: 0;
-        border-right: 0.3em solid lighten($cl-h, 0);
+        left: -0.4rem;
+        border: 0.45em solid $cl-h;
+        border-style: solid none;
       }
     }
     h5, h6 {
-      padding-left: 1.5rem;
+      margin-left: 1.6rem;
       &:before {
         height: 0.5em;
         width: 0.5em;
         top: (($line-height-html - 0.5) / 2 * 1em);
-        left: calc(1rem - 0.5em);
-        background-color: lighten($cl-h, 25);
-        border: 0.15em solid lighten($cl-h, 0);
+        left: -0.5em;
+        background-color: $cl-h;
+        border: 0;
         border-radius: 50%;
       }
+    }
+    h6:before {
+      content: "";
+      position: absolute;
+      background-color: hsla(0,0,0,0);
+      border: 0.2em solid $cl-h;
     }
     h1:first-child, h2:first-child {
       margin-top: 0;
     }
     h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
-      margin-top: -1rem;
+      margin-top: -0.5rem;
     }
 
     hr {
       border-width: 2px;
       border-color: hsl(220, 100, 90);
     }
-
-    
 
     a.footnote {
       &:before { content: "["; }
@@ -100,7 +105,7 @@
 
     .tag-list {
       .tag-svg {
-        color: $cl-link-2;
+        color: $cl-h;
       }
       .tag-word {
         display: inline-block;

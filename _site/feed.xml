@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-10T18:11:53+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">번역: TeX and LaTeX Support</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex-trans/" rel="alternate" type="text/html" title="번역: TeX and LaTeX Support" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex-trans</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex-trans/">&lt;p&gt;원문: &lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/index.html&quot;&gt;TeX and LaTeX Support&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-11T08:56:47+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">번역: TeX and LaTeX Support</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex-trans/" rel="alternate" type="text/html" title="번역: TeX and LaTeX Support" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex-trans</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex-trans/">&lt;p&gt;원문: &lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/index.html&quot;&gt;TeX and LaTeX Support&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;0-tex-latex-지원&quot;&gt;0. TeX, LaTeX 지원&lt;/h2&gt;
 &lt;p&gt; MathJax는 두 가지 기능이 포함되어있다. 첫 번째는 문서에서 수식 구문(ex: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt;)을 찾는 것이고, 두 번째는 Tex 표현식을 MathJax 내부 형식으로 변환하고 웹 페이지에 표시하는것 이다. 버전2 에서는 이 두 가지 기능이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tex2jax&lt;/code&gt;전처리기와 TeX input jax로 분리되어 있었지만, 버전3 에서는 통합되었다.&lt;/p&gt;
@@ -232,35 +232,55 @@
 
 &lt;p&gt; 커스텀 TeX 확장을 만들기 위해서는 &lt;a href=&quot;http://docs.mathjax.org/en/latest/web/webpack.html#custom-extension&quot;&gt;A Custom Extension&lt;/a&gt; 참조.&lt;/p&gt;
 
-&lt;h2 id=&quot;8-texlatex-명령어&quot;&gt;8. TeX/LaTeX 명령어&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">원문: TeX and LaTeX Support</summary></entry><entry><title type="html">축하중</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/" rel="alternate" type="text/html" title="축하중" /><published>2021-05-06T00:00:00+00:00</published><updated>2021-05-06T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/">&lt;h2 id=&quot;1-축하중&quot;&gt;1. 축하중&lt;/h2&gt;
-&lt;h3 id=&quot;법선응력&quot;&gt;법선응력&lt;/h3&gt;
-&lt;p&gt;하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.
-\[
+&lt;h2 id=&quot;8-texlatex-명령어&quot;&gt;8. TeX/LaTeX 명령어&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">원문: TeX and LaTeX Support</summary></entry><entry><title type="html">축하중</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/" rel="alternate" type="text/html" title="축하중" /><published>2021-05-06T00:00:00+00:00</published><updated>2021-05-06T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/">&lt;h2 id=&quot;1-법선하중&quot;&gt;1. 법선하중&lt;/h2&gt;
+&lt;h3 id=&quot;11-법선응력&quot;&gt;1.1 법선응력&lt;/h3&gt;
+&lt;p&gt; 하중 \(P\), 초기 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
 \sigma = \frac{P}{A}
-\]&lt;/p&gt;
+\end{equation}\]&lt;/p&gt;
 
-&lt;p&gt;법선응력은 하중의 압축(compression), 인장(tensile)상태에 따라 분류됨.
-\[
+&lt;p&gt; 법선응력은 하중의 압축(compression)과 인장(tensile)상태에 따라 분류할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
 \sigma_c = \frac{P_c}{A},\quad \sigma_t = \frac{P_t}{A}
-\]&lt;/p&gt;
+\end{equation}\]&lt;/p&gt;
 
-&lt;h3 id=&quot;법선변형률&quot;&gt;법선변형률&lt;/h3&gt;
-&lt;p&gt;변형량 \(\delta\), 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.
-\[
+&lt;div class=&quot;note&quot;&gt;
+  &lt;p&gt;단위&lt;br /&gt;
+\(P \, [\mathrm{N}]\)&lt;br /&gt;
+\(A \, [\mathrm{m^2}]\)&lt;br /&gt;
+\(\sigma \, [\mathrm{Pa}]\)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;12-법선변형률&quot;&gt;1.2 법선변형률&lt;/h3&gt;
+&lt;p&gt; 변형량 \(\delta\), 초기 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
 \varepsilon = \frac{\delta}{L}
-\]&lt;/p&gt;
+\end{equation}\]&lt;/p&gt;
 
-&lt;h5 id=&quot;열변형률&quot;&gt;열변형률&lt;/h5&gt;
-&lt;p&gt;열팽창계수 \(\alpha\), 온도변화 \(\Delta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.
-\[
-\varepsilon_T = \alpha\Delta T
-\]&lt;/p&gt;
+&lt;h4 id=&quot;121-열변형률&quot;&gt;1.2.1. 열변형률&lt;/h4&gt;
+&lt;p&gt; 열팽창계수 \(\alpha\), 온도변화 \(\varDelta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.&lt;/p&gt;
 
-&lt;h3 id=&quot;후크-법칙hooks-law&quot;&gt;후크 법칙(Hook’s law)&lt;/h3&gt;
+&lt;p&gt;\[\begin{equation}
+\varepsilon_T = \alpha\varDelta T
+\end{equation}\]&lt;/p&gt;
 
-&lt;p&gt;\[
+&lt;div class=&quot;note&quot;&gt;
+  &lt;p&gt;단위&lt;br /&gt;
+\(\delta \, [\mathrm{mm}]\)&lt;br /&gt;
+\(L \, [\mathrm{mm}]\)&lt;br /&gt;
+\(\varepsilon \, [\mathrm{mm/mm}]\)&lt;br /&gt;
+\(\varDelta T \, [\mathrm{K}]\)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;13-후크-법칙hooks-law&quot;&gt;1.3. 후크 법칙(Hook’s law)&lt;/h3&gt;
+
+&lt;p&gt; 탄성계수 \(E\)
+\[\begin{equation}
 \sigma = E\varepsilon
-\]&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><category term="축하중" /><summary type="html">1. 축하중 법선응력 하중 \(P\), 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식. \[ \sigma = \frac{P}{A} \]</summary></entry><entry><title type="html">MathJax 1</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="MathJax 1" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-참고&quot;&gt;0. 참고&lt;/h2&gt;
+\end{equation}\]&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><category term="축하중" /><summary type="html">1. 법선하중 1.1 법선응력  하중 \(P\), 초기 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.</summary></entry><entry><title type="html">MathJax 1</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="MathJax 1" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-참고&quot;&gt;0. 참고&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/differences.html&quot;&gt;Differences from Actual TeX&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm&quot;&gt;onemathematicalcat&lt;/a&gt;&lt;br /&gt;
@@ -278,8 +298,8 @@
 &lt;p&gt;가 들어있다.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;
-  &lt;div class=&quot;title&quot;&gt;kramdown 에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;/div&gt;
-  &lt;p&gt;kramdown 에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를 이스케이프 문자로 사용하기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt; 대신에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\)&lt;/code&gt; 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를 한 개만 써도 된다.&lt;/p&gt;
+  &lt;p&gt;Note - kramdown 에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;br /&gt;
+kramdown 에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를 이스케이프 문자로 사용하기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt; 대신에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\)&lt;/code&gt; 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를 한 개만 써도 된다.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;2-알파벳-숫자-기호&quot;&gt;2. 알파벳, 숫자, 기호&lt;/h2&gt;
