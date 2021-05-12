@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-11T08:56:47+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">번역: TeX and LaTeX Support</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex-trans/" rel="alternate" type="text/html" title="번역: TeX and LaTeX Support" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex-trans</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex-trans/">&lt;p&gt;원문: &lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/index.html&quot;&gt;TeX and LaTeX Support&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-12T11:26:36+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">번역: TeX and LaTeX Support</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex-trans/" rel="alternate" type="text/html" title="번역: TeX and LaTeX Support" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex-trans</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex-trans/">&lt;p&gt;원문: &lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/index.html&quot;&gt;TeX and LaTeX Support&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;0-tex-latex-지원&quot;&gt;0. TeX, LaTeX 지원&lt;/h2&gt;
 &lt;p&gt; MathJax는 두 가지 기능이 포함되어있다. 첫 번째는 문서에서 수식 구문(ex: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt;)을 찾는 것이고, 두 번째는 Tex 표현식을 MathJax 내부 형식으로 변환하고 웹 페이지에 표시하는것 이다. 버전2 에서는 이 두 가지 기능이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tex2jax&lt;/code&gt;전처리기와 TeX input jax로 분리되어 있었지만, 버전3 에서는 통합되었다.&lt;/p&gt;
@@ -232,55 +232,117 @@
 
 &lt;p&gt; 커스텀 TeX 확장을 만들기 위해서는 &lt;a href=&quot;http://docs.mathjax.org/en/latest/web/webpack.html#custom-extension&quot;&gt;A Custom Extension&lt;/a&gt; 참조.&lt;/p&gt;
 
-&lt;h2 id=&quot;8-texlatex-명령어&quot;&gt;8. TeX/LaTeX 명령어&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">원문: TeX and LaTeX Support</summary></entry><entry><title type="html">축하중</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/" rel="alternate" type="text/html" title="축하중" /><published>2021-05-06T00:00:00+00:00</published><updated>2021-05-06T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/">&lt;h2 id=&quot;1-법선하중&quot;&gt;1. 법선하중&lt;/h2&gt;
-&lt;h3 id=&quot;11-법선응력&quot;&gt;1.1 법선응력&lt;/h3&gt;
-&lt;p&gt; 하중 \(P\), 초기 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.&lt;/p&gt;
+&lt;h2 id=&quot;8-texlatex-명령어&quot;&gt;8. TeX/LaTeX 명령어&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">원문: TeX and LaTeX Support</summary></entry><entry><title type="html">축하중</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/" rel="alternate" type="text/html" title="축하중" /><published>2021-05-06T00:00:00+00:00</published><updated>2021-05-06T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/">&lt;h3 id=&quot;1-수직하중normal-load&quot;&gt;1. 수직하중(normal load)&lt;/h3&gt;
+&lt;h4 id=&quot;11-수직응력normal-stress&quot;&gt;1.1. 수직응력(normal stress)&lt;/h4&gt;
+&lt;p&gt; 수직(또는 법선)수직하중 \(P\), 초기 단면적 \(A\)에 대한 수직응력 \(\sigma\).&lt;/p&gt;
 
 &lt;p&gt;\[\begin{equation}
 \sigma = \frac{P}{A}
 \end{equation}\]&lt;/p&gt;
 
-&lt;p&gt; 법선응력은 하중의 압축(compression)과 인장(tensile)상태에 따라 분류할 수 있다.&lt;/p&gt;
+&lt;p&gt; 수직응력의 방향에 따라 인장응력(tensile stress) \(\sigma_t\)와 압축응력(compressive stress) \(\sigma_c\)로 분류한다.&lt;/p&gt;
 
 &lt;p&gt;\[\begin{equation}
-\sigma_c = \frac{P_c}{A},\quad \sigma_t = \frac{P_t}{A}
+\sigma_t = \frac{P_t}{A}, \quad \sigma_c = \frac{P_c}{A}
 \end{equation}\]&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;
-  &lt;p&gt;단위&lt;br /&gt;
-\(P \, [\mathrm{N}]\)&lt;br /&gt;
-\(A \, [\mathrm{m^2}]\)&lt;br /&gt;
-\(\sigma \, [\mathrm{Pa}]\)&lt;/p&gt;
-&lt;/div&gt;
+&lt;h5 id=&quot;111-지탱응력bearing-stress&quot;&gt;1.1.1. 지탱응력(bearing stress)&lt;/h5&gt;
+&lt;p&gt; 지탱응력(또는 베어링 응력)은 불규칙한 접촉면에 작용하는 평균응력이다. 하중 방향으로 투영된 면적 (또는 베어링 면적) \(A_b\)에 대한 지탱응력 \(\sigma_b\).
+\[\begin{equation}
+\sigma_b = \frac{P}{A_b}
+\end{equation}\]&lt;/p&gt;
 
-&lt;h3 id=&quot;12-법선변형률&quot;&gt;1.2 법선변형률&lt;/h3&gt;
-&lt;p&gt; 변형량 \(\delta\), 초기 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.&lt;/p&gt;
+&lt;h4 id=&quot;12-수직변형률normal-strain&quot;&gt;1.2. 수직변형률(normal strain)&lt;/h4&gt;
+&lt;p&gt; 변형량 \(\delta\), 초기 길이 \(L\)에 대한 수직변형률 \(\varepsilon\)의 식.&lt;/p&gt;
 
 &lt;p&gt;\[\begin{equation}
 \varepsilon = \frac{\delta}{L}
 \end{equation}\]&lt;/p&gt;
 
-&lt;h4 id=&quot;121-열변형률&quot;&gt;1.2.1. 열변형률&lt;/h4&gt;
+&lt;p&gt; 변형량은 초기 길이 \(L_0\), 나중 길이 \(L_1\)에 대한 식 \(\delta=L_1-L_0\) 로 계산한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-전단하중shearing-load&quot;&gt;2. 전단하중(shearing load)&lt;/h3&gt;
+&lt;h4 id=&quot;21-전단응력shear-stress&quot;&gt;2.1. 전단응력(shear stress)&lt;/h4&gt;
+&lt;p&gt; 전단하중 \(V\), 전단면적 \(A\)에 대한 전단응력 \(\tau\)의 식.&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
+\tau = \frac{V}{A}
+\end{equation}\]&lt;/p&gt;
+
+&lt;h4 id=&quot;22-전단변형률shear-strain&quot;&gt;2.2. 전단변형률(shear strain)&lt;/h4&gt;
+&lt;p&gt; 전단변형량 \(\delta\), 수직거리 \(L\)에 대한 전단변형률 \(\gamma\)의 식.&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
+\gamma = \frac{\delta}{L}
+\end{equation}\]&lt;/p&gt;
+
+&lt;h3 id=&quot;3-재료의-기계적-성질&quot;&gt;3. 재료의 기계적 성질&lt;/h3&gt;
+&lt;h4 id=&quot;31-응력-변형률-선도stress-strain-diagram&quot;&gt;3.1. 응력-변형률 선도(stress-strain diagram)&lt;/h4&gt;
+&lt;p&gt;비례한도 (proportional limit)
+탄성한도
+항복점 (yeild point)
+항복응력 \(\sigma_y\)
+극한응력, 극한인장강도(ultimate tensile strength, UTS) \(\sigma_u\)&lt;/p&gt;
+
+&lt;p&gt;신장량(elongation)
+단면감소율&lt;/p&gt;
+
+&lt;p&gt;단면변화량 \(\varDelta A\)
+체적변화량 \(\varDelta V\)
+체적탄성계수 \(K\)
+압축률 \(\beta\)&lt;/p&gt;
+
+&lt;h4 id=&quot;32-진응력true-stress-진변형률true-strain&quot;&gt;3.2. 진응력(true stress), 진변형률(true strain)&lt;/h4&gt;
+&lt;p&gt;  공칭응력 (nominal stress) \(\sigma_n\), 공칭변형률 (nominal strain) \(\varepsilon_n\)에 대응하는 진응력 \(\sigma_t\), 진변형률 \(\varepsilon_t\)&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
+\sigma_t = \sigma_n\left(1 + \varepsilon_n\right)
+\end{equation}\]&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
+\varepsilon_t = \ln{\left(1 + \varepsilon_n\right)}
+\end{equation}\]&lt;/p&gt;
+
+&lt;h4 id=&quot;33-후크-법칙hooks-law&quot;&gt;3.3. 후크 법칙(Hook's law)&lt;/h4&gt;
+
+&lt;p&gt; 탄성계수(modulus of elasticity) \(E\)에 대해
+\[\begin{equation}
+\sigma = E\varepsilon
+\end{equation}\]&lt;/p&gt;
+
+&lt;p&gt; 전단탄성계수 또는 강성계수(modulus of rigidity) \(G\)에 대해
+\[\begin{equation}
+\tau = G\gamma
+\end{equation}\]&lt;/p&gt;
+
+&lt;h4 id=&quot;34-푸아송-비poissons-ratio&quot;&gt;3.4. 푸아송 비(Poisson's ratio)&lt;/h4&gt;
+
+&lt;p&gt;\[\begin{equation}
+\nu = - \frac{\varepsilon’}{\varepsilon} = \frac{1}{m}
+\end{equation}\]&lt;/p&gt;
+
+&lt;h4 id=&quot;35-관계식&quot;&gt;3.5. 관계식&lt;/h4&gt;
+
+&lt;p&gt;\[\begin{equation}
+G = \frac{E}{2\left( 1 + \nu \right)}
+\end{equation}\]&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
+mE = 2G\left(\ m + 1 \right) = 3K\left(\ m -2 \right)
+\end{equation}\]&lt;/p&gt;
+
+&lt;p&gt;\[\begin{equation}
+K = \frac{GE}{9G-3E}
+\end{equation}\]&lt;/p&gt;
+
+&lt;h4 id=&quot;35-열변형률&quot;&gt;3.5. 열변형률&lt;/h4&gt;
 &lt;p&gt; 열팽창계수 \(\alpha\), 온도변화 \(\varDelta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.&lt;/p&gt;
 
 &lt;p&gt;\[\begin{equation}
 \varepsilon_T = \alpha\varDelta T
 \end{equation}\]&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;
-  &lt;p&gt;단위&lt;br /&gt;
-\(\delta \, [\mathrm{mm}]\)&lt;br /&gt;
-\(L \, [\mathrm{mm}]\)&lt;br /&gt;
-\(\varepsilon \, [\mathrm{mm/mm}]\)&lt;br /&gt;
-\(\varDelta T \, [\mathrm{K}]\)&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;13-후크-법칙hooks-law&quot;&gt;1.3. 후크 법칙(Hook’s law)&lt;/h3&gt;
-
-&lt;p&gt; 탄성계수 \(E\)
-\[\begin{equation}
-\sigma = E\varepsilon
-\end{equation}\]&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><category term="축하중" /><summary type="html">1. 법선하중 1.1 법선응력  하중 \(P\), 초기 면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.</summary></entry><entry><title type="html">MathJax 1</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="MathJax 1" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-참고&quot;&gt;0. 참고&lt;/h2&gt;
+&lt;h3 id=&quot;4-설계&quot;&gt;4. 설계&lt;/h3&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><category term="축하중" /><summary type="html">1. 수직하중(normal load) 1.1. 수직응력(normal stress)  수직(또는 법선)수직하중 \(P\), 초기 단면적 \(A\)에 대한 수직응력 \(\sigma\).</summary></entry><entry><title type="html">MathJax 1</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="MathJax 1" /><published>2021-04-26T00:00:00+00:00</published><updated>2021-04-26T00:00:00+00:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-참고&quot;&gt;0. 참고&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/differences.html&quot;&gt;Differences from Actual TeX&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm&quot;&gt;onemathematicalcat&lt;/a&gt;&lt;br /&gt;
