@@ -795,8 +795,7 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .highlight table td, .highlight table th { border: 0; padding: 0; }
 
-mjx-container[jax="CHTML"][display="true"] { overflow-x: auto; overflow-y: hidden; padding: 0.5rem 0; margin: 0.5rem 0; }
-
+/* mjx-container[jax="CHTML"][display="true"] { overflow-x: auto; overflow-y: hidden; padding: 0.5rem 0; margin: 0.5rem 0; } */
 .l-skip-links { position: absolute; top: -1.45em; white-space: nowrap; }
 
 .l-inner-wrap { margin: auto; padding: 1rem; max-width: 1140px; }

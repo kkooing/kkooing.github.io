@@ -141,7 +141,7 @@ window.MathJax = {
         </a></div><ul><li><div class="selected-menu-marker">
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64v6.72L15.27 12z" opacity=".3"/><path d="M8 19l11-7L8 5v14zm2-10.36L15.27 12 10 15.36V8.64z"/></svg>
     </div><div class="menu selected-menu terminal-menu"><a href="/mechanical-engineering/solid-mechanics">
-          <div>고체역학<span class="posts-count">[1]</span></div>
+          <div>고체역학<span class="posts-count">[2]</span></div>
         </a></div></li><li><div class="menu terminal-menu no-post">기계설계<span class="posts-count">[0]</span></div></li></ul></li><hr/><li><div class="menu no-post">도구</div><ul><li><div class="menu terminal-menu no-post">AutoCAD<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">인벤터<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Affinity Designer<span class="posts-count">[0]</span></div></li></ul></li></ul>
 </nav></section>
     
@@ -150,124 +150,134 @@ window.MathJax = {
   <div class="breadcrumbs"><a href="/mechanical-engineering">기계공학</a><span> / </span><a href="/mechanical-engineering/solid-mechanics">고체역학</a></div>
   <section class="content" id="content">
     <div class="content-header">
-      <h1 class="content-title">축하중</h1>
+      <h1 class="content-title">1. 기초</h1>
       <div class="content-meta">
         2021. 05. 06.
       </div>
     </div>
     <div class="content-text">
-      <h3 id="1-수직하중normal-load">1. 수직하중(normal load)</h3>
-<h4 id="11-수직응력normal-stress">1.1. 수직응력(normal stress)</h4>
-<p> 수직(또는 법선)수직하중 \(P\), 초기 단면적 \(A\)에 대한 수직응력 \(\sigma\).</p>
-
-<p>\[\begin{equation}
+      <h2 id="1-법선하중normal-load">1. 법선하중(normal load)</h2>
+<h3 id="11-법선응력normal-stress">1.1. 법선응력(normal stress)</h3>
+<p> 법선하중 \(P\), 초기 단면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.</p>
+<div class="c-scr">\[\begin{equation}
 \sigma = \frac{P}{A}
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<p> 수직응력의 방향에 따라 인장응력(tensile stress) \(\sigma_t\)와 압축응력(compressive stress) \(\sigma_c\)로 분류한다.</p>
-
-<p>\[\begin{equation}
+<p> 법선응력은 방향에 따라 인장응력(tensile stress) \(\sigma_t\)와 압축응력(compressive stress) \(\sigma_c\)이 있다.</p>
+<div class="c-scr">\[\begin{equation}
 \sigma_t = \frac{P_t}{A}, \quad \sigma_c = \frac{P_c}{A}
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<h5 id="111-지탱응력bearing-stress">1.1.1. 지탱응력(bearing stress)</h5>
-<p> 지탱응력(또는 베어링 응력)은 불규칙한 접촉면에 작용하는 평균응력이다. 하중 방향으로 투영된 면적 (또는 베어링 면적) \(A_b\)에 대한 지탱응력 \(\sigma_b\).
-\[\begin{equation}
+<h4 id="111-지탱응력bearing-stress">1.1.1. 지탱응력(bearing stress)</h4>
+<p> 지탱응력은 불규칙한 접촉면에 작용하는 평균응력이다. 하중 방향으로 투영된 면적 (또는 베어링 면적) \(A_b\)에 대한 지탱응력 \(\sigma_b\).</p>
+<div class="c-scr">\[\begin{equation}
 \sigma_b = \frac{P}{A_b}
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<h4 id="12-수직변형률normal-strain">1.2. 수직변형률(normal strain)</h4>
-<p> 변형량 \(\delta\), 초기 길이 \(L\)에 대한 수직변형률 \(\varepsilon\)의 식.</p>
-
-<p>\[\begin{equation}
+<h3 id="12-법선변형률normal-strain">1.2. 법선변형률(normal strain)</h3>
+<p> 변형량 \(\delta\), 초기 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.</p>
+<div class="c-scr">\[\begin{equation}
 \varepsilon = \frac{\delta}{L}
-\end{equation}\]</p>
+\end{equation}\]</div>
 
 <p> 변형량은 초기 길이 \(L_0\), 나중 길이 \(L_1\)에 대한 식 \(\delta=L_1-L_0\) 로 계산한다.</p>
 
-<h3 id="2-전단하중shearing-load">2. 전단하중(shearing load)</h3>
-<h4 id="21-전단응력shear-stress">2.1. 전단응력(shear stress)</h4>
+<h2 id="2-전단하중shearing-load">2. 전단하중(shearing load)</h2>
+<h3 id="21-전단응력shear-stress">2.1. 전단응력(shear stress)</h3>
 <p> 전단하중 \(V\), 전단면적 \(A\)에 대한 전단응력 \(\tau\)의 식.</p>
-
-<p>\[\begin{equation}
+<div class="c-scr">\[\begin{equation}
 \tau = \frac{V}{A}
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<h4 id="22-전단변형률shear-strain">2.2. 전단변형률(shear strain)</h4>
+<h3 id="22-전단변형률shear-strain">2.2. 전단변형률(shear strain)</h3>
 <p> 전단변형량 \(\delta\), 수직거리 \(L\)에 대한 전단변형률 \(\gamma\)의 식.</p>
-
-<p>\[\begin{equation}
+<div class="c-scr">\[\begin{equation}
 \gamma = \frac{\delta}{L}
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<h3 id="3-재료의-기계적-성질">3. 재료의 기계적 성질</h3>
-<h4 id="31-응력-변형률-선도stress-strain-diagram">3.1. 응력-변형률 선도(stress-strain diagram)</h4>
-<p>비례한도 (proportional limit)
-탄성한도
-항복점 (yeild point)
-항복응력 \(\sigma_y\)
-극한응력, 극한인장강도(ultimate tensile strength, UTS) \(\sigma_u\)</p>
+<h2 id="3-재료의-기계적-성질">3. 재료의 기계적 성질</h2>
+<h3 id="31-응력-변형률-선도stress-strain-diagram">3.1. 응력-변형률 선도(stress-strain diagram)</h3>
+<p>비례한도 (proportional limit)<br />
+탄성한도 (elastic limit)<br />
+항복점 (yield point)<br />
+항복응력 \(\sigma_y\)<br />
+극한응력, 극한인장강도(ultimate tensile strength, UTS) \(\sigma_u\)<br />
+파단 (rupture)</p>
 
-<p>신장량(elongation)
-단면감소율</p>
+<p>백분율 신장량(percent elongation) \(\frac{L_1-L_0}{L_0}\)<br />
+단면감소율 \(\frac{A_0-A_1}{A_0}\)</p>
 
-<p>단면변화량 \(\varDelta A\)
-체적변화량 \(\varDelta V\)
-체적탄성계수 \(K\)
-압축률 \(\beta\)</p>
+<p>단면변화율 \(\varDelta A/A = -2\nu\varepsilon\)<br />
+체적변화율 \(\varDelta V/V = \varepsilon_V = \varepsilon\left(1-2\nu \right)\)<br />
+체적탄성계수(bulk modulus) \(K\)<br />
+압축률 \(\beta = 1/K\)</p>
 
-<h4 id="32-진응력true-stress-진변형률true-strain">3.2. 진응력(true stress), 진변형률(true strain)</h4>
+<h3 id="32-진응력true-stress-진변형률true-strain">3.2. 진응력(true stress), 진변형률(true strain)</h3>
 <p>  공칭응력 (nominal stress) \(\sigma_n\), 공칭변형률 (nominal strain) \(\varepsilon_n\)에 대응하는 진응력 \(\sigma_t\), 진변형률 \(\varepsilon_t\)</p>
-
-<p>\[\begin{equation}
+<div class="c-scr">\[\begin{equation}
 \sigma_t = \sigma_n\left(1 + \varepsilon_n\right)
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<p>\[\begin{equation}
+<div class="c-scr">\[\begin{equation}
 \varepsilon_t = \ln{\left(1 + \varepsilon_n\right)}
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<h4 id="33-후크-법칙hooks-law">3.3. 후크 법칙(Hook's law)</h4>
+<h3 id="33-후크-법칙hooks-law">3.3. 후크 법칙(Hook's law)</h3>
 
-<p> 탄성계수(modulus of elasticity) \(E\)에 대해
-\[\begin{equation}
+<p> 탄성계수(modulus of elasticity) \(E\)에 대해</p>
+<div class="c-scr">\[\begin{equation}
 \sigma = E\varepsilon
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<p> 전단탄성계수 또는 강성계수(modulus of rigidity) \(G\)에 대해
-\[\begin{equation}
+<p> 전단탄성계수 또는 강성계수(modulus of rigidity) \(G\)에 대해</p>
+<div class="c-scr">\[\begin{equation}
 \tau = G\gamma
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<h4 id="34-푸아송-비poissons-ratio">3.4. 푸아송 비(Poisson's ratio)</h4>
+<h3 id="34-푸아송-비poissons-ratio">3.4. 푸아송 비(Poisson's ratio)</h3>
 
-<p>\[\begin{equation}
-\nu = - \frac{\varepsilon’}{\varepsilon} = \frac{1}{m}
-\end{equation}\]</p>
+<div class="c-scr">\[\begin{equation}
+\nu = - \frac{\varepsilon'}{\varepsilon} \lesssim \frac{1}{2}
+\end{equation}\]</div>
 
-<h4 id="35-관계식">3.5. 관계식</h4>
+<p> 푸아송 수</p>
+<div class="c-scr">\[\begin{equation}
+\nu = \frac{1}{m}
+\end{equation}\]</div>
 
-<p>\[\begin{equation}
-G = \frac{E}{2\left( 1 + \nu \right)}
-\end{equation}\]</p>
+<h3 id="35-관계식">3.5. 관계식</h3>
 
-<p>\[\begin{equation}
-mE = 2G\left(\ m + 1 \right) = 3K\left(\ m -2 \right)
-\end{equation}\]</p>
+<div class="c-scr">\[\begin{equation}
+\begin{aligned}
+E &amp; = 2G\left( 1 + \nu \right) \\
+  &amp; = 3K\left( 1 - 2\nu \right)
+\end{aligned}
+\end{equation}\]
+</div>
 
-<p>\[\begin{equation}
+<div class="c-scr">\[\begin{equation}
 K = \frac{GE}{9G-3E}
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<h4 id="35-열변형률">3.5. 열변형률</h4>
+<h3 id="35-열변형률">3.5. 열변형률</h3>
 <p> 열팽창계수 \(\alpha\), 온도변화 \(\varDelta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.</p>
 
-<p>\[\begin{equation}
+<div class="c-scr">\[\begin{equation}
 \varepsilon_T = \alpha\varDelta T
-\end{equation}\]</p>
+\end{equation}\]</div>
 
-<h3 id="4-설계">4. 설계</h3>
+<h2 id="4-설계">4. 설계</h2>
+<p> 안전계수\(S\)와 허용응력\(\sigma_a\)관계.</p>
 
+<p>연성 재료</p>
+<div class="c-scr">\[\begin{equation}
+\sigma_a= \frac{\sigma_y}{S}
+\end{equation}\]</div>
+
+<p>취성 재료</p>
+<div class="c-scr">\[\begin{equation}
+\sigma_a= \frac{\sigma_u}{S}
+\end{equation}\]</div>
 
     </div>
     <div class="content-footer">
@@ -277,8 +287,6 @@ K = \frac{GE}{9G-3E}
         </span>
 
         
-        
-        <span class="tag-word">축하중</span>
         
       </div>
     </div>
@@ -291,12 +299,22 @@ K = \frac{GE}{9G-3E}
   <div class="breadcrumbs"><a href="/mechanical-engineering">기계공학</a><span> / </span><a href="/mechanical-engineering/solid-mechanics">고체역학</a></div><div class="m-posts-stream">
   <ul class="data-ul" id="data-ul"><li class="data-li">
       <div class="gr-thumbnail">
+        <a href="/mechanical-engineering/solid-mechanics/solid-02/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/mechanical-engineering/solid-mechanics/solid-02/">2. 봉</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 5. 13.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li><li class="data-li">
+      <div class="gr-thumbnail">
         <a href="/mechanical-engineering/solid-mechanics/solid-01/">
           <img src="/assets/images/text_only.png" alt="thumbnail"/>
         </a>
       </div>
       <div class="gr-title">
-        <a href="/mechanical-engineering/solid-mechanics/solid-01/">축하중</a>
+        <a href="/mechanical-engineering/solid-mechanics/solid-01/">1. 기초</a>
       </div>
       <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 5. 6.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
     </li></ul>
@@ -307,7 +325,7 @@ K = \frac{GE}{9G-3E}
   const dataPerPage = Number('5');  // 페이지당 자료 수
   const buttonCount = Number('5');  // 최대 버튼 개수
 
-  const dataCount = Number('1');  // 총 자료 수
+  const dataCount = Number('2');  // 총 자료 수
   const pageCount = Math.ceil(dataCount / dataPerPage);  // 총 페이지 수
 
   //  get

@@ -1,0 +1,116 @@
+I"e<h3 id="1-수직하중normal-load">1. 수직하중(normal load)</h3>
+<h4 id="11-수직응력normal-stress">1.1. 수직응력(normal stress)</h4>
+<p> 수직(또는 법선)응력은 수직하중 \(P\), 초기 단면적 \(A\)에 대한 수직응력 \(\sigma\).</p>
+<div class="c-scr">\[\begin{equation}
+\sigma = \frac{P}{A}
+\end{equation}\]</div>
+
+<p> 수직응력의 방향에 따라 인장응력(tensile stress) \(\sigma_t\)와 압축응력(compressive stress) \(\sigma_c\)로 분류한다.</p>
+<div class="c-scr">\[\begin{equation}
+\sigma_t = \frac{P_t}{A}, \quad \sigma_c = \frac{P_c}{A}
+\end{equation}\]</div>
+
+<h5 id="111-지탱응력bearing-stress">1.1.1. 지탱응력(bearing stress)</h5>
+<p> 지탱응력(또는 베어링 응력)은 불규칙한 접촉면에 작용하는 평균응력이다. 하중 방향으로 투영된 면적 (또는 베어링 면적) \(A_b\)에 대한 지탱응력 \(\sigma_b\).</p>
+<div class="c-scr">\[\begin{equation}
+\sigma_b = \frac{P}{A_b}
+\end{equation}\]</div>
+
+<h4 id="12-수직변형률normal-strain">1.2. 수직변형률(normal strain)</h4>
+<p> 변형량 \(\delta\), 초기 길이 \(L\)에 대한 수직변형률 \(\varepsilon\)의 식.</p>
+<div class="c-scr">\[\begin{equation}
+\varepsilon = \frac{\delta}{L}
+\end{equation}\]</div>
+
+<p> 변형량은 초기 길이 \(L_0\), 나중 길이 \(L_1\)에 대한 식 \(\delta=L_1-L_0\) 로 계산한다.</p>
+
+<h3 id="2-전단하중shearing-load">2. 전단하중(shearing load)</h3>
+<h4 id="21-전단응력shear-stress">2.1. 전단응력(shear stress)</h4>
+<p> 전단하중 \(V\), 전단면적 \(A\)에 대한 전단응력 \(\tau\)의 식.</p>
+<div class="c-scr">\[\begin{equation}
+\tau = \frac{V}{A}
+\end{equation}\]</div>
+
+<h4 id="22-전단변형률shear-strain">2.2. 전단변형률(shear strain)</h4>
+<p> 전단변형량 \(\delta\), 수직거리 \(L\)에 대한 전단변형률 \(\gamma\)의 식.</p>
+<div class="c-scr">\[\begin{equation}
+\gamma = \frac{\delta}{L}
+\end{equation}\]</div>
+
+<h3 id="3-재료의-기계적-성질">3. 재료의 기계적 성질</h3>
+<h4 id="31-응력-변형률-선도stress-strain-diagram">3.1. 응력-변형률 선도(stress-strain diagram)</h4>
+<p>비례한도 (proportional limit)
+탄성한도
+항복점 (yeild point)
+항복응력 \(\sigma_y\)
+극한응력, 극한인장강도(ultimate tensile strength, UTS) \(\sigma_u\)</p>
+
+<p>신장량(elongation)
+단면감소율</p>
+
+<p>단면변화량 \(\varDelta A\)
+체적변화량 \(\varDelta V\)
+체적탄성계수 \(K\)
+압축률 \(\beta\)</p>
+
+<h4 id="32-진응력true-stress-진변형률true-strain">3.2. 진응력(true stress), 진변형률(true strain)</h4>
+<p>  공칭응력 (nominal stress) \(\sigma_n\), 공칭변형률 (nominal strain) \(\varepsilon_n\)에 대응하는 진응력 \(\sigma_t\), 진변형률 \(\varepsilon_t\)</p>
+<div class="c-scr">\[\begin{equation}
+\sigma_t = \sigma_n\left(1 + \varepsilon_n\right)
+\end{equation}\]</div>
+
+<div class="c-scr">\[\begin{equation}
+\varepsilon_t = \ln{\left(1 + \varepsilon_n\right)}
+\end{equation}\]</div>
+
+<h4 id="33-후크-법칙hooks-law">3.3. 후크 법칙(Hook's law)</h4>
+
+<p> 탄성계수(modulus of elasticity) \(E\)에 대해</p>
+<div class="c-scr">\[\begin{equation}
+\sigma = E\varepsilon
+\end{equation}\]</div>
+
+<p> 전단탄성계수 또는 강성계수(modulus of rigidity) \(G\)에 대해</p>
+<div class="c-scr">\[\begin{equation}
+\tau = G\gamma
+\end{equation}\]</div>
+
+<h4 id="34-푸아송-비poissons-ratio">3.4. 푸아송 비(Poisson's ratio)</h4>
+
+<div class="c-scr">\[\begin{equation}
+\nu = - \frac{\varepsilon'}{\varepsilon} \lesssim \frac{1}{2}
+\end{equation}\]</div>
+
+<p> 푸아송 수</p>
+<div class="c-scr">\[\begin{equation}
+\nu = \frac{1}{m}
+\end{equation}\]</div>
+
+<h4 id="35-관계식">3.5. 관계식</h4>
+
+<div class="c-scr">\[\begin{equation}
+E = 2G\left( 1 + \nu \right) \\ = 
+\end{equation}\]</div>
+
+<div class="c-scr">\[\begin{equation}
+G = \frac{E}{2\left( 1 + \nu \right)}
+\end{equation}\]</div>
+
+<div class="c-scr">\[\begin{equation}
+mE = 2G\left(\ m + 1 \right) = 3K\left(\ m -2 \right)
+\end{equation}\]</div>
+
+<div class="c-scr">\[\begin{equation}
+K = \frac{GE}{9G-3E}
+\end{equation}\]</div>
+
+<h4 id="35-열변형률">3.5. 열변형률</h4>
+<p> 열팽창계수 \(\alpha\), 온도변화 \(\varDelta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.</p>
+
+<div class="c-scr">\[\begin{equation}
+\varepsilon_T = \alpha\varDelta T
+\end{equation}\]</div>
+
+<h3 id="4-설계">4. 설계</h3>
+
+:ET
