@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link type="application/atom+xml" rel="alternate" href="https://kkooing.github.io/feed.xml" title="kkooing" />
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+</head>
+
+<body>
+  <nav class="l-skip-links">
+  Skip to 
+  <a href="#sl-content">content</a> | 
+  <a href="#sl-categories">category-list</a> |
+  <a href="#sl-pages">page-list</a>
+</nav>
+
+  <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+
+  <header class="l-header">
+  <div class="l-inner-wrap">
+    <div class="m-header">
+      <div class="hamburger-open">
+        <button class="btn-hamburger" onclick="sidebar_open()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+      <div class="site-logo">
+        <a class="site-name" href="/">
+          <img class="site-name-img" src="/assets/images/site_name.png" alt="kkooing">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+  <section class="l-center">
+  <div class="l-inner-wrap">
+
+    <section class="l-column-left" id="sidebar">
+      <div class="hamburger-close">
+        <button class="btn-hamburger" onclick="sidebar_close()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </div><div class="m-side-profile">
+  <div class="profile-img">
+    <img src="/assets/images/profile.png" alt="profile"/>
+  </div>
+  <div class="profile-info">
+    <a href="mailto:kdw7968@naver.com" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"/><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"/></svg>mail
+    </a><br/>
+    <a href="https://github.com/kkooing" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"/><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"/></svg>github
+    </a><br/>
+    <a href="https://goo.gl/maps/dGAyQJkjc2XxMfQ77" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" version="1" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M18.5,10.2c0,2.57-2.1,5.79-6.16,9.51L12,20.01l-0.34-0.31C7.6,15.99,5.5,12.77,5.5,10.2 c0-3.84,2.82-6.7,6.5-6.7S18.5,6.35,18.5,10.2z" fill-opacity=".3"/><path d="M12,2c4.2,0,8,3.22,8,8.2c0,3.32-2.67,7.25-8,11.8c-5.33-4.55-8-8.48-8-11.8C4,5.22,7.8,2,12,2z M18,10.2 C18,6.57,15.35,4,12,4s-6,2.57-6,6.2c0,2.34,1.95,5.44,6,9.14C16.05,15.64,18,12.54,18,10.2z M12,12c-1.1,0-2-0.9-2-2s0.9-2,2-2 s2,0.9,2,2S13.1,12,12,12z"/><path d="M0,0h24v24H0V0z" fill="none"/></svg>S. KR
+    </a>
+  </div>
+</div><nav class="m-side-pages" id="sl-pages">
+  <div class="widget-title">page</div>
+  
+  <button class="btn-home" onclick="document.location='/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-6H9v6H7v-7.81l5-4.5 5 4.5V18z"/><path d="M7 10.19V18h2v-6h6v6h2v-7.81l-5-4.5z" opacity=".3"/></svg>
+  </button>
+  
+  <button class="btn-about" onclick="document.location='/about/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm1 13h-2v-6h2v6zm0-8h-2V7h2v2z" opacity=".3"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+  </button>
+  
+  <button class="btn-archive" onclick="document.location='/archive/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 7.5l4 4 4-4V4H8zm0 9V20h8v-3.5l-4-4z" opacity=".3"/><path d="M18 2H6v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2zm-2 14.5V20H8v-3.5l4-4 4 4zm0-9l-4 4-4-4V4h8v3.5z"/></svg>
+  </button>
+
+  <button class="btn-search" onclick="document.location='/search/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+  </button>
+</nav>
+
+
+<nav class="m-side-categories" id="sl-categories">
+  <div class="widget-title">category</div>
+  <ul><li><div class="menu"><a href="/computer-language">
+          <div>컴퓨터 언어</div>
+        </a></div><ul><li><div class="menu"><a href="/computer-language/programming">
+          <div>프로그래밍</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/computer-language/programming/cpp">
+          <div>C++<span class="posts-count">[1]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">Python<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Ruby<span class="posts-count">[0]</span></div></li></ul></li><li><div class="menu no-post">스크립트</div><ul><li><div class="menu terminal-menu no-post">Bash<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Batch<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">PowerShell<span class="posts-count">[0]</span></div></li></ul></li><li><div class="menu"><a href="/computer-language/etc">
+          <div>기타</div>
+        </a></div><ul><li><div class="menu terminal-menu no-post">HTML<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu"><a href="/computer-language/etc/css">
+          <div>css<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/computer-language/etc/kramdown">
+          <div>Kramdown<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/computer-language/etc/latex">
+          <div>LaTeX<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">컨테이너<span class="posts-count">[0]</span></div></li></ul></li></ul></li><hr/><li><div class="selected-menu-marker">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64v6.72L15.27 12z" opacity=".3"/><path d="M8 19l11-7L8 5v14zm2-10.36L15.27 12 10 15.36V8.64z"/></svg>
+    </div><div class="menu selected-menu"><a href="/it">
+          <div>IT</div>
+        </a></div><ul><li><div class="selected-menu-marker">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64v6.72L15.27 12z" opacity=".3"/><path d="M8 19l11-7L8 5v14zm2-10.36L15.27 12 10 15.36V8.64z"/></svg>
+    </div><div class="menu selected-menu terminal-menu"><a href="/it/jekyll-blog">
+          <div>Jekyll 블로그<span class="posts-count">[6]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/it/raspberry-pi">
+          <div>라즈베리파이<span class="posts-count">[1]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/it/etc">
+          <div>기타<span class="posts-count">[1]</span></div>
+        </a></div></li></ul></li><hr/><li><div class="menu"><a href="/mechanical-engineering">
+          <div>기계공학</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/mechanical-engineering/solid-mechanics">
+          <div>고체역학<span class="posts-count">[3]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">기계설계<span class="posts-count">[0]</span></div></li></ul></li><hr/><li><div class="menu no-post">도구</div><ul><li><div class="menu terminal-menu no-post">AutoCAD<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">인벤터<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Affinity Designer<span class="posts-count">[0]</span></div></li></ul></li></ul>
+</nav></section>
+    
+    <section class="l-column-right">
+      <main class="m-main m-post">
+  <div class="breadcrumbs"><a href="/it">IT</a><span> / </span><a href="/it/jekyll-blog">Jekyll 블로그</a></div>
+  <section class="content" id="content">
+    <div class="content-header">
+      <h1 class="content-title">샘플 html 태그</h1>
+      <div class="content-meta">
+        2021. 04. 07.
+      </div>
+    </div>
+    <div class="content-text">
+      <h2 id="1-단락-요소">1. 단락 요소</h2>
+<h6 id="h1--h6">&lt;h1&gt; ~ &lt;h6&gt;</h6>
+<h1>&lt;h1&gt;</h1>
+<h2>&lt;h2&gt;</h2>
+<h3>&lt;h3&gt;</h3>
+<h4>&lt;h4&gt;</h4>
+<h5>&lt;h5&gt;</h5>
+<h6>&lt;h6&gt;</h6>
+
+<h6 id="address">&lt;address&gt;</h6>
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
+Visit us at:<br />
+Example.com<br />
+Box 564, Disneyland<br />
+USA
+</address>
+
+<h2 id="2-그룹-요소">2. 그룹 요소</h2>
+<h6 id="p">&lt;p&gt;</h6>
+<p>This is some text in a paragraph. This is some text in a paragraph.<br />
+This is some text in a paragraph. This is some text in a paragraph.<br />다음은 이러한 스택이 웹 디자인에 사용되는 방식과 모든 웹 페이지에 사용해야하는 이유를 포함하여 "글꼴 스택"이라는 CSS 용어의 정의입니다.
+</p>
+<p>This is some text in a paragraph.</p>
+<p>This is some text in a paragraph.</p>
+
+<h6 id="hr">&lt;hr&gt;</h6>
+<hr />
+
+<h6 id="pre">&lt;pre&gt;</h6>
+<pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int i, n, cube;
+  cout &lt;&lt; "Input the number of terms : ";
+  cin &gt;&gt; n;
+  for (i = 1; i &lt;= n; i++) {
+    cube = i * i * i;
+    cout &lt;&lt; "Number is: " &lt;&lt; i &lt;&lt; " and its cube is: " &lt;&lt; cube &lt;&lt; endl;
+  }
+}
+1lI|ㅣ, 0Ooㅇ
+|abcdefghijklmnopqrstuvwxyz|
+|다람쥐 헌 쳇바퀴에 타고파.|
+</pre>
+
+<h6 id="blockquote">&lt;blockquote&gt;</h6>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in <cite>100</cite> countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+
+<h6 id="ol">&lt;ol&gt;</h6>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h6 id="ul">&lt;ul&gt;</h6>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h6 id="dl">&lt;dl&gt;</h6>
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+<h6 id="figure-figcaption-img">&lt;figure&gt;, &lt;figcaption&gt;, &lt;img&gt;</h6>
+<figure>
+  <img src="https://www.w3schools.com/tags/pic_trulli.jpg" alt="Trulli" style="width:100%" />
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+<h2 id="3-택스트-요소">3. 택스트 요소</h2>
+<h6 id="a">&lt;a&gt;</h6>
+<p><a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
+
+<h6 id="em">&lt;em&gt;</h6>
+<p>You <em>have</em> to hurry up!</p>
+
+<h6 id="strong">&lt;strong&gt;</h6>
+<p>This text is <strong>important!</strong></p>
+
+<h6 id="small">&lt;small&gt;</h6>
+<p>This is some <small>smaller text.</small></p>
+
+<h6 id="cite">&lt;cite&gt;</h6>
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+<h6 id="q">&lt;q&gt;</h6>
+<p>WWF's goal is to:
+<q>Build a future where people live in harmony with nature.</q>
+We hope they succeed.</p>
+
+<h6 id="dfn">&lt;dfn&gt;</h6>
+<p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+<h6 id="abbr">&lt;abbr&gt;</h6>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<h6 id="ruby-rt">&lt;ruby&gt;, &lt;rt&gt;</h6>
+<p><ruby>
+漢 <rt> ㄏㄢˋ </rt>
+</ruby></p>
+
+<h6 id="data">&lt;data&gt;</h6>
+<ul>
+  <li><data value="21053">Cherry Tomato</data></li>
+  <li><data value="21054">Beef Tomato</data></li>
+  <li><data value="21055">Snack Tomato</data></li>
+</ul>
+
+<h6 id="time">&lt;time&gt;</h6>
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+<h6 id="code">&lt;code&gt;</h6>
+<p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+<h6 id="var">&lt;var&gt;</h6>
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+<h6 id="samp">&lt;samp&gt;</h6>
+<p><samp>File not found.<br />Press F1 to continue</samp></p>
+
+<h6 id="kbd">&lt;kbd&gt;</h6>
+<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+<h6 id="sub-sup">&lt;sub&gt;, &lt;sup&gt;</h6>
+<p>This text contains <sub>subscript</sub><sup>superscript</sup> text.</p>
+<p>This text contains <sup>superscript</sup> text.</p>
+
+<h6 id="mark">&lt;mark&gt;</h6>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<h6 id="bdi-bdo">&lt;bdi&gt;, &lt;bdo&gt;</h6>
+<p>User <bdi>إيان</bdi>: 90 points<br />
+<bdo dir="rtl">
+This text will go right-to-left.
+</bdo></p>
+
+<h6 id="span">&lt;span&gt;</h6>
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+<h6 id="br">&lt;br&gt;</h6>
+<p>To force<br /> line breaks<br /> in a text</p>
+
+<h6 id="wbr">&lt;wbr&gt;</h6>
+<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr />longwordthatwillbreakatspecific<wbr />placeswhenthebrowserwindowisresized.</p>
+
+<h6 id="s---정정-지양">&lt;s&gt; - 정정 (지양)</h6>
+<p><s>Only 50 tickets left!</s></p>
+
+<h6 id="i---기울임-무의미-부각됨-지양">&lt;i&gt; - 기울임 (무의미, 부각됨) (지양)</h6>
+<p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+
+<h6 id="b---두껍게-무의미-지양">&lt;b&gt; - 두껍게 (무의미) (지양)</h6>
+<p>This is normal text - <b>and this is bold text</b>.</p>
+
+<h6 id="u---언더라인-지양">&lt;u&gt; - 언더라인 (지양)</h6>
+<p>This is some <u>mispeled</u> text.</p>
+
+<h2 id="3-편집-요소">3. 편집 요소</h2>
+<h6 id="ins-del">&lt;ins&gt;, &lt;del&gt;</h6>
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+<h2 id="4-임베드-요소">4. 임베드 요소</h2>
+<h6 id="picture-source">&lt;picture&gt;, &lt;source&gt;</h6>
+<p><span style="color: red;">&lt;picture&gt;</span><br /></p>
+<picture>
+  <source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg" />
+  <source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg" />
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;" />
+</picture>
+
+<h6 id="iframe">&lt;iframe&gt;</h6>
+<iframe src="http://192.168.0.152" title="W3Schools Free Online Web Tutorials"></iframe>
+
+<h6 id="embed---비추천">&lt;embed&gt; - 비추천</h6>
+<h6 id="object-param">&lt;object&gt;, &lt;param&gt;</h6>
+
+<h6 id="video">&lt;video&gt;</h6>
+<video width="320" height="240" controls="">
+  <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+  <source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
+<h6 id="audio">&lt;audio&gt;</h6>
+<audio controls="">
+  <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
+  <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<h6 id="track">&lt;track&gt;</h6>
+<video width="320" height="240" controls="">
+  <source src="https://www.w3schools.com/tags/forrest_gump.mp4" type="video/mp4" />
+  <source src="https://www.w3schools.com/tags/forrest_gump.ogg" type="video/ogg" />
+  <track src="https://www.w3schools.com/tags/fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English" />
+  <track src="https://www.w3schools.com/tags/fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian" />
+</video>
+
+<h6 id="map-area">&lt;map&gt;, &lt;area&gt;</h6>
+<p><img src="https://www.w3schools.com/tags/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" /></p>
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm" />
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" />
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm" />
+</map>
+
+<h2 id="5-표-요소">5. 표 요소</h2>
+<h6 id="table-caption-thead-tbody-tfoot-tr-td-th">&lt;table&gt;, &lt;caption&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h6>
+<table>
+  <caption>Tbl.1 - Monthly savings</caption>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h6 id="colgroup-col">&lt;colgroup&gt;, &lt;col&gt;</h6>
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red" />
+    <col style="background-color:yellow" />
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+</table>
+
+<h2 id="6-폼-요소">6. 폼 요소</h2>
+<h6 id="form-label-input-type">&lt;form&gt;, &lt;label&gt;, &lt;input type=”“&gt;</h6>
+<form action="/action_page.php">
+  <label for="i-hidden">text:</label>
+  <input type="hidden" id="i-hidden" name="i-hidden" value="Submit" /><br />
+  <label for="i-text">text:</label>
+  <input type="text" id="i-text" name="i-text" /><br />
+  <label for="i-search">search:</label>
+  <input type="search" id="i-search" name="i-search" /><br />
+  <label for="i-tel">tel:</label>
+  <input type="tel" id="i-tel" name="i-tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="" /><br />
+  <label for="i-url">url:</label>
+  <input type="url" id="i-url" name="i-url" /><br />
+  <label for="i-email">email:</label>
+  <input type="email" id="i-email" name="i-email" /><br />
+  <label for="i-password">password:</label>
+  <input type="password" id="i-password" name="i-password" value="sadf" /><br />
+  <br />
+  <label for="i-date">date:</label>
+  <input type="date" id="i-date" name="i-date" /><br />
+  <label for="i-month">month:</label>
+  <input type="month" id="i-month" name="i-month" /><br />
+  <label for="i-week">week:</label>
+  <input type="week" id="i-week" name="i-week" /><br />
+  <label for="i-time">time:</label>
+  <input type="time" id="i-time" name="i-time" /><br />
+  <label for="i-datetime-local">datetime-local:</label>
+  <input type="datetime-local" id="i-datetime-local" name="i-datetime-local" /><br />
+  <br />
+  <label for="i-number">number:</label>
+  <input type="number" id="i-number" name="i-number" min="1" max="5" /><br />
+  <label for="i-range">range:</label>
+  <input type="range" id="i-range" name="i-range" min="0" max="50" /><br />
+  <label for="i-color">color:</label>
+  <input type="color" id="i-color" name="i-color" value="#ff0000" /><br />
+  <br />
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+  <label for="vehicle1"> I have a bike</label><br />
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+  <label for="vehicle2"> I have a car</label><br />
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+  <label for="vehicle3"> I have a boat</label><br />
+  <br />
+  <input type="radio" id="male" name="gender" value="male" />
+  <label for="male">Male</label><br />
+  <input type="radio" id="female" name="gender" value="female" />
+  <label for="female">Female</label><br />
+  <input type="radio" id="other" name="gender" value="other" />
+  <label for="other">Other</label><br />
+  <br />
+  <label for="i-file">file:</label>
+  <input type="file" id="i-file" name="i-file" /><br />
+  <label for="i-image">image:</label>
+  <input type="image" id="i-image" name="i-image" /><br />
+  <label for="i-button">button:</label>
+  <input type="button" onclick="alert('Hello World!')" value="Click Me!" /><br />
+  <label for="i-submit-reset">submit, reset:</label>
+  <input type="submit" value="Submit" />
+  <input type="reset" />
+</form>
+
+<h6 id="button">&lt;button&gt;</h6>
+<p><button type="button">Click Me!</button></p>
+
+<h6 id="select-optgroup-option">&lt;select&gt;, &lt;optgroup&gt;, &lt;option&gt;</h6>
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br /><br />
+  <input type="submit" value="Submit" />
+</form>
+
+<h6 id="datalist">&lt;datalist&gt;</h6>
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser" />
+  <datalist id="browsers">
+    <option value="Edge" />
+    <option value="Firefox" />
+    <option value="Chrome" />
+    <option value="Opera" />
+    <option value="Safari" />
+  </datalist>
+  <input type="submit" />
+</form>
+
+<h6 id="textarea">&lt;textarea&gt;</h6>
+<form action="/action_page.php">
+<label for="w3review">Review of W3Schools:</label>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+  </textarea>
+  <br /><br />
+  <input type="submit" value="Submit" />
+</form>
+
+<h6 id="output">&lt;output&gt;</h6>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50" />
++<input type="number" id="b" value="25" />
+=<output name="x" for="a b"></output>
+</form>
+
+<h6 id="progress">&lt;progress&gt;</h6>
+<progress id="file" value="32" max="100"> 32% </progress>
+
+<h6 id="meter">&lt;meter&gt;</h6>
+<p><label for="disk_c">Disk usage C:</label></p>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+
+<h6 id="fieldset-legend">&lt;fieldset&gt;, &lt;legend&gt;</h6>
+<form action="/action_page.php">
+ <fieldset>
+  <legend>Personalia:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br /><br />
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" /><br /><br />
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" /><br /><br />
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday" /><br /><br />
+  <input type="submit" value="Submit" />
+ </fieldset>
+</form>
+
+<h2 id="7-상호작용-요소">7. 상호작용 요소</h2>
+<h6 id="details-summary">&lt;details&gt;, &lt;summary&gt;</h6>
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+
+<h6 id="dialog">&lt;dialog&gt;</h6>
+<p>This is some text.</p>
+
+<p>This is some text.</p>
+
+<dialog open="">This is an open dialog window</dialog>
+
+<p>This is some text.</p>
+
+<p>This is some text.</p>
+
+<h2 id="8-스크립트-요소">8. 스크립트 요소</h2>
+<h6 id="script">&lt;script&gt;</h6>
+<p><span style="color: red;">&lt;script&gt;</span><br /></p>
+
+<h6 id="noscript">&lt;noscript&gt;</h6>
+<p><span style="color: red;">&lt;noscript&gt;</span><br />
+&lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;</p>
+
+<h6 id="template">&lt;template&gt;</h6>
+
+    </div>
+    <div class="content-footer">
+      <div class="tag-list">
+        <span class="tag-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><path d="M20,10V8h-4V4h-2v4h-4V4H8v4H4v2h4v4H4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4H20z M14,14h-4v-4h4V14z"/></g></svg>
+        </span>
+
+        
+        
+        <span class="tag-word">blog</span>
+        
+        <span class="tag-word">html</span>
+        
+      </div>
+    </div>
+  </section>
+</main><section class="m-comment">
+  <div>
+    Comment
+  </div>
+</section><section class="m-related">
+  <div class="breadcrumbs"><a href="/it">IT</a><span> / </span><a href="/it/jekyll-blog">Jekyll 블로그</a></div><div class="m-posts-stream">
+  <ul class="data-ul" id="data-ul"><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/it/jekyll-blog/sample-font/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/it/jekyll-blog/sample-font/">샘플 폰트</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 4. 13.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/it/jekyll-blog/sample-font-size/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/it/jekyll-blog/sample-font-size/">샘플 폰트 크기</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 4. 13.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/it/jekyll-blog/sample-tags/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/it/jekyll-blog/sample-tags/">샘플 html 태그</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 4. 7.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/it/jekyll-blog/jekyll-blog-2/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/it/jekyll-blog/jekyll-blog-2/">Jekyll 블로그 잡다 기록</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 3. 31.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/it/jekyll-blog/liquid/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/it/jekyll-blog/liquid/">Liquid 문법</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 3. 19.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/it/jekyll-blog/jekyll-blog-1/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/it/jekyll-blog/jekyll-blog-1/">Jekyll로 GitHub Pages 블로그 만들기</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 3. 17.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li></ul>
+
+  <div id="m-pagination"></div>
+
+<script>
+  const dataPerPage = Number('5');  // 페이지당 자료 수
+  const buttonCount = Number('5');  // 최대 버튼 개수
+
+  const dataCount = Number('6');  // 총 자료 수
+  const pageCount = Math.ceil(dataCount / dataPerPage);  // 총 페이지 수
+
+  //  get
+  let data_ul = document.getElementById("data-ul");
+  let data_li_array = document.getElementsByClassName("data-li");
+  let m_pagination = document.getElementById("m-pagination");
+  
+  // let
+  m_pagination.innerHTML = 
+    "<div id=\"wrap-btn-first\">" +
+      "<button id=\"btn-first\" onclick=\"gotoPage(1)\">1</button>&#133;" +
+    "</div>" +
+    "<div id=\"group-btn-page\"></div>" +
+    "<div id=\"wrap-btn-last\">" +
+      "&#133;<button id=\"btn-last\" onclick=\"gotoPage(" + pageCount + ")\">" + pageCount + "</button>" +
+    "</div>";
+  let wrap_btn_first = document.getElementById("wrap-btn-first");
+  let wrap_btn_last = document.getElementById("wrap-btn-last");
+  let group_btn_page = document.getElementById("group-btn-page");
+  for (let i = 0; i < pageCount; i++) {
+    group_btn_page.innerHTML += "<button class=\"btn-page\" onclick=\"gotoPage(" + (i+1) + ")\">" + (i+1) + "</button>";
+  }
+  let btn_page_array = document.getElementsByClassName("btn-page");
+
+  gotoPage(1);
+
+  function gotoPage(page) {
+    // li 관리
+    for (let i of data_li_array) { i.style = "display: none;"; }
+
+    let data_begin = (page - 1) * dataPerPage;
+    let data_end = (page * dataPerPage) - 1;
+    if (data_end >= dataCount) { data_end = dataCount - 1 }
+
+    for (let i = data_begin; i <= data_end; i++) { data_li_array[i].style = "display: grid;"; }
+
+    // button 관리
+    if (pageCount <= buttonCount) {
+      wrap_btn_first.style = "display: none;";
+      wrap_btn_last.style = "display: none;";
+    }
+    else {
+      for (let i of btn_page_array) { i.style = "display: none;"; }
+      let btn_begin = Math.ceil(page - ((buttonCount - 1) / 2));
+      let btn_end = Math.ceil(page + ((buttonCount - 1) / 2));
+      if ( btn_begin <= 1 ) {
+        btn_end += 1 - btn_begin; btn_begin = 1;
+        wrap_btn_first.style = "display: none;";
+      }
+      else {
+        wrap_btn_first.style = "display: inline-block;";
+      }
+      if ( btn_end >= pageCount ) {
+        btn_begin -= btn_end - pageCount; btn_end = pageCount;
+        wrap_btn_last.style = "display: none;";
+      }
+      else {
+        wrap_btn_last.style = "display: inline-block;";
+      }
+      for (let i = btn_begin - 1; i < btn_end; i++) { btn_page_array[i].style = "display: inline-block;"; }
+    }
+    for (let i of btn_page_array) { i.className = "btn-page"; }
+    btn_page_array[page-1].className = "btn-page active";
+
+  }
+</script>
+</section><section class="m-featured">
+  <div>
+    Featured
+  </div>
+</section></section>
+
+  </div>
+</section>
+  <footer class="l-footer">
+  <div class="l-inner-wrap">
+    <div class="copyright">
+      &copy;&nbsp;2020-2021&nbsp;<a href="https://github.com/kkooing"
+        target="_blank" rel="nofollow">kkooing</a>.
+    </div>
+  </div>
+</footer>
+
+  <script>
+  function sidebar_open() {
+    document.getElementById("sidebar").style.display = "block";
+  }
+
+  function sidebar_close() {
+    document.getElementById("sidebar").style.display = "none";
+  }
+
+  
+</script>
+</body>
+
+</html>

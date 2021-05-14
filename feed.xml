@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-14T22:01:01+09:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">단면치</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/plane-area-properties/" rel="alternate" type="text/html" title="단면치" /><published>2021-05-14T00:00:00+09:00</published><updated>2021-05-14T00:00:00+09:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/plane-area-properties</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/plane-area-properties/">&lt;figure class=&quot;&quot; style=&quot;display: block; text-align: center;&quot;&gt;
+  &lt;a href=&quot;/assets/images/Untitled.svg&quot; style=&quot;display: initial;&quot;&gt;
+    &lt;img src=&quot;/assets/images/Untitled.svg&quot; alt=&quot;기본방식 첫 페이지&quot; style=&quot;width: auto;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><summary type="html"></summary></entry><entry><title type="html">2. 봉</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02/" rel="alternate" type="text/html" title="2. 봉" /><published>2021-05-13T00:00:00+09:00</published><updated>2021-05-13T00:00:00+09:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02/">&lt;p&gt;봉(rod): 축방향 하중(axial force) 지지&lt;br /&gt;
+보(beam): 굽힘 모멘트(bending moment) 지지&lt;br /&gt;
+축(shaft): 비틀림 모멘트(twisting moment, torque) 지지&lt;/p&gt;
+
+&lt;h2 id=&quot;1-법선하중normal-load&quot;&gt;1. 법선하중(normal load)&lt;/h2&gt;
+&lt;h3 id=&quot;11-법선응력normal-stress&quot;&gt;1.1. 법선응력(normal stress)&lt;/h3&gt;
+&lt;p&gt; 법선하중 \(P\), 초기 단면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma = \frac{P}{A}
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt; 법선응력은 방향에 따라 인장응력(tensile stress) \(\sigma_t\)와 압축응력(compressive stress) \(\sigma_c\)이 있다.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_t = \frac{P_t}{A}, \quad \sigma_c = \frac{P_c}{A}
+\end{equation}\]&lt;/div&gt;
+&lt;p&gt;F&lt;/p&gt;
+&lt;h4 id=&quot;111-지탱응력bearing-stress&quot;&gt;1.1.1. 지탱응력(bearing stress)&lt;/h4&gt;
+&lt;p&gt; 지탱응력은 불규칙한 접촉면에 작용하는 평균응력이다. 하중 방향으로 투영된 면적 (또는 베어링 면적) \(A_b\)에 대한 지탱응력 \(\sigma_b\).&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_b = \frac{P}{A_b}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;12-법선변형률normal-strain&quot;&gt;1.2. 법선변형률(normal strain)&lt;/h3&gt;
+&lt;p&gt; 변형량 \(\delta\), 초기 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\varepsilon = \frac{\delta}{L}
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt; 변형량은 초기 길이 \(L_0\), 나중 길이 \(L_1\)에 대한 식 \(\delta=L_1-L_0\) 로 계산한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-전단하중shearing-load&quot;&gt;2. 전단하중(shearing load)&lt;/h2&gt;
+&lt;h3 id=&quot;21-전단응력shear-stress&quot;&gt;2.1. 전단응력(shear stress)&lt;/h3&gt;
+&lt;p&gt; 전단하중 \(V\), 전단면적 \(A\)에 대한 전단응력 \(\tau\)의 식.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\tau = \frac{V}{A}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;22-전단변형률shear-strain&quot;&gt;2.2. 전단변형률(shear strain)&lt;/h3&gt;
+&lt;p&gt; 전단변형량 \(\delta\), 수직거리 \(L\)에 대한 전단변형률 \(\gamma\)의 식.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\gamma = \frac{\delta}{L}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h2 id=&quot;3-재료의-기계적-성질&quot;&gt;3. 재료의 기계적 성질&lt;/h2&gt;
+&lt;h3 id=&quot;31-응력-변형률-선도stress-strain-diagram&quot;&gt;3.1. 응력-변형률 선도(stress-strain diagram)&lt;/h3&gt;
+&lt;p&gt;비례한도 (proportional limit)&lt;br /&gt;
+탄성한도 (elastic limit)&lt;br /&gt;
+항복점 (yield point)&lt;br /&gt;
+항복응력 \(\sigma_y\)&lt;br /&gt;
+극한응력, 극한인장강도(ultimate tensile strength, UTS) \(\sigma_u\)&lt;br /&gt;
+파단 (rupture)&lt;/p&gt;
+
+&lt;p&gt;백분율 신장량(percent elongation) \(\frac{L_1-L_0}{L_0}\)&lt;br /&gt;
+단면감소율 \(\frac{A_0-A_1}{A_0}\)&lt;/p&gt;
+
+&lt;p&gt;단면변화율 \(\varDelta A/A = -2\nu\varepsilon\)&lt;br /&gt;
+체적변화율 \(\varDelta V/V = \varepsilon_V = \varepsilon\left(1-2\nu \right)\)&lt;br /&gt;
+체적탄성계수(bulk modulus) \(K\)&lt;br /&gt;
+압축률 \(\beta = 1/K\)&lt;/p&gt;
+
+&lt;h3 id=&quot;32-진응력true-stress-진변형률true-strain&quot;&gt;3.2. 진응력(true stress), 진변형률(true strain)&lt;/h3&gt;
+&lt;p&gt;  공칭응력 (nominal stress) \(\sigma_n\), 공칭변형률 (nominal strain) \(\varepsilon_n\)에 대응하는 진응력 \(\sigma_t\), 진변형률 \(\varepsilon_t\)&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_t = \sigma_n\left(1 + \varepsilon_n\right)
+\end{equation}\]&lt;/div&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\varepsilon_t = \ln{\left(1 + \varepsilon_n\right)}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;33-후크-법칙hooks-law&quot;&gt;3.3. 후크 법칙(Hook's law)&lt;/h3&gt;
+
+&lt;p&gt; 탄성계수(modulus of elasticity) \(E\)에 대해&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma = E\varepsilon
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt; 전단탄성계수 또는 강성계수(modulus of rigidity) \(G\)에 대해&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\tau = G\gamma
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;34-푸아송-비poissons-ratio&quot;&gt;3.4. 푸아송 비(Poisson's ratio)&lt;/h3&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\nu = - \frac{\varepsilon'}{\varepsilon} \lesssim \frac{1}{2}
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt; 푸아송 수&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\nu = \frac{1}{m}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;35-관계식&quot;&gt;3.5. 관계식&lt;/h3&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\begin{aligned}
+E &amp;amp; = 2G\left( 1 + \nu \right) \\
+  &amp;amp; = 3K\left( 1 - 2\nu \right)
+\end{aligned}
+\end{equation}\]
+&lt;/div&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+K = \frac{GE}{9G-3E}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;35-열변형률&quot;&gt;3.5. 열변형률&lt;/h3&gt;
+&lt;p&gt; 열팽창계수 \(\alpha\), 온도변화 \(\varDelta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.&lt;/p&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\varepsilon_T = \alpha\varDelta T
+\end{equation}\]&lt;/div&gt;
+
+&lt;h2 id=&quot;4-설계&quot;&gt;4. 설계&lt;/h2&gt;
+&lt;p&gt; 안전계수\(S\)와 허용응력\(\sigma_a\)관계.&lt;/p&gt;
+
+&lt;p&gt;연성 재료&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_a= \frac{\sigma_y}{S}
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt;취성 재료&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_a= \frac{\sigma_u}{S}
+\end{equation}\]&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><summary type="html">봉(rod): 축방향 하중(axial force) 지지 보(beam): 굽힘 모멘트(bending moment) 지지 축(shaft): 비틀림 모멘트(twisting moment, torque) 지지</summary></entry><entry><title type="html">번역: TeX and LaTeX Support</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex-trans/" rel="alternate" type="text/html" title="번역: TeX and LaTeX Support" /><published>2021-05-10T00:00:00+09:00</published><updated>2021-05-10T00:00:00+09:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex-trans</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex-trans/">&lt;p&gt;원문: &lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/index.html&quot;&gt;TeX and LaTeX Support&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;0-tex-latex-지원&quot;&gt;0. TeX, LaTeX 지원&lt;/h2&gt;
+&lt;p&gt; MathJax는 두 가지 기능이 포함되어있다. 첫 번째는 문서에서 수식 구문(ex: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt;)을 찾는 것이고, 두 번째는 Tex 표현식을 MathJax 내부 형식으로 변환하고 웹 페이지에 표시하는것 이다. 버전2 에서는 이 두 가지 기능이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tex2jax&lt;/code&gt;전처리기와 TeX input jax로 분리되어 있었지만, 버전3 에서는 통합되었다.&lt;/p&gt;
+
+&lt;p&gt; TeX input jax는 원하는 수식 구문 마커를 찾도록 설정할 수 있다. &lt;a href=&quot;http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options&quot;&gt;TeX configuration options&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; MathJax는 수식 구문을 MathJax 내부 형식(기본적으로 MathML)으로 변환한다. 또한 추가 기능을 위한 확장을 사용할 수 있다. &lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/extensions.html#tex-extensions&quot;&gt;TeX and LaTeX extensions&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1-실제-tex와의-차이&quot;&gt;1. 실제 TeX와의 차이&lt;/h2&gt;
+&lt;p&gt; 웹 표현을 위한 MathJax는 인쇄를 위한 TeX 지원에 한계가 있다. 그래서 실제 TeX/LaTeX와 MathJax의 TeX 입력에는 일부 차이점이 있다.&lt;/p&gt;
+
+&lt;p&gt; 우선, MathJax는 text모드 없이 오직 math모드만을 구현한다. 문서의 텍스트 처리는 표준 HTML 태그로 이루어져야 하고, MathJax는 수식 부분만 처리한다. 그러므로 MathJax는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\emph&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{enumerate}...\end{enumerate}&lt;/code&gt; 등의 text모드 매크로나 환경을 구현하지 못한다. 이러한 형식 지정 작업을 위해서는 HTML을 사용해야한다. LaTeX-to-HTML변환기가 필요하다면 MathJax 이외의 옵션을 고려해야한다.&lt;/p&gt;
+
+&lt;p&gt; 위 규칙에서 두 가지 예외가 있는데 첫째는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ref&lt;/code&gt; 이고, 둘째는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;기호를 이스케이프 하기 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\text{}&lt;/code&gt;같은 매크로이다. 하지만 일반적으로 이러한 텍스트 블록 내에서 다른 매크로는 작동하지 않는다. 즉, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\text{some \textbf{bold} text}&lt;/code&gt;는 &quot;some \textbf{bold} text&quot; 로 축력된다.&lt;/p&gt;
+
+&lt;p&gt; 버전3.1에서는 text모드 매크로를 위한 확장 기능이 있다.&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/extensions/textmacros.html#tex-textmacros&quot;&gt;textmacros&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; 두 번째로, MathJax의 일부 기능은 제한될 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-texlatex-수식-구문-마커&quot;&gt;2. TeX/LaTeX 수식 구문 마커&lt;/h2&gt;
+&lt;p&gt; MathJax에서 수식을 입력하는 방법은 display모드를 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[...\]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt;와 text모드를 위한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(...\)&lt;/code&gt; 가 있다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$...$&lt;/code&gt;를 text모드 입력 구문으로 사용하려면 아래처럼 설정해야한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;inlineMath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt; 수식 내부에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{equation}...\end{equation}&lt;/code&gt; 같은 환경명령을 실행할 수 있게 설정할 수 있다.. (&lt;a href=&quot;http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options&quot;&gt;TeX Input Processor Options&lt;/a&gt;의 processEnvironments 설정)&lt;/p&gt;
+
+&lt;p&gt; Tex 입력기의 추가 설정 방법: &lt;a href=&quot;http://docs.mathjax.org/en/latest/options/input/tex.html#tex-options&quot;&gt;tex configuration options&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-html에서의-주의사항&quot;&gt;3. HTML에서의 주의사항&lt;/h2&gt;
+&lt;h3 id=&quot;31-html-특수기호&quot;&gt;3.1 HTML 특수기호&lt;/h3&gt;
+&lt;p&gt; MathJax 구문 안에서 &amp;lt;, &amp;gt;, &amp;amp; 를 입력하려면 앞뒤로 공백을 두거나 HTML entity 를 사용한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;32-cms와의-상호작용&quot;&gt;3.2 CMS와의 상호작용&lt;/h3&gt;
+&lt;p&gt;CMS(Content-Management Systems: markdown 같은거)를 사용할 때는 이스케이프에 주의한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-tex-매크로-정의&quot;&gt;4. TeX 매크로 정의&lt;/h2&gt;
+&lt;p&gt; 사용자 정의 매크로와 환경을 만들기 위해 &lt;strong&gt;수식구문 내에서&lt;/strong&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\def&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\newcommand&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\renewcommand&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\newenvironment&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\renewenvironment&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\let&lt;/code&gt; 를 사용할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;RR&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;환경 설정을 통해 매크롤르 정의할 수도 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;macros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;RR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;bf R}&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+     &lt;span class=&quot;na&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;bf #1}&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/extensions/configmacros.html#tex-configmacros-options&quot;&gt;configmacros Options&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-자동-방정식-번호-지정&quot;&gt;5. 자동 방정식 번호 지정&lt;/h2&gt;
+&lt;p&gt; 기본적으로 꺼져있지만 아래 설정으로 활성화한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;ams&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;notag&lt;/code&gt;또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\nonumber&lt;/code&gt;로 개별적으로 번호를 끄거나, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tag{}&lt;/code&gt;로 수동 번호지정이 가능하다.&lt;/p&gt;
+
+&lt;p&gt; ams 환경에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;로 번호를 끄고 켤 수 있다.
+번호 O&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;equation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;E&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;equation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;번호 X&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;equation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;equation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\label&lt;/code&gt;과 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ref&lt;/code&gt; 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\eqref&lt;/code&gt;로 방정식 참조하는법&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;equation&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;eqref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;eq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;we&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;an&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;interesting&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;integral&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;equation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int_0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;infty&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;eq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;equation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/extensions/tagformat.html#tex-tagformat&quot;&gt;tagformat&lt;/a&gt; 확장&lt;br /&gt;
+&lt;a href=&quot;http://docs.mathjax.org/en/latest/web/typeset.html#tex-reset&quot;&gt;Resetting Automatic Equation Numbering&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-texlatex-확장&quot;&gt;6. TeX/LaTeX 확장&lt;/h2&gt;
+
+&lt;h3 id=&quot;61-tex-확장-로드&quot;&gt;6.1. TeX 확장 로드&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[tex]/color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[+]&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[-]&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;autoload&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;62-런타임에-tex-확장-로드&quot;&gt;6.2. 런타임에 TeX 확장 로드&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;63-tex-확장-설정&quot;&gt;6.3. TeX 확장 설정&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[tex]/color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[+]&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]},&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;[tex]/color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;7-texlatex-확장-목록&quot;&gt;7. TeX/LaTeX 확장 목록&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;action&lt;/li&gt;
+  &lt;li&gt;ams&lt;/li&gt;
+  &lt;li&gt;amscd&lt;/li&gt;
+  &lt;li&gt;autoload&lt;/li&gt;
+  &lt;li&gt;bbox&lt;/li&gt;
+  &lt;li&gt;boldsymbol&lt;/li&gt;
+  &lt;li&gt;braket&lt;/li&gt;
+  &lt;li&gt;bussproofs&lt;/li&gt;
+  &lt;li&gt;cancel&lt;/li&gt;
+  &lt;li&gt;color&lt;/li&gt;
+  &lt;li&gt;colorv2&lt;/li&gt;
+  &lt;li&gt;configmacros&lt;/li&gt;
+  &lt;li&gt;enclose&lt;/li&gt;
+  &lt;li&gt;extpfeil&lt;/li&gt;
+  &lt;li&gt;html&lt;/li&gt;
+  &lt;li&gt;mhchem&lt;/li&gt;
+  &lt;li&gt;newcommand&lt;/li&gt;
+  &lt;li&gt;noerrors&lt;/li&gt;
+  &lt;li&gt;noundefined&lt;/li&gt;
+  &lt;li&gt;physics&lt;/li&gt;
+  &lt;li&gt;require&lt;/li&gt;
+  &lt;li&gt;tagformat&lt;/li&gt;
+  &lt;li&gt;textmacros&lt;/li&gt;
+  &lt;li&gt;unicode&lt;/li&gt;
+  &lt;li&gt;verb&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; 커스텀 TeX 확장을 만들기 위해서는 &lt;a href=&quot;http://docs.mathjax.org/en/latest/web/webpack.html#custom-extension&quot;&gt;A Custom Extension&lt;/a&gt; 참조.&lt;/p&gt;
+
+&lt;h2 id=&quot;8-texlatex-명령어&quot;&gt;8. TeX/LaTeX 명령어&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">원문: TeX and LaTeX Support</summary></entry><entry><title type="html">1. 기초</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/" rel="alternate" type="text/html" title="1. 기초" /><published>2021-05-06T00:00:00+09:00</published><updated>2021-05-06T00:00:00+09:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-01/">&lt;h2 id=&quot;1-법선하중normal-load&quot;&gt;1. 법선하중(normal load)&lt;/h2&gt;
+&lt;h3 id=&quot;11-법선응력normal-stress&quot;&gt;1.1. 법선응력(normal stress)&lt;/h3&gt;
+&lt;p&gt; 법선하중 \(P\), 초기 단면적 \(A\)에 대한 법선응력 \(\sigma\)의 식.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma = \frac{P}{A}
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt; 법선응력은 방향에 따라 인장응력(tensile stress) \(\sigma_t\)와 압축응력(compressive stress) \(\sigma_c\)이 있다.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_t = \frac{P_t}{A}, \quad \sigma_c = \frac{P_c}{A}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h4 id=&quot;111-지탱응력bearing-stress&quot;&gt;1.1.1. 지탱응력(bearing stress)&lt;/h4&gt;
+&lt;p&gt; 지탱응력은 불규칙한 접촉면에 작용하는 평균응력이다. 하중 방향으로 투영된 면적 (또는 베어링 면적) \(A_b\)에 대한 지탱응력 \(\sigma_b\).&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_b = \frac{P}{A_b}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;12-법선변형률normal-strain&quot;&gt;1.2. 법선변형률(normal strain)&lt;/h3&gt;
+&lt;p&gt; 변형량 \(\delta\), 초기 길이 \(L\)에 대한 법선변형률 \(\varepsilon\)의 식.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\varepsilon = \frac{\delta}{L}
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt; 변형량은 초기 길이 \(L_0\), 나중 길이 \(L_1\)에 대한 식 \(\delta=L_1-L_0\) 로 계산한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-전단하중shearing-load&quot;&gt;2. 전단하중(shearing load)&lt;/h2&gt;
+&lt;h3 id=&quot;21-전단응력shear-stress&quot;&gt;2.1. 전단응력(shear stress)&lt;/h3&gt;
+&lt;p&gt; 전단하중 \(V\), 전단면적 \(A\)에 대한 전단응력 \(\tau\)의 식.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\tau = \frac{V}{A}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;22-전단변형률shear-strain&quot;&gt;2.2. 전단변형률(shear strain)&lt;/h3&gt;
+&lt;p&gt; 전단변형량 \(\delta\), 수직거리 \(L\)에 대한 전단변형률 \(\gamma\)의 식.&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\gamma = \frac{\delta}{L}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h2 id=&quot;3-재료의-기계적-성질&quot;&gt;3. 재료의 기계적 성질&lt;/h2&gt;
+&lt;h3 id=&quot;31-응력-변형률-선도stress-strain-diagram&quot;&gt;3.1. 응력-변형률 선도(stress-strain diagram)&lt;/h3&gt;
+&lt;p&gt;비례한도 (proportional limit)&lt;br /&gt;
+탄성한도 (elastic limit)&lt;br /&gt;
+항복점 (yield point)&lt;br /&gt;
+항복응력 \(\sigma_y\)&lt;br /&gt;
+극한응력, 극한인장강도(ultimate tensile strength, UTS) \(\sigma_u\)&lt;br /&gt;
+파단 (rupture)&lt;/p&gt;
+
+&lt;p&gt;백분율 신장량(percent elongation) \(\frac{L_1-L_0}{L_0}\)&lt;br /&gt;
+단면감소율 \(\frac{A_0-A_1}{A_0}\)&lt;/p&gt;
+
+&lt;p&gt;단면변화율 \(\varDelta A/A = -2\nu\varepsilon\)&lt;br /&gt;
+체적변화율 \(\varDelta V/V = \varepsilon_V = \varepsilon\left(1-2\nu \right)\)&lt;br /&gt;
+체적탄성계수(bulk modulus) \(K\)&lt;br /&gt;
+압축률 \(\beta = 1/K\)&lt;/p&gt;
+
+&lt;h3 id=&quot;32-진응력true-stress-진변형률true-strain&quot;&gt;3.2. 진응력(true stress), 진변형률(true strain)&lt;/h3&gt;
+&lt;p&gt;  공칭응력 (nominal stress) \(\sigma_n\), 공칭변형률 (nominal strain) \(\varepsilon_n\)에 대응하는 진응력 \(\sigma_t\), 진변형률 \(\varepsilon_t\)&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_t = \sigma_n\left(1 + \varepsilon_n\right)
+\end{equation}\]&lt;/div&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\varepsilon_t = \ln{\left(1 + \varepsilon_n\right)}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;33-후크-법칙hooks-law&quot;&gt;3.3. 후크 법칙(Hook's law)&lt;/h3&gt;
+
+&lt;p&gt; 탄성계수(modulus of elasticity) \(E\)에 대해&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma = E\varepsilon
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt; 전단탄성계수 또는 강성계수(modulus of rigidity) \(G\)에 대해&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\tau = G\gamma
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;34-푸아송-비poissons-ratio&quot;&gt;3.4. 푸아송 비(Poisson's ratio)&lt;/h3&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\nu = - \frac{\varepsilon'}{\varepsilon} \lesssim \frac{1}{2}
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt; 푸아송 수&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\nu = \frac{1}{m}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;35-관계식&quot;&gt;3.5. 관계식&lt;/h3&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\begin{aligned}
+E &amp;amp; = 2G\left( 1 + \nu \right) \\
+  &amp;amp; = 3K\left( 1 - 2\nu \right)
+\end{aligned}
+\end{equation}\]
+&lt;/div&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+K = \frac{GE}{9G-3E}
+\end{equation}\]&lt;/div&gt;
+
+&lt;h3 id=&quot;35-열변형률&quot;&gt;3.5. 열변형률&lt;/h3&gt;
+&lt;p&gt; 열팽창계수 \(\alpha\), 온도변화 \(\varDelta T\)에 대한 열변형률 \(\varepsilon_T\)의 식.&lt;/p&gt;
+
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\varepsilon_T = \alpha\varDelta T
+\end{equation}\]&lt;/div&gt;
+
+&lt;h2 id=&quot;4-설계&quot;&gt;4. 설계&lt;/h2&gt;
+&lt;p&gt; 안전계수\(S\)와 허용응력\(\sigma_a\)관계.&lt;/p&gt;
+
+&lt;p&gt;연성 재료&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_a= \frac{\sigma_y}{S}
+\end{equation}\]&lt;/div&gt;
+
+&lt;p&gt;취성 재료&lt;/p&gt;
+&lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
+\sigma_a= \frac{\sigma_u}{S}
+\end{equation}\]&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><summary type="html">1. 법선하중(normal load) 1.1. 법선응력(normal stress)  법선하중 \(P\), 초기 단면적 \(A\)에 대한 법선응력 \(\sigma\)의 식. \[\begin{equation} \sigma = \frac{P}{A} \end{equation}\]</summary></entry><entry><title type="html">MathJax 1</title><link href="https://kkooing.github.io/computer-language/etc/latex/latex/" rel="alternate" type="text/html" title="MathJax 1" /><published>2021-04-26T00:00:00+09:00</published><updated>2021-04-26T00:00:00+09:00</updated><id>https://kkooing.github.io/computer-language/etc/latex/latex</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/latex/latex/">&lt;h2 id=&quot;0-참고&quot;&gt;0. 참고&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://docs.mathjax.org/en/latest/input/tex/differences.html&quot;&gt;Differences from Actual TeX&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;wikibooks LaTeX/Mathematics&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm&quot;&gt;onemathematicalcat&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.onemathematicalcat.org/MathJaxDocumentation/MathJaxKorean/TeXSyntax_ko.html&quot;&gt;onemathematicalcat(한글 번역)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1-인라인-수식-text-블록-수식-displayed&quot;&gt;1. 인라인 수식 (text), 블록 수식 (displayed)&lt;/h2&gt;
+&lt;p&gt;text 모드 (인라인): &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;br /&gt;
+문장 내부에 text 모드 \( \LaTeX \) 가 들어있다.&lt;/p&gt;
+
+&lt;p&gt;displayed 모드 (블록): &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\]&lt;/code&gt;&lt;br /&gt;
+아래에는 display 모드&lt;/p&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+\[ \LaTeX \]
+&lt;/div&gt;
+
+&lt;p&gt;가 들어있다.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;
+  &lt;p&gt;Note - kramdown 에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt;&lt;br /&gt;
+kramdown 에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를 이스케이프 문자로 사용하기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\)&lt;/code&gt; 대신에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\(&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\)&lt;/code&gt; 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; 를 한 개만 써도 된다.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;2-알파벳-숫자-기호&quot;&gt;2. 알파벳, 숫자, 기호&lt;/h2&gt;
+&lt;p&gt;그냥 쓰면 된다&lt;/p&gt;
+
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;a b c d e f g h i j k l m n o p q r s t u v w x y z
+0 1 2 3 4 5 6 7 8 9
++ - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+\[ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : * \]
+&lt;/div&gt;
+
+&lt;h2 id=&quot;3-그리스-문자&quot;&gt;3. 그리스 문자&lt;/h2&gt;
+
+&lt;div class=&quot;ib sx&quot;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\alpha, A\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\alpha, A&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\beta, B\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\beta, B&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\gamma, \Gamma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\gamma, \Gamma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\delta, \Delta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\delta, \Delta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\epsilon, E\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\epsilon, E&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\zeta, Z\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\zeta, Z&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\eta, H\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\eta, H&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\theta, \Theta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\theta, \Theta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\iota, I\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\iota, I&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\kappa, K\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\kappa, K&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\lambda, \Lambda\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\lambda, \Lambda&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\mu, M\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mu, M&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\nu, N\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\nu, N&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\xi, \Xi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\xi, \Xi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(o, O\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;o, O&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\pi, \Pi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\pi, \Pi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\rho, P\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\rho, P&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sigma, \Sigma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sigma, \Sigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\tau, T\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tau, T&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\upsilon. \Upsilon\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\upsilon, \Upsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\phi, \Phi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\phi, \Phi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\chi, X\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\chi, X&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\psi, \Psi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\psi, \Psi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\omega, \Omega\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\omega, \Omega&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varepsilon\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varepsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\vartheta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vartheta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varkappa\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varkappa&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varpi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varpi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varrho\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varrho&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varsigma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varsigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varphi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varphi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;4-삼각함수&quot;&gt;4. 삼각함수&lt;/h2&gt;
+
+&lt;p&gt;그대로 쓰면 된다.&lt;/p&gt;
+&lt;div class=&quot;ib sx&quot;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sin\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cos\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cos&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\tan\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sec\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sec&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\csc\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\csc&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arcsin\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccos\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccos&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arctan\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arctan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arcsec\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsec&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccsc\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccsc&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccot\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccot&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sinh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sinh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cosh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cosh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\tanh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tanh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sech\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sech&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\csch\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\csch&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\coth\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\coth&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arcsinh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsinh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccosh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccosh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arctanh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arctanh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arcsech\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsech&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccsch\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccsch&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccoth\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccoth&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;4-이항연산자&quot;&gt;4. 이항연산자&lt;/h2&gt;
+
+&lt;div class=&quot;sx&quot;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;연산자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\pm\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\pm&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\mp\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mp&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\div\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\div&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\times\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\times&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cdot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cdot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cap\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cap&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cup\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cup&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\vee\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vee&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\wedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\wedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\wedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\wedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;4-분수&quot;&gt;4. 분수&lt;/h2&gt;
+
+&lt;div class=&quot;sx&quot;&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\frac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\frac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;분수는 가독성을 위해 display 모드보다 text 모드일 때의 크기가 더 작다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tfrac&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dfrac&lt;/code&gt; 을 사용해 이 크기를 강제할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;sx&quot;&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tfrac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\tfrac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dfrac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\dfrac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;번분수를 표현할 때는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\frac&lt;/code&gt; 대신에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cfrac&lt;/code&gt; 을 사용해 가독성을 높일 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+\[\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}\tag{frac}\]
+&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+\[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\tag{cfrac}\]
+&lt;/div&gt;
+
+&lt;h2 id=&quot;4-기타&quot;&gt;4. 기타&lt;/h2&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;\( \lim\limits_{x \to \infty} \)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\limits_{x \to \infty}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(k_n^2\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k_n^2&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(k^n_2\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k^n_2&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(n^{22}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n^{22}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(n |_{n=17}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n |_{n=17}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\binom{a}{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;binom{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\tbinom{a}{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tbinom{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\dbinom{a}{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dbinom{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sqrt{a}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sqrt{a}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sqrt[a]{b}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sqrt[a]{b}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\sum_{i=1}^{10}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sum_{i=1}^{10}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\displaystyle\sum_{i=1}^{10}\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\displaystyle\sum_{i=1}^{10}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\int_0^\infty\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int_0^\infty&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;\(\int\limits_0^\infty\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int\limits_0^\infty&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sum\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sum&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\prod\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\prod&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\coprod\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\coprod&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigoplus\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigoplus&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigotimes\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigotimes&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigodot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigodot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigcup\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigcup&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigcap\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigcap&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\biguplus\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\biguplus&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigsqcup\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigsqcup&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigvee\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigvee&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\bigwedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigwedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\int\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\oint\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\oint&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">0. 참고 Differences from Actual TeX wikibooks LaTeX/Mathematics onemathematicalcat onemathematicalcat(한글 번역)</summary></entry><entry><title type="html">샘플 폰트</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font/" rel="alternate" type="text/html" title="샘플 폰트" /><published>2021-04-13T00:00:00+09:00</published><updated>2021-04-13T00:00:00+09:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+&lt;table style=&quot;letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
+&lt;caption&gt;Sans Serif&lt;/caption&gt;
+&lt;tr style=&quot;font-family: sans-serif, 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;sans-serif&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: Roboto', 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;Roboto&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Sans&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Noto Sans', 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;Noto Sans&lt;/td&gt;
+&lt;td&gt;國참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Noto Sans KR', 'Noto Serif KR'; font-weight: 400;&quot;&gt;
+&lt;td&gt;Noto Sans KR@400&lt;/td&gt;
+&lt;td&gt;國참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;font-family: 'Noto Sans KR', 'Noto Serif KR'; font-weight: 300;&quot;&gt;
+&lt;td&gt;Noto Sans KR@300&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Nanum Gothic', 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;Nanum Gothic&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+&lt;table style=&quot;letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
+&lt;caption&gt;Serif&lt;/caption&gt;
+&lt;tr style=&quot;font-family: serif, 'Noto Sans KR';&quot;&gt;
+&lt;td&gt;serif&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Serif&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Noto Serif', 'Noto Sans KR';&quot;&gt;
+&lt;td&gt;Noto Serif&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Noto Serif KR', 'Noto Sans KR'; font-weight: 400;&quot;&gt;
+&lt;td&gt;Noto Serif KR@400&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;font-family: 'Noto Serif KR', 'Noto Sans KR'; font-weight: 300;&quot;&gt;
+&lt;td&gt;Noto Serif KR@300&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Nanum Gothic', 'Noto Sans KR';&quot;&gt;
+&lt;td&gt;Nanum Gothic&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+&lt;table style=&quot;letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
+&lt;caption&gt;monospace&lt;/caption&gt;
+&lt;tr style=&quot;font-family: monospace; 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;monospace&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Roboto Mono', 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;Roboto Mono&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Nanum Gothic Coding', 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;Nanum Gothic Coding&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;font-family: 'D2Coding', 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;D2Coding&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inconsolata&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Inconsolata', 'Noto Serif KR';&quot;&gt;
+&lt;td&gt;Inconsolata&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+&lt;table style=&quot;letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
+&lt;caption&gt;cursive&lt;/caption&gt;
+&lt;tr style=&quot;font-family: cursive; 'Noto Sans KR';&quot;&gt;
+&lt;td&gt;cursive&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;tr style=&quot;font-family: 'Nanum Pen Script', 'Noto Sans KR';&quot;&gt;
+&lt;td&gt;Nanum Pen Script&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;분류&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dpi&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dp&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ldpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;120&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1920&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;mdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;160&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1440&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;hdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;240&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;960&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;320&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;720&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xxhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;480&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;480&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xxxhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;640&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;360&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;https://pixplicity.com/dp-px-converter&quot;&gt;https://pixplicity.com/dp-px-converter&lt;/a&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><category term="폰트" /><summary type="html">1. 평행 비교</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+09:00</published><updated>2021-04-13T00:00:00+09:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
+
+&lt;div class=&quot;sx nw&quot;&gt;
+&lt;table&gt;
+&lt;caption&gt;Sans Serif&lt;/caption&gt;
+
+&lt;tr style=&quot;font-size: 20px;&quot;&gt;
+&lt;td&gt;20px&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 19px;&quot;&gt;
+&lt;td&gt;19px&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 18px;&quot;&gt;
+&lt;td&gt;18px&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 17px;&quot;&gt;
+&lt;td&gt;17px&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 16px;&quot;&gt;
+&lt;td&gt;16px&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 15px;&quot;&gt;
+&lt;td&gt;15px&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 14px;&quot;&gt;
+&lt;td&gt;14px&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 1.25em;&quot;&gt;
+&lt;td&gt;1.25em&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 1em;&quot;&gt;
+&lt;td&gt;1em&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr style=&quot;font-size: 0.75em;&quot;&gt;
+&lt;td&gt;0.75em&lt;/td&gt;
+&lt;td&gt;참나무 타는 소리와 야경만큼 밤의 여유를 표현해 주는 것도 없다.&lt;/td&gt;
+&lt;td&gt;The quick brown fox jumps over the lazy dog.&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;!?.,'&quot;;:(){}[]&amp;lt;&amp;gt;@#$%^&amp;amp;*+-_=/\|`~&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;분류&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dpi&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dp&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ldpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;120&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1920&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;mdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;160&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1440&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;hdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;240&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;960&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;320&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;720&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xxhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;480&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;480&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;xxxhdpi&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;640&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;360&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;https://pixplicity.com/dp-px-converter&quot;&gt;https://pixplicity.com/dp-px-converter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://screensizemap.com/&quot;&gt;https://screensizemap.com/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://material.io/blog/device-metrics&quot;&gt;https://material.io/blog/device-metrics&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://screensiz.es/&quot;&gt;https://screensiz.es/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://yesviz.com/&quot;&gt;https://yesviz.com/&lt;/a&gt;
+&lt;a href=&quot;https://viewportsizer.com/devices/&quot;&gt;https://viewportsizer.com/devices/&lt;/a&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><summary type="html">1. 평행 비교</summary></entry><entry><title type="html">샘플 html 태그</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-tags/" rel="alternate" type="text/html" title="샘플 html 태그" /><published>2021-04-07T00:00:00+09:00</published><updated>2021-04-07T00:00:00+09:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-tags</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-tags/">&lt;h2 id=&quot;1-단락-요소&quot;&gt;1. 단락 요소&lt;/h2&gt;
+&lt;h6 id=&quot;h1--h6&quot;&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/h6&gt;
+&lt;h1&gt;&amp;lt;h1&amp;gt;&lt;/h1&gt;
+&lt;h2&gt;&amp;lt;h2&amp;gt;&lt;/h2&gt;
+&lt;h3&gt;&amp;lt;h3&amp;gt;&lt;/h3&gt;
+&lt;h4&gt;&amp;lt;h4&amp;gt;&lt;/h4&gt;
+&lt;h5&gt;&amp;lt;h5&amp;gt;&lt;/h5&gt;
+&lt;h6&gt;&amp;lt;h6&amp;gt;&lt;/h6&gt;
+
+&lt;h6 id=&quot;address&quot;&gt;&amp;lt;address&amp;gt;&lt;/h6&gt;
+&lt;address&gt;
+Written by &lt;a href=&quot;mailto:webmaster@example.com&quot;&gt;Jon Doe&lt;/a&gt;.&lt;br /&gt;
+Visit us at:&lt;br /&gt;
+Example.com&lt;br /&gt;
+Box 564, Disneyland&lt;br /&gt;
+USA
+&lt;/address&gt;
+
+&lt;h2 id=&quot;2-그룹-요소&quot;&gt;2. 그룹 요소&lt;/h2&gt;
+&lt;h6 id=&quot;p&quot;&gt;&amp;lt;p&amp;gt;&lt;/h6&gt;
+&lt;p&gt;This is some text in a paragraph. This is some text in a paragraph.&lt;br /&gt;
+This is some text in a paragraph. This is some text in a paragraph.&lt;br /&gt;다음은 이러한 스택이 웹 디자인에 사용되는 방식과 모든 웹 페이지에 사용해야하는 이유를 포함하여 &quot;글꼴 스택&quot;이라는 CSS 용어의 정의입니다.
+&lt;/p&gt;
+&lt;p&gt;This is some text in a paragraph.&lt;/p&gt;
+&lt;p&gt;This is some text in a paragraph.&lt;/p&gt;
+
+&lt;h6 id=&quot;hr&quot;&gt;&amp;lt;hr&amp;gt;&lt;/h6&gt;
+&lt;hr /&gt;
+
+&lt;h6 id=&quot;pre&quot;&gt;&amp;lt;pre&amp;gt;&lt;/h6&gt;
+&lt;pre&gt;
+#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int main() {
+  int i, n, cube;
+  cout &amp;lt;&amp;lt; &quot;Input the number of terms : &quot;;
+  cin &amp;gt;&amp;gt; n;
+  for (i = 1; i &amp;lt;= n; i++) {
+    cube = i * i * i;
+    cout &amp;lt;&amp;lt; &quot;Number is: &quot; &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &quot; and its cube is: &quot; &amp;lt;&amp;lt; cube &amp;lt;&amp;lt; endl;
+  }
+}
+1lI|ㅣ, 0Ooㅇ
+|abcdefghijklmnopqrstuvwxyz|
+|다람쥐 헌 쳇바퀴에 타고파.|
+&lt;/pre&gt;
+
+&lt;h6 id=&quot;blockquote&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/h6&gt;
+&lt;blockquote cite=&quot;http://www.worldwildlife.org/who/index.html&quot;&gt;
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in &lt;cite&gt;100&lt;/cite&gt; countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+&lt;/blockquote&gt;
+
+&lt;h6 id=&quot;ol&quot;&gt;&amp;lt;ol&amp;gt;&lt;/h6&gt;
+&lt;ol&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h6 id=&quot;ul&quot;&gt;&amp;lt;ul&amp;gt;&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;dl&quot;&gt;&amp;lt;dl&amp;gt;&lt;/h6&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Coffee&lt;/dt&gt;
+  &lt;dd&gt;Black hot drink&lt;/dd&gt;
+  &lt;dt&gt;Milk&lt;/dt&gt;
+  &lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h6 id=&quot;figure-figcaption-img&quot;&gt;&amp;lt;figure&amp;gt;, &amp;lt;figcaption&amp;gt;, &amp;lt;img&amp;gt;&lt;/h6&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://www.w3schools.com/tags/pic_trulli.jpg&quot; alt=&quot;Trulli&quot; style=&quot;width:100%&quot; /&gt;
+  &lt;figcaption&gt;Fig.1 - Trulli, Puglia, Italy.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;3-택스트-요소&quot;&gt;3. 택스트 요소&lt;/h2&gt;
+&lt;h6 id=&quot;a&quot;&gt;&amp;lt;a&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.w3schools.com&quot;&gt;Visit W3Schools.com!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;em&quot;&gt;&amp;lt;em&amp;gt;&lt;/h6&gt;
+&lt;p&gt;You &lt;em&gt;have&lt;/em&gt; to hurry up!&lt;/p&gt;
+
+&lt;h6 id=&quot;strong&quot;&gt;&amp;lt;strong&amp;gt;&lt;/h6&gt;
+&lt;p&gt;This text is &lt;strong&gt;important!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;small&quot;&gt;&amp;lt;small&amp;gt;&lt;/h6&gt;
+&lt;p&gt;This is some &lt;small&gt;smaller text.&lt;/small&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;cite&quot;&gt;&amp;lt;cite&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch. Painted in 1893.&lt;/p&gt;
+
+&lt;h6 id=&quot;q&quot;&gt;&amp;lt;q&amp;gt;&lt;/h6&gt;
+&lt;p&gt;WWF's goal is to:
+&lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;
+We hope they succeed.&lt;/p&gt;
+
+&lt;h6 id=&quot;dfn&quot;&gt;&amp;lt;dfn&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;dfn&gt;HTML&lt;/dfn&gt; is the standard markup language for creating web pages.&lt;/p&gt;
+
+&lt;h6 id=&quot;abbr&quot;&gt;&amp;lt;abbr&amp;gt;&lt;/h6&gt;
+&lt;p&gt;The &lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+
+&lt;h6 id=&quot;ruby-rt&quot;&gt;&amp;lt;ruby&amp;gt;, &amp;lt;rt&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;ruby&gt;
+漢 &lt;rt&gt; ㄏㄢˋ &lt;/rt&gt;
+&lt;/ruby&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;data&quot;&gt;&amp;lt;data&amp;gt;&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;data value=&quot;21053&quot;&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;data value=&quot;21054&quot;&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;data value=&quot;21055&quot;&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;time&quot;&gt;&amp;lt;time&amp;gt;&lt;/h6&gt;
+&lt;p&gt;Open from &lt;time&gt;10:00&lt;/time&gt; to &lt;time&gt;21:00&lt;/time&gt; every weekday.&lt;/p&gt;
+&lt;p&gt;I have a date on &lt;time datetime=&quot;2008-02-14 20:00&quot;&gt;Valentines day&lt;/time&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;code&quot;&gt;&amp;lt;code&amp;gt;&lt;/h6&gt;
+&lt;p&gt;The HTML &lt;code&gt;button&lt;/code&gt; tag defines a clickable button.&lt;/p&gt;
+
+&lt;h6 id=&quot;var&quot;&gt;&amp;lt;var&amp;gt;&lt;/h6&gt;
+&lt;p&gt;The area of a triangle is: 1/2 x &lt;var&gt;b&lt;/var&gt; x &lt;var&gt;h&lt;/var&gt;, where &lt;var&gt;b&lt;/var&gt; is the base, and &lt;var&gt;h&lt;/var&gt; is the vertical height.&lt;/p&gt;
+
+&lt;h6 id=&quot;samp&quot;&gt;&amp;lt;samp&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;samp&gt;File not found.&lt;br /&gt;Press F1 to continue&lt;/samp&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;kbd&quot;&gt;&amp;lt;kbd&amp;gt;&lt;/h6&gt;
+&lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; to copy text (Windows).&lt;/p&gt;
+
+&lt;h6 id=&quot;sub-sup&quot;&gt;&amp;lt;sub&amp;gt;, &amp;lt;sup&amp;gt;&lt;/h6&gt;
+&lt;p&gt;This text contains &lt;sub&gt;subscript&lt;/sub&gt;&lt;sup&gt;superscript&lt;/sup&gt; text.&lt;/p&gt;
+&lt;p&gt;This text contains &lt;sup&gt;superscript&lt;/sup&gt; text.&lt;/p&gt;
+
+&lt;h6 id=&quot;mark&quot;&gt;&amp;lt;mark&amp;gt;&lt;/h6&gt;
+&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;
+
+&lt;h6 id=&quot;bdi-bdo&quot;&gt;&amp;lt;bdi&amp;gt;, &amp;lt;bdo&amp;gt;&lt;/h6&gt;
+&lt;p&gt;User &lt;bdi&gt;إيان&lt;/bdi&gt;: 90 points&lt;br /&gt;
+&lt;bdo dir=&quot;rtl&quot;&gt;
+This text will go right-to-left.
+&lt;/bdo&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;span&quot;&gt;&amp;lt;span&amp;gt;&lt;/h6&gt;
+&lt;p&gt;My mother has &lt;span style=&quot;color:blue&quot;&gt;blue&lt;/span&gt; eyes.&lt;/p&gt;
+
+&lt;h6 id=&quot;br&quot;&gt;&amp;lt;br&amp;gt;&lt;/h6&gt;
+&lt;p&gt;To force&lt;br /&gt; line breaks&lt;br /&gt; in a text&lt;/p&gt;
+
+&lt;h6 id=&quot;wbr&quot;&gt;&amp;lt;wbr&amp;gt;&lt;/h6&gt;
+&lt;p&gt;This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery&lt;wbr /&gt;longwordthatwillbreakatspecific&lt;wbr /&gt;placeswhenthebrowserwindowisresized.&lt;/p&gt;
+
+&lt;h6 id=&quot;s---정정-지양&quot;&gt;&amp;lt;s&amp;gt; - 정정 (지양)&lt;/h6&gt;
+&lt;p&gt;&lt;s&gt;Only 50 tickets left!&lt;/s&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;i---기울임-무의미-부각됨-지양&quot;&gt;&amp;lt;i&amp;gt; - 기울임 (무의미, 부각됨) (지양)&lt;/h6&gt;
+&lt;p&gt;&lt;i&gt;Lorem ipsum&lt;/i&gt; is the most popular filler text in history.&lt;/p&gt;
+
+&lt;h6 id=&quot;b---두껍게-무의미-지양&quot;&gt;&amp;lt;b&amp;gt; - 두껍게 (무의미) (지양)&lt;/h6&gt;
+&lt;p&gt;This is normal text - &lt;b&gt;and this is bold text&lt;/b&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;u---언더라인-지양&quot;&gt;&amp;lt;u&amp;gt; - 언더라인 (지양)&lt;/h6&gt;
+&lt;p&gt;This is some &lt;u&gt;mispeled&lt;/u&gt; text.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-편집-요소&quot;&gt;3. 편집 요소&lt;/h2&gt;
+&lt;h6 id=&quot;ins-del&quot;&gt;&amp;lt;ins&amp;gt;, &amp;lt;del&amp;gt;&lt;/h6&gt;
+&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;4-임베드-요소&quot;&gt;4. 임베드 요소&lt;/h2&gt;
+&lt;h6 id=&quot;picture-source&quot;&gt;&amp;lt;picture&amp;gt;, &amp;lt;source&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;picture&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source media=&quot;(min-width:650px)&quot; srcset=&quot;https://www.w3schools.com/tags/img_white_flower.jpg&quot; /&gt;
+  &lt;source media=&quot;(min-width:465px)&quot; srcset=&quot;https://www.w3schools.com/tags/img_orange_flowers.jpg&quot; /&gt;
+  &lt;img src=&quot;img_orange_flowers.jpg&quot; alt=&quot;Flowers&quot; style=&quot;width:auto;&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;h6 id=&quot;iframe&quot;&gt;&amp;lt;iframe&amp;gt;&lt;/h6&gt;
+&lt;iframe src=&quot;http://192.168.0.152&quot; title=&quot;W3Schools Free Online Web Tutorials&quot;&gt;&lt;/iframe&gt;
+
+&lt;h6 id=&quot;embed---비추천&quot;&gt;&amp;lt;embed&amp;gt; - 비추천&lt;/h6&gt;
+&lt;h6 id=&quot;object-param&quot;&gt;&amp;lt;object&amp;gt;, &amp;lt;param&amp;gt;&lt;/h6&gt;
+
+&lt;h6 id=&quot;video&quot;&gt;&amp;lt;video&amp;gt;&lt;/h6&gt;
+&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;&quot;&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/movie.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/movie.ogg&quot; type=&quot;video/ogg&quot; /&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;h6 id=&quot;audio&quot;&gt;&amp;lt;audio&amp;gt;&lt;/h6&gt;
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/horse.ogg&quot; type=&quot;audio/ogg&quot; /&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/horse.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+
+&lt;h6 id=&quot;track&quot;&gt;&amp;lt;track&amp;gt;&lt;/h6&gt;
+&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;&quot;&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/forrest_gump.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;https://www.w3schools.com/tags/forrest_gump.ogg&quot; type=&quot;video/ogg&quot; /&gt;
+  &lt;track src=&quot;https://www.w3schools.com/tags/fgsubtitles_en.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;
+  &lt;track src=&quot;https://www.w3schools.com/tags/fgsubtitles_no.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;no&quot; label=&quot;Norwegian&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h6 id=&quot;map-area&quot;&gt;&amp;lt;map&amp;gt;, &amp;lt;area&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.w3schools.com/tags/workplace.jpg&quot; alt=&quot;Workplace&quot; usemap=&quot;#workmap&quot; width=&quot;400&quot; height=&quot;379&quot; /&gt;&lt;/p&gt;
+&lt;map name=&quot;workmap&quot;&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;34,44,270,350&quot; alt=&quot;Computer&quot; href=&quot;computer.htm&quot; /&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;290,172,333,250&quot; alt=&quot;Phone&quot; href=&quot;phone.htm&quot; /&gt;
+  &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; alt=&quot;Cup of coffee&quot; href=&quot;coffee.htm&quot; /&gt;
+&lt;/map&gt;
+
+&lt;h2 id=&quot;5-표-요소&quot;&gt;5. 표 요소&lt;/h2&gt;
+&lt;h6 id=&quot;table-caption-thead-tbody-tfoot-tr-td-th&quot;&gt;&amp;lt;table&amp;gt;, &amp;lt;caption&amp;gt;, &amp;lt;thead&amp;gt;, &amp;lt;tbody&amp;gt;, &amp;lt;tfoot&amp;gt;, &amp;lt;tr&amp;gt;, &amp;lt;td&amp;gt;, &amp;lt;th&amp;gt;&lt;/h6&gt;
+&lt;table&gt;
+  &lt;caption&gt;Tbl.1 - Monthly savings&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Month&lt;/th&gt;
+      &lt;th&gt;Savings&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;January&lt;/td&gt;
+      &lt;td&gt;$100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;February&lt;/td&gt;
+      &lt;td&gt;$80&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sum&lt;/td&gt;
+      &lt;td&gt;$180&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;h6 id=&quot;colgroup-col&quot;&gt;&amp;lt;colgroup&amp;gt;, &amp;lt;col&amp;gt;&lt;/h6&gt;
+&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col span=&quot;2&quot; style=&quot;background-color:red&quot; /&gt;
+    &lt;col style=&quot;background-color:yellow&quot; /&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;ISBN&lt;/th&gt;
+    &lt;th&gt;Title&lt;/th&gt;
+    &lt;th&gt;Price&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3476896&lt;/td&gt;
+    &lt;td&gt;My first HTML&lt;/td&gt;
+    &lt;td&gt;$53&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;6-폼-요소&quot;&gt;6. 폼 요소&lt;/h2&gt;
+&lt;h6 id=&quot;form-label-input-type&quot;&gt;&amp;lt;form&amp;gt;, &amp;lt;label&amp;gt;, &amp;lt;input type=”“&amp;gt;&lt;/h6&gt;
+&lt;form action=&quot;/action_page.php&quot;&gt;
+  &lt;label for=&quot;i-hidden&quot;&gt;text:&lt;/label&gt;
+  &lt;input type=&quot;hidden&quot; id=&quot;i-hidden&quot; name=&quot;i-hidden&quot; value=&quot;Submit&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-text&quot;&gt;text:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;i-text&quot; name=&quot;i-text&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-search&quot;&gt;search:&lt;/label&gt;
+  &lt;input type=&quot;search&quot; id=&quot;i-search&quot; name=&quot;i-search&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-tel&quot;&gt;tel:&lt;/label&gt;
+  &lt;input type=&quot;tel&quot; id=&quot;i-tel&quot; name=&quot;i-tel&quot; placeholder=&quot;123-45-678&quot; pattern=&quot;[0-9]{3}-[0-9]{2}-[0-9]{3}&quot; required=&quot;&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-url&quot;&gt;url:&lt;/label&gt;
+  &lt;input type=&quot;url&quot; id=&quot;i-url&quot; name=&quot;i-url&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-email&quot;&gt;email:&lt;/label&gt;
+  &lt;input type=&quot;email&quot; id=&quot;i-email&quot; name=&quot;i-email&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-password&quot;&gt;password:&lt;/label&gt;
+  &lt;input type=&quot;password&quot; id=&quot;i-password&quot; name=&quot;i-password&quot; value=&quot;sadf&quot; /&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;label for=&quot;i-date&quot;&gt;date:&lt;/label&gt;
+  &lt;input type=&quot;date&quot; id=&quot;i-date&quot; name=&quot;i-date&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-month&quot;&gt;month:&lt;/label&gt;
+  &lt;input type=&quot;month&quot; id=&quot;i-month&quot; name=&quot;i-month&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-week&quot;&gt;week:&lt;/label&gt;
+  &lt;input type=&quot;week&quot; id=&quot;i-week&quot; name=&quot;i-week&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-time&quot;&gt;time:&lt;/label&gt;
+  &lt;input type=&quot;time&quot; id=&quot;i-time&quot; name=&quot;i-time&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-datetime-local&quot;&gt;datetime-local:&lt;/label&gt;
+  &lt;input type=&quot;datetime-local&quot; id=&quot;i-datetime-local&quot; name=&quot;i-datetime-local&quot; /&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;label for=&quot;i-number&quot;&gt;number:&lt;/label&gt;
+  &lt;input type=&quot;number&quot; id=&quot;i-number&quot; name=&quot;i-number&quot; min=&quot;1&quot; max=&quot;5&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-range&quot;&gt;range:&lt;/label&gt;
+  &lt;input type=&quot;range&quot; id=&quot;i-range&quot; name=&quot;i-range&quot; min=&quot;0&quot; max=&quot;50&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-color&quot;&gt;color:&lt;/label&gt;
+  &lt;input type=&quot;color&quot; id=&quot;i-color&quot; name=&quot;i-color&quot; value=&quot;#ff0000&quot; /&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;vehicle1&quot; name=&quot;vehicle1&quot; value=&quot;Bike&quot; /&gt;
+  &lt;label for=&quot;vehicle1&quot;&gt; I have a bike&lt;/label&gt;&lt;br /&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;vehicle2&quot; name=&quot;vehicle2&quot; value=&quot;Car&quot; /&gt;
+  &lt;label for=&quot;vehicle2&quot;&gt; I have a car&lt;/label&gt;&lt;br /&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;vehicle3&quot; name=&quot;vehicle3&quot; value=&quot;Boat&quot; /&gt;
+  &lt;label for=&quot;vehicle3&quot;&gt; I have a boat&lt;/label&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; value=&quot;male&quot; /&gt;
+  &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;&lt;br /&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot; /&gt;
+  &lt;label for=&quot;female&quot;&gt;Female&lt;/label&gt;&lt;br /&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;other&quot; name=&quot;gender&quot; value=&quot;other&quot; /&gt;
+  &lt;label for=&quot;other&quot;&gt;Other&lt;/label&gt;&lt;br /&gt;
+  &lt;br /&gt;
+  &lt;label for=&quot;i-file&quot;&gt;file:&lt;/label&gt;
+  &lt;input type=&quot;file&quot; id=&quot;i-file&quot; name=&quot;i-file&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-image&quot;&gt;image:&lt;/label&gt;
+  &lt;input type=&quot;image&quot; id=&quot;i-image&quot; name=&quot;i-image&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-button&quot;&gt;button:&lt;/label&gt;
+  &lt;input type=&quot;button&quot; onclick=&quot;alert('Hello World!')&quot; value=&quot;Click Me!&quot; /&gt;&lt;br /&gt;
+  &lt;label for=&quot;i-submit-reset&quot;&gt;submit, reset:&lt;/label&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+  &lt;input type=&quot;reset&quot; /&gt;
+&lt;/form&gt;
+
+&lt;h6 id=&quot;button&quot;&gt;&amp;lt;button&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot;&gt;Click Me!&lt;/button&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;select-optgroup-option&quot;&gt;&amp;lt;select&amp;gt;, &amp;lt;optgroup&amp;gt;, &amp;lt;option&amp;gt;&lt;/h6&gt;
+&lt;form action=&quot;/action_page.php&quot;&gt;
+  &lt;label for=&quot;cars&quot;&gt;Choose a car:&lt;/label&gt;
+  &lt;select name=&quot;cars&quot; id=&quot;cars&quot;&gt;
+    &lt;optgroup label=&quot;Swedish Cars&quot;&gt;
+      &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+      &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label=&quot;German Cars&quot;&gt;
+      &lt;option value=&quot;mercedes&quot;&gt;Mercedes&lt;/option&gt;
+      &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+    &lt;/optgroup&gt;
+  &lt;/select&gt;
+  &lt;br /&gt;&lt;br /&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+&lt;/form&gt;
+
+&lt;h6 id=&quot;datalist&quot;&gt;&amp;lt;datalist&amp;gt;&lt;/h6&gt;
+&lt;form action=&quot;/action_page.php&quot; method=&quot;get&quot;&gt;
+  &lt;label for=&quot;browser&quot;&gt;Choose your browser from the list:&lt;/label&gt;
+  &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; id=&quot;browser&quot; /&gt;
+  &lt;datalist id=&quot;browsers&quot;&gt;
+    &lt;option value=&quot;Edge&quot; /&gt;
+    &lt;option value=&quot;Firefox&quot; /&gt;
+    &lt;option value=&quot;Chrome&quot; /&gt;
+    &lt;option value=&quot;Opera&quot; /&gt;
+    &lt;option value=&quot;Safari&quot; /&gt;
+  &lt;/datalist&gt;
+  &lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+
+&lt;h6 id=&quot;textarea&quot;&gt;&amp;lt;textarea&amp;gt;&lt;/h6&gt;
+&lt;form action=&quot;/action_page.php&quot;&gt;
+&lt;label for=&quot;w3review&quot;&gt;Review of W3Schools:&lt;/label&gt;
+&lt;textarea id=&quot;w3review&quot; name=&quot;w3review&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;
+  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+  &lt;/textarea&gt;
+  &lt;br /&gt;&lt;br /&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+&lt;/form&gt;
+
+&lt;h6 id=&quot;output&quot;&gt;&amp;lt;output&amp;gt;&lt;/h6&gt;
+&lt;form oninput=&quot;x.value=parseInt(a.value)+parseInt(b.value)&quot;&gt;
+&lt;input type=&quot;range&quot; id=&quot;a&quot; value=&quot;50&quot; /&gt;
++&lt;input type=&quot;number&quot; id=&quot;b&quot; value=&quot;25&quot; /&gt;
+=&lt;output name=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;
+&lt;/form&gt;
+
+&lt;h6 id=&quot;progress&quot;&gt;&amp;lt;progress&amp;gt;&lt;/h6&gt;
+&lt;progress id=&quot;file&quot; value=&quot;32&quot; max=&quot;100&quot;&gt; 32% &lt;/progress&gt;
+
+&lt;h6 id=&quot;meter&quot;&gt;&amp;lt;meter&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;label for=&quot;disk_c&quot;&gt;Disk usage C:&lt;/label&gt;&lt;/p&gt;
+&lt;meter id=&quot;disk_c&quot; value=&quot;2&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;2 out of 10&lt;/meter&gt;
+
+&lt;h6 id=&quot;fieldset-legend&quot;&gt;&amp;lt;fieldset&amp;gt;, &amp;lt;legend&amp;gt;&lt;/h6&gt;
+&lt;form action=&quot;/action_page.php&quot;&gt;
+ &lt;fieldset&gt;
+  &lt;legend&gt;Personalia:&lt;/legend&gt;
+  &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+  &lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+  &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+  &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+  &lt;label for=&quot;birthday&quot;&gt;Birthday:&lt;/label&gt;
+  &lt;input type=&quot;date&quot; id=&quot;birthday&quot; name=&quot;birthday&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+ &lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;h2 id=&quot;7-상호작용-요소&quot;&gt;7. 상호작용 요소&lt;/h2&gt;
+&lt;h6 id=&quot;details-summary&quot;&gt;&amp;lt;details&amp;gt;, &amp;lt;summary&amp;gt;&lt;/h6&gt;
+&lt;details&gt;
+  &lt;summary&gt;Epcot Center&lt;/summary&gt;
+  &lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;h6 id=&quot;dialog&quot;&gt;&amp;lt;dialog&amp;gt;&lt;/h6&gt;
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;dialog open=&quot;&quot;&gt;This is an open dialog window&lt;/dialog&gt;
+
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;h2 id=&quot;8-스크립트-요소&quot;&gt;8. 스크립트 요소&lt;/h2&gt;
+&lt;h6 id=&quot;script&quot;&gt;&amp;lt;script&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;noscript&quot;&gt;&amp;lt;noscript&amp;gt;&lt;/h6&gt;
+&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&amp;lt;noscript&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&amp;lt;noscript&amp;gt;Sorry, your browser does not support JavaScript!&amp;lt;/noscript&amp;gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;template&quot;&gt;&amp;lt;template&amp;gt;&lt;/h6&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><category term="html" /><summary type="html">1. 단락 요소 &amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt; &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt;</summary></entry><entry><title type="html">색상</title><link href="https://kkooing.github.io/computer-language/etc/css/css-color/" rel="alternate" type="text/html" title="색상" /><published>2021-04-07T00:00:00+09:00</published><updated>2021-04-07T00:00:00+09:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-color</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-color/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
+
+&lt;p&gt;rgb(&lt;ruby&gt;60&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;, &lt;ruby&gt;179&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;, &lt;ruby&gt;113&lt;rt&gt;0~255&lt;/rt&gt;&lt;/ruby&gt;)&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="css" /><category term="css" /><summary type="html">기본 문법</summary></entry><entry><title type="html">문법</title><link href="https://kkooing.github.io/computer-language/etc/css/css-syntax/" rel="alternate" type="text/html" title="문법" /><published>2021-04-06T00:00:00+09:00</published><updated>2021-04-06T00:00:00+09:00</updated><id>https://kkooing.github.io/computer-language/etc/css/css-syntax</id><content type="html" xml:base="https://kkooing.github.io/computer-language/etc/css/css-syntax/">&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
+
+&lt;p&gt;h1 {color: blue; font-size: 12px;}&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;문자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;이름&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;\&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;backslash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;period&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;*&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;asterisk&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;_&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;underscore&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;+&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;plus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;minus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;=&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;equal sign&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;`&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;back tick&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;()[]{}&amp;lt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;left and right parens/brackets/braces/angle brackets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;#&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;hash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;!&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;bang&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;&amp;lt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;left guillemet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;right guillemet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;:&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;colon&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;|&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pipe&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&quot;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;double quote&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;'&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;single quote&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;$&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;dollar sign&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="css" /><category term="css" /><summary type="html">기본 문법</summary></entry></feed>

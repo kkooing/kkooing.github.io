@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link type="application/atom+xml" rel="alternate" href="https://kkooing.github.io/feed.xml" title="kkooing" />
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+</head>
+
+<body>
+  <nav class="l-skip-links">
+  Skip to 
+  <a href="#sl-content">content</a> | 
+  <a href="#sl-categories">category-list</a> |
+  <a href="#sl-pages">page-list</a>
+</nav>
+
+  <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+
+  <header class="l-header">
+  <div class="l-inner-wrap">
+    <div class="m-header">
+      <div class="hamburger-open">
+        <button class="btn-hamburger" onclick="sidebar_open()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+      <div class="site-logo">
+        <a class="site-name" href="/">
+          <img class="site-name-img" src="/assets/images/site_name.png" alt="kkooing">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+  <section class="l-center">
+  <div class="l-inner-wrap">
+
+    <section class="l-column-left" id="sidebar">
+      <div class="hamburger-close">
+        <button class="btn-hamburger" onclick="sidebar_close()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </div><div class="m-side-profile">
+  <div class="profile-img">
+    <img src="/assets/images/profile.png" alt="profile"/>
+  </div>
+  <div class="profile-info">
+    <a href="mailto:kdw7968@naver.com" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"/><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"/></svg>mail
+    </a><br/>
+    <a href="https://github.com/kkooing" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"/><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"/></svg>github
+    </a><br/>
+    <a href="https://goo.gl/maps/dGAyQJkjc2XxMfQ77" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" version="1" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M18.5,10.2c0,2.57-2.1,5.79-6.16,9.51L12,20.01l-0.34-0.31C7.6,15.99,5.5,12.77,5.5,10.2 c0-3.84,2.82-6.7,6.5-6.7S18.5,6.35,18.5,10.2z" fill-opacity=".3"/><path d="M12,2c4.2,0,8,3.22,8,8.2c0,3.32-2.67,7.25-8,11.8c-5.33-4.55-8-8.48-8-11.8C4,5.22,7.8,2,12,2z M18,10.2 C18,6.57,15.35,4,12,4s-6,2.57-6,6.2c0,2.34,1.95,5.44,6,9.14C16.05,15.64,18,12.54,18,10.2z M12,12c-1.1,0-2-0.9-2-2s0.9-2,2-2 s2,0.9,2,2S13.1,12,12,12z"/><path d="M0,0h24v24H0V0z" fill="none"/></svg>S. KR
+    </a>
+  </div>
+</div><nav class="m-side-pages" id="sl-pages">
+  <div class="widget-title">page</div>
+  
+  <button class="btn-home" onclick="document.location='/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-6H9v6H7v-7.81l5-4.5 5 4.5V18z"/><path d="M7 10.19V18h2v-6h6v6h2v-7.81l-5-4.5z" opacity=".3"/></svg>
+  </button>
+  
+  <button class="btn-about" onclick="document.location='/about/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm1 13h-2v-6h2v6zm0-8h-2V7h2v2z" opacity=".3"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+  </button>
+  
+  <button class="btn-archive" onclick="document.location='/archive/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 7.5l4 4 4-4V4H8zm0 9V20h8v-3.5l-4-4z" opacity=".3"/><path d="M18 2H6v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2zm-2 14.5V20H8v-3.5l4-4 4 4zm0-9l-4 4-4-4V4h8v3.5z"/></svg>
+  </button>
+
+  <button class="btn-search" onclick="document.location='/search/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+  </button>
+</nav>
+
+
+<nav class="m-side-categories" id="sl-categories">
+  <div class="widget-title">category</div>
+  <ul><li><div class="menu"><a href="/computer-language">
+          <div>컴퓨터 언어</div>
+        </a></div><ul><li><div class="menu"><a href="/computer-language/programming">
+          <div>프로그래밍</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/computer-language/programming/cpp">
+          <div>C++<span class="posts-count">[1]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">Python<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Ruby<span class="posts-count">[0]</span></div></li></ul></li><li><div class="menu no-post">스크립트</div><ul><li><div class="menu terminal-menu no-post">Bash<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Batch<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">PowerShell<span class="posts-count">[0]</span></div></li></ul></li><li><div class="menu"><a href="/computer-language/etc">
+          <div>기타</div>
+        </a></div><ul><li><div class="menu terminal-menu no-post">HTML<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu"><a href="/computer-language/etc/css">
+          <div>css<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/computer-language/etc/kramdown">
+          <div>Kramdown<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/computer-language/etc/latex">
+          <div>LaTeX<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">컨테이너<span class="posts-count">[0]</span></div></li></ul></li></ul></li><hr/><li><div class="selected-menu-marker">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64v6.72L15.27 12z" opacity=".3"/><path d="M8 19l11-7L8 5v14zm2-10.36L15.27 12 10 15.36V8.64z"/></svg>
+    </div><div class="menu selected-menu"><a href="/it">
+          <div>IT</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/it/jekyll-blog">
+          <div>Jekyll 블로그<span class="posts-count">[6]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/it/raspberry-pi">
+          <div>라즈베리파이<span class="posts-count">[1]</span></div>
+        </a></div></li><li><div class="selected-menu-marker">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64v6.72L15.27 12z" opacity=".3"/><path d="M8 19l11-7L8 5v14zm2-10.36L15.27 12 10 15.36V8.64z"/></svg>
+    </div><div class="menu selected-menu terminal-menu"><a href="/it/etc">
+          <div>기타<span class="posts-count">[1]</span></div>
+        </a></div></li></ul></li><hr/><li><div class="menu"><a href="/mechanical-engineering">
+          <div>기계공학</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/mechanical-engineering/solid-mechanics">
+          <div>고체역학<span class="posts-count">[3]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">기계설계<span class="posts-count">[0]</span></div></li></ul></li><hr/><li><div class="menu no-post">도구</div><ul><li><div class="menu terminal-menu no-post">AutoCAD<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">인벤터<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Affinity Designer<span class="posts-count">[0]</span></div></li></ul></li></ul>
+</nav></section>
+    
+    <section class="l-column-right">
+      <main class="m-main m-post">
+  <div class="breadcrumbs"><a href="/it">IT</a><span> / </span><a href="/it/etc">기타</a></div>
+  <section class="content" id="content">
+    <div class="content-header">
+      <h1 class="content-title">윈도우 시작프로그램 관리</h1>
+      <div class="content-meta">
+        2021. 02. 24.
+      </div>
+    </div>
+    <div class="content-text">
+      <h3 id="관리자-계정">관리자 계정</h3>
+
+<p><code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run</code>
+<code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\RunOnce</code></p>
+
+<h3 id="현재-유저">현재 유저</h3>
+
+<p><code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</code>
+<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce</code>
+<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices</code>
+<code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows</code></p>
+
+    </div>
+    <div class="content-footer">
+      <div class="tag-list">
+        <span class="tag-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><path d="M20,10V8h-4V4h-2v4h-4V4H8v4H4v2h4v4H4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4H20z M14,14h-4v-4h4V14z"/></g></svg>
+        </span>
+
+        
+        
+        <span class="tag-word">regedit</span>
+        
+        <span class="tag-word">startup</span>
+        
+        <span class="tag-word">windows</span>
+        
+      </div>
+    </div>
+  </section>
+</main><section class="m-comment">
+  <div>
+    Comment
+  </div>
+</section><section class="m-related">
+  <div class="breadcrumbs"><a href="/it">IT</a><span> / </span><a href="/it/etc">기타</a></div><div class="m-posts-stream">
+  <ul class="data-ul" id="data-ul"><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/it/etc/managing-windows-startup-programs/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/it/etc/managing-windows-startup-programs/">윈도우 시작프로그램 관리</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 2. 24.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li></ul>
+
+  <div id="m-pagination"></div>
+
+<script>
+  const dataPerPage = Number('5');  // 페이지당 자료 수
+  const buttonCount = Number('5');  // 최대 버튼 개수
+
+  const dataCount = Number('1');  // 총 자료 수
+  const pageCount = Math.ceil(dataCount / dataPerPage);  // 총 페이지 수
+
+  //  get
+  let data_ul = document.getElementById("data-ul");
+  let data_li_array = document.getElementsByClassName("data-li");
+  let m_pagination = document.getElementById("m-pagination");
+  
+  // let
+  m_pagination.innerHTML = 
+    "<div id=\"wrap-btn-first\">" +
+      "<button id=\"btn-first\" onclick=\"gotoPage(1)\">1</button>&#133;" +
+    "</div>" +
+    "<div id=\"group-btn-page\"></div>" +
+    "<div id=\"wrap-btn-last\">" +
+      "&#133;<button id=\"btn-last\" onclick=\"gotoPage(" + pageCount + ")\">" + pageCount + "</button>" +
+    "</div>";
+  let wrap_btn_first = document.getElementById("wrap-btn-first");
+  let wrap_btn_last = document.getElementById("wrap-btn-last");
+  let group_btn_page = document.getElementById("group-btn-page");
+  for (let i = 0; i < pageCount; i++) {
+    group_btn_page.innerHTML += "<button class=\"btn-page\" onclick=\"gotoPage(" + (i+1) + ")\">" + (i+1) + "</button>";
+  }
+  let btn_page_array = document.getElementsByClassName("btn-page");
+
+  gotoPage(1);
+
+  function gotoPage(page) {
+    // li 관리
+    for (let i of data_li_array) { i.style = "display: none;"; }
+
+    let data_begin = (page - 1) * dataPerPage;
+    let data_end = (page * dataPerPage) - 1;
+    if (data_end >= dataCount) { data_end = dataCount - 1 }
+
+    for (let i = data_begin; i <= data_end; i++) { data_li_array[i].style = "display: grid;"; }
+
+    // button 관리
+    if (pageCount <= buttonCount) {
+      wrap_btn_first.style = "display: none;";
+      wrap_btn_last.style = "display: none;";
+    }
+    else {
+      for (let i of btn_page_array) { i.style = "display: none;"; }
+      let btn_begin = Math.ceil(page - ((buttonCount - 1) / 2));
+      let btn_end = Math.ceil(page + ((buttonCount - 1) / 2));
+      if ( btn_begin <= 1 ) {
+        btn_end += 1 - btn_begin; btn_begin = 1;
+        wrap_btn_first.style = "display: none;";
+      }
+      else {
+        wrap_btn_first.style = "display: inline-block;";
+      }
+      if ( btn_end >= pageCount ) {
+        btn_begin -= btn_end - pageCount; btn_end = pageCount;
+        wrap_btn_last.style = "display: none;";
+      }
+      else {
+        wrap_btn_last.style = "display: inline-block;";
+      }
+      for (let i = btn_begin - 1; i < btn_end; i++) { btn_page_array[i].style = "display: inline-block;"; }
+    }
+    for (let i of btn_page_array) { i.className = "btn-page"; }
+    btn_page_array[page-1].className = "btn-page active";
+
+  }
+</script>
+</section><section class="m-featured">
+  <div>
+    Featured
+  </div>
+</section></section>
+
+  </div>
+</section>
+  <footer class="l-footer">
+  <div class="l-inner-wrap">
+    <div class="copyright">
+      &copy;&nbsp;2020-2021&nbsp;<a href="https://github.com/kkooing"
+        target="_blank" rel="nofollow">kkooing</a>.
+    </div>
+  </div>
+</footer>
+
+  <script>
+  function sidebar_open() {
+    document.getElementById("sidebar").style.display = "block";
+  }
+
+  function sidebar_close() {
+    document.getElementById("sidebar").style.display = "none";
+  }
+
+  
+</script>
+</body>
+
+</html>

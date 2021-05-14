@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link type="application/atom+xml" rel="alternate" href="https://kkooing.github.io/feed.xml" title="kkooing" />
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+window.MathJax = {
+  tex: {
+    tags: 'ams'
+  }
+};
+</script>
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+</head>
+
+<body>
+  <nav class="l-skip-links">
+  Skip to 
+  <a href="#sl-content">content</a> | 
+  <a href="#sl-categories">category-list</a> |
+  <a href="#sl-pages">page-list</a>
+</nav>
+
+  <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+
+  <header class="l-header">
+  <div class="l-inner-wrap">
+    <div class="m-header">
+      <div class="hamburger-open">
+        <button class="btn-hamburger" onclick="sidebar_open()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+      <div class="site-logo">
+        <a class="site-name" href="/">
+          <img class="site-name-img" src="/assets/images/site_name.png" alt="kkooing">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+  <section class="l-center">
+  <div class="l-inner-wrap">
+
+    <section class="l-column-left" id="sidebar">
+      <div class="hamburger-close">
+        <button class="btn-hamburger" onclick="sidebar_close()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </div><div class="m-side-profile">
+  <div class="profile-img">
+    <img src="/assets/images/profile.png" alt="profile"/>
+  </div>
+  <div class="profile-info">
+    <a href="mailto:kdw7968@naver.com" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"/><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"/></svg>mail
+    </a><br/>
+    <a href="https://github.com/kkooing" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"/><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"/></svg>github
+    </a><br/>
+    <a href="https://goo.gl/maps/dGAyQJkjc2XxMfQ77" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" version="1" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M18.5,10.2c0,2.57-2.1,5.79-6.16,9.51L12,20.01l-0.34-0.31C7.6,15.99,5.5,12.77,5.5,10.2 c0-3.84,2.82-6.7,6.5-6.7S18.5,6.35,18.5,10.2z" fill-opacity=".3"/><path d="M12,2c4.2,0,8,3.22,8,8.2c0,3.32-2.67,7.25-8,11.8c-5.33-4.55-8-8.48-8-11.8C4,5.22,7.8,2,12,2z M18,10.2 C18,6.57,15.35,4,12,4s-6,2.57-6,6.2c0,2.34,1.95,5.44,6,9.14C16.05,15.64,18,12.54,18,10.2z M12,12c-1.1,0-2-0.9-2-2s0.9-2,2-2 s2,0.9,2,2S13.1,12,12,12z"/><path d="M0,0h24v24H0V0z" fill="none"/></svg>S. KR
+    </a>
+  </div>
+</div><nav class="m-side-pages" id="sl-pages">
+  <div class="widget-title">page</div>
+  
+  <button class="btn-home" onclick="document.location='/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-6H9v6H7v-7.81l5-4.5 5 4.5V18z"/><path d="M7 10.19V18h2v-6h6v6h2v-7.81l-5-4.5z" opacity=".3"/></svg>
+  </button>
+  
+  <button class="btn-about" onclick="document.location='/about/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm1 13h-2v-6h2v6zm0-8h-2V7h2v2z" opacity=".3"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+  </button>
+  
+  <button class="btn-archive" onclick="document.location='/archive/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 7.5l4 4 4-4V4H8zm0 9V20h8v-3.5l-4-4z" opacity=".3"/><path d="M18 2H6v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2zm-2 14.5V20H8v-3.5l4-4 4 4zm0-9l-4 4-4-4V4h8v3.5z"/></svg>
+  </button>
+
+  <button class="btn-search" onclick="document.location='/search/'">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+  </button>
+</nav>
+
+
+<nav class="m-side-categories" id="sl-categories">
+  <div class="widget-title">category</div>
+  <ul><li><div class="selected-menu-marker">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64v6.72L15.27 12z" opacity=".3"/><path d="M8 19l11-7L8 5v14zm2-10.36L15.27 12 10 15.36V8.64z"/></svg>
+    </div><div class="menu selected-menu"><a href="/computer-language">
+          <div>컴퓨터 언어</div>
+        </a></div><ul><li><div class="menu"><a href="/computer-language/programming">
+          <div>프로그래밍</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/computer-language/programming/cpp">
+          <div>C++<span class="posts-count">[1]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">Python<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Ruby<span class="posts-count">[0]</span></div></li></ul></li><li><div class="menu no-post">스크립트</div><ul><li><div class="menu terminal-menu no-post">Bash<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Batch<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">PowerShell<span class="posts-count">[0]</span></div></li></ul></li><li><div class="selected-menu-marker">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64v6.72L15.27 12z" opacity=".3"/><path d="M8 19l11-7L8 5v14zm2-10.36L15.27 12 10 15.36V8.64z"/></svg>
+    </div><div class="menu selected-menu"><a href="/computer-language/etc">
+          <div>기타</div>
+        </a></div><ul><li><div class="menu terminal-menu no-post">HTML<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu"><a href="/computer-language/etc/css">
+          <div>css<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/computer-language/etc/kramdown">
+          <div>Kramdown<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="selected-menu-marker">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64v6.72L15.27 12z" opacity=".3"/><path d="M8 19l11-7L8 5v14zm2-10.36L15.27 12 10 15.36V8.64z"/></svg>
+    </div><div class="menu selected-menu terminal-menu"><a href="/computer-language/etc/latex">
+          <div>LaTeX<span class="posts-count">[2]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">컨테이너<span class="posts-count">[0]</span></div></li></ul></li></ul></li><hr/><li><div class="menu"><a href="/it">
+          <div>IT</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/it/jekyll-blog">
+          <div>Jekyll 블로그<span class="posts-count">[6]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/it/raspberry-pi">
+          <div>라즈베리파이<span class="posts-count">[1]</span></div>
+        </a></div></li><li><div class="menu terminal-menu"><a href="/it/etc">
+          <div>기타<span class="posts-count">[1]</span></div>
+        </a></div></li></ul></li><hr/><li><div class="menu"><a href="/mechanical-engineering">
+          <div>기계공학</div>
+        </a></div><ul><li><div class="menu terminal-menu"><a href="/mechanical-engineering/solid-mechanics">
+          <div>고체역학<span class="posts-count">[3]</span></div>
+        </a></div></li><li><div class="menu terminal-menu no-post">기계설계<span class="posts-count">[0]</span></div></li></ul></li><hr/><li><div class="menu no-post">도구</div><ul><li><div class="menu terminal-menu no-post">AutoCAD<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">인벤터<span class="posts-count">[0]</span></div></li><li><div class="menu terminal-menu no-post">Affinity Designer<span class="posts-count">[0]</span></div></li></ul></li></ul>
+</nav></section>
+    
+    <section class="l-column-right">
+      <main class="m-main m-post">
+  <div class="breadcrumbs"><a href="/computer-language">컴퓨터 언어</a><span> / </span><a href="/computer-language/etc">기타</a><span> / </span><a href="/computer-language/etc/latex">LaTeX</a></div>
+  <section class="content" id="content">
+    <div class="content-header">
+      <h1 class="content-title">MathJax 1</h1>
+      <div class="content-meta">
+        2021. 04. 26.
+      </div>
+    </div>
+    <div class="content-text">
+      <h2 id="0-참고">0. 참고</h2>
+<p><a href="http://docs.mathjax.org/en/latest/input/tex/differences.html">Differences from Actual TeX</a><br />
+<a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">wikibooks LaTeX/Mathematics</a><br />
+<a href="https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm">onemathematicalcat</a><br />
+<a href="https://www.onemathematicalcat.org/MathJaxDocumentation/MathJaxKorean/TeXSyntax_ko.html">onemathematicalcat(한글 번역)</a></p>
+
+<h2 id="1-인라인-수식-text-블록-수식-displayed">1. 인라인 수식 (text), 블록 수식 (displayed)</h2>
+<p>text 모드 (인라인): <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code><br />
+문장 내부에 text 모드 \( \LaTeX \) 가 들어있다.</p>
+
+<p>displayed 모드 (블록): <code class="language-plaintext highlighter-rouge">\[</code>, <code class="language-plaintext highlighter-rouge">\]</code><br />
+아래에는 display 모드</p>
+
+<div class="sx nw">
+\[ \LaTeX \]
+</div>
+
+<p>가 들어있다.</p>
+
+<div class="note">
+  <p>Note - kramdown 에서 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code><br />
+kramdown 에서는 <code class="language-plaintext highlighter-rouge">\</code> 를 이스케이프 문자로 사용하기 때문에 <code class="language-plaintext highlighter-rouge">\(</code>, <code class="language-plaintext highlighter-rouge">\)</code> 대신에 <code class="language-plaintext highlighter-rouge">\\(</code>, <code class="language-plaintext highlighter-rouge">\\)</code> 를 사용해야 한다. HTML 태그 안에서는 kramdown 문법이 작동하지 않기 때문에 <code class="language-plaintext highlighter-rouge">\</code> 를 한 개만 써도 된다.</p>
+</div>
+
+<h2 id="2-알파벳-숫자-기호">2. 알파벳, 숫자, 기호</h2>
+<p>그냥 쓰면 된다</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>a b c d e f g h i j k l m n o p q r s t u v w x y z
+0 1 2 3 4 5 6 7 8 9
++ - = ! / ( ) [ ] &lt; &gt; | ' : *
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="sx nw">
+\[ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &lt; &gt; | ' : * \]
+</div>
+
+<h2 id="3-그리스-문자">3. 그리스 문자</h2>
+
+<div class="ib sx">
+<table>
+  <thead>
+    <tr><th>문자</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\alpha, A\)</td><td><code class="language-plaintext highlighter-rouge">\alpha, A</code></td></tr>
+    <tr><td>\(\beta, B\)</td><td><code class="language-plaintext highlighter-rouge">\beta, B</code></td></tr>
+    <tr><td>\(\gamma, \Gamma\)</td><td><code class="language-plaintext highlighter-rouge">\gamma, \Gamma</code></td></tr>
+    <tr><td>\(\delta, \Delta\)</td><td><code class="language-plaintext highlighter-rouge">\delta, \Delta</code></td></tr>
+    <tr><td>\(\epsilon, E\)</td><td><code class="language-plaintext highlighter-rouge">\epsilon, E</code></td></tr>
+    <tr><td>\(\zeta, Z\)</td><td><code class="language-plaintext highlighter-rouge">\zeta, Z</code></td></tr>
+    <tr><td>\(\eta, H\)</td><td><code class="language-plaintext highlighter-rouge">\eta, H</code></td></tr>
+    <tr><td>\(\theta, \Theta\)</td><td><code class="language-plaintext highlighter-rouge">\theta, \Theta</code></td></tr>
+    <tr><td>\(\iota, I\)</td><td><code class="language-plaintext highlighter-rouge">\iota, I</code></td></tr>
+    <tr><td>\(\kappa, K\)</td><td><code class="language-plaintext highlighter-rouge">\kappa, K</code></td></tr>
+    <tr><td>\(\lambda, \Lambda\)</td><td><code class="language-plaintext highlighter-rouge">\lambda, \Lambda</code></td></tr>
+    <tr><td>\(\mu, M\)</td><td><code class="language-plaintext highlighter-rouge">\mu, M</code></td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>문자</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\nu, N\)</td><td><code class="language-plaintext highlighter-rouge">\nu, N</code></td></tr>
+    <tr><td>\(\xi, \Xi\)</td><td><code class="language-plaintext highlighter-rouge">\xi, \Xi</code></td></tr>
+    <tr><td>\(o, O\)</td><td><code class="language-plaintext highlighter-rouge">o, O</code></td></tr>
+    <tr><td>\(\pi, \Pi\)</td><td><code class="language-plaintext highlighter-rouge">\pi, \Pi</code></td></tr>
+    <tr><td>\(\rho, P\)</td><td><code class="language-plaintext highlighter-rouge">\rho, P</code></td></tr>
+    <tr><td>\(\sigma, \Sigma\)</td><td><code class="language-plaintext highlighter-rouge">\sigma, \Sigma</code></td></tr>
+    <tr><td>\(\tau, T\)</td><td><code class="language-plaintext highlighter-rouge">\tau, T</code></td></tr>
+    <tr><td>\(\upsilon. \Upsilon\)</td><td><code class="language-plaintext highlighter-rouge">\upsilon, \Upsilon</code></td></tr>
+    <tr><td>\(\phi, \Phi\)</td><td><code class="language-plaintext highlighter-rouge">\phi, \Phi</code></td></tr>
+    <tr><td>\(\chi, X\)</td><td><code class="language-plaintext highlighter-rouge">\chi, X</code></td></tr>
+    <tr><td>\(\psi, \Psi\)</td><td><code class="language-plaintext highlighter-rouge">\psi, \Psi</code></td></tr>
+    <tr><td>\(\omega, \Omega\)</td><td><code class="language-plaintext highlighter-rouge">\omega, \Omega</code></td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>문자</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\varepsilon\)</td><td><code class="language-plaintext highlighter-rouge">\varepsilon</code></td></tr>
+    <tr><td>\(\vartheta\)</td><td><code class="language-plaintext highlighter-rouge">\vartheta</code></td></tr>
+    <tr><td>\(\varkappa\)</td><td><code class="language-plaintext highlighter-rouge">\varkappa</code></td></tr>
+    <tr><td>\(\varpi\)</td><td><code class="language-plaintext highlighter-rouge">\varpi</code></td></tr>
+    <tr><td>\(\varrho\)</td><td><code class="language-plaintext highlighter-rouge">\varrho</code></td></tr>
+    <tr><td>\(\varsigma\)</td><td><code class="language-plaintext highlighter-rouge">\varsigma</code></td></tr>
+    <tr><td>\(\varphi\)</td><td><code class="language-plaintext highlighter-rouge">\varphi</code></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="4-삼각함수">4. 삼각함수</h2>
+
+<p>그대로 쓰면 된다.</p>
+<div class="ib sx">
+<table>
+  <thead>
+    <tr><th>함수</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\sin\)</td><td><code class="language-plaintext highlighter-rouge">\sin</code></td></tr>
+    <tr><td>\(\cos\)</td><td><code class="language-plaintext highlighter-rouge">\cos</code></td></tr>
+    <tr><td>\(\tan\)</td><td><code class="language-plaintext highlighter-rouge">\tan</code></td></tr>
+    <tr><td>\(\sec\)</td><td><code class="language-plaintext highlighter-rouge">\sec</code></td></tr>
+    <tr><td>\(\csc\)</td><td><code class="language-plaintext highlighter-rouge">\csc</code></td></tr>
+    <tr><td>\(\cot\)</td><td><code class="language-plaintext highlighter-rouge">\cot</code></td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>함수</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\arcsin\)</td><td><code class="language-plaintext highlighter-rouge">\arcsin</code></td></tr>
+    <tr><td>\(\arccos\)</td><td><code class="language-plaintext highlighter-rouge">\arccos</code></td></tr>
+    <tr><td>\(\arctan\)</td><td><code class="language-plaintext highlighter-rouge">\arctan</code></td></tr>
+    <tr><td>\(\arcsec\)</td><td><del><code class="language-plaintext highlighter-rouge">\arcsec</code></del></td></tr>
+    <tr><td>\(\arccsc\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccsc</code></del></td></tr>
+    <tr><td>\(\arccot\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccot</code></del></td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>함수</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\sinh\)</td><td><code class="language-plaintext highlighter-rouge">\sinh</code></td></tr>
+    <tr><td>\(\cosh\)</td><td><code class="language-plaintext highlighter-rouge">\cosh</code></td></tr>
+    <tr><td>\(\tanh\)</td><td><code class="language-plaintext highlighter-rouge">\tanh</code></td></tr>
+    <tr><td>\(\sech\)</td><td><del><code class="language-plaintext highlighter-rouge">\sech</code></del></td></tr>
+    <tr><td>\(\csch\)</td><td><del><code class="language-plaintext highlighter-rouge">\csch</code></del></td></tr>
+    <tr><td>\(\coth\)</td><td><code class="language-plaintext highlighter-rouge">\coth</code></td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>함수</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\arcsinh\)</td><td><del><code class="language-plaintext highlighter-rouge">\arcsinh</code></del></td></tr>
+    <tr><td>\(\arccosh\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccosh</code></del></td></tr>
+    <tr><td>\(\arctanh\)</td><td><del><code class="language-plaintext highlighter-rouge">\arctanh</code></del></td></tr>
+    <tr><td>\(\arcsech\)</td><td><del><code class="language-plaintext highlighter-rouge">\arcsech</code></del></td></tr>
+    <tr><td>\(\arccsch\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccsch</code></del></td></tr>
+    <tr><td>\(\arccoth\)</td><td><del><code class="language-plaintext highlighter-rouge">\arccoth</code></del></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="4-이항연산자">4. 이항연산자</h2>
+
+<div class="sx">
+<table>
+  <thead>
+    <tr><th>연산자</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\pm\)</td><td><code class="language-plaintext highlighter-rouge">\pm</code></td></tr>
+    <tr><td>\(\mp\)</td><td><code class="language-plaintext highlighter-rouge">\mp</code></td></tr>
+    <tr><td>\(\div\)</td><td><code class="language-plaintext highlighter-rouge">\div</code></td></tr>
+    <tr><td>\(\times\)</td><td><code class="language-plaintext highlighter-rouge">\times</code></td></tr>
+    <tr><td>\(\cdot\)</td><td><code class="language-plaintext highlighter-rouge">\cdot</code></td></tr>
+    <tr><td>\(\cap\)</td><td><code class="language-plaintext highlighter-rouge">\cap</code></td></tr>
+    <tr><td>\(\cup\)</td><td><code class="language-plaintext highlighter-rouge">\cup</code></td></tr>
+    <tr><td>\(\vee\)</td><td><code class="language-plaintext highlighter-rouge">\vee</code></td></tr>
+    <tr><td>\(\wedge\)</td><td><code class="language-plaintext highlighter-rouge">\wedge</code></td></tr>
+    <tr><td>\(\wedge\)</td><td><code class="language-plaintext highlighter-rouge">\wedge</code></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="4-분수">4. 분수</h2>
+
+<div class="sx">
+  <table>
+    <tr><td><code class="language-plaintext highlighter-rouge">\frac{a}{b}</code></td><td>\(\frac{a}{b}\)</td></tr>
+  </table>
+</div>
+
+<p>분수는 가독성을 위해 display 모드보다 text 모드일 때의 크기가 더 작다. <code class="language-plaintext highlighter-rouge">\tfrac</code>, <code class="language-plaintext highlighter-rouge">\dfrac</code> 을 사용해 이 크기를 강제할 수 있다.</p>
+
+<div class="sx">
+  <table>
+    <tr><td><code class="language-plaintext highlighter-rouge">\tfrac{a}{b}</code></td><td>\(\tfrac{a}{b}\)</td></tr>
+    <tr><td><code class="language-plaintext highlighter-rouge">\dfrac{a}{b}</code></td><td>\(\dfrac{a}{b}\)</td></tr>
+  </table>
+</div>
+
+<p>번분수를 표현할 때는 <code class="language-plaintext highlighter-rouge">\frac</code> 대신에 <code class="language-plaintext highlighter-rouge">\cfrac</code> 을 사용해 가독성을 높일 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="sx nw">
+\[\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}\tag{frac}\]
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="sx nw">
+\[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\tag{cfrac}\]
+</div>
+
+<h2 id="4-기타">4. 기타</h2>
+
+<div class="sx nw">
+  <table>
+    <thead>
+      <tr><th>출력</th><th>LaTeX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\( \lim\limits_{x \to \infty} \)</td><td><code class="language-plaintext highlighter-rouge">\limits_{x \to \infty}</code></td></tr>
+      <tr><td>\(k_n^2\)</td><td><code class="language-plaintext highlighter-rouge">k_n^2</code></td></tr>
+      <tr><td>\(k^n_2\)</td><td><code class="language-plaintext highlighter-rouge">k^n_2</code></td></tr>
+      <tr><td>\(n^{22}\)</td><td><code class="language-plaintext highlighter-rouge">n^{22}</code></td></tr>
+      <tr><td>\(n |_{n=17}\)</td><td><code class="language-plaintext highlighter-rouge">n |_{n=17}</code></td></tr>
+      <tr><td>\(\binom{a}{b}\)</td><td><code class="language-plaintext highlighter-rouge">binom{a}{b}</code></td></tr>
+      <tr><td>\(\tbinom{a}{b}\)</td><td><code class="language-plaintext highlighter-rouge">tbinom{a}{b}</code></td></tr>
+      <tr><td>\(\dbinom{a}{b}\)</td><td><code class="language-plaintext highlighter-rouge">dbinom{a}{b}</code></td></tr>
+      <tr><td>\(\sqrt{a}\)</td><td><code class="language-plaintext highlighter-rouge">\sqrt{a}</code></td></tr>
+      <tr><td>\(\sqrt[a]{b}\)</td><td><code class="language-plaintext highlighter-rouge">\sqrt[a]{b}</code></td></tr>
+      <tr><td>\(\sum_{i=1}^{10}\)</td><td><code class="language-plaintext highlighter-rouge">\sum_{i=1}^{10}</code></td></tr>
+      <tr><td>\(\displaystyle\sum_{i=1}^{10}\)</td><td><code class="language-plaintext highlighter-rouge">\displaystyle\sum_{i=1}^{10}</code></td></tr>
+      <tr><td>\(\int_0^\infty\)</td><td><code class="language-plaintext highlighter-rouge">\int_0^\infty</code></td></tr>
+      <tr><td>\(\int\limits_0^\infty\)</td><td><code class="language-plaintext highlighter-rouge">\int\limits_0^\infty</code></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="sx nw">
+<table>
+  <thead>
+    <tr><th>출력</th><th>LaTeX</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>\(\sum\)</td><td><code class="language-plaintext highlighter-rouge">\sum</code></td></tr>
+    <tr><td>\(\prod\)</td><td><code class="language-plaintext highlighter-rouge">\prod</code></td></tr>
+    <tr><td>\(\coprod\)</td><td><code class="language-plaintext highlighter-rouge">\coprod</code></td></tr>
+    <tr><td>\(\bigoplus\)</td><td><code class="language-plaintext highlighter-rouge">\bigoplus</code></td></tr>
+    <tr><td>\(\bigotimes\)</td><td><code class="language-plaintext highlighter-rouge">\bigotimes</code></td></tr>
+    <tr><td>\(\bigodot\)</td><td><code class="language-plaintext highlighter-rouge">\bigodot</code></td></tr>
+    <tr><td>\(\bigcup\)</td><td><code class="language-plaintext highlighter-rouge">\bigcup</code></td></tr>
+    <tr><td>\(\bigcap\)</td><td><code class="language-plaintext highlighter-rouge">\bigcap</code></td></tr>
+    <tr><td>\(\biguplus\)</td><td><code class="language-plaintext highlighter-rouge">\biguplus</code></td></tr>
+    <tr><td>\(\bigsqcup\)</td><td><code class="language-plaintext highlighter-rouge">\bigsqcup</code></td></tr>
+    <tr><td>\(\bigvee\)</td><td><code class="language-plaintext highlighter-rouge">\bigvee</code></td></tr>
+    <tr><td>\(\bigwedge\)</td><td><code class="language-plaintext highlighter-rouge">\bigwedge</code></td></tr>
+    <tr><td>\(\int\)</td><td><code class="language-plaintext highlighter-rouge">\int</code></td></tr>
+    <tr><td>\(\oint\)</td><td><code class="language-plaintext highlighter-rouge">\oint</code></td></tr>
+  </tbody>
+</table>
+</div>
+
+    </div>
+    <div class="content-footer">
+      <div class="tag-list">
+        <span class="tag-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><path d="M20,10V8h-4V4h-2v4h-4V4H8v4H4v2h4v4H4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4H20z M14,14h-4v-4h4V14z"/></g></svg>
+        </span>
+
+        
+        
+        <span class="tag-word">latex</span>
+        
+        <span class="tag-word">mathjax</span>
+        
+      </div>
+    </div>
+  </section>
+</main><section class="m-comment">
+  <div>
+    Comment
+  </div>
+</section><section class="m-related">
+  <div class="breadcrumbs"><a href="/computer-language">컴퓨터 언어</a><span> / </span><a href="/computer-language/etc">기타</a><span> / </span><a href="/computer-language/etc/latex">LaTeX</a></div><div class="m-posts-stream">
+  <ul class="data-ul" id="data-ul"><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/computer-language/etc/latex/latex-trans/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/computer-language/etc/latex/latex-trans/">번역: TeX and LaTeX Support</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 5. 10.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li><li class="data-li">
+      <div class="gr-thumbnail">
+        <a href="/computer-language/etc/latex/latex/">
+          <img src="/assets/images/text_only.png" alt="thumbnail"/>
+        </a>
+      </div>
+      <div class="gr-title">
+        <a href="/computer-language/etc/latex/latex/">MathJax 1</a>
+      </div>
+      <div class="gr-info"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span class="posted-date">&#39;21. 4. 26.</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm0 15.17L18.83 16H4V4h16v13.17z"/><path d="M4 4v12h14.83L20 17.17V4z" opacity=".3"/></svg><span class="comment-count">0</span></div>
+    </li></ul>
+
+  <div id="m-pagination"></div>
+
+<script>
+  const dataPerPage = Number('5');  // 페이지당 자료 수
+  const buttonCount = Number('5');  // 최대 버튼 개수
+
+  const dataCount = Number('2');  // 총 자료 수
+  const pageCount = Math.ceil(dataCount / dataPerPage);  // 총 페이지 수
+
+  //  get
+  let data_ul = document.getElementById("data-ul");
+  let data_li_array = document.getElementsByClassName("data-li");
+  let m_pagination = document.getElementById("m-pagination");
+  
+  // let
+  m_pagination.innerHTML = 
+    "<div id=\"wrap-btn-first\">" +
+      "<button id=\"btn-first\" onclick=\"gotoPage(1)\">1</button>&#133;" +
+    "</div>" +
+    "<div id=\"group-btn-page\"></div>" +
+    "<div id=\"wrap-btn-last\">" +
+      "&#133;<button id=\"btn-last\" onclick=\"gotoPage(" + pageCount + ")\">" + pageCount + "</button>" +
+    "</div>";
+  let wrap_btn_first = document.getElementById("wrap-btn-first");
+  let wrap_btn_last = document.getElementById("wrap-btn-last");
+  let group_btn_page = document.getElementById("group-btn-page");
+  for (let i = 0; i < pageCount; i++) {
+    group_btn_page.innerHTML += "<button class=\"btn-page\" onclick=\"gotoPage(" + (i+1) + ")\">" + (i+1) + "</button>";
+  }
+  let btn_page_array = document.getElementsByClassName("btn-page");
+
+  gotoPage(1);
+
+  function gotoPage(page) {
+    // li 관리
+    for (let i of data_li_array) { i.style = "display: none;"; }
+
+    let data_begin = (page - 1) * dataPerPage;
+    let data_end = (page * dataPerPage) - 1;
+    if (data_end >= dataCount) { data_end = dataCount - 1 }
+
+    for (let i = data_begin; i <= data_end; i++) { data_li_array[i].style = "display: grid;"; }
+
+    // button 관리
+    if (pageCount <= buttonCount) {
+      wrap_btn_first.style = "display: none;";
+      wrap_btn_last.style = "display: none;";
+    }
+    else {
+      for (let i of btn_page_array) { i.style = "display: none;"; }
+      let btn_begin = Math.ceil(page - ((buttonCount - 1) / 2));
+      let btn_end = Math.ceil(page + ((buttonCount - 1) / 2));
+      if ( btn_begin <= 1 ) {
+        btn_end += 1 - btn_begin; btn_begin = 1;
+        wrap_btn_first.style = "display: none;";
+      }
+      else {
+        wrap_btn_first.style = "display: inline-block;";
+      }
+      if ( btn_end >= pageCount ) {
+        btn_begin -= btn_end - pageCount; btn_end = pageCount;
+        wrap_btn_last.style = "display: none;";
+      }
+      else {
+        wrap_btn_last.style = "display: inline-block;";
+      }
+      for (let i = btn_begin - 1; i < btn_end; i++) { btn_page_array[i].style = "display: inline-block;"; }
+    }
+    for (let i of btn_page_array) { i.className = "btn-page"; }
+    btn_page_array[page-1].className = "btn-page active";
+
+  }
+</script>
+</section><section class="m-featured">
+  <div>
+    Featured
+  </div>
+</section></section>
+
+  </div>
+</section>
+  <footer class="l-footer">
+  <div class="l-inner-wrap">
+    <div class="copyright">
+      &copy;&nbsp;2020-2021&nbsp;<a href="https://github.com/kkooing"
+        target="_blank" rel="nofollow">kkooing</a>.
+    </div>
+  </div>
+</footer>
+
+  <script>
+  function sidebar_open() {
+    document.getElementById("sidebar").style.display = "block";
+  }
+
+  function sidebar_close() {
+    document.getElementById("sidebar").style.display = "none";
+  }
+
+  
+</script>
+</body>
+
+</html>
