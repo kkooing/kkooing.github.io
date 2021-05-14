@@ -964,6 +964,8 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-post .content-text h1 + h2, .m-post .content-text h2 + h3, .m-post .content-text h3 + h4, .m-post .content-text h4 + h5, .m-post .content-text h5 + h6 { margin-top: -0.5rem; }
 
+.m-post .content-text p { overflow-x: hidden; }
+
 .m-post .content-text hr { border-width: 2px; border-color: #ccddff; }
 
 .m-post .content-text a.footnote:before { content: "["; }
@@ -980,11 +982,13 @@ table td, table th { border: 1px solid Gainsboro; padding: 0 0.3em; }
 
 .m-post .content-footer .tag-list .tag-word { display: inline-block; font-size: 0.8rem; color: #3399ff; background-color: AliceBlue; border: 1px solid #3399ff; border-radius: 1em; vertical-align: middle; padding: 0 0.6em 0.1em 0.6em; }
 
-.c-inl > * { vertical-align: top; display: inline-block; }
+.ib > * { vertical-align: top; display: inline-block; }
 
-.c-inl > mjx-container[jax="CHTML"][display="true"] { vertical-align: top; display: inline-block; }
+.ib > mjx-container[jax="CHTML"][display="true"] { vertical-align: top; display: inline-block; }
 
-.c-scr { overflow-x: auto; }
+.sx { overflow-x: auto; }
+
+.nw { white-space: nowrap; }
 
 .note { background-color: #fefacd; padding: 0.5em; position: relative; border-top: 2.55em solid #ffe666; font-size: 0.8rem; }
 

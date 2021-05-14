@@ -1,0 +1,211 @@
+I"<h2 id="불리언-타입">불리언 타입</h2>
+
+<div class="sx nw">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">타입</th>
+        <th style="text-align: center">설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center"><code class="language-plaintext highlighter-rouge">bool</code></td>
+        <td style="text-align: center">불리언</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p>bool 타입은 true 또는 false 값을 가지는 논리 타입이다. int, 포인터 타입 간에 변환이 가능하다.<br /></p>
+
+<div class="sx nw">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">bool</th>
+        <th style="text-align: center">int</th>
+        <th style="text-align: center">포인터</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center"><code class="language-plaintext highlighter-rouge">true</code></td>
+        <td style="text-align: center"><code class="language-plaintext highlighter-rouge">1</code> or <code class="language-plaintext highlighter-rouge">!0</code></td>
+        <td style="text-align: center"><code class="language-plaintext highlighter-rouge">!nullptr</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><code class="language-plaintext highlighter-rouge">false</code></td>
+        <td style="text-align: center"><code class="language-plaintext highlighter-rouge">0</code></td>
+        <td style="text-align: center"><code class="language-plaintext highlighter-rouge">nullptr</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<h2 id="문자-타입">문자 타입</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">타입</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">char</code></td>
+      <td style="text-align: center">기본 문자 타입</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">signed char</code></td>
+      <td style="text-align: center">부호 있는 char</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">unsigned char</code></td>
+      <td style="text-align: center">부호 없는 char</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">wchar_t</code></td>
+      <td style="text-align: center">대규모 문자(유니코드)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">char16_t</code></td>
+      <td style="text-align: center">16비트 문자(UTF-16)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">char32_t</code></td>
+      <td style="text-align: center">32비트 문자(UTF-32)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>-127~127의 char는 signed char, 0~255의 char는 unsigned char에 보관한다. 일반적인 char가 signed char인지 unsigned char인지는 구현에 따라 다르다.<br /></p>
+
+<h2 id="정수-타입">정수 타입</h2>
+
+<h3 id="부호별">부호별</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">타입</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">int</code></td>
+      <td style="text-align: center">일반적인 int</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">signed int</code></td>
+      <td style="text-align: center">부호 있는 int</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">unsigned int</code></td>
+      <td style="text-align: center">부호 없는 int</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="크기별">크기별</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">타입</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">short int</code></td>
+      <td style="text-align: center">작은 int</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">int</code></td>
+      <td style="text-align: center">일반 int</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">long int</code></td>
+      <td style="text-align: center">큰 int</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">long long int</code></td>
+      <td style="text-align: center">큰 int</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>부호/크기별 단축 표기<br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">부호</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>int</th>
+      <th>signed</th>
+      <th>unsigned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="4">크기</th>
+      <th>short</th>
+      <td>short</td><td>signed short</td><td>unsigned short</td>
+    </tr>
+    <tr>
+      <th>int</th>
+      <td>int</td><td>signed</td><td>unsigned</td>
+    </tr>
+    <tr>
+      <th>long</th>
+      <td>long</td><td>signed long</td><td>unsigned long</td>
+    </tr>
+    <tr>
+      <th>long long</th>
+      <td>long long</td><td>signed long long</td><td>unsigned long long</td>
+    </tr>
+  </tbody>
+</table>
+<p><br />
+int는 signed int와 완전히 동일하다.<br /></p>
+
+<h2 id="부동소수점-타입">부동소수점 타입</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">타입</th>
+      <th style="text-align: center">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td style="text-align: center">단정밀도</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">double</code></td>
+      <td style="text-align: center">배정밀도</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">long double</code></td>
+      <td style="text-align: center">확장 정밀도</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="void-타입">void 타입</h2>
+
+<p>함수와 포인터의 타입으로만 사용 가능하다.<br /></p>
+:ET

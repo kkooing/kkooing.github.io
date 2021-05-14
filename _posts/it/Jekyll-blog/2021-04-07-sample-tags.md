@@ -21,8 +21,6 @@ Box 564, Disneyland<br>
 USA
 </address>
 
-<hr/>
-
 ## 2. 그룹 요소
 ###### &lt;p&gt;
 <p>This is some text in a paragraph. This is some text in a paragraph.<br />
@@ -85,8 +83,6 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
   <img src="https://www.w3schools.com/tags/pic_trulli.jpg" alt="Trulli" style="width:100%">
   <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
 </figure>
-
-<hr/>
 
 ## 3. 택스트 요소
 ###### &lt;a&gt;
@@ -177,13 +173,9 @@ This text will go right-to-left.
 ###### &lt;u&gt; - 언더라인 (지양)
 <p>This is some <u>mispeled</u> text.</p>
 
-<hr/>
-
 ## 3. 편집 요소
 ###### &lt;ins&gt;, &lt;del&gt;
 <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
-
-<hr/>
 
 ## 4. 임베드 요소
 ###### &lt;picture&gt;, &lt;source&gt;
@@ -230,8 +222,6 @@ This text will go right-to-left.
   <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
 </map>
 
-<hr/>
-
 ## 5. 표 요소
 ###### &lt;table&gt;, &lt;caption&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;
 <table>
@@ -277,8 +267,6 @@ This text will go right-to-left.
     <td>$53</td>
   </tr>
 </table>
-
-<hr/>
 
 ## 6. 폼 요소
 ###### &lt;form&gt;, &lt;label&gt;, &lt;input type=""&gt;
@@ -415,8 +403,6 @@ This text will go right-to-left.
  </fieldset>
 </form>
 
-<hr/>
-
 ## 7. 상호작용 요소
 ###### &lt;details&gt;, &lt;summary&gt;
 <details>
@@ -434,8 +420,6 @@ This text will go right-to-left.
 <p>This is some text.</p>
 
 <p>This is some text.</p>
-
-<hr/>
 
 ## 8. 스크립트 요소
 ###### &lt;script&gt;

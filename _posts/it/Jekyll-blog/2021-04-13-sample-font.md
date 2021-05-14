@@ -5,7 +5,7 @@ thumbnail       :
 ---
 ## 1. 평행 비교
 
-<div style="overflow-x: auto; white-space: nowrap;">
+<div class="sx nw">
 <table style="letter-spacing: 0em; word-spacing: 0em;">
 <caption>Sans Serif</caption>
 <tr style="font-family: sans-serif, 'Noto Serif KR';">
@@ -57,7 +57,7 @@ thumbnail       :
 </table>
 </div>
 
-<div style="overflow-x: auto; white-space: nowrap;">
+<div class="sx nw">
 <table style="letter-spacing: 0em; word-spacing: 0em;">
 <caption>Serif</caption>
 <tr style="font-family: serif, 'Noto Sans KR';">
@@ -101,7 +101,7 @@ thumbnail       :
 </table>
 </div>
 
-<div style="overflow-x: auto; white-space: nowrap;">
+<div class="sx nw">
 <table style="letter-spacing: 0em; word-spacing: 0em;">
 <caption>monospace</caption>
 <tr style="font-family: monospace; 'Noto Serif KR';">
@@ -145,7 +145,7 @@ thumbnail       :
 </table>
 </div>
 
-<div style="overflow-x: auto; white-space: nowrap;">
+<div class="sx nw">
 <table style="letter-spacing: 0em; word-spacing: 0em;">
 <caption>cursive</caption>
 <tr style="font-family: cursive; 'Noto Sans KR';">

@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-13T08:42:50+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">2. 봉</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02/" rel="alternate" type="text/html" title="2. 봉" /><published>2021-05-13T00:00:00+00:00</published><updated>2021-05-13T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02/">&lt;p&gt;봉(rod): 축방향 하중(axial force) 지지&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kkooing.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kkooing.github.io/" rel="alternate" type="text/html" /><updated>2021-05-14T12:59:34+00:00</updated><id>https://kkooing.github.io/feed.xml</id><title type="html">kkooing</title><subtitle>프로그래밍, 역학, 설계</subtitle><author><name>kkooing</name><email>kdw7968@naver.com</email></author><entry><title type="html">단면치</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/plane-area-properties/" rel="alternate" type="text/html" title="단면치" /><published>2021-05-14T00:00:00+00:00</published><updated>2021-05-14T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/plane-area-properties</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/plane-area-properties/">&lt;figure class=&quot;&quot; style=&quot;display: block; text-align: center;&quot;&gt;
+  &lt;a href=&quot;/assets/images/Untitled.svg&quot; style=&quot;display: initial;&quot;&gt;
+    &lt;img src=&quot;/assets/images/Untitled.svg&quot; alt=&quot;기본방식 첫 페이지&quot; style=&quot;width: auto;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="mechanical-engineering" /><category term="solid-mechanics" /><summary type="html"></summary></entry><entry><title type="html">2. 봉</title><link href="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02/" rel="alternate" type="text/html" title="2. 봉" /><published>2021-05-13T00:00:00+00:00</published><updated>2021-05-13T00:00:00+00:00</updated><id>https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02</id><content type="html" xml:base="https://kkooing.github.io/mechanical-engineering/solid-mechanics/solid-02/">&lt;p&gt;봉(rod): 축방향 하중(axial force) 지지&lt;br /&gt;
 보(beam): 굽힘 모멘트(bending moment) 지지&lt;br /&gt;
 축(shaft): 비틀림 모멘트(twisting moment, torque) 지지&lt;/p&gt;
 
@@ -13,7 +16,7 @@
 &lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
 \sigma_t = \frac{P_t}{A}, \quad \sigma_c = \frac{P_c}{A}
 \end{equation}\]&lt;/div&gt;
-
+&lt;p&gt;F&lt;/p&gt;
 &lt;h4 id=&quot;111-지탱응력bearing-stress&quot;&gt;1.1.1. 지탱응력(bearing stress)&lt;/h4&gt;
 &lt;p&gt; 지탱응력은 불규칙한 접촉면에 작용하는 평균응력이다. 하중 방향으로 투영된 면적 (또는 베어링 면적) \(A_b\)에 대한 지탱응력 \(\sigma_b\).&lt;/p&gt;
 &lt;div class=&quot;c-scr&quot;&gt;\[\begin{equation}
@@ -491,7 +494,9 @@ K = \frac{GE}{9G-3E}
 &lt;p&gt;displayed 모드 (블록): &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\[&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\]&lt;/code&gt;&lt;br /&gt;
 아래에는 display 모드&lt;/p&gt;
 
-&lt;p&gt;\[ \LaTeX \]&lt;/p&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
+\[ \LaTeX \]
+&lt;/div&gt;
 
 &lt;p&gt;가 들어있다.&lt;/p&gt;
 
@@ -511,153 +516,155 @@ kramdown 에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quo
 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : *
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;\[
-a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ‘ : *
-\]&lt;/p&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
+\[ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! / ( ) [ ] &amp;lt; &amp;gt; | ' : * \]
+&lt;/div&gt;
 
 &lt;h2 id=&quot;3-그리스-문자&quot;&gt;3. 그리스 문자&lt;/h2&gt;
 
-&lt;div class=&quot;c-inl c-scr&quot;&gt;
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;&lt;td&gt;\(\alpha, A\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\alpha, A&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\beta, B\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\beta, B&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\gamma, \Gamma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\gamma, \Gamma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\delta, \Delta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\delta, \Delta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\epsilon, E\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\epsilon, E&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\zeta, Z\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\zeta, Z&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\eta, H\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\eta, H&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\theta, \Theta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\theta, \Theta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\iota, I\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\iota, I&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\kappa, K\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\kappa, K&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\lambda, \Lambda\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\lambda, \Lambda&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\mu, M\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mu, M&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;div class=&quot;ib sx&quot;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\alpha, A\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\alpha, A&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\beta, B\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\beta, B&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\gamma, \Gamma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\gamma, \Gamma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\delta, \Delta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\delta, \Delta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\epsilon, E\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\epsilon, E&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\zeta, Z\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\zeta, Z&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\eta, H\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\eta, H&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\theta, \Theta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\theta, \Theta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\iota, I\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\iota, I&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\kappa, K\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\kappa, K&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\lambda, \Lambda\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\lambda, \Lambda&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\mu, M\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mu, M&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;&lt;td&gt;\(\nu, N\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\nu, N&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\xi, \Xi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\xi, \Xi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(o, O\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;o, O&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\pi, \Pi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\pi, \Pi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\rho, P\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\rho, P&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\sigma, \Sigma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sigma, \Sigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\tau, T\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tau, T&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\upsilon. \Upsilon\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\upsilon, \Upsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\phi, \Phi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\phi, \Phi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\chi, X\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\chi, X&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\psi, \Psi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\psi, \Psi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\omega, \Omega\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\omega, \Omega&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\nu, N\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\nu, N&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\xi, \Xi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\xi, \Xi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(o, O\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;o, O&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\pi, \Pi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\pi, \Pi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\rho, P\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\rho, P&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sigma, \Sigma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sigma, \Sigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\tau, T\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tau, T&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\upsilon. \Upsilon\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\upsilon, \Upsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\phi, \Phi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\phi, \Phi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\chi, X\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\chi, X&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\psi, \Psi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\psi, \Psi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\omega, \Omega\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\omega, \Omega&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;&lt;td&gt;\(\varepsilon\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varepsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\vartheta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vartheta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\varkappa\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varkappa&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\varpi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varpi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\varrho\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varrho&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\varsigma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varsigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\varphi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varphi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;문자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varepsilon\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varepsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\vartheta\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vartheta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varkappa\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varkappa&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varpi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varpi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varrho\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varrho&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varsigma\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varsigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\varphi\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\varphi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;4-삼각함수&quot;&gt;4. 삼각함수&lt;/h2&gt;
 
 &lt;p&gt;그대로 쓰면 된다.&lt;/p&gt;
-&lt;div class=&quot;c-inl c-scr&quot;&gt;
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;&lt;td&gt;\(\sin\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\cos\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cos&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\tan\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\sec\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sec&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\csc\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\csc&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\cot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;div class=&quot;ib sx&quot;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sin\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cos\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cos&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\tan\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sec\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sec&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\csc\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\csc&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arcsin\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arccos\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccos&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arctan\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arctan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arcsec\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsec&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arccsc\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccsc&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arccot\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccot&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arcsin\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccos\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccos&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arctan\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arctan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arcsec\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsec&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccsc\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccsc&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccot\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccot&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;&lt;td&gt;\(\sinh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sinh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\cosh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cosh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\tanh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tanh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\sech\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sech&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\csch\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\csch&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\coth\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\coth&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sinh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sinh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cosh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cosh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\tanh\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tanh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\sech\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\sech&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\csch\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\csch&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\coth\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\coth&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arcsinh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsinh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arccosh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccosh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arctanh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arctanh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arcsech\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsech&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arccsch\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccsch&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\arccoth\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccoth&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;함수&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arcsinh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsinh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccosh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccosh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arctanh\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arctanh&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arcsech\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arcsech&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccsch\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccsch&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\arccoth\)&lt;/td&gt;&lt;td&gt;&lt;del&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\arccoth&lt;/code&gt;&lt;/del&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;4-이항연산자&quot;&gt;4. 이항연산자&lt;/h2&gt;
 
+&lt;div class=&quot;sx&quot;&gt;
 &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;연산자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;&lt;td&gt;\(\pm\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\pm&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\mp\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mp&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\div\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\div&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\times\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\times&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\cdot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cdot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\cap\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cap&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\cup\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cup&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\vee\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vee&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\wedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\wedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;tr&gt;&lt;td&gt;\(\wedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\wedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;연산자&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;\(\pm\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\pm&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\mp\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mp&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\div\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\div&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\times\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\times&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cdot\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cdot&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cap\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cap&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\cup\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\cup&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\vee\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vee&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\wedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\wedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;\(\wedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\wedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;4-분수&quot;&gt;4. 분수&lt;/h2&gt;
 
-&lt;div class=&quot;c-scr&quot;&gt;
+&lt;div class=&quot;sx&quot;&gt;
   &lt;table&gt;
     &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\frac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\frac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
   &lt;/table&gt;
@@ -665,7 +672,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 
 &lt;p&gt;분수는 가독성을 위해 display 모드보다 text 모드일 때의 크기가 더 작다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tfrac&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dfrac&lt;/code&gt; 을 사용해 이 크기를 강제할 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;c-scr&quot;&gt;
+&lt;div class=&quot;sx&quot;&gt;
   &lt;table&gt;
     &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tfrac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\tfrac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dfrac{a}{b}&lt;/code&gt;&lt;/td&gt;&lt;td&gt;\(\dfrac{a}{b}\)&lt;/td&gt;&lt;/tr&gt;
@@ -678,17 +685,21 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;\[\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}\tag{frac}\]&lt;/p&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
+\[\frac{a}{b+\frac{c}{d+\frac{e}{f+\frac{g}{h}}}}\tag{frac}\]
+&lt;/div&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;\[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\tag{cfrac}\]&lt;/p&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
+\[\cfrac{a}{b+\cfrac{c}{d+\cfrac{e}{f+\cfrac{g}{h}}}}\tag{cfrac}\]
+&lt;/div&gt;
 
 &lt;h2 id=&quot;4-기타&quot;&gt;4. 기타&lt;/h2&gt;
 
-&lt;div class=&quot;c-scr&quot;&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
   &lt;table&gt;
     &lt;thead&gt;
       &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
@@ -712,9 +723,8 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
   &lt;/table&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;c-scr&quot;&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
 &lt;table&gt;
-  &lt;div&gt;
   &lt;thead&gt;
     &lt;tr&gt;&lt;th&gt;출력&lt;/th&gt;&lt;th&gt;LaTeX&lt;/th&gt;&lt;/tr&gt;
   &lt;/thead&gt;
@@ -733,15 +743,11 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
     &lt;tr&gt;&lt;td&gt;\(\bigwedge\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bigwedge&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;&lt;td&gt;\(\int\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\int&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;&lt;td&gt;\(\oint\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\oint&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;\(\fint\)&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\oint&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
   &lt;/tbody&gt;
-  &lt;/div&gt;
 &lt;/table&gt;
-&lt;/div&gt;
+&lt;/div&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">0. 참고 Differences from Actual TeX wikibooks LaTeX/Mathematics onemathematicalcat onemathematicalcat(한글 번역)</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
 
-&lt;p&gt;\[\atan\]&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="latex" /><category term="mathjax" /><category term="latex" /><summary type="html">0. 참고 Differences from Actual TeX wikibooks LaTeX/Mathematics onemathematicalcat onemathematicalcat(한글 번역)</summary></entry><entry><title type="html">샘플 폰트 크기</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font-size/" rel="alternate" type="text/html" title="샘플 폰트 크기" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font-size</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font-size/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
-
-&lt;div class=&quot;scroll-x-container&quot; style=&quot;white-space: nowrap;&quot;&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
 &lt;table&gt;
 &lt;caption&gt;Sans Serif&lt;/caption&gt;
 
@@ -876,7 +882,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;a href=&quot;https://yesviz.com/&quot;&gt;https://yesviz.com/&lt;/a&gt;
 &lt;a href=&quot;https://viewportsizer.com/devices/&quot;&gt;https://viewportsizer.com/devices/&lt;/a&gt;&lt;/p&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="blog" /><summary type="html">1. 평행 비교</summary></entry><entry><title type="html">샘플 폰트</title><link href="https://kkooing.github.io/it/jekyll-blog/sample-font/" rel="alternate" type="text/html" title="샘플 폰트" /><published>2021-04-13T00:00:00+00:00</published><updated>2021-04-13T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/sample-font</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/sample-font/">&lt;h2 id=&quot;1-평행-비교&quot;&gt;1. 평행 비교&lt;/h2&gt;
 
-&lt;div style=&quot;overflow-x: auto; white-space: nowrap;&quot;&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
 &lt;table style=&quot;letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
 &lt;caption&gt;Sans Serif&lt;/caption&gt;
 &lt;tr style=&quot;font-family: sans-serif, 'Noto Serif KR';&quot;&gt;
@@ -928,7 +934,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;/table&gt;
 &lt;/div&gt;
 
-&lt;div style=&quot;overflow-x: auto; white-space: nowrap;&quot;&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
 &lt;table style=&quot;letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
 &lt;caption&gt;Serif&lt;/caption&gt;
 &lt;tr style=&quot;font-family: serif, 'Noto Sans KR';&quot;&gt;
@@ -972,7 +978,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;/table&gt;
 &lt;/div&gt;
 
-&lt;div style=&quot;overflow-x: auto; white-space: nowrap;&quot;&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
 &lt;table style=&quot;letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
 &lt;caption&gt;monospace&lt;/caption&gt;
 &lt;tr style=&quot;font-family: monospace; 'Noto Serif KR';&quot;&gt;
@@ -1016,7 +1022,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 + - = ! 
 &lt;/table&gt;
 &lt;/div&gt;
 
-&lt;div style=&quot;overflow-x: auto; white-space: nowrap;&quot;&gt;
+&lt;div class=&quot;sx nw&quot;&gt;
 &lt;table style=&quot;letter-spacing: 0em; word-spacing: 0em;&quot;&gt;
 &lt;caption&gt;cursive&lt;/caption&gt;
 &lt;tr style=&quot;font-family: cursive; 'Noto Sans KR';&quot;&gt;
@@ -1098,8 +1104,6 @@ Box 564, Disneyland&lt;br /&gt;
 USA
 &lt;/address&gt;
 
-&lt;hr /&gt;
-
 &lt;h2 id=&quot;2-그룹-요소&quot;&gt;2. 그룹 요소&lt;/h2&gt;
 &lt;h6 id=&quot;p&quot;&gt;&amp;lt;p&amp;gt;&lt;/h6&gt;
 &lt;p&gt;This is some text in a paragraph. This is some text in a paragraph.&lt;br /&gt;
@@ -1162,8 +1166,6 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
   &lt;img src=&quot;https://www.w3schools.com/tags/pic_trulli.jpg&quot; alt=&quot;Trulli&quot; style=&quot;width:100%&quot; /&gt;
   &lt;figcaption&gt;Fig.1 - Trulli, Puglia, Italy.&lt;/figcaption&gt;
 &lt;/figure&gt;
-
-&lt;hr /&gt;
 
 &lt;h2 id=&quot;3-택스트-요소&quot;&gt;3. 택스트 요소&lt;/h2&gt;
 &lt;h6 id=&quot;a&quot;&gt;&amp;lt;a&amp;gt;&lt;/h6&gt;
@@ -1254,13 +1256,9 @@ This text will go right-to-left.
 &lt;h6 id=&quot;u---언더라인-지양&quot;&gt;&amp;lt;u&amp;gt; - 언더라인 (지양)&lt;/h6&gt;
 &lt;p&gt;This is some &lt;u&gt;mispeled&lt;/u&gt; text.&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;h2 id=&quot;3-편집-요소&quot;&gt;3. 편집 요소&lt;/h2&gt;
 &lt;h6 id=&quot;ins-del&quot;&gt;&amp;lt;ins&amp;gt;, &amp;lt;del&amp;gt;&lt;/h6&gt;
 &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
-
-&lt;hr /&gt;
 
 &lt;h2 id=&quot;4-임베드-요소&quot;&gt;4. 임베드 요소&lt;/h2&gt;
 &lt;h6 id=&quot;picture-source&quot;&gt;&amp;lt;picture&amp;gt;, &amp;lt;source&amp;gt;&lt;/h6&gt;
@@ -1307,8 +1305,6 @@ This text will go right-to-left.
   &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; alt=&quot;Cup of coffee&quot; href=&quot;coffee.htm&quot; /&gt;
 &lt;/map&gt;
 
-&lt;hr /&gt;
-
 &lt;h2 id=&quot;5-표-요소&quot;&gt;5. 표 요소&lt;/h2&gt;
 &lt;h6 id=&quot;table-caption-thead-tbody-tfoot-tr-td-th&quot;&gt;&amp;lt;table&amp;gt;, &amp;lt;caption&amp;gt;, &amp;lt;thead&amp;gt;, &amp;lt;tbody&amp;gt;, &amp;lt;tfoot&amp;gt;, &amp;lt;tr&amp;gt;, &amp;lt;td&amp;gt;, &amp;lt;th&amp;gt;&lt;/h6&gt;
 &lt;table&gt;
@@ -1354,8 +1350,6 @@ This text will go right-to-left.
     &lt;td&gt;$53&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
-
-&lt;hr /&gt;
 
 &lt;h2 id=&quot;6-폼-요소&quot;&gt;6. 폼 요소&lt;/h2&gt;
 &lt;h6 id=&quot;form-label-input-type&quot;&gt;&amp;lt;form&amp;gt;, &amp;lt;label&amp;gt;, &amp;lt;input type=”“&amp;gt;&lt;/h6&gt;
@@ -1492,8 +1486,6 @@ This text will go right-to-left.
  &lt;/fieldset&gt;
 &lt;/form&gt;
 
-&lt;hr /&gt;
-
 &lt;h2 id=&quot;7-상호작용-요소&quot;&gt;7. 상호작용 요소&lt;/h2&gt;
 &lt;h6 id=&quot;details-summary&quot;&gt;&amp;lt;details&amp;gt;, &amp;lt;summary&amp;gt;&lt;/h6&gt;
 &lt;details&gt;
@@ -1511,8 +1503,6 @@ This text will go right-to-left.
 &lt;p&gt;This is some text.&lt;/p&gt;
 
 &lt;p&gt;This is some text.&lt;/p&gt;
-
-&lt;hr /&gt;
 
 &lt;h2 id=&quot;8-스크립트-요소&quot;&gt;8. 스크립트 요소&lt;/h2&gt;
 &lt;h6 id=&quot;script&quot;&gt;&amp;lt;script&amp;gt;&lt;/h6&gt;
@@ -1607,143 +1597,4 @@ This text will go right-to-left.
       &lt;td style=&quot;text-align: left&quot;&gt;dollar sign&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="css" /><category term="css" /><summary type="html">기본 문법</summary></entry><entry><title type="html">Jekyll 블로그 잡다 기록</title><link href="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2/" rel="alternate" type="text/html" title="Jekyll 블로그 잡다 기록" /><published>2021-03-31T00:00:00+00:00</published><updated>2021-03-31T00:00:00+00:00</updated><id>https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2</id><content type="html" xml:base="https://kkooing.github.io/it/jekyll-blog/jekyll-blog-2/">&lt;h2 id=&quot;플러그인-추가&quot;&gt;플러그인 추가&lt;/h2&gt;
-&lt;p&gt;/_posts 폴더 아래에 카테고리별 폴더를 만들어서 게시물을 분류하려고 한다. Jekyll은 폴더 안에 포스트를 넣으면 해당 포스트에 자동으로 카테고리를 달아준다.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;폴더 구조:
-./
-├── cat-A/
-│   ├── cat-1/
-│   │   └── _posts/
-│   │       └── 2021-03-07-sample-post-1.md
-│   └── cat-2/
-│       └── _posts/
-│           └── 2021-03-21-sample-post-2.md
-└── _posts/
-    ├── cat-B/
-    │   └── 2021-03-17-sample-post-3.md
-    └── cat-C/
-        └── 2021-04-02-sample-post-4.md
-
-결과:
-  sample-post-1의 카테고리: [cat-A, cat-1]
-  sample-post-2의 카테고리: [cat-A, cat-2]
-  sample-post-3의 카테고리: []
-  sample-post-4의 카테고리: []
-
-결론:
-  _posts/ 아래의 폴더는 무시된다.
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;이러한 결과에 대해서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Jekyll::Document::categories_from_path&lt;/code&gt;에도 설명되어있다.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;// Jekyll::Document::categories_from_path
-
-# Add superdirectories of the special_dir to categories.
-# In the case of es/_posts, 'es' is added as a category.
-# In the case of _posts/es, 'es' is NOT added as a category.
-#
-# Returns nothing.
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;플러그인을 통해 다음의 결과를 얻으려 한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;폴더 구조:
-./
-└── _posts/
-    ├── cat-A/
-    │   ├── cat-1/
-    │   │   └── 2021-03-07-sample-post-1.md
-    │   └── cat-2/
-    │       └── 2021-03-21-sample-post-2.md
-    ├── cat-B/
-    │   └── 2021-03-17-sample-post-3.md
-    └── cat-C/
-        └── 2021-04-02-sample-post-4.md
-
-결과:
-  sample-post-1의 카테고리: [cat-A, cat-1]
-  sample-post-2의 카테고리: [cat-A, cat-2]
-  sample-post-3의 카테고리: [cat-B]
-  sample-post-4의 카테고리: [cat-C]
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;_plugins/에 다음 파일을 생성한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;// jekyll-auto-cat.rb
-
-module Jekyll
-  class Document
-    def categories_from_path(special_dir)
-      superdirs = relative_path.sub(special_dir, &quot;&quot;).downcase
-      superdirs = superdirs.split(File::SEPARATOR)
-      superdirs.reject! { |c| c.empty? || c == special_dir || c == basename }
-      merge_data!({ &quot;categories&quot; =&amp;gt; superdirs }, :source =&amp;gt; &quot;file path&quot;)
-    end
-  end
-end
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;분명히 소문자로 폴더명을 지었고 로컬에서 블로그를 실행하면 아무 문제 없는데 git에 올릴때는 알 수 없는 이유로 대문자 카테고리가 추가 생성되는 오류가 있었다. 그래서 일단은 4번째 줄의 downcase로 임시조치해 놓았다.&lt;/p&gt;
-
-&lt;h2 id=&quot;html-구조&quot;&gt;HTML 구조&lt;/h2&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="it" /><category term="jekyll-blog" /><category term="jekyll" /><category term="github-pages" /><category term="blog" /><summary type="html">플러그인 추가 /_posts 폴더 아래에 카테고리별 폴더를 만들어서 게시물을 분류하려고 한다. Jekyll은 폴더 안에 포스트를 넣으면 해당 포스트에 자동으로 카테고리를 달아준다.</summary></entry></feed>
+&lt;/table&gt;</content><author><name>kkooing</name><email>kdw7968@naver.com</email></author><category term="computer-language" /><category term="etc" /><category term="css" /><category term="css" /><summary type="html">기본 문법</summary></entry></feed>

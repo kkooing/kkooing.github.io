@@ -78,6 +78,10 @@
       margin-top: -0.5rem;
     }
 
+    p {
+      overflow-x: hidden;
+    }
+
     hr {
       border-width: 2px;
       border-color: hsl(220, 100, 90);

@@ -5,7 +5,6 @@ thumbnail       : "https://1.bp.blogspot.com/-gV8bLJ7y_Bw/YDNHHNFun7I/AAAAAAAAAZ
 ---
 ## 0. 주제
 &nbsp;curl을 통해 iptime 공유기 공인 IP 주소를 가져온다.
-<hr/>
 
 ## 1. 서론
 &nbsp;우선 인터넷에 연결이 되어 있다면 자신의 공인 IP를 쉘에 불러오는것은 간단하게 할 수 있다.[^IP-addr]
@@ -32,7 +31,6 @@ curl icanhazip.com
 * iptime 공유기 (모델 N704V3, 펌웨어 12.07.6)
 * 세션방식 로그인
 * Captcha 없음
-<hr/>
 
 ## 2. 본론
 &nbsp;브라우저에 기본 게이트웨이 주소(나는 192.168.0.1)를 입력하면 아래와 같은 순서로 리다이렉트 된다.
@@ -60,13 +58,11 @@ curl -s4 'http://192.168.0.1/sess-bin/login_handler.cgi' -H 'Referer: http://192
 curl -s4 'http://192.168.0.1/login/login.cgi' -H "Cookie: efm_session_id=${cookie}" | sed -En "s,.*동적 IP - 연결됨 - (.*).*,\1,p"
 ```
 `${cookie}`{:.language-bash} : 쿠키<br/>
-<hr/>
 
 ## 3. 결론
 &nbsp;이제 타 사이트에 접속하지 않고도 공인 IP를 알 수 있게 되었다. 공유기에 로그인을 할 수 있으니 IP 말고 다른 정보를 조회하는 데에도 유용하게 사용할 수 있을것 같다. 추후에 공유기 제조사에서 펌웨어를 업그레이드하면 이 방법이 소용없을 수도 있지만.... 그땐 그냥 기본인증으로 사용해야겠다.
 
 *(의문점: 공유기에 로그인 기록이 안 남는것 같다)*
-<hr/>
 
 ## A. 참고
-[^IP-addr]: *Tecmint: Linux Howtos, Tutorials & Guides, "4 Ways to Find Server Public IP Address in Linux Terminal", <https://www.tecmint.com/find-linux-server-public-ip-address/>*
+[^IP-addr]: *Tecmint: Linux Howtos, Tutorials & Guides, \"4 Ways to Find Server Public IP Address in Linux Terminal\", <https://www.tecmint.com/find-linux-server-public-ip-address/>*

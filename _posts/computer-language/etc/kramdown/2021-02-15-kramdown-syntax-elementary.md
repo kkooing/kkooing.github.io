@@ -4,15 +4,10 @@ tags            : [kramdown, markdown]
 thumbnail       : 
 ---
 ## 제목 \<h\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -70,15 +65,10 @@ H2 제목
 </div>
 
 ## 문단, 개행 \<p\>, \<br/\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -136,15 +126,10 @@ H2 제목
 </div>
 
 ## 글자 꾸밈 \<em\>, \<strong\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -193,15 +178,10 @@ _기울임_
 
 ## 리스트
 ### ordered \<ol\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -230,15 +210,10 @@ _기울임_
 </div>
 
 ### unordered \<ul\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -267,15 +242,10 @@ _기울임_
 </div>
 
 ### definition \<dl\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -317,15 +287,10 @@ _기울임_
 ## 코드
 ### 블록 코드 \<pre\>\<code\>
 #### 들여쓰기 방식
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -364,15 +329,10 @@ _기울임_
 </div>
 
 #### 기호 방식
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -400,15 +360,10 @@ _기울임_
 </div>
 
 ### 인라인 코드 \<code\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -442,15 +397,10 @@ _기울임_
 `````
 
 ## 인용 \<blockquote\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -476,15 +426,10 @@ _기울임_
 </div>
 
 ## 미주(footnote)
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -531,15 +476,10 @@ _기울임_
 </div>
 
 ## 수평선 \<hr/\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -566,15 +506,10 @@ _ _ _
 </div>
 
 ## 표 \<table\>
-
-<div class="scroll-x-container">
+<div class="sx nw">
 <table>
   <thead>
-    <tr>
-      <th>kramdown</th>
-      <th>HTML</th>
-      <th>브라우저</th>
-    </tr>
+    <tr><th>kramdown</th><th>HTML</th><th>브라우저</th></tr>
   </thead>
   <tbody>
     <tr>

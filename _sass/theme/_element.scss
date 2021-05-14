@@ -1,15 +1,22 @@
 //  c for container
-.c-inl>* {
+//    inline-block
+.ib>* {
   vertical-align: top;
   display: inline-block;
 }
-.c-inl>mjx-container[jax="CHTML"][display="true"] {
+.ib>mjx-container[jax="CHTML"][display="true"] {
   vertical-align: top;
   display: inline-block;
 }
 
-.c-scr {
+//    scroll-x
+.sx {
   overflow-x: auto;
+}
+
+//    nowrap
+.nw {
+  white-space: nowrap;
 }
 
 //  ※ Note

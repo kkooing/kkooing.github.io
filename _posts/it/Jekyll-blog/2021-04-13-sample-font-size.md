@@ -5,7 +5,7 @@ thumbnail       :
 ---
 ## 1. 평행 비교
 
-<div class="scroll-x-container" style="white-space: nowrap;">
+<div class="sx nw">
 <table>
 <caption>Sans Serif</caption>
 
