@@ -49,12 +49,14 @@ CMS(Content-Management Systems: markdown 같은거)를 사용할 때는 이스�
 ## 4. TeX 매크로 정의
 &nbsp;사용자 정의 매크로와 환경을 만들기 위해 **수식구문 내에서**  `\def`, `\newcommand`, `\renewcommand`, `\newenvironment`, `\renewenvironment`, `\let` 를 사용할 수 있다.
 
+{% raw %}
 ```js
 \(
    \def\RR{{\bf R}}
    \def\bold#1{{\bf #1}}
 \)
 ```
+{% endraw %}
 
 환경 설정을 통해 매크롤르 정의할 수도 있다.
 
