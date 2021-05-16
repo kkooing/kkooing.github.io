@@ -1,0 +1,78 @@
+I"#<div class="sx nw">
+<table>
+  <thead>
+   <tr>
+     <th>그림</th>
+     <th>넓이</th>
+     <th colspan="2">도심</th>
+     <th>도심 기준<br />(\( I_x\), \( I_y\))</th>
+     <th>외접선 기준<br />(\( I_{x’}\), \( I_{y’}\))</th>
+   </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="6">사각형</th>
+    </tr>
+    <tr>
+      <td rowspan="2"><figure class="" style="display: block; text-align: center;">
+  <a href="https://gist.githubusercontent.com/kkooing/7b950562f612080b8476d555dfb9db14/raw/ec33cbbd2b994f4b8cd161e84b414a6d7274b187/%25EB%258B%25A8%25EB%25A9%25B4%25EC%25B9%2598-%25EC%2582%25AC%25EA%25B0%2581%25ED%2598%2595.svg" style="display: initial;">
+    <img src="https://gist.githubusercontent.com/kkooing/7b950562f612080b8476d555dfb9db14/raw/ec33cbbd2b994f4b8cd161e84b414a6d7274b187/%25EB%258B%25A8%25EB%25A9%25B4%25EC%25B9%2598-%25EC%2582%25AC%25EA%25B0%2581%25ED%2598%2595.svg" alt="사각형" style="width: 200px;" />
+  </a></figure></td>
+      <td rowspan="2">\(\displaystyle bh\)</td>
+      <th>\( x \)</th>
+      <td>\(\displaystyle \frac{b}{2}\)</td>
+      <td>\(\displaystyle \frac{bh^3}{12}\)</td>
+      <td>\(\displaystyle \frac{bh^3}{3}\)</td>
+    </tr>
+    <tr>
+      <th>\( y \)</th>
+      <td>\(\displaystyle \frac{h}{2}\)</td>
+      <td>\(\displaystyle \frac{b^3h}{12}\)</td>
+      <td>\(\displaystyle \frac{b^3h}{3}\)</td>
+    </tr>
+
+    <tr>
+      <th colspan="6">중실원</th>
+    </tr>
+    <tr>
+      <td rowspan="2"><figure class="" style="display: block; text-align: center;">
+  <a href="https://gist.githubusercontent.com/kkooing/7b950562f612080b8476d555dfb9db14/raw/ec33cbbd2b994f4b8cd161e84b414a6d7274b187/%25EB%258B%25A8%25EB%25A9%25B4%25EC%25B9%2598-%25EC%25A4%2591%25EC%258B%25A4%25EC%259B%2590.svg" style="display: initial;">
+    <img src="https://gist.githubusercontent.com/kkooing/7b950562f612080b8476d555dfb9db14/raw/ec33cbbd2b994f4b8cd161e84b414a6d7274b187/%25EB%258B%25A8%25EB%25A9%25B4%25EC%25B9%2598-%25EC%25A4%2591%25EC%258B%25A4%25EC%259B%2590.svg" alt="중실원" style="width: 200px;" />
+  </a></figure></td>
+      <td rowspan="2">\(\displaystyle bh\)</td>
+      <th>\( x \)</th>
+      <td>\(\displaystyle \frac{b}{2}\)</td>
+      <td>\(\displaystyle \frac{bh^3}{12}\)</td>
+      <td>\(\displaystyle \frac{bh^3}{3}\)</td>
+    </tr>
+    <tr>
+      <th>\( y \)</th>
+      <td>\(\displaystyle \frac{h}{2}\)</td>
+      <td>\(\displaystyle \frac{b^3h}{12}\)</td>
+      <td>\(\displaystyle \frac{b^3h}{3}\)</td>
+    </tr>
+
+    <tr>
+      <th colspan="6">중공원</th>
+    </tr>
+    <tr>
+      <td rowspan="2"><figure class="" style="display: block; text-align: center;">
+  <a href="https://gist.githubusercontent.com/kkooing/7b950562f612080b8476d555dfb9db14/raw/ec33cbbd2b994f4b8cd161e84b414a6d7274b187/%25EB%258B%25A8%25EB%25A9%25B4%25EC%25B9%2598-%25EC%25A4%2591%25EA%25B3%25B5%25EC%259B%2590.svg" style="display: initial;">
+    <img src="https://gist.githubusercontent.com/kkooing/7b950562f612080b8476d555dfb9db14/raw/ec33cbbd2b994f4b8cd161e84b414a6d7274b187/%25EB%258B%25A8%25EB%25A9%25B4%25EC%25B9%2598-%25EC%25A4%2591%25EA%25B3%25B5%25EC%259B%2590.svg" alt="중공원" style="width: 200px;" />
+  </a></figure></td>
+      <td rowspan="2">\(\displaystyle bh\)</td>
+      <th>\( x \)</th>
+      <td>\(\displaystyle \frac{b}{2}\)</td>
+      <td>\(\displaystyle \frac{bh^3}{12}\)</td>
+      <td>\(\displaystyle \frac{bh^3}{3}\)</td>
+    </tr>
+    <tr>
+      <th>\( y \)</th>
+      <td>\(\displaystyle \frac{h}{2}\)</td>
+      <td>\(\displaystyle \frac{b^3h}{12}\)</td>
+      <td>\(\displaystyle \frac{b^3h}{3}\)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+:ET

@@ -1,7 +1,7 @@
 <figure class="{{ include.class }}" style="display: block; text-align: center;">
   <a href="{{ include.image_path | relative_url }}" style="display: initial;">
     <img src="{{ include.image_path | relative_url }}"
-        alt="{% if include.alt %}{{ include.alt }}{% endif %}" style="width: auto;">
+        alt="{% if include.alt %}{{ include.alt }}{% endif %}" style="{% if include.style %}{{ include.style }}{% endif %}">
   </a>
   {%- if include.caption -%}
     <figcaption>
